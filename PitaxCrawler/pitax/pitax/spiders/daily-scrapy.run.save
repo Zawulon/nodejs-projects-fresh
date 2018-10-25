@@ -1,0 +1,2 @@
+cd 
+scrapy runspider /home/twoznica/nodejs-projects/PitaxCrawler/pitax/pitax/spiders//home/twoznica/nodejs-projects/PitaxCrawler/pitax/pitax/spiders/toscrape-test2.py

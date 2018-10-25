@@ -1,0 +1,4 @@
+cd /home/twoznica/nodejs-projects/PitaxCrawler/pitax/pitax/spiders/
+scrapy runspider toscrape-test2.py
+git add --a
+git commit -m"debian crawl automatic"
