@@ -1,0 +1,360 @@
+<html><head>
+  <title>Towarzystwo Pomocy Potrzebującym "Nadzieja"</title>
+  <meta name="Keywords" content="towarzystwo, pomoc, potrzebującym, nadzieja, brat, albert, śrem">
+  <meta name="description" content="Towarzystwo Pomocy Potrzebującym " nadzieja""="">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="imagetoolbar" content="no">
+  <meta name="Author" content="graphic design - Kinga &amp; Kamil Kondras www.mantikora.pl :: site engine, CMS - Grzegorz Szymczak www.hsystem.eu">
+  <meta name="robots" content="all">
+  <meta name="revisit-after" content="5 days">
+  <link href="main/tpls/basic/style.css" rel="stylesheet" type="text/css">
+    <link href="mods/fmenu/tpls/basic/path/style.css" type="text/css" rel="stylesheet">
+    <link href="mods/fmenu/tpls/basic/tpl3/style.css" type="text/css" rel="stylesheet">
+    <link href="mods/farticles/tpls/basic/empty_list/style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="lib/js/advajax.js"></script>
+  <script type="text/javascript" src="main/tpls/basic/functions.js"></script>
+    <script type="text/javascript" src="lib/lightbox2/prototype.js"></script>
+  <script type="text/javascript" src="lib/lightbox2/scriptaculous.js?load=effects,builder"></script><script type="text/javascript" src="http://bratalbert.nstrefa.pl/nadzieja.srem.info/lib/lightbox2/effects.js"></script><script type="text/javascript" src="http://bratalbert.nstrefa.pl/nadzieja.srem.info/lib/lightbox2/builder.js"></script>
+  <script type="text/javascript" src="lib/lightbox2/lightbox.js"></script>
+  <link rel="stylesheet" href="lib/lightbox2/lightbox.css" type="text/css" media="screen">
+</head>
+<body>
+  <div class="whole_site">
+    <center>
+      <div class="main_container">
+        <div class="main_menu1"><div class="mod_fmenu_tpl3">
+  <table align="center" cellpadding="0" cellspacing="0" style="width:1000px;height:30px;">
+    <tbody><tr>
+      <td style="width:10px;"></td>
+      <td style="width:px;" id="__tm0" align="center" onmouseover="dm_select_divs(4);" onmouseout="dm_uselect_all_divs();" onclick="document.location=&quot;./s4,aktualnosci.html&quot;;">Aktualności</td>
+      <td class="mod_fmenu_tpl3_td2"></td>
+      <td style="width:px;" id="__tm1" align="center" onmouseover="dm_select_divs(11);" onmouseout="dm_uselect_all_divs();" onclick="document.location=&quot;./s11,realizowane_zadania.html&quot;;">Realizowane zadania</td>
+      <td class="mod_fmenu_tpl3_td2"></td>
+      <td style="width:px;" id="__tm2" align="center" onmouseover="dm_select_divs(5);" onmouseout="dm_uselect_all_divs();" onclick="document.location=&quot;./s5,struktura_towarzystwa.html&quot;;">Struktura Towarzystwa</td>
+      <td class="mod_fmenu_tpl3_td2"></td>
+      <td style="width:px;" id="__tm3" align="center" onmouseover="dm_select_divs(7);" onmouseout="dm_uselect_all_divs();" onclick="document.location=&quot;./s7,statut.html&quot;;">Statut    </td>
+      <td class="mod_fmenu_tpl3_td2"></td>
+      <td style="width:px;" id="__tm4" align="center" onmouseover="dm_select_divs(10);" onmouseout="dm_uselect_all_divs();" onclick="document.location=&quot;./s10,sprawozdania_roczne.html&quot;;">Sprawozdania roczne</td>
+      <td class="mod_fmenu_tpl3_td2"></td>
+      <td style="width:px;" id="__tm5" align="center" onclick="document.location=&quot;./s8,misja_towarzystwa.html&quot;;">Misja Towarzystwa</td>
+      <td class="mod_fmenu_tpl3_td2"></td>
+      <td style="width:px;" id="__tm6" align="center" onclick="document.location=&quot;./s12,historia_towarzystwa.html&quot;;">Historia Towarzystwa</td>
+      <td class="mod_fmenu_tpl3_td2"></td>
+      <td style="width:px;" id="__tm7" align="center" onclick="document.location=&quot;./s13,nasi_sponsorzy.html&quot;;">Nasi sponsorzy</td>
+      <td style="width:10px;"></td>
+    </tr>
+  </tbody></table>
+</div>
+<script language="JavaScript">
+<!--
+function dm_select_divs(_div1,_div2){
+  for(lp=0;lp<=dm_tab_count;lp++){
+    if(lp==_div1 || lp==_div2)dm_tab1[lp] = 1;
+  }
+  if(dm_scroll_stat==0){
+    dm_scroll_stat = 1;
+    dm_dynamic_scroller();
+  }
+}
+
+function dm_uselect_all_divs(){
+  for(lp=0;lp<=dm_tab_count;lp++){
+    dm_tab1[lp] = 0;
+  }
+  if(dm_scroll_stat==0){
+    dm_scroll_stat = 1;
+    dm_dynamic_scroller();
+  }
+}
+
+function dm_dynamic_scroller(){
+  __act_stat = 0; // status czy jakiekolwiek okienko ma być po zakonczeniu dalej skrolowane
+
+  for(lp=0;lp<=dm_tab_count;lp++){
+
+    if(dm_tab1[lp]==1 && dm_tab2[lp]<90){ // pokazywanie okienka
+      dm_tab2[lp] = dm_tab2[lp] + 20; // zwiekszanie opacity
+      op1 = dm_tab2[lp]/100;
+      document.getElementById("dmdiv"+lp).style.filter = "alpha(opacity="+dm_tab2[lp]+")";
+      document.getElementById("dmdiv"+lp).style.opacity = op1;
+
+      if(dm_tab2[lp]>=0){
+        document.getElementById("dmdiv"+lp).style.display = "block";
+        document.getElementById("dmdiv"+lp).style.zIndex = 101 + dm_tab2[lp];
+      }
+    }
+
+    if(dm_tab1[lp]==0 && dm_tab2[lp]>0){ // chowanie okienka
+      dm_tab2[lp] = dm_tab2[lp] - 20; // zmniejszanie opacity
+      op1 = dm_tab2[lp]/100;
+      document.getElementById("dmdiv"+lp).style.filter = "alpha(opacity="+dm_tab2[lp]+")";
+      document.getElementById("dmdiv"+lp).style.opacity = op1;
+
+     if(dm_tab2[lp]<=0){
+       document.getElementById("dmdiv"+lp).style.display = "none";
+       document.getElementById("dmdiv"+lp).style.zIndex = 101 + dm_tab2[lp];
+     }
+    }
+
+
+    if(dm_tab2[lp]>0 && dm_tab2[lp]<100)__act_stat = 1; // scrolowanie elementu niezakonczone - wywolac funkcje ponownie
+
+  }
+
+  if(__act_stat==0)dm_scroll_stat = 0; // zapis statusu dynamiki na 0 - nie wywolywanie kolejny raz funkcji
+  else { // wywolanie ponowne
+    dm_scroll_stat = 1;
+    setTimeout("dm_dynamic_scroller()",50);
+  }
+}
+
+
+
+var dm_tab1 = new Array(); // tablica znacznikow aktywnosci DIVow
+var dm_tab2 = new Array(); // tablica aktualnych opacity
+var dm_scroll_stat = 0; // status (0/1) czy funkcja scrolowania (zmiany opacity i wylaczania divow) jest aktywna
+var dm_tab_count = 77; // dugosc tablicy indexow divow
+ dm_tab1[0] = 0; dm_tab2[0] = 0;  dm_tab1[1] = 0; dm_tab2[1] = 0;  dm_tab1[2] = 0; dm_tab2[2] = 0;  dm_tab1[3] = 0; dm_tab2[3] = 0;  dm_tab1[4] = 0; dm_tab2[4] = 0;  dm_tab1[5] = 0; dm_tab2[5] = 0;  dm_tab1[6] = 0; dm_tab2[6] = 0;  dm_tab1[7] = 0; dm_tab2[7] = 0;  dm_tab1[8] = 0; dm_tab2[8] = 0;  dm_tab1[9] = 0; dm_tab2[9] = 0;  dm_tab1[10] = 0; dm_tab2[10] = 0;  dm_tab1[11] = 0; dm_tab2[11] = 0;  dm_tab1[12] = 0; dm_tab2[12] = 0;  dm_tab1[13] = 0; dm_tab2[13] = 0;  dm_tab1[14] = 0; dm_tab2[14] = 0;  dm_tab1[15] = 0; dm_tab2[15] = 0;  dm_tab1[16] = 0; dm_tab2[16] = 0;  dm_tab1[17] = 0; dm_tab2[17] = 0;  dm_tab1[18] = 0; dm_tab2[18] = 0;  dm_tab1[19] = 0; dm_tab2[19] = 0;  dm_tab1[20] = 0; dm_tab2[20] = 0;  dm_tab1[21] = 0; dm_tab2[21] = 0;  dm_tab1[22] = 0; dm_tab2[22] = 0;  dm_tab1[23] = 0; dm_tab2[23] = 0;  dm_tab1[24] = 0; dm_tab2[24] = 0;  dm_tab1[25] = 0; dm_tab2[25] = 0;  dm_tab1[26] = 0; dm_tab2[26] = 0;  dm_tab1[27] = 0; dm_tab2[27] = 0;  dm_tab1[28] = 0; dm_tab2[28] = 0;  dm_tab1[29] = 0; dm_tab2[29] = 0;  dm_tab1[30] = 0; dm_tab2[30] = 0;  dm_tab1[31] = 0; dm_tab2[31] = 0;  dm_tab1[32] = 0; dm_tab2[32] = 0;  dm_tab1[33] = 0; dm_tab2[33] = 0;  dm_tab1[34] = 0; dm_tab2[34] = 0;  dm_tab1[35] = 0; dm_tab2[35] = 0;  dm_tab1[36] = 0; dm_tab2[36] = 0;  dm_tab1[37] = 0; dm_tab2[37] = 0;  dm_tab1[38] = 0; dm_tab2[38] = 0;  dm_tab1[39] = 0; dm_tab2[39] = 0;  dm_tab1[40] = 0; dm_tab2[40] = 0;  dm_tab1[41] = 0; dm_tab2[41] = 0;  dm_tab1[42] = 0; dm_tab2[42] = 0;  dm_tab1[43] = 0; dm_tab2[43] = 0;  dm_tab1[44] = 0; dm_tab2[44] = 0;  dm_tab1[45] = 0; dm_tab2[45] = 0;  dm_tab1[46] = 0; dm_tab2[46] = 0;  dm_tab1[47] = 0; dm_tab2[47] = 0;  dm_tab1[48] = 0; dm_tab2[48] = 0;  dm_tab1[49] = 0; dm_tab2[49] = 0;  dm_tab1[50] = 0; dm_tab2[50] = 0;  dm_tab1[51] = 0; dm_tab2[51] = 0;  dm_tab1[52] = 0; dm_tab2[52] = 0;  dm_tab1[53] = 0; dm_tab2[53] = 0;  dm_tab1[54] = 0; dm_tab2[54] = 0;  dm_tab1[55] = 0; dm_tab2[55] = 0;  dm_tab1[56] = 0; dm_tab2[56] = 0;  dm_tab1[57] = 0; dm_tab2[57] = 0;  dm_tab1[58] = 0; dm_tab2[58] = 0;  dm_tab1[59] = 0; dm_tab2[59] = 0;  dm_tab1[60] = 0; dm_tab2[60] = 0;  dm_tab1[61] = 0; dm_tab2[61] = 0;  dm_tab1[62] = 0; dm_tab2[62] = 0;  dm_tab1[63] = 0; dm_tab2[63] = 0;  dm_tab1[64] = 0; dm_tab2[64] = 0;  dm_tab1[65] = 0; dm_tab2[65] = 0;  dm_tab1[66] = 0; dm_tab2[66] = 0;  dm_tab1[67] = 0; dm_tab2[67] = 0;  dm_tab1[68] = 0; dm_tab2[68] = 0;  dm_tab1[69] = 0; dm_tab2[69] = 0;  dm_tab1[70] = 0; dm_tab2[70] = 0;  dm_tab1[71] = 0; dm_tab2[71] = 0;  dm_tab1[72] = 0; dm_tab2[72] = 0;  dm_tab1[73] = 0; dm_tab2[73] = 0;  dm_tab1[74] = 0; dm_tab2[74] = 0;  dm_tab1[75] = 0; dm_tab2[75] = 0;  dm_tab1[76] = 0; dm_tab2[76] = 0;  dm_tab1[77] = 0; dm_tab2[77] = 0; 
+//-->
+</script>
+<div id="dmdiv4" style="left:10;top:35;width:170;height:38;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s18,aktualne_wiadomosci.html&quot;;" onmouseover="dm_select_divs(4,18);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Aktualne Wiadomości</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s19,archiwum.html&quot;;" onmouseover="dm_select_divs(4);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Archiwum</div>
+ </div>
+<div id="dmdiv11" style="left:92;top:35;width:170;height:76;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s76,nadzieja_2017.html&quot;;" onmouseover="dm_select_divs(11);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;"NADZIEJA" 2017</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s54,nadzieja2011.html&quot;;" onmouseover="dm_select_divs(11);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;"NADZIEJA"2011</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s63,nadzieja_2012.html&quot;;" onmouseover="dm_select_divs(11);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;"NADZIEJA" 2012</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s45,archiwum.html&quot;;" onmouseover="dm_select_divs(11,45);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Archiwum</div>
+ </div>
+<div id="dmdiv5" style="left:234;top:35;width:170;height:38;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s48,struktura_towarzystwa.html&quot;;" onmouseover="dm_select_divs(5);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Struktura Towarzystwa</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s47,dokumenty_prawne.html&quot;;" onmouseover="dm_select_divs(5);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Dokumenty Prawne</div>
+ </div>
+<div id="dmdiv7" style="left:390;top:35;width:170;height:133;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s22,postanowienia_ogolne.html&quot;;" onmouseover="dm_select_divs(7);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Postanowienia  ogólne</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s23,cele_i_sposoby_ich_realizacji.html&quot;;" onmouseover="dm_select_divs(7);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Cele i sposoby ich realizacji	</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s24,czlonkostwo.html&quot;;" onmouseover="dm_select_divs(7);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Członkostwo</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s25,organa_towarzystwa.html&quot;;" onmouseover="dm_select_divs(7);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Organa Towarzystwa</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s26,rada_towarzystwa.html&quot;;" onmouseover="dm_select_divs(7);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Rada Towarzystwa	</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s27,gospodarka_finansowa.html&quot;;" onmouseover="dm_select_divs(7);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Gospodarka Finansowa</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s28,rozwiazanie_i_likwidacja_towarzystwa.html&quot;;" onmouseover="dm_select_divs(7);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Rozwiązanie i likwidacja Towarzystwa  </div>
+ </div>
+<div id="dmdiv10" style="left:465;top:35;width:170;height:95;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s77,sprawozdanie_za_2017r.html&quot;;" onmouseover="dm_select_divs(10,77);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdanie za 2017r.</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s70,sprawozdanie_za_2014r.html&quot;;" onmouseover="dm_select_divs(10,70);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdanie za 2014r.</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s65,sprawozdanie_za_2013r.html&quot;;" onmouseover="dm_select_divs(10,65);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdanie za 2013r.</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s64,sprawozdanie_za_2012r.html&quot;;" onmouseover="dm_select_divs(10);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdanie za 2012r.</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s46,archiwum.html&quot;;" onmouseover="dm_select_divs(10,46);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Archiwum</div>
+ </div>
+<div id="dmdiv18" style="left:183;top:35;width:170;height:38;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s61,„_dzialania_na_rzecz_poprawy_jakosci_zycia_osob_dlugotrwale_przewlekle_chorych_oraz_osob_niepelnosprawnych”_.html&quot;;" onmouseover="dm_select_divs(4,18);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;„Działania na rzecz poprawy jakości życia osób długotrwale, przewlekle chorych oraz osób niepełnosprawnych”,</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s62,.html&quot;;" onmouseover="dm_select_divs(4,18);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;</div>
+ </div>
+<div id="dmdiv45" style="left:265;top:95;width:170;height:114;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s51,nadzieja_2010.html&quot;;" onmouseover="dm_select_divs(11,45);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;"NADZIEJA" 2010</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s30,„_nadzieja”_2009.html&quot;;" onmouseover="dm_select_divs(11,45);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp; „NADZIEJA” 2009</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s49,nadzieja_2009.html&quot;;" onmouseover="dm_select_divs(11,45);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;"NADZIEJA" 2009</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s31,„_nadzieja”_2008.html&quot;;" onmouseover="dm_select_divs(11,45);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;„NADZIEJA” 2008</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s32,„_nadzieja”_2007.html&quot;;" onmouseover="dm_select_divs(11,45);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp; „NADZIEJA” 2007</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s60,realizowane_zadania_2011.html&quot;;" onmouseover="dm_select_divs(11,45);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Realizowane zadania 2011</div>
+ </div>
+<div id="dmdiv77" style="left:638;top:35;width:170;height:76;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s78,sprawozdanie_merytoryczne_2017.html&quot;;" onmouseover="dm_select_divs(10,77);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdanie merytoryczne 2017</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s81,bilans_2017.html&quot;;" onmouseover="dm_select_divs(10,77);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Bilans 2017</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s82,rachunek_wynikow_2017.html&quot;;" onmouseover="dm_select_divs(10,77);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Rachunek wyników 2017</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s83,informacja_dodatkowa_2017.html&quot;;" onmouseover="dm_select_divs(10,77);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Informacja dodatkowa 2017</div>
+ </div>
+<div id="dmdiv70" style="left:638;top:55;width:170;height:76;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s71,sprawozdanie_merytoryczne_2014.html&quot;;" onmouseover="dm_select_divs(10,70);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdanie merytoryczne 2014</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s72,bilans_2014.html&quot;;" onmouseover="dm_select_divs(10,70);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Bilans 2014</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s73,rachunek_wynikow_2014.html&quot;;" onmouseover="dm_select_divs(10,70);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Rachunek wyników 2014</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s74,informacja_dodatkowa_2014.html&quot;;" onmouseover="dm_select_divs(10,70);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Informacja dodatkowa 2014</div>
+ </div>
+<div id="dmdiv65" style="left:638;top:75;width:170;height:76;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s66,sprawozdanie_merytoryczne_2013.html&quot;;" onmouseover="dm_select_divs(10,65);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdanie merytoryczne 2013</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s67,bilans_2013.html&quot;;" onmouseover="dm_select_divs(10,65);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Bilans 2013</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s68,rachunek_wynikow_2013.html&quot;;" onmouseover="dm_select_divs(10,65);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Rachunek wyników 2013</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s69,informacja_dodatkowa_2013.html&quot;;" onmouseover="dm_select_divs(10,65);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Informacja dodatkowa 2013</div>
+ </div>
+<div id="dmdiv46" style="left:638;top:115;width:170;height:95;position:absolute;display:none;z-index:101;background:#ffffff;border-style:solid;border-width:1px;border-color:#CAD7E8;">
+     <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s52,sprawozdania_za_2010_r.html&quot;;" onmouseover="dm_select_divs(10,46);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdania za 2010 r.</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s35,sprawozdanie_za_2009_r.html&quot;;" onmouseover="dm_select_divs(10,46);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdanie za 2009 r</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s34,sprawozdanie_za_2008_r.html&quot;;" onmouseover="dm_select_divs(10,46);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdanie za 2008 r</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s33,sprawozdanie_za_2007_r.html&quot;;" onmouseover="dm_select_divs(10,46);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdanie za 2007 r</div>
+     <div style="width:100%;height:1px;background:#CAD7E8;font-size:1px;"></div>
+    <div style="width:100%;height:19;cursor:pointer;color:#005599;font-size:11;font-weight:normal;" onclick="document.location=&quot;./s55,sprawozdania_za_2011r.html&quot;;" onmouseover="dm_select_divs(10,46);" onmouseout="dm_uselect_all_divs();" align="left"><div style="width:100%;height:2px;font-size:1px;"></div>&nbsp;Sprawozdania za 2011r.</div>
+ </div>
+</div>
+        <div class="main_links main_link1"><a href="./">strona główna</a></div>
+        <div class="main_links main_link2"><a href="./mapa_serwisu.html">mapa serwisu</a></div>
+        <div class="main_links main_link3"><a href="./s6,kontakt.html">kontakt</a></div>
+              <div class="find_field"><form id="find_f" method="post" action="./szukaj.html"><input name="findtext" value=""></form></div>
+      <div class="field_butt" onclick="document.getElementById(&quot;find_f&quot;).submit();"></div>
+        <div class="top_banner"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="990" height="140" id="flash" align="middle">
+	 <param name="allowScriptAccess" value="sameDomain">
+	 <param name="movie" value="fls/_banners/baner990x140.swf">
+	 <param name="quality" value="high">
+	 <param name="bgcolor" value="#ffffff">
+	 <param name="wmode" value="opaque">
+	 <embed src="fls/_banners/baner990x140.swf" quality="high" bgcolor="#ffffff" width="990" height="140" name="flash" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="opaque">
+</object></div>
+        <div class="sub_container">
+					<table cellpadding="0" cellspacing="0" width="1000px">
+						<tbody><tr>
+							<td width="5px"></td>
+							<td align="left" valign="top" width="200px">
+								<table cellpadding="0" cellspacing="0" width="100%" class="submenu">
+	<tbody><tr>
+		<td align="left" valign="top" class="submenu_top" colspan="3"><div style="width:100%;height:8px;font-size:1px;"></div>&nbsp;&nbsp;&nbsp;Aktualności</td>
+	</tr>
+</tbody></table>
+		<table cellpadding="0" cellspacing="0" width="200px" class="submenu">
+		<tbody><tr>
+			<td align="right" valign="top" style="width:10px;"></td>
+			<td style="width:180px;" class="submenu_pos"><a href="./s18,aktualne_wiadomosci.html">Aktualne Wiadomości</a></td>
+			<td width="10px"></td>
+		</tr>
+	</tbody></table>
+			<div class="submenu_dots"></div>
+		<table cellpadding="0" cellspacing="0" width="200px" class="submenu">
+		<tbody><tr>
+			<td align="right" valign="top" style="width:10px;"></td>
+			<td style="width:180px;" class="submenu_pos"><a href="./s19,archiwum.html">Archiwum</a></td>
+			<td width="10px"></td>
+		</tr>
+	</tbody></table>
+<div class="submenu_bot"></div>								<div style="width:100%;height:10px;font-size:1px;"></div>
+								<table cellpadding="0" cellspacing="0" width="100%" class="box_kontakt">
+	<tbody><tr>
+		<td align="left" valign="top" class="box_kontakt_top" colspan="3"><div style="width:100%;height:8px;font-size:1px;"></div>&nbsp;&nbsp;&nbsp;Kontakt</td>
+	</tr>
+	<tr>
+		<td width="10px"></td>
+		<td class="box_kontakt_pos"><p><a href="http://www.pitax.pl/rozlicz/0000063355/" target="_blank"><span style="font-size: smaller;"><img src="http://bratalbert.nstrefa.pl/nadzieja.srem.info/fls/editor/Image/Urozlicz-pit-online-new-button.png" alt="" width="180" height="64"></span></a></p>
+<p><strong>Biuro Towarzystwa:&nbsp; </strong><br>
+63-100 Śrem,<br>
+ul. Chłapowskiego 1<br>
+tel: <strong>663 953 504</strong><br>
+<font color="#666666"><strong>www. nadzieja.srem.info</strong></font><br>
+<strong>Nasz email:</strong><br>
+<font color="#99cc00"><a href="mailto:brat_albert@poczta.onet.eu">brat_albert@poczta.onet.eu</a></font><br>
+<strong>Biuro czynne</strong>: pn. – pt.<br>
+w godz. 9:30 - 13:30</p>
+<p><span style="font-size: small;"><strong>KRS 0 0 0 0 0 6 3 3 5 5</strong></span><br>
+<font color="#668a62"><font size="1"><br>
+</font></font></p></td>
+		<td width="10px"></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" class="box_kontakt_bot" colspan="3"></td>
+	</tr>	
+</tbody></table>								<div style="width:100%;height:9px;font-size:1px;"></div>
+								<a href="http://bazy.ngo.pl/search/info.asp?id=29952" target="_blank"><img src="main/tpls/basic/gfx/okno4.png" alt="Organizacja pożytku publicznego" width="200px"></a>
+							</td>
+							<td width="31px"></td>
+							<td align="left" valign="top" width="448px"><div style="width:448px;height:20px;" class="cont_nag">1 procent podatku</div>
+<div class="cont_dots"></div>
+<div style="width:448px;height:10px;"></div>
+<div class="cont"><p style="text-align: center;"><span style="font-size: large;"><strong>Oddaj 1% swojego podatku, Twoj wkład ma znaczenie! Kliknij w poniższy baner aby rozpocząć rozliczenie.</strong></span><br>
+<a href="http://www.pitax.pl/krs/0000063355/"><img src="http://bratalbert.nstrefa.pl/nadzieja.srem.info/fls/editor/Image/pitax-przekaz-1-procent-d-750x100.jpg" alt="" width="750" height="100"></a><br>
+<span style="font-size: xx-large;"><strong>K R S &nbsp; 0 0 0 0 0 6 3 3 5 5</strong></span><br>
+<strong>1% – tzw. mechanizm jednego procentu, </strong>czyli możliwość przekazywania 1% podatku dochodowego na rzecz organizacji pożytku publicznego w Polsce.</p>
+<p style="text-align: center;">Darmowy Program PIT dostarcza <a href="http://www.iwop.pl">Instrytut Wsparcia Organizacji Pozarządowych</a>&nbsp;w ramach projektu <a href="http://www.pitax.pl">PITax.pl</a> dla OPP.<br>
+<br>
+<strong>Na czym polega mechanizm 1%? </strong></p>
+<div align="justify">W dniu 1 stycznia 2004 roku weszła w życie ustawa o wolontariacie. Na jej mocy podatnik płacący podatek dochodowy od osób fizycznych może przeznaczyć 1% swojego należnego podatku na rzecz wybranej przez siebie organizacji pożytku publicznego znajdującej się na oficjalnej liście tego rodzaju organizacji. Przed 1 stycznia 2007 roku podatnik był obowiązany osobiście dokonać przelewu na rzecz wybranej przez siebie OPP, a następnie odliczyć tę kwotę w swoim rozliczeniu rocznym. Obecnie na wniosek podatnika wyrażony w zeznaniu rocznym jeden procent na konto bankowe OPP przekazuje naczelnik urzędu skarbowego.</div>
+<p><br>
+<strong>Jeden procent może przekazać:</strong></p>
+<ul>
+    <li>podatnik podatku dochodowego od osób fizycznych,</li>
+    <li>podatnik opodatkowany ryczałtem od przychodów ewidencjonowanych,</li>
+    <li>podatnik objęty liniowo 19-procentową stawką podatku,</li>
+    <li>podatnik uzyskujący dochód z odpłatnego zbycia papierów wartościowych oraz pochodnych instrumentów finansowych.</li>
+    <li>Adresatem dotacji może być jedynie organizacja wpisana do Krajowego Rejestru Sądowego jako <strong>Organizacje Pożytku Publicznego</strong>.&nbsp; Aby zachować prawo do przekazania jednego procenta należy złożyć rozliczenie roczne w ustawowym terminie, tj. 31 stycznia dla zryczałtowanego podatku od przychodów PIT-28, 30 kwietnia dla podatku dochodowego od przychodów osób fizycznych PIT-36, PIT-37, odpłatnego zbycia papierów wartościowych PIT-38.</li>
+</ul>
+<p><br>
+<font size="1">źródło<font size="2">:</font></font><a href="http://pl.wikipedia.org/wiki/1%25_podatku" target="_blank"><font size="2">http://pl.wikipedia.org/wiki/1%25_podatku</font><br>
+<br>
+</a><img alt="" src="/nadzieja.srem.info/adm/fck/editor/images/smiley/msn/lightbulb.gif">Pamiętaj:<a href="javascript:void(0);/*1259615983257*/"><br>
+</a></p>
+<ul>
+    <li>1% można przekazać tylko w zeznaniach podatkowych złożonych w terminie.</li>
+    <li>W przypadku niezgodności numeru KRS i nazwy organizacji w zeznaniu podatkowym, podatnik zostanie wezwany do złożenia wyjaśnień.</li>
+    <li>Podatnik nie może podzielić swojego 1% na kilka organizacji</li>
+</ul>
+<p><br>
+<strong>Przydatne linki:</strong><br>
+<br>
+Ministerstwo Polityki Społecznej - Departament Pożytku Publicznego</p>
+<ul>
+    <li><a target="_blank" href="http://www.pozytek.gov.pl/">http://www.pozytek.gov.pl/</a></li>
+</ul>
+<p>Ustawa z dnia 24 kwietnia 2003 r. o działalności pożytku publicznego i o wolontariacie</p>
+<ul>
+    <li><a target="_blank" href="http://www.pozytek.gov.pl/Ustawa,o,dzialalnosci,pozytku,publicznego,i,o,wolontariacie,405.html">http://www.pozytek.gov.pl/Ustawa,o,dzialalnosci,pozytku,publicznego,i,o,wolontariacie,405.html</a></li>
+</ul>
+<p>Portal organizacji pozarządowych</p>
+<ul>
+    <li><font size="2"><a target="_blank" href="http://www.ngo.pl/">http://www.ngo.pl/</a></font></li>
+</ul>
+<p>&nbsp;</p></div></td>
+							<td width="31px"></td>
+							<td align="left" valign="top" width="280px">
+								<div class="okno1"><div class="okno1_but" onclick="document.location=&quot;s16,1_procent_podatku.html&quot;;"></div></div>
+								<div style="width:100%;height:10px;font-size:1px;"></div>
+								<div class="okno2"><div class="okno2_but" onclick="document.location=&quot;s17,wolontariat.html&quot;;"></div></div>
+								<div style="width:100%;height:10px;font-size:1px;"></div>
+								<div class="okno3"><div class="okno3_but" onclick="document.location=&quot;s15,galeria.html&quot;;"></div></div>
+							</td>
+							<td width="5px"></td>
+						</tr>
+					</tbody></table>
+					<div style="width:100%;height:20px;"></div>
+					<div style="width:996px;padding-left:2px;"><p><font color="#668a62"><font size="1">Copyright © 2009 Towarzystwo Pomocy Potrzebującym im. św. Brata Alberta “ Nadzieja” w Śremie&nbsp; • adres: ul. Chłapowskiego 1, Śrem 63-100&nbsp; •&nbsp; telefon: 663 953 504&nbsp; •&nbsp; nr KRS 0000063355 • </font></font><font color="#668a62"><font size="1">Konto </font></font><font color="#668a62"><font size="1">B.Z. WBK S.A. O/Śrem&nbsp; •&nbsp; nr: 17 1090 1405 0000 0000 4001 1650 </font></font><font color="#668a62"><font size="1"><br>
+</font></font></p>
+<p>&nbsp;</p></div>
+					<div style="width:100%;height:7px;"></div>
+					<div class="kreska_dol"></div>
+					<div width="100%" class="created_by" align="right">created by <a href="http://netmonster.pl" target="_blank">netMonster.pl</a>&nbsp;&nbsp;</div>
+					<div style="width:100%;height:3px;"></div>
+        </div>
+      </div>
+    </center>
+  </div>
+
+<div id="overlay" style="display: none;"></div><div id="lightbox" style="display: none;"><div id="outerImageContainer" style="width: 250px; height: 250px;"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a id="prevLink" href="#"></a><a id="nextLink" href="#"></a></div><div id="loading"><a id="loadingLink" href="#"><img src="lib/lightbox2/loading.gif"></a></div></div></div><div id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a id="bottomNavClose" href="#"><img src="lib/lightbox2/closelabel.gif"></a></div></div></div></div></body></html>
