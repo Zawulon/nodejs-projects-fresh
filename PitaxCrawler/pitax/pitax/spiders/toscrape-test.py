@@ -47,7 +47,7 @@ class ToScrapeCSSSpider(scrapy.Spider):
             self.urlslist.append(row[1])
         #    print(row[1])
         conn.close()
-        for url in self.urlslist:
+        for url in self.start_urls:
             time.sleep (3)
             yield SplashRequest(url, self.parse, args={'timeout': 90, 'resource_timeout':20})
     
