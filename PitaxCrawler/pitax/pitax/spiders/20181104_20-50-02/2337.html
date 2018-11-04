@@ -1,0 +1,987 @@
+<!DOCTYPE html><html class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface generatedcontent video audio no-localstorage no-sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="pl-PL" style=""><head>
+				
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+</title>
+		
+		<link rel="stylesheet" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/css/app.css">
+		<link rel="stylesheet" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/css/style.css">
+
+		<link rel="icon" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/assets/img/icons/favicon.ico" type="image/x-icon">
+
+		<link rel="dns-prefetch" href="//s.w.org">
+		<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.szkolapodstawowa3.kalisz.pl\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://www.szkolapodstawowa3.kalisz.pl/wp-includes/js/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/plugins/contact-form-7/includes/css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpa-style-css" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/plugins/wp-accessibility/css/wpa-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="ui-font.css-css" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/plugins/wp-accessibility/toolbar/fonts/css/a11y-toolbar.css" type="text/css" media="all">
+<link rel="stylesheet" id="ui-a11y.css-css" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/plugins/wp-accessibility/toolbar/css/a11y.css" type="text/css" media="all">
+<link rel="stylesheet" id="ui-fontsize.css-css" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/plugins/wp-accessibility/toolbar/css/a11y-fontsize-alt.css" type="text/css" media="all">
+<script type="text/javascript" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/js/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/js/modernizr/modernizr.min.js"></script>
+<link rel="https://api.w.org/" href="http://www.szkolapodstawowa3.kalisz.pl/wp-json/">
+		<script src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/js/enscroll-0.6.0.min.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[ 
+			$(function(){
+				$('#pretty-scroll').enscroll({
+					verticalTrackClass: 'track4',
+					verticalHandleClass: 'handle4',
+					minScrollbarLength: 28
+				});
+			});
+			//]]>  
+		</script>			
+		<link rel="stylesheet" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/assets/owl/owl.carousel.min.css">
+		<link rel="stylesheet" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/assets/owl/owl.theme.default.min.css">
+		<link rel="stylesheet" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/assets/css/animate.css">
+		<script src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/assets/owl/owl.carousel.js"></script>
+		  
+		  
+			
+	<meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"></head>
+	<body class="home blog"><!-- a11y toolbar --><div class="a11y-responsive a11y-toolbar ltr left"><ul class="a11y-toolbar-list"><li class="a11y-toolbar-list-item"><button type="button" class="a11y-toggle-contrast toggle-contrast" id="is_normal_contrast" aria-pressed="false"><span class="offscreen">Przełącz wysoki kontrast</span><span class="aticon aticon-adjust" aria-hidden="true"></span></button></li><li class="a11y-toolbar-list-item"><button type="button" class="a11y-toggle-fontsize toggle-fontsize" id="is_normal_fontsize" aria-pressed="false"><span class="offscreen">Zmień rozmiar czcionek</span><span class="aticon aticon-font" aria-hidden="true"></span></button></li></ul></div><!-- // a11y toolbar -->
+		
+		<!--[if lt IE 9]>  
+			<div class="fixed-ie">
+				  <strong>Uwaga! Korzystasz z bardzo starej wersji Internet Explorera.</strong> Nie jest ona wspierana przez producenta i stanowi potencjalne zagrożenie. Jeśli widzisz tę wiadomość, zaktualizuj swoją przeglądarkę.<br /> <a target="_blank" rel="nofollow" href="http://www.microsoft.com/pl-pl/download/internet-explorer-9-details.aspx">Przeglądarkę możesz zaktualizować tutaj </a>.
+			</div>
+		<![endif]-->
+		<div id="socialblock" class="show-for-medium-up">
+			<div id="fbcontent">
+				<a href="https://www.facebook.com/szkolapodstawowa3.kalisz/" title=""><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/img/fb-2.png" alt=""></a>
+				<a href="https://www.youtube.com/channel/UCu2X0ASpC4h4oWOH290iLoA" title=""><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/img/yt-2.png" alt=""></a>
+			</div>	
+		</div>
+	
+		<div class="row border">
+		  		
+			<div class="twelve large-12 columns">
+				<div class="row container">
+					<div class="twelve large-12 columns">
+						<div class="row header">
+							<div class="large-3 medium-3 columns logo">
+								<a href="http://www.szkolapodstawowa3.kalisz.pl"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/img/logo.png" alt=""></a>
+							</div>
+							
+							<div class="large-8 medium-8 columns nav-header">	
+								<div class="row">
+									<div class="large-6 medium-6 small-6 columns left" style="margin-top: 5px;">	
+										<a href="http://www.szkolapodstawowa3.kalisz.pl/kontakt">Skontaktuj się z nami</a>
+									</div>
+									<div class="large-6 medium-6 small-6 columns right text-right">	
+										<span class="show-for-medium-up">Szukaj nas na: </span>
+										<a rel="nofollow" href="https://www.facebook.com/szkolapodstawowa3.kalisz/"><img style="margin-left: 5px;" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/img/fb.png" alt=""></a>
+										<a rel="nofollow" href="https://www.youtube.com/channel/UCu2X0ASpC4h4oWOH290iLoA"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/img/yt.png" alt=""></a>
+									</div>									
+								</div>
+								
+								<div class="row">
+									<div class="large-12 columns">	
+									<ul id="menu-naglowek" class="nav"><li id="menu-item-655" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-655"><a href="http://www.gimnazjum2kalisz.slaskdatacenter.pl/plan1819/">Plan lekcji</a></li>
+<li id="menu-item-656" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-656"><a href="http://gim2kalisz.kylos.pl/"><span style="color: #6eaf09;">Dziennik elektroniczny</span></a></li>
+<li id="menu-item-658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-658"><a href="http://www.szkolapodstawowa3.kalisz.pl/nabor/">Nabór</a></li>
+<li id="menu-item-1312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1312"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/sukcesy-naszych-uczniow/">Sukcesy naszych uczniów</a></li>
+<li id="menu-item-1488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1488"><a href="http://www.szkolapodstawowa3.kalisz.pl/absolwenci/">Pasje naszych absolwentów</a></li>
+</ul>	
+									</div>
+								</div>				
+							</div>
+							
+							<div class="large-1 medium-1 columns show-for-large-up"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/img/godlo.jpg" alt=""></div>
+						</div>
+						
+						<div class="row">						<div class="bg-slider-homepage">
+							<div class="three large-3 medium-3 columns sidebar">	
+								<div class="row">
+								<nav class="top-bar" data-topbar="" role="navigation" data-options="is_hover: false">
+								<div class="title">
+									Menu nawigacyjne
+								</div>							
+								<ul id="menu-lewe-menu" class="nav-menu"><li id="menu-item-665" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-665"><a href="http://www.szkolapodstawowa3.kalisz.pl/category/aktualnosci/">Aktualności</a></li>
+<li id="menu-item-690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-690"><a href="http://www.szkolapodstawowa3.kalisz.pl/informacje-o-szkole/">O szkole</a>
+<ul class="sub-menu">
+	<li id="menu-item-742" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-742"><a href="http://www.szkolapodstawowa3.kalisz.pl/informacje-o-szkole/misja-szkoly/">Misja i koncepcja pracy szkoły</a></li>
+	<li id="menu-item-745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-745"><a href="http://www.szkolapodstawowa3.kalisz.pl/informacje-o-szkole/sylwetka-absolwenta/">Sylwetka absolwenta</a></li>
+	<li id="menu-item-2467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2467"><a href="http://www.szkolapodstawowa3.kalisz.pl/informacje-o-szkole/absolwenci-g2/">Absolwenci</a></li>
+	<li id="menu-item-744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-744"><a href="http://www.szkolapodstawowa3.kalisz.pl/informacje-o-szkole/patron/">Patron</a></li>
+	<li id="menu-item-741" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-741"><a href="http://www.szkolapodstawowa3.kalisz.pl/informacje-o-szkole/hymn-szkoly/">Hymn szkoły</a></li>
+	<li id="menu-item-743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-743"><a href="http://www.szkolapodstawowa3.kalisz.pl/informacje-o-szkole/odznaka-slowackiego/">Odznaka Słowackiego</a></li>
+	<li id="menu-item-740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-740"><a href="http://www.szkolapodstawowa3.kalisz.pl/informacje-o-szkole/dokumenty/">Dokumenty</a></li>
+</ul>
+</li>
+<li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="http://www.szkolapodstawowa3.kalisz.pl/klasa-dwujezyczna/">Nauczanie dwujęzyczne</a></li>
+<li id="menu-item-1682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1682"><a href="http://www.szkolapodstawowa3.kalisz.pl/innowacje/">Innowacje</a>
+<ul class="sub-menu">
+	<li id="menu-item-1700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1700"><a href="http://www.szkolapodstawowa3.kalisz.pl/innowacje/budzaca-sie-szkola/">„AiR”- aktywność i rozwój</a></li>
+	<li id="menu-item-1701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1701"><a href="http://www.szkolapodstawowa3.kalisz.pl/innowacje/webqeusty/">WebQuesty</a></li>
+	<li id="menu-item-1698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1698"><a href="http://www.szkolapodstawowa3.kalisz.pl/innowacje/funtastyczny-angielski/">FUNtastyczny angielski</a></li>
+	<li id="menu-item-3345" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3345"><a href="http://www.szkolapodstawowa3.kalisz.pl/informatyka-dla-smyka/">INFORMATYKA dla SMYKA</a></li>
+</ul>
+</li>
+<li id="menu-item-684" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-684"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/">Strefa ucznia</a>
+<ul class="sub-menu">
+	<li id="menu-item-719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-719"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/samorzad-uczniowski/">Samorząd Uczniowski</a></li>
+	<li id="menu-item-725" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-725"><a href="http://www.szkolapodstawowa3.kalisz.pl/category/skyclub/">SkyClub</a></li>
+	<li id="menu-item-720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-720"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/sukcesy-naszych-uczniow/">Sukcesy naszych uczniów</a></li>
+	<li id="menu-item-2714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2714"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/pasje-naszych-uczniow/">Pasje naszych uczniów</a></li>
+	<li id="menu-item-726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a href="http://www.szkolapodstawowa3.kalisz.pl/zajecia-pozalekcyjne-2017-2018/">Zajęcia pozalekcyjne 2017/2018</a></li>
+	<li id="menu-item-2219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2219"><a href="http://www.szkolapodstawowa3.kalisz.pl/szkolna-kolo-rowerowe-ciasna-bike/">Szkolne Koło Rowerowe Ciasna Bike</a></li>
+	<li id="menu-item-722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-722"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/szkola-promujaca-zdrowie/">Szkoła Promująca Zdrowie</a></li>
+	<li id="menu-item-724" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-724"><a href="http://www.szkolapodstawowa3.kalisz.pl/category/klub-europejczyka/">Klub Europejczyka</a></li>
+	<li id="menu-item-2804" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2804"><a href="http://www.szkolapodstawowa3.kalisz.pl/category/wolontariat/">Wolontariat</a></li>
+</ul>
+</li>
+<li id="menu-item-683" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-683"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-rodzica/">Strefa rodzica</a>
+<ul class="sub-menu">
+	<li id="menu-item-717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-717"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-rodzica/wychowawcy-klas/">Wychowawcy klas</a></li>
+	<li id="menu-item-716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-716"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-rodzica/wazne-daty/">Ważne daty</a></li>
+	<li id="menu-item-2811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2811"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-rodzica/jak-chronic-dziecko-w-sieci/">Jak chronić dziecko w Sieci</a></li>
+	<li id="menu-item-714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-714"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-rodzica/bezpieczna-i-przyjazna-szkola/">Bezpieczna i przyjazna szkoła</a></li>
+	<li id="menu-item-715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-715"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-rodzica/przydatne-linki/">Przydatne linki</a></li>
+</ul>
+</li>
+<li id="menu-item-2402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2402"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/">Projekty</a>
+<ul class="sub-menu">
+	<li id="menu-item-5126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5126"><a href="http://www.szkolapodstawowa3.kalisz.pl/ksiazka-uczy-bawi-i-rozwija/">Książka uczy, bawi i rozwija (2018/19)</a></li>
+	<li id="menu-item-5186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5186"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/migajace-przedszkola-migajace-szkoly/">MIGAJĄCE PRZEDSZKOLA, MIGAJĄCE SZKOŁY (2018/19)</a></li>
+	<li id="menu-item-5846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5846"><a href="http://www.szkolapodstawowa3.kalisz.pl/5843-2/">POCZTÓWKOWE ZNAJOMOŚCI (2018/19)</a></li>
+	<li id="menu-item-5897" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5897"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/sniadanie-daje-moc/">Śniadanie daje moc (2018/19)</a></li>
+	<li id="menu-item-5143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5143"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/archi-przygody/">ARCHI-PRZYGODY (2018/19)</a></li>
+	<li id="menu-item-5254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5254"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/omnibus/">OMNIBUS (2017-2019)</a></li>
+	<li id="menu-item-5114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5114"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty-2017-18/">Projekty 2017-18</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2403"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty-2017-18/lubella-inspiruje-i-edukuje/">Lubella inspiruje i edukuje (2017/18)</a></li>
+		<li id="menu-item-2409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2409"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty-2017-18/wzorowa-lazienka-2017-18/">Wzorowa łazienka (2017/18)</a></li>
+		<li id="menu-item-2408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2408"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty-2017-18/nie-pal-przy-mnie-prosze-2017-18/">Nie pal przy mnie, proszę (2017/18)</a></li>
+		<li id="menu-item-2407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2407"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty-2017-18/marzycielska-poczta-2017-18/">Marzycielska poczta (2017/18)</a></li>
+		<li id="menu-item-2410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2410"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty-2017-18/akademia-bezpiecznego-puchatka/">Akademia Bezpiecznego Puchatka (2017/18)</a></li>
+		<li id="menu-item-2406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2406"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/zdrowa-ja-2017-18/">ZDROWA JA (2017/18)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2404"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/miganie-jak-spektakl/">Miganie jak spektakl</a></li>
+	<li id="menu-item-2405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2405"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/dzieci-dzieciom/">Dzieci Dzieciom</a></li>
+	<li id="menu-item-2412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/program-comenius/">Program Comenius</a></li>
+	<li id="menu-item-2411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2411"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/eszkola-moja-wielkopolska/">eSzkoła Moja Wielkopolska</a></li>
+</ul>
+</li>
+<li id="menu-item-916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-916"><a href="http://www.szkolapodstawowa3.kalisz.pl/pracownicy/">Pracownicy</a>
+<ul class="sub-menu">
+	<li id="menu-item-931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-931"><a href="http://www.szkolapodstawowa3.kalisz.pl/pracownicy/dyrekcja/">Dyrekcja</a></li>
+	<li id="menu-item-930" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-930"><a href="http://www.szkolapodstawowa3.kalisz.pl/pracownicy/nauczyciele/">Nauczyciele</a></li>
+	<li id="menu-item-929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-929"><a href="http://www.szkolapodstawowa3.kalisz.pl/pracownicy/pedagog-szkolny/">Pedagog szkolny</a></li>
+	<li id="menu-item-927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-927"><a href="http://www.szkolapodstawowa3.kalisz.pl/pracownicy/pracownicy-obslugi/">Pracownicy obsługi</a></li>
+</ul>
+</li>
+<li id="menu-item-928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928"><a href="http://www.szkolapodstawowa3.kalisz.pl/biblioteka/">Biblioteka</a></li>
+<li id="menu-item-2175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2175"><a href="http://www.szkolapodstawowa3.kalisz.pl/swietlica/">Świetlica</a></li>
+<li id="menu-item-2362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2362"><a href="http://www.szkolapodstawowa3.kalisz.pl/stolowka/">Stołówka</a></li>
+</ul>								</nav>								
+									
+								</div>											
+							</div>											
+									<div class="large-9 medium-9 columns slider banner">
+																				<div class="orbit-container"><ul class="example-orbit show-for-medium-up orbit-slides-container" data-orbit="" style="height: 434px;">
+												
+											<li class="active">
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/01/nab3.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/nabor/">Zapraszamy do nas:)</a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/nabor/" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/usmiech_31.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/12/moc-usmiechu/">Tygodnie Dobrych Myśli</a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/12/moc-usmiechu/" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/świąteczny-czas.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="">Magia świąt</a>
+													<p></p>			
+													
+													<a href="" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/Lekcja-chemii.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="">Chemiczne wyzwania</a>
+													<p></p>			
+													
+													<a href="" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/mEmisja.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/sukcesy-naszych-uczniow/">Gra miejska: <i>Porwanie Dymskiego</i></a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/sukcesy-naszych-uczniow/" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/Dzień-Pluszowego-Misia.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/2017/11/24/obchody-swiatowego-dnia-pluszowego-misia/">Dzień Pluszowego Misia</a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/2017/11/24/obchody-swiatowego-dnia-pluszowego-misia/" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/Spotanie-z-Mikołajem.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="">Spotkanie<br> z Mikołajem</a>
+													<p></p>			
+													
+													<a href="" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/przyrodnicze-poszukiwania-1.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/pasje-naszych-uczniow/">Przyrodnicze poszukiwania</a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/pasje-naszych-uczniow/" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/aktynwy-język-polski.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/2017/12/19/rozwijamy-skrzydla-naszych-uczniow-air/">Aktywny<br> język polski</a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/2017/12/19/rozwijamy-skrzydla-naszych-uczniow-air/" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/44107705_317784975705989_4464453203785678848_n.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/15/uroczystosc-pasowania-z-udzialem-prezydenta-grzegorza-sapinskiego/">Pasowanie uczniów klas pierwszych</a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/15/uroczystosc-pasowania-z-udzialem-prezydenta-grzegorza-sapinskiego/" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/Gołuchów-grabienie-liści.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/samorzad-uczniowski/">Ratujmy kasztanowce!</a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/samorzad-uczniowski/" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/kasztany.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/2017/09/01/swietlica-zaprasza/">Na świetlicy</a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/2017/09/01/swietlica-zaprasza/" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/dzień-kropki.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="">Dzień kropki</a>
+													<p></p>			
+													
+													<a href="" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/Tydzień-Zdrowia.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/szkola-promujaca-zdrowie/">Tydzień Zdrowia</a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/szkola-promujaca-zdrowie/" class="small round button">→</a>									
+												</div>
+											</li>
+												
+											<li>
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/01/językowa.jpg" alt="">
+												<div class="orbit-caption">
+													<a class="title-news" href="http://www.szkolapodstawowa3.kalisz.pl/klasa-dwujezyczna/">Klasa dwujęzyczna</a>
+													<p></p>			
+													
+													<a href="http://www.szkolapodstawowa3.kalisz.pl/klasa-dwujezyczna/" class="small round button">→</a>									
+												</div>
+											</li>
+													
+										</ul><a href="#" class="orbit-prev"><span></span></a><a href="#" class="orbit-next"><span></span></a><div class="orbit-timer"><span></span><div class="orbit-progress" style="overflow: hidden; width: 21.209999999999994%;"></div></div><div class="orbit-slide-number"><span>1</span> of <span>15</span></div><div class="orbit-bullets-container"><ol class="orbit-bullets"><li data-orbit-slide="0" class="active"></li><li data-orbit-slide="1"></li><li data-orbit-slide="2"></li><li data-orbit-slide="3"></li><li data-orbit-slide="4"></li><li data-orbit-slide="5"></li><li data-orbit-slide="6"></li><li data-orbit-slide="7"></li><li data-orbit-slide="8"></li><li data-orbit-slide="9"></li><li data-orbit-slide="10"></li><li data-orbit-slide="11"></li><li data-orbit-slide="12"></li><li data-orbit-slide="13"></li><li data-orbit-slide="14"></li></ol></div></div>
+											
+										
+										<div class="large-6 medium-6 columns banner-slider">
+											<a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-rodzica/">
+												<span class="title">
+													Strefa<br>
+													rodzica<br>										
+												</span>
+												<span class="small round button">→</span>	
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/img/banner-1.jpg" alt="">
+												</a>
+											</div>
+											<div class="large-6 medium-6 columns banner-slider">
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/">
+												<span class="title">
+													Strefa<br> 
+													ucznia<br> 										
+												</span>
+												<span class="small round button">→</span>	
+												<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/img/banner-2.jpg" alt="">
+											</a>
+										</div>			
+									</div>
+						</div>
+						
+												<div class="owl-carousel owl-theme show-for-medium-up owl-loaded owl-drag">
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+													<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1000px, 0px, 0px); transition: 0s; -webkit-transition: 0s; width: 4000px;"><div class="owl-item cloned" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/27/wygrana-w-rajdzie-od-sasa-do-lasa/"><img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div></div><div class="owl-item cloned" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/nowy-gosc-robot-photon-w-2a/"><img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div></div><div class="owl-item cloned" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/klub-ksiazki-fajny-czyli-jaki/"><img width="768" height="1024" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n-768x1024.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n-768x1024.jpg 768w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n-225x300.jpg 225w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n.jpg 1296w" sizes="(max-width: 768px) 100vw, 768px"></a></div></div><div class="owl-item cloned" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/24/bezpieczni-na-drodze/"><img width="960" height="720" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n.jpg 960w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n-300x225.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n-768x576.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"></a></div></div><div class="owl-item cloned" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/23/szkolne-przygody-gangu-slodziakow-w-2a/"><img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div></div><div class="owl-item active" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/godlo-polski-z-kolek-origami/"><img width="922" height="692" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012.jpg 922w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012-300x225.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012-768x576.jpg 768w" sizes="(max-width: 922px) 100vw, 922px"></a></div></div><div class="owl-item active" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/dziekujemy-za-wasze-glosy/"><img width="540" height="300" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/Baner_Budzet_Obywatelski_zmniejszony.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/Baner_Budzet_Obywatelski_zmniejszony.jpg 540w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/Baner_Budzet_Obywatelski_zmniejszony-300x167.jpg 300w" sizes="(max-width: 540px) 100vw, 540px"></a></div></div><div class="owl-item active" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/31/pocztowkowe-znajomosci-w-2a/"><img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div></div><div class="owl-item active" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/30/drzewa-marzen/"><img width="832" height="624" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3.jpg 832w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3-300x225.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3-768x576.jpg 768w" sizes="(max-width: 832px) 100vw, 832px"></a></div></div><div class="owl-item active" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/29/5829/"><img width="768" height="1024" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n-768x1024.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n-768x1024.jpg 768w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n-225x300.jpg 225w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n.jpg 1296w" sizes="(max-width: 768px) 100vw, 768px"></a></div></div><div class="owl-item" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/27/wygrana-w-rajdzie-od-sasa-do-lasa/"><img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div></div><div class="owl-item" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/nowy-gosc-robot-photon-w-2a/"><img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div></div><div class="owl-item" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/klub-ksiazki-fajny-czyli-jaki/"><img width="768" height="1024" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n-768x1024.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n-768x1024.jpg 768w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n-225x300.jpg 225w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n.jpg 1296w" sizes="(max-width: 768px) 100vw, 768px"></a></div></div><div class="owl-item" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/24/bezpieczni-na-drodze/"><img width="960" height="720" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n.jpg 960w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n-300x225.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n-768x576.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"></a></div></div><div class="owl-item" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/23/szkolne-przygody-gangu-slodziakow-w-2a/"><img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div></div><div class="owl-item cloned" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/godlo-polski-z-kolek-origami/"><img width="922" height="692" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012.jpg 922w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012-300x225.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012-768x576.jpg 768w" sizes="(max-width: 922px) 100vw, 922px"></a></div></div><div class="owl-item cloned" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/dziekujemy-za-wasze-glosy/"><img width="540" height="300" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/Baner_Budzet_Obywatelski_zmniejszony.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/Baner_Budzet_Obywatelski_zmniejszony.jpg 540w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/Baner_Budzet_Obywatelski_zmniejszony-300x167.jpg 300w" sizes="(max-width: 540px) 100vw, 540px"></a></div></div><div class="owl-item cloned" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/31/pocztowkowe-znajomosci-w-2a/"><img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div></div><div class="owl-item cloned" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/30/drzewa-marzen/"><img width="832" height="624" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3.jpg 832w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3-300x225.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3-768x576.jpg 768w" sizes="(max-width: 832px) 100vw, 832px"></a></div></div><div class="owl-item cloned" style="width: 200px;"><div class="item"><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/29/5829/"><img width="768" height="1024" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n-768x1024.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n-768x1024.jpg 768w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n-225x300.jpg 225w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n.jpg 1296w" sizes="(max-width: 768px) 100vw, 768px"></a></div></div></div></div><div class="owl-nav"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots disabled"></div></div>
+												
+						<div data-equalizer="" data-equalize-on="medium">
+													<div class="three large-3 medium-3 columns sidebar" data-equalizer-watch="" style="height: 4888px;">	
+ 
+							
+								<div class="row show-for-medium-up">
+									<div class="twelve large-12 columns sidebar-box calendar">	
+										
+										<div class="row">
+										<a href="http://www.budzacasieszkola.pl/"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/04/logo-budaca-sie-szkola.png" height="123" width="300"></a>
+										</div>
+									</div>
+								</div>	
+							
+							
+							
+							
+								<div class="row show-for-medium-up">
+									<div class="twelve large-12 columns sidebar-box calendar">	
+										<div class="title">
+											Kalendarz<br>
+											wydarzeń
+										</div>
+																					
+										<div id="pretty-scroll" tabindex="0" style="width: 188.59999990463257px; padding-right: 13px; outline: none; overflow: hidden;">
+											<ul>
+																							
+												<li>
+													<a class="name" data-reveal-id="calendar-">Uroczysty apel  - 100 LAT NIEPODLEGŁEJ</a>
+													<a data-reveal-id="calendar-1">
+														<time class="date">9 listopada 2018 roku</time>
+													</a>													
+													<div id="calendar-" class="reveal-modal" data-reveal="">
+														 <p class="lead">Uroczysty apel  - 100 LAT NIEPODLEGŁEJ</p>
+													   													</div>	
+												</li>	
+																							
+												<li>
+													<a class="name" data-reveal-id="calendar-">IV Kaliski Marsz Nordic Walking z okazji 100 rocznicy Niepodległości Polski</a>
+													<a data-reveal-id="calendar-1">
+														<time class="date">10 listopada 2018 (sobota)</time>
+													</a>													
+													<div id="calendar-" class="reveal-modal" data-reveal="">
+														 <p class="lead">IV Kaliski Marsz Nordic Walking z okazji 100 rocznicy Niepodległości Polski</p>
+													   													</div>	
+												</li>	
+																							
+												<li>
+													<a class="name" data-reveal-id="calendar-">XVII Marsz Wolności- rajd pieszy</a>
+													<a data-reveal-id="calendar-1">
+														<time class="date">11 listopada 2018 roku (niedziela)</time>
+													</a>													
+													<div id="calendar-" class="reveal-modal" data-reveal="">
+														 <p class="lead">XVII Marsz Wolności- rajd pieszy</p>
+													   													</div>	
+												</li>	
+																							
+												<li>
+													<a class="name" data-reveal-id="calendar-">Rajd rowerowy z okazji 100 rocznicy Odzyskania Niepodległości Polski</a>
+													<a data-reveal-id="calendar-1">
+														<time class="date">11.11.2018 (niedziela)</time>
+													</a>													
+													<div id="calendar-" class="reveal-modal" data-reveal="">
+														 <p class="lead">Rajd rowerowy z okazji 100 rocznicy Odzyskania Niepodległości Polski</p>
+													   													</div>	
+												</li>	
+																							
+												<li>
+													<a class="name" data-reveal-id="calendar-">Wywiadówki</a>
+													<a data-reveal-id="calendar-1">
+														<time class="date">13 listopada 2018 roku</time>
+													</a>													
+													<div id="calendar-" class="reveal-modal" data-reveal="">
+														 <p class="lead">Wywiadówki</p>
+													   													</div>	
+												</li>	
+																							
+												<li>
+													<a class="name" data-reveal-id="calendar-IV EDYCJA KONKURSU OGÓLNOPOLSKIEGO Z ,,WIEDZY OGÓLNEJ''">IV EDYCJA KONKURSU OGÓLNOPOLSKIEGO Z ,,WIEDZY OGÓLNEJ'' skierowanego do uczniów klas 1 – 3 szkoły podstawowej</a>
+													<a data-reveal-id="calendar-1">
+														<time class="date">15 listopada 2018 roku</time>
+													</a>													
+													<div id="calendar-IV EDYCJA KONKURSU OGÓLNOPOLSKIEGO Z ,,WIEDZY OGÓLNEJ''" class="reveal-modal" data-reveal="">
+														 <p class="lead">IV EDYCJA KONKURSU OGÓLNOPOLSKIEGO Z ,,WIEDZY OGÓLNEJ'' skierowanego do uczniów klas 1 – 3 szkoły podstawowej</p>
+													   <p>W konkursie biorą udział uczniowie klas pierwszych i drugich. Konkurs  odbędzie się 15.11.2018 r. (czwartek) w godzinach 11.50 - 13.00 w sali P2.  </p>
+													</div>	
+												</li>	
+																							
+												<li>
+													<a class="name" data-reveal-id="calendar-">Egzamin próbny - klasy III gimnazjum</a>
+													<a data-reveal-id="calendar-1">
+														<time class="date">28-30 listopada 2018 roku</time>
+													</a>													
+													<div id="calendar-" class="reveal-modal" data-reveal="">
+														 <p class="lead">Egzamin próbny - klasy III gimnazjum</p>
+													   													</div>	
+												</li>	
+																							
+												<li>
+													<a class="name" data-reveal-id="calendar-">Egzamin próbny - klasy VIII</a>
+													<a data-reveal-id="calendar-1">
+														<time class="date">17-19 grudnia 2018 roku</time>
+													</a>													
+													<div id="calendar-" class="reveal-modal" data-reveal="">
+														 <p class="lead">Egzamin próbny - klasy VIII</p>
+													   													</div>	
+												</li>	
+																															
+											</ul>
+																						
+										</div><div style="position: absolute; z-index: 1; margin: 0px; padding: 0px; display: block; left: 223.796875px; top: 84px;"><div class="enscroll-track track4" style="position: relative; height: 230px;"><a href="" class="handle4" style="position: absolute; z-index: 1; height: 68.88020833333334px; top: 0px;"><div class="top"></div><div class="bottom"></div></a></div></div>
+																			</div>
+								</div>	
+		
+								<div class="row show-for-medium-up">				
+									<div class="twelve large-12 columns sidebar-box newsletter">	
+										<div class="title">
+											Masz<br>
+											pytania?
+										</div>
+										
+										<p>Jeśli potrzebujesz pomocy lub masz jakieś pytania przyjdź lub zadzwoń. </p>
+										
+										<p>Szkoła Podstawowa Nr 3<br>
+										im. Juliusza Słowackiego w Kaliszu<br>
+										ul. Ciasna 16,<br>
+										62-800 Kalisz</p>			
+										
+										<p>
+										<strong class="big">(62) 767 67 47</strong><br>
+										<a href="mailto:sekretariatsp3kalisz@gmail.com">sekretariatsp3kalisz@gmail.com</a></p>
+										
+										<a rel="nofollow" href="http://gim2kalisz.szkolnybip.pl/"><img class="bip" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/img/bip.png" alt=""></a>
+									</div>		
+								</div>	
+			
+								<div class="row show-for-medium-up">				
+									<div class="twelve large-12 columns sidebar-box newsletter">	
+										<div class="title">
+											Certyfikaty
+										</div>
+										
+										<div class="row">
+																								
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/Dyplom-XIII-Rajd-Od-sasa-do-lasa.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/dyplom-rajd-sasa.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/06/S45C-518061313140.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/06/kmdobra4-06-18.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/09/S45C-518091714460.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/09/dyplom.png" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/04/skan-25.04.2015-1.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/04/dyplomeko-e1524830342174.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/04/S45C-518040412310.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/04/teenhealth.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/03/S45C.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/03/wigilia-e1524830547530.bmp" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/02/Lubella-1.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/02/lubella-e1524830605279.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/Certyfikat-Puchatka.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/cert-1-e1524830632595.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/S45C-516090510530.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/cert-2-e1524830653596.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/S45C-517120812390.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/cert-3.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/skan-10.05.2017.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/cert-4-e1524830672823.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/skany.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/cert-5-e1524830690515.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/wzorowa-lazienka.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/cert-6-e1524830705709.jpg" alt=""></a></div>
+													
+													<div class="six large-6 medium-6 small-4 columns" style="padding-bottom: 15px;">	<a href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/03/skany.pdf"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/03/certyfikat8-e1524830725996.jpg" alt=""></a></div>
+													
+																					</div>
+									</div>		
+								</div>
+								<div class="row show-for-medium-up">				
+									<div class="twelve large-12 columns sidebar-box newsletter">	
+										<div class="title">
+											Współpracujemy z PITax.pl
+										</div>
+										
+										<div class="row">
+											<a href="https://www.pitax.pl" rel="dofollow"><img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/04/LOGO-PITax.pl_-e1523984327665.png"></a>
+										</div>
+									</div>		
+								</div>									
+							</div>
+								
+							
+							<div class="nine large-9 medium-9 columns" data-equalizer-watch="" style="height: 4888px;">
+								
+								<div class="row">					
+									<div class="twelve large-12 columns news">					
+										<div class="news-list-header">
+											<div class="six large-6 medium-6 columns title">
+												Więcej<br>
+												<strong>aktualności</strong>
+											</div>	
+											<div class="six large-6 medium-6 columns archive">
+												<a href="#" data-dropdown="drop" class="small secondary radius round button dropdown  right">Wybierz miesiąc</a><br>
+												<ul id="drop" data-dropdown-content="" class="f-dropdown">
+														<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/">Listopad 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/">Październik 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/09/">Wrzesień 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/08/">Sierpień 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/07/">Lipiec 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/06/">Czerwiec 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/05/">Maj 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/04/">Kwiecień 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/03/">Marzec 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/02/">Luty 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2018/01/">Styczeń 2018</a></li>
+	<li><a href="http://www.szkolapodstawowa3.kalisz.pl/2017/12/">Grudzień 2017</a></li>
+												</ul>
+												<p class="right">Archiwum:</p>
+											</div>
+										</div>
+										
+																				<ul class="news-list">
+												
+											<li class="six large-6  columns">
+												<a class="miniature" href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/godlo-polski-z-kolek-origami/">
+																											<img width="922" height="692" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012.jpg 922w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012-300x225.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/IMG_20181031_1236012-768x576.jpg 768w" sizes="(max-width: 922px) 100vw, 922px">																										
+												
+												</a>
+												<a class="news-title" href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/godlo-polski-z-kolek-origami/">Godło Polski z kółek origami</a>
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/godlo-polski-z-kolek-origami/">
+													<time class="date" datetime="2018-11-02T20:46:18+00:00"><i class="fi-clock"></i> 2 listopada 2018</time>
+												</a>
+												
+												<p></p><p>Na zajęciach rozwijających plastyczno-technicznych uczniowie klasy 1b postanowili uczcić zbiżające się Święto Odzyskania Niepodległości. Ich zadaniem było wykonanie z kółek origami Godła Polski. Powstały piękne prace, które można zobaczyć na wystawie szkolnego korytarza. Uczniowie podczas zajęć wykazali się umiejętnością pracy z instrukcją, precyzyjnością i zręcznością w wycinaniu oraz cierpliwością, gdyż technika wykonania jest pracochłonna. Dzieci […]</p>
+<p></p>
+												
+												<a class="button" href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/godlo-polski-z-kolek-origami/">
+													Czytaj całość
+												</a>												
+											</li>
+												
+											<li class="six large-6  columns">
+												<a class="miniature" href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/dziekujemy-za-wasze-glosy/">
+																											<img width="540" height="300" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/Baner_Budzet_Obywatelski_zmniejszony.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/Baner_Budzet_Obywatelski_zmniejszony.jpg 540w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/11/Baner_Budzet_Obywatelski_zmniejszony-300x167.jpg 300w" sizes="(max-width: 540px) 100vw, 540px">																										
+												
+												</a>
+												<a class="news-title" href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/dziekujemy-za-wasze-glosy/">Dziękujemy za WASZE głosy</a>
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/dziekujemy-za-wasze-glosy/">
+													<time class="date" datetime="2018-11-02T13:11:17+00:00"><i class="fi-clock"></i> 2 listopada 2018</time>
+												</a>
+												
+												<p></p><p>Drodzy Rodzice, Przyjaciele i Sympatycy szkoły, Nauczyciele, Uczniowie i Absolwenci! Serdecznie dziękujemy za to, że oddaliście głosy na siłownię dla SP3 w Budżecie Obywatelskim. Dokładnie 1753 głosy! Dzięki nim otrzymamy na nasz projekt 170.000 zł i będziemy mogli wspólnie cieszyć się ze sprzętów, które staną w otoczeniu placówki i z których skorzystają nie tylko dzieci. […]</p>
+<p></p>
+												
+												<a class="button" href="http://www.szkolapodstawowa3.kalisz.pl/2018/11/02/dziekujemy-za-wasze-glosy/">
+													Czytaj całość
+												</a>												
+											</li>
+												
+											<li class="six large-6  columns">
+												<a class="miniature" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/31/pocztowkowe-znajomosci-w-2a/">
+																											<img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/pocztta_13-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">																										
+												
+												</a>
+												<a class="news-title" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/31/pocztowkowe-znajomosci-w-2a/">„Pocztówkowe znajomości” w 2a</a>
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/31/pocztowkowe-znajomosci-w-2a/">
+													<time class="date" datetime="2018-10-31T23:27:33+00:00"><i class="fi-clock"></i> 31 października 2018</time>
+												</a>
+												
+												<p></p><p>Nowe przyjaźnie czy nauka geografii….? To i wiele więcej… Klasa 2a bierze udział&nbsp; w&nbsp; wymianie kartkami pocztowymi z rówieśnikami z całej Polski. Uczniowie nauczą się samodzielnie wypisywać kartki pocztowe, poznają zasady pracy poczty, a przede wszystkim mają możliwość nawiązać nowe kontakty z rówieśnikami z innych miejscowości. Otrzymując pocztówki z całego kraju klasa pozna inne regiony, […]</p>
+<p></p>
+												
+												<a class="button" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/31/pocztowkowe-znajomosci-w-2a/">
+													Czytaj całość
+												</a>												
+											</li>
+												
+											<li class="six large-6  columns">
+												<a class="miniature" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/30/drzewa-marzen/">
+																											<img width="832" height="624" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3.jpg 832w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3-300x225.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/marzenia7a3-768x576.jpg 768w" sizes="(max-width: 832px) 100vw, 832px">																										
+												
+												</a>
+												<a class="news-title" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/30/drzewa-marzen/">Drzewa MARZEŃ</a>
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/30/drzewa-marzen/">
+													<time class="date" datetime="2018-10-30T17:40:00+00:00"><i class="fi-clock"></i> 30 października 2018</time>
+												</a>
+												
+												<p></p><p>W ramach Tygodnia Dobrej Myśli z klasą VIIa pod hasłem&nbsp;„MARZENIA SIĘ NIE SPEŁNIAJĄ, MARZENIA SIĘ SPEŁNIA” uczniowie zostali zaproszeni do stworzenia klasowego drzewa zawierającego ich marzenia.&nbsp;Ten rozmarzony czas zaowocował przepięknymi pracami, które można podziwiać w stołówce szkolnej.&nbsp; Gratulujemy pomysłowości i życzymy … spełniania marzeń. Żeby coś się zdarzyło Żeby mogło się zdarzyć I zjawiła się […]</p>
+<p></p>
+												
+												<a class="button" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/30/drzewa-marzen/">
+													Czytaj całość
+												</a>												
+											</li>
+												
+											<li class="six large-6  columns">
+												<a class="miniature" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/29/5829/">
+																											<img width="768" height="1024" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n-768x1024.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n-768x1024.jpg 768w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n-225x300.jpg 225w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/45068882_272736626701749_6753374849306984448_n.jpg 1296w" sizes="(max-width: 768px) 100vw, 768px">																										
+												
+												</a>
+												<a class="news-title" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/29/5829/">Wieczór z dreszczykiem</a>
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/29/5829/">
+													<time class="date" datetime="2018-10-29T17:26:03+00:00"><i class="fi-clock"></i> 29 października 2018</time>
+												</a>
+												
+												<p></p><p>Trochę w tym było Dziadów, trochę Sherlocka Holmesa, ale przede wszystkim – dobrej zabawy! Na poniedziałkowym spotkaniu Klubu Książki uczniowie czytali i omawiali wybrane opowiadania sir A. C. Doyle’a o Sherlocku Holmesie:&nbsp;Anioły Zemsty, Wampirzyca z hrabstwa Sussex, Ofiara Miłości, Lokatorka w woalce oraz Niezwykłe wydarzenia na moście Thor.&nbsp;Słynny detektyw w mistrzowski sposób posługiwał się metodą […]</p>
+<p></p>
+												
+												<a class="button" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/29/5829/">
+													Czytaj całość
+												</a>												
+											</li>
+												
+											<li class="six large-6  columns">
+												<a class="miniature" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/27/wygrana-w-rajdzie-od-sasa-do-lasa/">
+																											<img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/20181027_120933-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">																										
+												
+												</a>
+												<a class="news-title" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/27/wygrana-w-rajdzie-od-sasa-do-lasa/">WYGRANA W RAJDZIE „OD SASA DO LASA”</a>
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/27/wygrana-w-rajdzie-od-sasa-do-lasa/">
+													<time class="date" datetime="2018-10-27T15:10:01+00:00"><i class="fi-clock"></i> 27 października 2018</time>
+												</a>
+												
+												<p></p><p>27 października 2018 roku 30 – osobowa drużyna uczniów z naszej szkoły zajęła I miejsce w klasyfikacji ogólnej, zdobywając puchar wójta gminy Gołuchów podczas XIII Rajdu „Od Sasa do Lasa” wiodącego do Kościelnej Wsi. GRATULUJEMY!!!</p>
+<p></p>
+												
+												<a class="button" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/27/wygrana-w-rajdzie-od-sasa-do-lasa/">
+													Czytaj całość
+												</a>												
+											</li>
+												
+											<li class="six large-6  columns">
+												<a class="miniature" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/nowy-gosc-robot-photon-w-2a/">
+																											<img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/ph_1-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">																										
+												
+												</a>
+												<a class="news-title" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/nowy-gosc-robot-photon-w-2a/">Nowy gość – robot Photon w 2a</a>
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/nowy-gosc-robot-photon-w-2a/">
+													<time class="date" datetime="2018-10-26T15:31:45+00:00"><i class="fi-clock"></i> 26 października 2018</time>
+												</a>
+												
+												<p></p><p>Rozmarzeni, zamyśleni…&nbsp; – tworzymy drzewo klasowych marzeń. W piątek uczniowie dzielili się swoimi najskrytszymi marzeniami.&nbsp; Zostały one zapisane na kolorowych motylkach i umieszczone na drzewie klasowych marzeń, na którym były odszukiwane przez robota Photona.&nbsp; Każdy uczeń przy pomocy iPada sterował robotem, doprowadzając go na właściwe miejsce, gdzie widniało jego marzenie. &nbsp;Niesamowite zadowolenie i ekscytacja uczniów […]</p>
+<p></p>
+												
+												<a class="button" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/nowy-gosc-robot-photon-w-2a/">
+													Czytaj całość
+												</a>												
+											</li>
+												
+											<li class="six large-6  columns">
+												<a class="miniature" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/klub-ksiazki-fajny-czyli-jaki/">
+																											<img width="768" height="1024" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n-768x1024.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n-768x1024.jpg 768w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n-225x300.jpg 225w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43706370_670847643297295_8192299059378126848_n.jpg 1296w" sizes="(max-width: 768px) 100vw, 768px">																										
+												
+												</a>
+												<a class="news-title" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/klub-ksiazki-fajny-czyli-jaki/">Klub Książki – fajny, czyli jaki?</a>
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/klub-ksiazki-fajny-czyli-jaki/">
+													<time class="date" datetime="2018-10-26T14:55:58+00:00"><i class="fi-clock"></i> 26 października 2018</time>
+												</a>
+												
+												<p></p><p>Na poniedziałkowym spotkaniu Klubu Książki uczniowie prezentowali wybrane przez siebie powieści. Poznaliśmy najważniejsze wątki i problematykę utworów:&nbsp;&nbsp;Tatuażysta z Auschwitz, Baśniobór cz. V, Miasto kości, Metro 2033, Metro 2034, Metro 2035. Uczniowie, z tak dużym zaangażowaniem, opowiadali o wybranych przez siebie książkach, że straciliśmy poczucie czasu i spotkanie Klubu Książki przeciągnęło się do studenckiej godziny lekcyjnej. […]</p>
+<p></p>
+												
+												<a class="button" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/26/klub-ksiazki-fajny-czyli-jaki/">
+													Czytaj całość
+												</a>												
+											</li>
+												
+											<li class="six large-6  columns">
+												<a class="miniature" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/24/bezpieczni-na-drodze/">
+																											<img width="960" height="720" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n.jpg 960w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n-300x225.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/43604318_1733113706817095_8330371572065894400_n-768x576.jpg 768w" sizes="(max-width: 960px) 100vw, 960px">																										
+												
+												</a>
+												<a class="news-title" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/24/bezpieczni-na-drodze/">Bezpieczni na drodze</a>
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/24/bezpieczni-na-drodze/">
+													<time class="date" datetime="2018-10-24T16:12:44+00:00"><i class="fi-clock"></i> 24 października 2018</time>
+												</a>
+												
+												<p></p><p>24 października 2018 odbyło się spotkanie z funkcjonariuszem Policji KMP w Kaliszu z uczniami klas 1a i 1b. Pierwszoklasiści brali udział w pogadance na temat bezpieczeństwa na drogach, dowiedzieli się, czym zajmuje się policjant oraz mieli możliwość przymierzenia policyjnej czapki i obejrzenia policyjnych atrybutów. Na zakończenie zajęć uczniowie wykonali pracę plastyczną przedstawiającą postać policjanta oraz […]</p>
+<p></p>
+												
+												<a class="button" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/24/bezpieczni-na-drodze/">
+													Czytaj całość
+												</a>												
+											</li>
+												
+											<li class="six large-6  columns">
+												<a class="miniature" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/23/szkolne-przygody-gangu-slodziakow-w-2a/">
+																											<img width="800" height="450" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1.jpg 800w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1-300x169.jpg 300w, http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2018/10/slodziaki_3-1-768x432.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">																										
+												
+												</a>
+												<a class="news-title" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/23/szkolne-przygody-gangu-slodziakow-w-2a/">Szkolne przygody GANGU SŁODZIAKÓW&nbsp;w 2A&nbsp;</a>
+												<a href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/23/szkolne-przygody-gangu-slodziakow-w-2a/">
+													<time class="date" datetime="2018-10-23T08:40:17+00:00"><i class="fi-clock"></i> 23 października 2018</time>
+												</a>
+												
+												<p></p><p>„Czytanie pełni niezwykle ważną rolę w rozwoju dziecka – pobudza wyobraźnię, uczy samodzielnego myślenia, ćwiczy pamięć i koncentrację.&nbsp;Sieć sklepów Biedronka, świadoma wagi tego tematu, aktywnie wspiera inicjatywy na rzecz czytelnictwa wśród najmłodszych i ich rodziców”. W związku z tym nasza klasa bierze udział w konkursie, który ma inspirować dzieci do codziennego czytania. Udział w konkursie […]</p>
+<p></p>
+												
+												<a class="button" href="http://www.szkolapodstawowa3.kalisz.pl/2018/10/23/szkolne-przygody-gangu-slodziakow-w-2a/">
+													Czytaj całość
+												</a>												
+											</li>
+																					</ul>
+																				
+																				<ul class="pagination">
+	<li><span aria-current="page" class=" current">1</span></li>
+	<li><a class="" href="http://www.szkolapodstawowa3.kalisz.pl/page/2/">2</a></li>
+	<li><a class="" href="http://www.szkolapodstawowa3.kalisz.pl/page/3/">3</a></li>
+	<li><a class="" href="http://www.szkolapodstawowa3.kalisz.pl/page/4/">4</a></li>
+	<li><a class="" href="http://www.szkolapodstawowa3.kalisz.pl/page/5/">5</a></li>
+	<li><a class="" href="http://www.szkolapodstawowa3.kalisz.pl/page/6/">6</a></li>
+	<li><span class=" dots">…</span></li>
+	<li><a class="" href="http://www.szkolapodstawowa3.kalisz.pl/page/13/">13</a></li>
+	<li><a class="next" href="http://www.szkolapodstawowa3.kalisz.pl/page/2/">»</a></li>
+</ul>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">		
+						<div class="logotypes show-for-medium-up">
+																
+									<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/azj-e1513800012581.jpg" alt="">
+									
+									<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/frse-1.png" alt="">
+									
+									<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/odt-1.png" alt="">
+									
+									<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/szkolaodkrywcow.png" alt="">
+									
+									<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/trzezwyumysl.png" alt="">
+									
+									<img src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/uploads/2017/12/wf-zklasa.png" alt="">
+									
+													</div>
+				</div>
+						
+				<div class="row footer">
+					<div class="three large-4 medium-4 columns footer-box">
+						<div class="title">
+							Realizowane<br>
+							projekty
+						</div>
+						<ul id="menu-stopka" class=""><li id="menu-item-956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-956"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/eszkola-moja-wielkopolska/">eSzkoła Moja Wielkopolska</a></li>
+<li id="menu-item-957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-957"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/program-comenius/">Program Comenius</a></li>
+<li id="menu-item-959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-959"><a href="http://www.szkolapodstawowa3.kalisz.pl/projekty/szkola-z-klasa/">Szkoła z klasą</a></li>
+</ul>		
+					</div>
+					
+					<div class="three large-4 medium-4 columns footer-box">
+						<div class="title">
+							Istotne<br>
+							informacje
+						</div>
+						
+						
+						<ul id="menu-naglowek-1" class=""><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-655"><a href="http://www.gimnazjum2kalisz.slaskdatacenter.pl/plan1819/">Plan lekcji</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-656"><a href="http://gim2kalisz.kylos.pl/"><span style="color: #6eaf09;">Dziennik elektroniczny</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-658"><a href="http://www.szkolapodstawowa3.kalisz.pl/nabor/">Nabór</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1312"><a href="http://www.szkolapodstawowa3.kalisz.pl/strefa-ucznia/sukcesy-naszych-uczniow/">Sukcesy naszych uczniów</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1488"><a href="http://www.szkolapodstawowa3.kalisz.pl/absolwenci/">Pasje naszych absolwentów</a></li>
+</ul>		
+					</div>
+
+					<div class="six large-4 medium-4 columns footer-box">
+						<div class="title">
+							Masz<br>
+							pytania?				
+						</div>
+						
+						<div class="row">
+							<div class="four large-12 medium-6 columns">
+								<ul class="vcard">
+									<li class="fn">Szkoła Podstawowa Nr 3<br> im. Juliusza Słowackiego w Kaliszu</li>
+									<li class="street-address">ul. Ciasna 16</li>
+									<li class="locality">62-800 Kalisz</li>
+									<li class="phone">(62) 767 67 47</li>
+									<li class="email"><a href="mailto:sekretariatsp3kalisz@gmail.com">sekretariatsp3kalisz@gmail.com</a></li>								
+								</ul>					
+							</div>
+
+						</div>
+					</div>			
+				</div>
+			</div>
+		</div>
+		
+		<div class="row copyright-outside">
+			<div class="twelve large-12 columns">
+				<div class="row copyright">
+					<div class="six large-6 medium-6 columns">
+						<p class="left">Copyright © 2017 Szkoła Podstawowa Nr 3 w Kaliszu.<br>
+						Wszelkie prawa zastrzeżone.</p>
+					</div>
+					
+					<div class="six large-6 medium-6 columns show-for-medium-up">	
+						<p class="right">Projekt przygotowany<br>
+						oraz wdrożony przez <a href="http://www.tebim.pro">Tebim.pro</a></p>				
+					</div>					
+				</div>
+			</div>
+		</div>
+		<link rel="stylesheet" type="text/css" media="screen" href="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/scroll/templates/grass_green/style.css">
+
+	
+		
+	<script type="text/javascript">
+	//<![CDATA[
+	(function( $ ) { 'use strict';
+		var insert_a11y_toolbar = '<!-- a11y toolbar -->';
+		insert_a11y_toolbar += '<div class="a11y-responsive a11y-toolbar ltr left">';
+		insert_a11y_toolbar += '<ul class="a11y-toolbar-list">';insert_a11y_toolbar += '<li class="a11y-toolbar-list-item"><button type="button" class="a11y-toggle-contrast toggle-contrast" id="is_normal_contrast" aria-pressed="false"><span class="offscreen">Przełącz wysoki kontrast</span><span class="aticon aticon-adjust" aria-hidden="true"></span></button></li>';insert_a11y_toolbar += '<li class="a11y-toolbar-list-item"><button type="button" class="a11y-toggle-fontsize toggle-fontsize" id="is_normal_fontsize" aria-pressed="false"><span class="offscreen">Zmień rozmiar czcionek</span><span class="aticon aticon-font" aria-hidden="true"></span></button></li>';
+		insert_a11y_toolbar += '</ul>';
+		insert_a11y_toolbar += '</div>';
+		insert_a11y_toolbar += '<!-- // a11y toolbar -->';
+		$( document ).find( 'body' ).prepend( insert_a11y_toolbar );
+	}(jQuery));
+	//]]>
+	</script><script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/www.szkolapodstawowa3.kalisz.pl\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Potwierd\u017a, \u017ce nie jeste\u015b robotem."}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/plugins/contact-form-7/includes/js/scripts.js"></script>
+<script type="text/javascript" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/plugins/wp-accessibility/toolbar/js/jquery.scrollto.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var a11y_stylesheet_path = "http:\/\/www.szkolapodstawowa3.kalisz.pl\/wp-content\/plugins\/wp-accessibility\/toolbar\/css\/a11y-contrast.css";
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/plugins/wp-accessibility/toolbar/js/a11y.js"></script>
+<script type="text/javascript" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/plugins/wp-accessibility/js/longdesc.button.js"></script>
+<script type="text/javascript" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/js/app.js"></script>
+<script type="text/javascript" src="http://www.szkolapodstawowa3.kalisz.pl/wp-includes/js/wp-embed.min.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+(function( $ ) { 'use strict';
+	
+	$('a').removeAttr('target');
+	
+	$('input,a,select,textarea,button').removeAttr('tabindex');
+	
+}(jQuery));
+//]]>
+</script>	
+		<script type="text/javascript">
+		var stb = {
+			hascolsed: false,
+			cookieLife: 100000,
+			triggerHeight: 80,
+			stbElement: ""
+		};
+		</script>
+		<script type="text/javascript" src="http://www.szkolapodstawowa3.kalisz.pl/wp-content/themes/FoundationPress-master/scroll/jquery.cookie.js?ver=1.3"></script>
+		<script>
+		jQuery('.owl-carousel').owlCarousel({
+			loop:true,
+			margin:0,
+			nav:true,
+			dots:false,
+			autoplay:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:5
+				}
+			}
+		})			
+		</script>			
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110608868-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-110608868-1');
+		</script>
+
+	
+</body></html>
