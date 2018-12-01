@@ -55,15 +55,17 @@ class ToScrapeCSSSpider(scrapy.Spider):
     
     def closed(self, reason):
         print (self.crawler.stats.get_stats())
-        zipfilename = self.dateTimeString + '/' + str(self.counter) + 'index.html'
-        self.logger.info('Parse output_filename %s', self.dateTimeString)
-        output_filename = os.path.dirname(zipfilename)
-        self.logger.info('Parse outpuoutput_filename %s', output_filename)
-        if os.path.exists(os.path.dirname(zipfilename)):
-            shutil.make_archive(output_filename, 'zip', os.path.dirname(zipfilename))
-            shutil.rmtree(os.path.dirname(zipfilename), ignore_errors=True)
-            ff = output_filename+'.zip'
-            dst_file = os.path.join('crawled_history', ff)
+        curfolder = os.getcwd()
+        self.logger.info('Current folder: %s', curfolder)
+        foldertozip = os.path.join(curfolder,self.dateTimeString)
+        self.logger.info('Crawl logs folder to zip: %s', foldertozip)
+        if os.path.exists(foldertozip):
+            self.logger.info('making archive: %s.zip', foldertozip)
+            shutil.make_archive(self.dateTimeString, 'zip', foldertozip)
+            shutil.rmtree(foldertozip, ignore_errors=True)
+            ff = foldertozip+'.zip'
+            dst_file = os.path.join(curfolder, 'crawled_history')
+            self.logger.info('moving archive to: %s', dst_file)
             shutil.move(ff, dst_file)
 
     def parse(self, response):
