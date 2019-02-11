@@ -1,0 +1,668 @@
+<!DOCTYPE html><html lang="pl-PL"><head><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="ODSK BG US">
+		<title>Biblioteka Główna  » E-czasopisma</title>
+		<link href="http://bg.szczecin.pl/wp-content/themes/bgwp/img/favicon.svg" rel="SHORTCUT ICON">
+		<!-- Bootstrap core CSS -->
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/inc/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+		<!-- Custom stylesheet for this template -->
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/style.css">
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/item-style.css">
+		<!-- Socials square style -->
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/social-bar.css">
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/social-bar-collapse-searchform.css">
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/social-bar-searchform.css">
+		<!-- Main menu & logo-->
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/logo.css">
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/menu-main.css">
+		<!-- Slider carousel of bootstrap stype -->
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/head-carousel.css">
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/new-books-carousel.css">
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/carousel.css">
+		<!-- Virtual-trip and Library chat -->
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/square-button.css">
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/square-button2.css">
+		<!-- Shortcut tabs square style -->
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/shortcut-tabs.css">
+		<!-- Customize stylesheet -->
+		<style media="all" type="text/css">
+				.bg-0, .bg-0c{background: #000000;}
+		.bg-0:hover{background: ;}
+		.bg-1,.bg-1c{background: #FFFFFF;}
+		.bg-1:hover{background: ;}
+		.bg-2, .bg-2c{background: #0b4f9e;}
+		.bg-2:hover{background: ;}
+		.bg-3, .bg-3c{background: #8c0025;}
+		.bg-3:hover{background: ; }
+		#header-menu-nav>.current_page_item{background: #0B559E;}
+		#header-menu-nav>.current_page_item a{color:#FFF;}
+					.custom-backgrounds{
+				background: url(http://bg.szczecin.pl/wp-content/themes/bgwp/img/body_bg.png) no-repeat center center fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			/*Fontello icons*/
+			@font-face {
+					font-family: 'fontello';
+					src: url('http://bg.szczecin.pl/wp-content/themes/bgwp/inc/fontello/fontello.eot?2dbe7e14');
+					src: url('http://bg.szczecin.pl/wp-content/themes/bgwp/inc/fontello/fontello.eot?2dbe7e14#iefix') format('embedded-opentype'),
+						url('http://bg.szczecin.pl/wp-content/themes/bgwp/inc/fontello/fontello.woff?2dbe7e14') format('woff'),
+						url('http://bg.szczecin.pl/wp-content/themes/bgwp/inc/fontello/fontello.ttf?2dbe7e14') format('truetype'),
+						url('http://bg.szczecin.pl/wp-content/themes/bgwp/inc/fontello/fontello.svg?2dbe7e14#fontello') format('svg');
+					font-weight: normal;
+					font-style: normal;
+				}
+				.us{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_us.png'); }
+				.epnp{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_epnp.png'); }
+				.pbn{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_pbn.png'); }
+				.zbc{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_zbc.png'); }
+				.rokabi{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_rokabi.png'); }
+				.wnus{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_wnus.png'); }
+				.monit{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_monit_hover.png'); }
+				.wifi{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_wifi_hover.png'); }
+				.disa{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_disa_hover.png'); }
+				.ceon{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_ceon.png'); }
+				.dun{ background: url('http://bg.szczecin.pl/wp-content/themes/bgwp/img/ico_dun.png'); }
+		</style>
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/fontello-icons.css">
+		<!-- Shortcut tabs square style -->
+		<link media="all" type="text/css" rel="stylesheet" href="http://bg.szczecin.pl/wp-content/themes/bgwp/css/footer.css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+<link rel="dns-prefetch" href="https://s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Biblioteka Główna » E-czasopisma Kanał z komentarzami" href="https://bg.szczecin.pl/e-czasopisma/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/bg.szczecin.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://bg.szczecin.pl/wp-includes/js/wp-emoji-release.min.js?ver=4.6.1" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="quick_chat_style_sheet-css" href="http://bg.szczecin.pl/wp-content/plugins/quick-chat/css/quick-chat.css?ver=4.6.1" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='quick_chat_ie_style_sheet-css'  href='http://bg.szczecin.pl/wp-content/plugins/quick-chat/css/quick-chat-ie.css?ver=4.6.1' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="http://bg.szczecin.pl/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://bg.szczecin.pl/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="https://api.w.org/" href="https://bg.szczecin.pl/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bg.szczecin.pl/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://bg.szczecin.pl/wp-includes/wlwmanifest.xml"> 
+<link rel="canonical" href="https://bg.szczecin.pl/e-czasopisma/">
+<link rel="shortlink" href="https://bg.szczecin.pl/?p=131">
+<link rel="alternate" type="application/json+oembed" href="https://bg.szczecin.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbg.szczecin.pl%2Fe-czasopisma%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://bg.szczecin.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbg.szczecin.pl%2Fe-czasopisma%2F&amp;format=xml">
+
+<!-- BEGIN GOOGLE ANALITICS CODE -->
+	 <!-- END GOOGLE ANALITICS CODE -->
+	<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/10a/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/10a/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/10a/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/10a/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/10a/controls.js"></script><style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      .gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/35/10a/onion.js"></script></head>
+<body class="page page-id-131 page-template-default custom-backgrounds">
+<div class="container">
+	<div class="row cp cm">
+		<div class="col-md-6 collapse brr cp cm" id="social-bar-collapse">
+  <div class="well brr cp cm">
+    <form method="get" id="social-bar-collapse-searchform" class="social-bar-searchform-collapse" action="https://katalog.bg.szczecin.pl/cgi-bin/koha/opac-search.pl?op=do_search&amp;type=opac&amp;marclist=&amp;and_or=and&amp;operator=contains">
+      <input name="op" value="do_search" type="hidden">
+      <input name="type" value="opac" type="hidden">
+      <input name="marclist" value="" type="hidden">
+      <input name="mongodb" value="$" type="hidden">
+      <input name="and_or" value="and" type="hidden">
+      <input name="operator" value="contains" type="hidden">
+        <input type="search" value="" name="value" id="s2" class="form-control social-bar-searchtext-collapse" placeholder="Wyszukaj w katalogu...">
+          <div class="input-group-btn searchOptionsColaBTN">
+
+            <button type="button" id="searchOptionsCola" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="updateLinks();">
+    					<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    				</button>
+            <ul class="dropdown-menu searchOptionsDrop">
+    					<li style="padding:5px;">Wyszukaj wpisaną frazę:</li>
+              <li><a href="http://search.ebscohost.com/login.aspx?type=0&amp;mode=bool&amp;lang=en&amp;sid=144666116&amp;direct=true&amp;bquery=" id="linkEDS_Cola"><span style="float:left;padding-top:10px;">w multiwyszukiwarce EDS&nbsp;</span>&nbsp;&nbsp;<img style="display: inline-block;margin:0px;padding:0px;" src="http://bg.szczecin.pl/wp-content/themes/bgwp/img/eds_logo.png"> </a> </li>
+              <li><a href="http://podziemne.bg.szczecin.pl/cgi-bin/koha/opac-search.pl?op=do_search&amp;type=opac&amp;marclist=&amp;and_or=and&amp;operator=contains&amp;value=" id="linkSPEC_Cola">w katalogu zbiorów specjalnych</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="https://bg.szczecin.pl/?s=" id="linkTHIS_Cola">na tej stronie</a></li>
+            </ul>
+          </div>
+
+    </form>
+  </div>
+</div>
+		<div class="col-md-6 col-md-offset-6 cp social-bar">	<ul class="social-bar-lst shadow-frame">
+		<li id="searchsubmit-collapse">
+			<a data-toggle="collapse" data-target="#social-bar-collapse" aria-expanded="false" aria-controls="social-bar-collapse">
+				<i class="fontello-icons icon-search"></i>
+			</a>
+		</li>
+				<li id="koha-soc-link">
+			<a class="social-bar-lst-item social-koha-logon" href="https://sslkatalog.bg.szczecin.pl/cgi-bin/koha/opac-user.pl" target="_blank">
+				<i class="fontello-icons"><img style="width:14px;height:14px;" src="http://bg.szczecin.pl/wp-content/themes/bgwp/img/koha.logon.png"></i>
+			</a>
+		</li>
+				<li id="facebook-link">
+			<a class="social-bar-lst-item social-facebook" href="https://www.facebook.com/Biblioteka.Glowna.Uniwersytetu.Szczecinskiego/" target="_blank">
+				<i class="fontello-icons icon-facebook"></i>
+			</a>
+		</li>
+				<li id="twitter-link">
+			<a class="social-bar-lst-item social-twitter" href="https://twitter.com/libdoe" target="_blank">
+				<i class="fontello-icons icon-twitter"></i>
+			</a>
+		</li>
+				<li id="rss-link">
+			<a class="social-bar-lst-item" href="https://bg.szczecin.pl/feed/rss/">
+				<i class="fontello-icons icon-rss"></i>
+			</a>
+		</li>
+		<!--
+		<li id="speaker-link">
+			<a class="social-bar-lst-item social-speaker" href="#">
+				<i class="fontello-icons icon-speaker">&#xe815;</i>
+			</a>
+		</li>
+		<li id="fontsize-link">
+			<a class="social-bar-lst-item social-fontsize" href="#">
+				<i class="fontello-icons icon-fontsize">&#xe816;</i>
+			</a>
+		</li>
+	-->
+		<li id="hightcontrast-link">
+			<a class="social-bar-lst-item social-hightcontrast" href="#">
+				<i class="fontello-icons icon-adjust"></i>
+			</a>
+		</li>
+
+	</ul>
+	<form method="get" id="searchform" class="social-bar-searchform shadow-frame" action="https://katalog.bg.szczecin.pl/cgi-bin/koha/opac-search.pl?op=do_search&amp;type=opac&amp;marclist=&amp;and_or=and&amp;operator=contains">
+	<div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" id="searchsubmit" type="submit">
+					<i class="fontello-icons icon-search"></i>
+        </button>
+      </span>
+			<input name="op" value="do_search" type="hidden">
+			<input name="type" value="opac" type="hidden">
+			<input name="marclist" value="" type="hidden">
+			<input name="and_or" value="and" type="hidden">
+			<input name="mongodb" value="$" type="hidden">
+			<input name="operator" value="contains" type="hidden">
+
+			<input onkeypress="updateLinks();" type="search" value="" name="value" id="s1" class="form-control searchtext" placeholder="Wyszukaj w katalogu...">
+
+			<div class="input-group-btn">
+        <button type="button" id="searchOptions" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="updateLinks();">
+					<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+				</button>
+        <ul class="dropdown-menu searchOptionsDrop">
+					<li style="padding:5px;">Wyszukaj wpisaną frazę:</li>
+          <li><a href="http://search.ebscohost.com/login.aspx?type=0&amp;mode=bool&amp;lang=en&amp;sid=144666116&amp;direct=true&amp;bquery=" id="linkEDS"><span style="float:left;padding-top:10px;">w multiwyszukiwarce EDS&nbsp;</span>&nbsp;&nbsp;<img style="display: inline-block;margin:0px;padding:0px;" src="http://bg.szczecin.pl/wp-content/themes/bgwp/img/eds_logo.png"> </a> </li>
+          <li><a href="http://podziemne.bg.szczecin.pl/cgi-bin/koha/opac-search.pl?op=do_search&amp;type=opac&amp;marclist=&amp;and_or=and&amp;operator=contains&amp;value=" id="linkSPEC">w katalogu zbiorów specjalnych</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="https://bg.szczecin.pl/?s=" id="linkTHIS">na tej stronie</a></li>
+        </ul>
+      </div>
+    </div>
+</form>
+</div>
+	</div>
+	<div class="row cp cm shadow-frame bg-1">
+		<div class="row cp cm">
+			<div class="col-md-4 cp cm bg-1 logo"><div class="navbar-header">
+  <a href="https://bg.szczecin.pl" title="Biblioteka Główna">
+    <img class="logo_img" src="http://bg.szczecin.pl/wp-content/themes/bgwp/img/logo.jpg" alt="" title="">
+          <div class="title-and-description">
+        <h1>Biblioteka Główna</h1>
+        <h2>Uniwersytet Szczeciński</h2>
+      </div>
+      </a>
+
+    <button type="button" class="navbar-toggle collapsed brr" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+</div>
+</div>
+			<div class="col-md-8 bg-1 cp cm">
+  <nav class="collapse navbar-collapse cp cm" id="navbar-collapse">
+    <ul id="header-menu-nav" class="nav navbar-nav"><li class="dropdown dropdown-specs"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Katalogi<span class="caret"></span></a><ul class="dropdown-menu brr first-submenu"><li><a href="http://katalog.bg.szczecin.pl/cgi-bin/koha/opac-search.pl"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Katalog główny</a></li><li><a href="https://bg.szczecin.pl/katalogi-kartkowe/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Katalogi kartkowe</a></li><li><a href="https://bg.szczecin.pl/katalogi-wlasne/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Katalogi własne</a></li><li><a href="http://rokabi.ksiaznica.szczecin.pl/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;RoK@Bi</a></li><li><a href="http://katalog.nukat.edu.pl"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;NUKAT</a></li><li><a href="http://karo.umk.pl/Karo/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;KaRo</a></li><li><a href="http://bn.org.pl/katalogi-i-bibliografie"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Katalogi Biblioteki Narodowej</a></li><li><a href="https://bg.szczecin.pl/katalogi-szczecinskich-bibliotek-2/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Katalogi szczecińskich bibliotek</a></li><li><a href="https://bg.szczecin.pl/katalogi-na-swiecie/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Katalogi na świecie</a></li><li><a href="http://bg.szczecin.pl/ksiegozbior-dr-egona-krulla/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Księgozbiór dr. Egona Krulla</a></li></ul></li><li class="dropdown dropdown-specs active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">E-Zasoby<span class="caret"></span></a><ul class="dropdown-menu brr "><li><a href="https://bg.szczecin.pl/bazy-danych/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Bazy danych</a></li><li><a href="https://bg.szczecin.pl/bazy-testowe/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Bazy testowe</a></li><li><a href="https://bg.szczecin.pl/bazy-wlasne/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Bazy własne</a></li><li class="active"><a href="https://bg.szczecin.pl/e-czasopisma/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;E-czasopisma</a></li><li><a href="https://bg.szczecin.pl/e-booki/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;E-booki</a></li><li><a href="https://bg.szczecin.pl/e-dokumenty/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;E-dokumenty</a></li><li><a href="http://cyfrowa.bg.szczecin.pl/#s=&amp;author=on&amp;title=on"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Biblioteka Cyfrowa US</a></li><li><a href="http://zbc.ksiaznica.szczecin.pl/dlibra"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;ZBC Pomerania</a></li><li><a href="https://bg.szczecin.pl/federacja-bibliotek-cyfrowych/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Federacja Bibliotek Cyfrowych</a></li><li><a href="http://www.ebib.pl/?page_id=693"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Biblioteki cyfrowe na świecie</a></li><li><a href="https://bg.szczecin.pl/eds/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Multiwyszukiwarka EDS</a></li></ul></li><li class="dropdown dropdown-specs"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usługi<span class="caret"></span></a><ul class="dropdown-menu brr "><li><a href="https://bg.szczecin.pl/wypozyczalnia/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Wypożyczalnia</a></li><li><a href="https://bg.szczecin.pl/wypozyczenia-miedzybiblioteczne/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Wypożyczalnia międzybiblioteczna</a></li><li><a href="https://bg.szczecin.pl/czytelnie/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Czytelnie</a></li><li><a href="https://bg.szczecin.pl/bibliometria-i-bibliografia/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Bibliometria i bibliografia</a></li><li><a href="https://bg.szczecin.pl/zdalny-dostep-do-baz/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Zdalny dostęp do baz</a></li></ul></li><li class="dropdown-specs"><a href="https://bg.szczecin.pl/szkolenia/">Szkolenia</a></li><li class="dropdown dropdown-specs"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">O Nas<span class="caret"></span></a><ul class="dropdown-menu brr "><li><a href="https://bg.szczecin.pl/struktura-organizacyjna/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Struktura organizacyjna</a></li><li><a href="https://bg.szczecin.pl/sklad-osobowy/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Skład osobowy</a></li><li><a href="https://bg.szczecin.pl/sala-strumianska/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Sala Joanny i Jana Kulmów</a></li><li><a href="https://bg.szczecin.pl/parametryzacja/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Parametryzacja jednostek naukowych (2013-2016)</a></li><li><a href="https://bg.szczecin.pl/regulamin/"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp;Regulaminy</a></li></ul></li><li class="dropdown-specs"><a href="https://bg.szczecin.pl/eng/">ENG</a></li></ul>
+  </nav>
+</div>		</div>
+		<div class="row cp cm">
+			<div class="col-md-12 hgt-1p2 bg-2c cp cm page-head">
+				    <h1>Biblioteka Główna - E-czasopisma</h1>
+    <h2>Uniwersytet Szczeciński</h2>
+			</div>
+		</div>
+		<div class="row cp cm">
+			<!--<div class="col-md-3 hgt-3-without-padding cm cp col-news col-news-in-page">
+								<div class="row hgt-2 bg-2c cp cm new-books"></div>
+			</div>-->
+			<div class="col-md-12 cp cm">      <div id="page-and-post" class="cp cm">
+          <div class="item cp cm">
+                      <!-- item id:0 -->
+                      <!-- <h4>03-08-2015</h4><br><br> -->
+                      <p>Bazy danych czasopism elektronicznych: zobacz w zakładce <a title="Bazy On-Line" href="http://bg.szczecin.pl/bazy-danych/">E-Zasoby &gt; Bazy danych</a></p>
+<p>Zapraszamy do korzystania z elektronicznych wersji czasopism:</p>
+<ul>
+<li><a class="link" href="http://www.bibliothecanostra.awf.katowice.pl/" target="_blank">Bibliotheca Nostra</a></li>
+<li><a class="link" title="Directory of Open Access Journals" href="http://www.doaj.org" target="_blank">Directory of Open Access Journals</a> – wykaz czasopism w wolnym dostępie</li>
+<li><a class="link" title="MIT Press" href="http://www.mitpressjournals.org" target="_blank">MIT Press</a> – pełny dostęp do czasopism Linguistic Inquiry i PAJ: A Journal of Performance and Art oraz dostęp do pełnych tekstów niektórych artykułów i czasopism.</li>
+<li><a class="link" title="Journal Of Modern Optics" href="http://www.ingentaconnect.com/content/tandf/tmop" target="_blank">Journal Of Modern Optics</a></li>
+<li><a class="link" title="Maritime Policy Management" href="http://www.ingentaconnect.com/content/routledg/tmpm" target="_blank">Maritime Policy Management</a></li>
+<li><a class="link" title="Przegląd Uniwersytecki" href="http://przeglad.stara.usz.edu.pl" target="_blank">Przegląd Uniwersytecki</a> – Kwartalnik Uniwersytetu Szczecińskiego</li>
+</ul>
+<p>&nbsp;</p>
+<p>Polskie czasopisma matematyczne</p>
+<ul>
+<li><a class="link" title="Typological Methods in Nonlinear Analysis" href="http://apcz.umk.pl/czasopisma/index.php/TMNA/index" target="_blank">Typological Methods in Nonlinear Analysis</a></li>
+</ul>
+<p>&nbsp;</p>
+<p>Czasopisma <a title="Polskie Towarzystwo Matematyczne" href="http://wydawnictwa.ptm.org.pl/index.php" target="_blank">Polskiego Towarzystwa Matematycznego</a></p>
+<ul>
+<li><a class="link" title="Aniquitates Mathemticae" href="http://wydawnictwa.ptm.org.pl/index.php/antiquitates-mathematicae" target="_blank">Antiquitates Mathematicae</a></li>
+<li><a class="link" title="Commentationes Mathemticae" href="http://wydawnictwa.ptm.org.pl/index.php/commentationes-mathematicae" target="_blank">Commentationes Mathematicae</a></li>
+<li><a class="link" title="Didactica Mathematicae" href="http://wydawnictwa.ptm.org.pl/index.php/didactica-mathematicae" target="_blank">Didactica Mathematicae</a></li>
+<li><a class="link" title="Mathematica Applicanda" href="http://wydawnictwa.ptm.org.pl/index.php/matematyka-stosowana" target="_blank">Mathematica Applicanda</a></li>
+<li><a class="link" title="Wiadomości Matematyczne" href="http://wydawnictwa.ptm.org.pl/index.php/wiadomosci-matematyczne" target="_blank">Wiadomości Matematyczne</a></li>
+</ul>
+<p>&nbsp;</p>
+<p>Czasopisma <a title="Instytut Matematyki PAN" href="http://journals.impan.gov.pl">Instytutu Matematyki PAN</a></p>
+<ul>
+<li><a class="link" title="Acta Arithmetica" href="http://journals.impan.gov.pl/aa/" target="_blank">Acta Arithmetica</a></li>
+<li><a class="link" title="Annales Polonici Mathematici" href="http://journals.impan.gov.pl/ap/" target="_blank">Annales Polonici Mathematici</a></li>
+<li><a class="link" title="Applicationes Mathematicae" href="http://journals.impan.gov.pl/am/">Applicationes Mathematicae</a></li>
+<li><a class="link" title="Bulletin of the Polish Academy of Sciences. Mathematics" href="http://journals.impan.gov.pl/ba/">Bulletin of the Polish Academy of Sciences. Mathematics</a></li>
+<li><a class="link" title="Colloquium Mathematicum" href="http://journals.impan.gov.pl/cm/">Colloquium Mathematicum</a></li>
+<li><a class="link" title="Dissertationes Mathematicae" href="http://journals.impan.gov.pl/dm/">Dissertationes Mathematicae</a></li>
+<li><a class="link" title="Fundamenta Mathematicae" href="http://journals.impan.gov.pl/fm/">Fundamenta Mathematicae</a></li>
+<li><a class="link" title="Studia Mathematica" href="http://journals.impan.gov.pl/sm/">Studia Mathematica</a></li>
+<li><a class="link" title="Banach Center Publications" href="http://journals.impan.gov.pl/bc/">Banach Center Publications</a></li>
+</ul>
+<p>&nbsp;</p>
+<p>Zagraniczne czasopisma matematyczne</p>
+<ul>
+<li><a class="link" title="The Annals of Mathematics" href="http://annals.math.princeton.edu/?attachment_id=972" target="_blank">The Annals of Mathematics</a></li>
+<li><a class="link" title="Mathematica Scandinavica" href="http://www.mscand.dk" target="_blank">Mathematica Scandinavica</a></li>
+<li><a class="link" title="Mathematische Annalen" href="http://www.springerlink.com/link.asp?id=100442" target="_blank">Mathematische Annalen</a></li>
+<li><a class="link" title="Pacific Journal of Mathematics" href="https://msp.org/pjm/2018/297-2/index.xhtml">Pacific Journal of Mathematics</a></li>
+</ul>
+<p>&nbsp;</p>
+
+                      
+                  </div>      </div>
+      </div>
+					</div>
+		<div class="row cp cm">
+			<div class="col-md-6 hgt-1 bg-1  "><div class="contact-info1">
+  Skontaktuj się z nami!    <button type="button" class="fr btn btn-default btn-sm brr contact-details-elements" style="letter-spacing: 0px;" data-toggle="modal" data-target="#contact-details">WIĘCEJ INFORMACJI</button>
+    <!-- Modal -->
+    <div class="modal fade" id="contact-details" tabindex="-1" role="dialog" aria-labelledby="contact-details-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content colorsheme1 brr">
+          <div class="modal-header tcb">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h1 class="modal-title" id="contact-details-label">Szczegółowy kontakt</h1>
+          </div>
+          <div class="modal-body tcb" style="letter-spacing: 0px;">
+            <p><span style="color: #000000"><strong><span style="color: #003300">Sekretariat Dyrektora:</span></strong></span> tel. (91) 444-23-61,&nbsp; fax (91) 444- 23- 62,&nbsp; sekret[at]bg.szczecin.pl</p>
+<p><strong><span style="color: #333300"><span style="color: #003300">Dyrektor:</span></span></strong> tel.(91) 444-24-02<br>
+<span style="color: #003300"><strong><span style="color: #003300">Z-ca dyrektora</span>:</strong></span> tel. (91) 444-23-60</p>
+<p>&nbsp;</p>
+<p><strong><span style="color: #003300"><span style="color: #0000ff">Wypożyczalnia:</span><br>
+</span></strong> <strong>tel. (91) 444-24-05 <span style="color: #ff0000">(prolongata książek)</span></strong></p>
+<p><strong><span style="color: #0000ff">Czytelnia Pracy Cichej i Zbiorów Specjalnych:</span> </strong>tel. (91) 444-24-38</p>
+<p><strong><span style="color: #0000ff">Wypożyczalnia Międzybiblioteczna:</span> </strong>tel. (91) 444-23-61, wmb[at]bg.szczecin.pl</p>
+<p><strong><span style="color: #0000ff">Oddział Gromadzenia i Opracowania Zbiorów</span>:</strong> tel. (91) 444-24-03<br>
+– czasopisma: czasopisma[at]bg.szczecin.pl<br>
+– oferty wydawnicze: b.kozlowska[at]bg.szczecin.pl</p>
+<p><strong><span style="color: #0000ff">Oddział Monitoringu Naukowego</span>:</strong> tel. (91) 444-24-17</p>
+<p><span style="color: #003300"><strong>– <span style="color: #0000ff">Sekcja Bibliografii Naukowe</span>j:</strong></span> tel. (91) 444-24-08, bibliografia[at]bg.szczecin.pl<br>
+<span style="color: #003300"><strong>– <span style="color: #0000ff">Sekcja Bibliometrii:</span></strong> </span>tel. (91) 444-23-52, bibliometria[at]bg.szczecin.pl</p>
+<p><strong><span style="color: #0000ff">Informatycy</span>:</strong> (91) 444-24 43<strong><span style="color: #ff0000"> (bazy)</span></strong></p>
+<p><strong><span style="color: #0000ff">Portiernia:</span></strong> (91) 444-24-60</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default brr" style="letter-spacing: 0px;" data-dismiss="modal">ZAMKNIJ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="contact-info2 tdr">
+  Informacje tel.:<br><br>
+</div>
+
+  <div class="contact-info3-bg">(91) 444-24-05</div>
+<div class="contact-info2 tdr">
+    fax.: (91) 444-23-62<br>
+  ul. Tarczyńskiego 1, 70-387 Szczecin <br>
+  e-mail: info[at]bg.szczecin.pl 
+</div>
+</div>
+			<div class="col-md-3 hgt-1 bg-2c cm cp tac">
+  <div class="hgt-1 bg-2c cm cp" id="map-canvas" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; transition: 0ms; -webkit-transition: 0ms; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" src="about:blank" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe></div></div></div>
+  <a href="http://maps.google.com/?q=53.435065,14.534402" target="_blank" id="map-link" class="btn btn-default btn-xs">PRZEJDŹ DO GOOGLE MAPS</a>
+  </div>
+			<div class="col-md-3 hgt-1 bg-3c tac tcw"><i class="fontello-icons tfl mbm mts clock-icon"></i>
+<h1 class="ps opening-hours-elements">Godziny otwarcia Biblioteki</h1>
+<p class="opening-hours-elements">&nbsp;</p>
+<h2 class="opening-hours-elements">&nbsp;</h2>
+<p class="opening-hours-elements">&nbsp;</p>
+  <button type="button" class="btn btn-default btn-lg brr opening-hours-elements" data-toggle="modal" data-target="#opening-hours">ZOBACZ SZCZEGÓŁY</button>
+  <!-- Modal -->
+  <div class="modal fade" id="opening-hours" tabindex="-1" role="dialog" aria-labelledby="opening-hours-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content colorsheme1 brr">
+        <div class="modal-header tcb">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h1 class="modal-title" id="opening-hours-label">Godziny otwarcia</h1>
+        </div>
+        <div class="modal-body tcb">
+          <p>&nbsp;</p>
+<h3 style="text-align: center" align="center"><span style="color: #ff0000"><strong><span style="color: #ff0000"><br>
+</span></strong> </span></h3>
+<h3 align="center"></h3>
+<h3 align="center"><span style="font-size: xx-large;color: #ffffff"><b><span style="color: #008000">Harmonogram pracy </span></b></span></h3>
+<h3 align="center"><span style="font-size: xx-large;color: #ffffff"><b><span style="color: #008000">Biblioteki Głównej</span></b></span></h3>
+<p>&nbsp;</p>
+<p style="text-align: center"><span style="color: #ff0000">w czasie przerwy zimowej:<br>
+</span></p>
+<p style="text-align: center">14.02 – 20.02.2019 r. czynne w godz. 9.00 – 15.00</p>
+<p style="text-align: center">16.02.2019 r. (sobota) – nieczynne</p>
+<p style="text-align: center">Od 21.02.2019 r. – wg harmonogramu</p>
+<p style="text-align: center">
+</p><p style="text-align: center"><span style="color: #ff0000">w czasie roku akademickiego:</span></p>
+<h1>&nbsp;Wypożyczalnia i czytelnia</h1>
+<p style="text-align: center">pn. – pt. 9:00 – 19:00<br>
+sob. 9:00 – 14:00</p>
+<p>&nbsp;</p>
+<h1>Czytelnia Zbiorów specjalnych i czytelnia pracy cichej</h1>
+<p style="text-align: center">pn. – pt. 9:00 – 15:00<br>
+soboty – nieczynne</p>
+<p style="text-align: center">Po godz.15.00 i w soboty w godz. 9.00 – 14.00, zbiory Czytelni<br>
+Zbiorów Specjalnych są udostępniane w Wypożyczalni.</p>
+<p>&nbsp;</p>
+<h1>Wypożyczalnia Międzybiblioteczna</h1>
+<p style="text-align: center">pn. – pt. 9:00 – 15:00<br>
+soboty – nieczynne</p>
+<p>&nbsp;</p>
+<h1>SEKCJE:&nbsp; Bibliometrii i Bibliografii Naukowej</h1>
+<p style="text-align: center">pn. – pt. 9:00 – 15:00 (Bibliografia)<br>
+pn. – pt. 9:00 – 14:00 (Bibliometria)<br>
+<a href="https://bg.szczecin.pl/wp-content/uploads/2015/07/Harmonogram-pracy-w-Roku-Akademickim-2018-2019.pdf">Harmonogram pracy w roku akademickim 2018/2019</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default brr" data-dismiss="modal">ZAMKNIJ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>
+		<div class="row cm">
+			<div class="col-md-12 bg-0c hgt-1 tcw foot">
+<!--<h1 class="tcw">Nasze wsparcie:</h1>-->
+<div class="row bg-1c">
+  <a href="http://www.usz.edu.pl/"><div class="col-md-2 hgt-1p2 us"></div></a>
+  <a href="https://www.epnp.pl/"><div class="col-md-2 hgt-1p2 epnp"></div></a>
+  <!--<a href="https://pbn.nauka.gov.pl/"><div class="col-md-2 hgt-1p2 pbn"></div></a>-->
+  <a href="http://zbc.ksiaznica.szczecin.pl/"><div class="col-md-2 hgt-1p2 zbc"></div></a>
+  <a href="http://rokabi.ksiaznica.szczecin.pl/"><div class="col-md-2 hgt-1p2 rokabi"></div></a>
+  <a href="https://ceon.pl/"><div class="col-md-2 hgt-1p2 ceon"></div></a>
+<!--  <a href="http://www.wn.usz.edu.pl/"><div class="col-md-2 hgt-1p2 wnus"></div></a>-->
+  <a href="https://bg.szczecin.pl/dun/"><div class="col-md-2 hgt-1p2 dun"></div></a>
+</div>
+
+  <div class="row pm"><a href="https://bg.szczecin.pl/przyjazna-biblioteka/"><div class="col-xs-4 hgt-1p3   disa"></div></a><a href="https://bg.szczecin.pl/obiekt-monitorowany/"><div class="col-xs-4 hgt-1p3   monit"></div></a><a href="https://bg.szczecin.pl/dostep-do-internetu/"><div class="col-xs-4 hgt-1p3   wifi"></div></a></div>  <!--<h1>&nbsp;</h1>-->
+
+<h5 class="tac tcw pn">
+  Oparte na Wordpress, stworzone przez ODSK BG US | <a href="https://bg.szczecin.pl/polityka-plikow-cookie/">Polityka plików cookie</a></h5>
+
+</div>
+		</div>
+	</div>
+</div>
+<div id="goToTop" class="go-to-top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></div>
+
+<div id="cookie-bar" style="display: block;"><span class="secondToHide">Ta strona używa ciasteczek</span><span class="firstToHide"> (cookies), dzięki którym nasz serwis może działać lepiej</span><span class="secondToHide">.</span><button id="CookieButton" tabindex="1" onclick="AcceptCookies();">Ok, rozumiem!</button><a tabindex="1" href="https://bg.szczecin.pl/polityka-plikow-cookie/"><span class="secondToHide">Dowiedz się więcej.</span><span class="secondToShow">Więcej...</span></a></div>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+	  function initialize() {
+		    var mapCanvas = document.getElementById('map-canvas');
+		    var mapOptions = {
+		        center: new google.maps.LatLng(53.435065, 14.534402),
+		        zoom: 17,
+		        mapTypeId: google.maps.MapTypeId.ROADMAP
+		    }
+		    var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.435065, 14.534402),
+          map: map
+        });
+	  }
+	  google.maps.event.addDomListener(window, 'load', initialize);
+	</script>  <script>
+    jQuery('#goToTop').click(function (){jQuery("html, body").animate({scrollTop:0}, '500', 'swing', function() {});});
+
+    var shadowFrame, mapsCanvas, bgs, colorfonts, borderdivs;
+
+    jQuery(document).ready(function() {
+      updateLinks();
+      getHightContrast();
+      if(jQuery(this).scrollTop() > 300){
+        jQuery( '#goToTop' ).fadeIn();
+      }else{
+        jQuery( '#goToTop' ).fadeOut();
+      }
+      jQuery(window).scroll(function () {
+        if(jQuery(this).scrollTop() > 300){
+          jQuery( '#goToTop' ).fadeIn();
+        }else{
+          jQuery( '#goToTop' ).fadeOut();
+        }
+      });
+
+      var ismobile = window.matchMedia("only screen and (max-width: 760px)");
+      if (ismobile.matches) {
+        jQuery('.carousel').carousel ({
+          interval:false
+        });
+      }else{/*
+        jQuery('.carousel').carousel ({
+            interval:2500
+        });*/
+      }
+      if(!ReadCookie("bgCookieAccept")){
+        jQuery("#cookie-bar").show();
+      }
+
+      jQuery('#hightcontrast-link').click(function(){
+        if(ReadCookie("HIGHTCONTRAST")=='true'){
+          SetCookie("HIGHTCONTRAST", 'false', 1);
+          unsetHightContrast();
+        } else {
+          SetCookie("HIGHTCONTRAST", 'true', 1);
+          getHightContrast();
+          setHightContrast();
+          }
+      });
+
+      if(ReadCookie("HIGHTCONTRAST")=='true'){
+        getHightContrast();
+        setHightContrast();
+      }
+    });
+
+    function getHightContrast(){
+      mapsCanvas = {
+        wkitFilter: jQuery('img.logo_img, #map-canvas').css('-webkit-filter'),
+        mozFilter: jQuery('img.logo_img, #map-canvas').css('-moz-filter'),
+        oFilter: jQuery('img.logo_img, #map-canvas').css('-o-filter'),
+        msFilter: jQuery('img.logo_img, #map-canvas').css('-ms-filter'),
+        Filter: jQuery('img.logo_img, #map-canvas').css('filter')
+      };
+      shadowFrame = {
+        webkitBoxShadow: jQuery('.shadow-frame').css('-webkit-box-shadow'),
+        mozBoxShadow: jQuery('.shadow-frame').css('-moz-box-shadow'),
+        boxShadow: jQuery('.shadow-frame').css('box-shadow')
+      };
+      bgs = {
+        b0: jQuery('body').css('background'),
+        b1: jQuery('.bg-1').css('background'),
+        b2: jQuery('.bg-2c').css('background'),
+        b3: jQuery('.bg-3c').css('background'),
+        b4: jQuery('.panel').css('background'),
+        b5: jQuery('.subhome-head').css('background'),
+        b6: jQuery('.navbar-nav > li:nth-child(odd)').css('background'),
+        b7: jQuery('#header-menu-nav .nav > li > a').css('background'),
+        b8: jQuery('#header-menu-nav .dropdown-menu > li > a').css('background'),
+        b9: jQuery('.square-button').css('background')
+      }
+      colorfonts = {
+        c0: jQuery('.subhome-head h1').css('color'),
+        c1: jQuery('.bg-1 > *').css('color'),
+        c2: jQuery('.logo h1').css('color'),
+        c3: jQuery('.panel > *').css('color'),
+        c4: jQuery('.navbar-nav > li > *').css('color'),
+        c5: jQuery('#header-menu-nav .dropdown-menu > li > a').css('color'),
+        c6: jQuery('#header-menu-nav .dropdown-menu > li > a> span').css('color'),
+        c7: jQuery('.logo').css('color'),
+        c8: jQuery('#header-menu-nav .navbar-nav > li > a > span').css('color')
+      }
+      borderdivs = {
+        bd0: jQuery('.panel').css('border'),
+        bd1: jQuery('.subhome-head').css('border'),
+        bd2: jQuery('.square-button').css('border')
+      }
+      /*$('.bg-2c, .bg-3c, .panel, .subhome-head, .square-button, .foot').css('border', 'inset 1px #FFF');*/
+    }
+    function setHightContrast(){
+      jQuery('img.logo_img, #map-canvas').css('-webkit-filter', 'invert(100%)');
+      jQuery('img.logo_img, #map-canvas').css('-moz-filter', 'invert(100%)');
+      jQuery('img.logo_img, #map-canvas').css('-o-filter', 'invert(100%)');
+      jQuery('img.logo_img, #map-canvas').css('-ms-filter', 'invert(100%)');
+      jQuery('img.logo_img, #map-canvas').css('filter', 'invert(100%)');
+      jQuery('.shadow-frame').css('-webkit-box-shadow', '0px 0px 32px -4px rgba(255,255,255,0.75)');
+      jQuery('.shadow-frame').css('-moz-box-shadow', '0px 0px 32px -4px rgba(255,255,255,0.75)');
+      jQuery('.shadow-frame').css('box-shadow', '0px 0px 32px -4px rgba(255,255,255,0.75)');
+      jQuery('body, .bg-1, .bg-2c, .bg-3c, .panel, .subhome-head, .navbar-nav > li:nth-child(odd), #header-menu-nav .nav > li > a, #header-menu-nav  .dropdown-menu > li > a, .square-button').css('background', '#000');
+      jQuery('.subhome-head h1, .bg-1 > *, .logo h1, .panel > *, .navbar-nav > li > *, #header-menu-nav .dropdown-menu > li > a, #header-menu-nav .dropdown-menu > li > a> span, .logo, #header-menu-nav .navbar-nav > li > a > span').css('color', '#FFF');
+      jQuery('.panel, .subhome-head, .square-button').css('border', 'inset 1px #FFF');
+    }
+
+    function unsetHightContrast(){
+      jQuery('img.logo_img, #map-canvas').css('-webkit-filter', mapsCanvas.wkitFilter);
+      jQuery('img.logo_img, #map-canvas').css('-moz-filter', mapsCanvas.mozFilter);
+      jQuery('img.logo_img, #map-canvas').css('-o-filter', mapsCanvas.oFilter);
+      jQuery('img.logo_img, #map-canvas').css('-ms-filter', mapsCanvas.msFilter);
+      jQuery('img.logo_img, #map-canvas').css('filter', mapsCanvas.Filter);
+
+      jQuery('.shadow-frame').css('-webkit-box-shadow', shadowFrame.webkitBoxShadow);
+      jQuery('.shadow-frame').css('-moz-box-shadow', shadowFrame.mozBoxShadow);
+      jQuery('.shadow-frame').css('box-shadow', shadowFrame.boxShadow);
+
+      jQuery('body').css('background', bgs.b0);
+      jQuery('.bg-1').css('background', bgs.b1);
+      jQuery('.bg-2c').css('background', bgs.b2);
+      jQuery('.bg-3c').css('background', bgs.b3);
+      jQuery('.panel').css('background', bgs.b4);
+      jQuery('.subhome-head').css('background', bgs.b5);
+      jQuery('.navbar-nav > li:nth-child(odd)').css('background', bgs.b6);
+      jQuery('#header-menu-nav .nav > li > a').css('background', bgs.b7);
+      jQuery('#header-menu-nav .dropdown-menu > li > a').css('background', bgs.b8);
+      jQuery('.square-button').css('background', bgs.b9);
+
+      jQuery('.subhome-head h1').css('color', colorfonts.c0);
+      jQuery('.bg-1 > *').css('color', colorfonts.c1);
+      jQuery('.logo h1').css('color', colorfonts.c2);
+      jQuery('.panel > h1, .panel p').css('color', colorfonts.c3);
+      jQuery('.navbar-nav > li > *').css('color', colorfonts.c4);
+      jQuery('#header-menu-nav .dropdown-menu > li > a').css('color', colorfonts.c5);
+      jQuery('#header-menu-nav .dropdown-menu > li > a> span').css('color', colorfonts.c6);
+      jQuery('.logo').css('color', colorfonts.c7);
+      jQuery('#header-menu-nav .navbar-nav > li > a > span').css('color', colorfonts.c8);
+      //$('.subhome-head h1, .bg-1 > *, .logo h1, .panel > *, .navbar-nav > li > *, #header-menu-nav .dropdown-menu > li > a, #header-menu-nav .dropdown-menu > li > a> span, .logo, #header-menu-nav .navbar-nav > li > a > span').css('color', '#000');
+      jQuery('.panel').css('border', borderdivs.bd0);
+      jQuery('.subhome-head').css('border', borderdivs.bd1);
+      jQuery('.square-button').css('border', borderdivs.bd2);
+    }
+
+    function SetCookie(cookieName, cookieValue, nDays) {
+    	var today = new Date();
+    	var expire = new Date();
+    	if (nDays==null || nDays==0) nDays=1;
+    	expire.setTime(today.getTime() + 3600000*24*nDays);
+    	document.cookie = cookieName+"="+escape(cookieValue)+ ";expires="+expire.toGMTString()+"; path=/";
+    }
+    function ReadCookie(cookieName) {
+    	var theCookie=" "+document.cookie;
+    	var ind=theCookie.indexOf(" "+cookieName+"=");
+    	if (ind==-1) ind=theCookie.indexOf(";"+cookieName+"=");
+    	if (ind==-1 || cookieName=="") return "";
+    	var ind1=theCookie.indexOf(";",ind+1);
+    	if (ind1==-1) ind1=theCookie.length;
+    	return unescape(theCookie.substring(ind+cookieName.length+2,ind1));
+    }
+    function DeleteCookie(cookieName) {
+    	var today = new Date();
+    	var expire = new Date() - 30;
+    	expire.setTime(today.getTime() - 3600000*24*90);
+    	document.cookie = cookieName+"="+escape(cookieValue)+ ";expires="+expire.toGMTString();
+    }
+    function AcceptCookies() {
+    	SetCookie('bgCookieAccept', true, 30);
+    	jQuery("#cookie-bar").hide();
+    	jQuery("html").css("margin-top","0");
+    }
+
+    function updateLinks(){
+      words = document.getElementById('s1').value;
+      document.getElementById('linkEDS').setAttribute('href', "http://search.ebscohost.com/login.aspx?type=0&mode=bool&lang=en&sid=144666116&direct=true&bquery=" + words);
+      document.getElementById('linkSPEC').setAttribute('href', "http://podziemne.bg.szczecin.pl/cgi-bin/koha/opac-search.pl?op=do_search&type=opac&marclist=&and_or=and&operator=contains&value=" + words);
+      document.getElementById('linkTHIS').setAttribute('href', "https://bg.szczecin.pl/?s=" + words);
+
+      words = document.getElementById('s2').value;
+      document.getElementById('linkEDS_Cola').setAttribute('href', "http://search.ebscohost.com/login.aspx?type=0&mode=bool&lang=en&sid=144666116&direct=true&bquery=" + words);
+      document.getElementById('linkSPEC_Cola').setAttribute('href', "http://podziemne.bg.szczecin.pl/cgi-bin/koha/opac-search.pl?op=do_search&type=opac&marclist=&and_or=and&operator=contains&value=" + words);
+      document.getElementById('linkTHIS_Cola').setAttribute('href', "https://bg.szczecin.pl/?s=" + words);
+    }
+  </script>
+  <script src="http://bg.szczecin.pl/wp-content/themes/bgwp/inc/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+
+<!-- WP-FOOTER START -->
+<!-- Site will be created and tracking code added on next request --><script type="text/javascript" src="http://bg.szczecin.pl/wp-content/plugins/quick-chat/js/jquery.c00kie.js?ver=4.13"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var quick_chat = {"url":"http:\/\/bg.szczecin.pl\/wp-content\/plugins\/quick-chat\/","ajaxurl":"http:\/\/bg.szczecin.pl\/wp-admin\/admin-ajax.php","user_id":"0","version":"4.13","debug_mode":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://bg.szczecin.pl/wp-content/plugins/quick-chat/js/quick-chat-load.js?ver=4.13"></script>
+<script type="text/javascript" src="http://bg.szczecin.pl/wp-includes/js/wp-embed.min.js?ver=4.6.1"></script>
+<!-- WP-FOOTER END -->
+
+	
+
+<div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;"><span style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbswy</span></div></body></html>

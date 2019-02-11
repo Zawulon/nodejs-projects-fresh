@@ -1,0 +1,619 @@
+<!DOCTYPE html><html lang="pl-PL"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    
+    <title>Fundacja Ekspert-Kujawy </title>
+    
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    
+    <!-- Slick theme -->
+    <link rel="stylesheet" type="text/css" href="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/slick/slick-theme.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/style.css">
+    
+    <!-- JavaScript -->
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/js/jquery-1.11.3.min.js"></script>
+
+    <script src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/js/bootstrap.min.js"></script>
+    <script src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/slick/slick.min.js"></script>
+    
+    <script src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/js/isotope.pkgd.min.js"></script>
+    
+    <script>
+    $( document ).ready( function() {
+
+
+
+        
+        $('#header-carousel').slick({
+            dots: true,
+            arrows: false,
+            pauseOnHover: true,
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            cssEase: 'linear'
+        });
+        
+        $('#reviews-carousel').slick({
+            dots: true,
+            arrows: false,
+            pauseOnHover: true,
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: false,
+            cssEase: 'linear'
+        });
+        
+        $('#partners-carousel').slick({
+            dots: true,
+            arrows: false,
+            pauseOnHover: true,
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            fade: false,
+            cssEase: 'linear'
+        });
+        
+        // init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+    layoutMode: 'fitRows'
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+
+$('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
+    });
+    });
+
+// Create cookie
+function createCookie(name, value, days) {
+    var expires;
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        expires = "; expires="+date.toGMTString();
+    }
+    else {
+        expires = "";
+    }
+    document.cookie = name+"="+value+expires+"; path=/";
+}
+
+// Read cookie
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1,c.length);
+        }
+        if (c.indexOf(nameEQ) === 0) {
+            return c.substring(nameEQ.length,c.length);
+        }
+    }
+    return null;
+}
+
+	if (!readCookie('_cpolicy')) {
+		$('#cookies-info').addClass('cookies-visible');
+	}
+	
+	$('#accept-cookies').click(function () {
+		$(this).parent().removeClass('cookies-visible');
+		createCookie('_cpolicy', '1', 365);
+	});
+
+    });
+    </script>
+    <link rel="dns-prefetch" href="//s.w.org">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/fundacja.ekspert-kujawy.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://fundacja.ekspert-kujawy.pl/wp-includes/js/wp-emoji-release.min.js?ver=4.9.9" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="cookie-notice-front-css" href="http://fundacja.ekspert-kujawy.pl/wp-content/plugins/cookie-notice/css/front.min.css?ver=4.9.9" type="text/css" media="all">
+<link rel="stylesheet" id="lightboxStyle-css" href="http://fundacja.ekspert-kujawy.pl/wp-content/plugins/lightbox-plus/css/elegant/colorbox.min.css?ver=2.7.2" type="text/css" media="screen">
+<script type="text/javascript" src="http://fundacja.ekspert-kujawy.pl/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://fundacja.ekspert-kujawy.pl/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var cnArgs = {"ajaxurl":"http:\/\/fundacja.ekspert-kujawy.pl\/wp-admin\/admin-ajax.php","hideEffect":"fade","onScroll":"no","onScrollOffset":"100","cookieName":"cookie_notice_accepted","cookieValue":"true","cookieTime":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"","cache":"","refuse":"no","revoke_cookies":"0","revoke_cookies_opt":"automatic","secure":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://fundacja.ekspert-kujawy.pl/wp-content/plugins/cookie-notice/js/front.min.js?ver=1.2.45"></script>
+<link rel="https://api.w.org/" href="http://fundacja.ekspert-kujawy.pl/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://fundacja.ekspert-kujawy.pl/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://fundacja.ekspert-kujawy.pl/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.9">
+<script>
+    jQuery(document).ready(function($){
+    var currParent;     
+ 
+    $('li').hover(function() {
+        if ($(this).children('ul').hasClass('children'))
+        {            
+            $(this).children('ul').stop().slideDown(300);
+        }
+    }, function() {
+       $(this).children('ul').stop().slideUp(300);
+    });
+    
+});
+    </script>    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28436474-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body class="cookies-not-set">
+
+<div id="cookies-info" class="cookies-visible">
+<p>Nasza strona wykorzystuje pliki cookies w celu poprawnej realizacji dostarczanych usług i informacji oraz w celach anonimowych informacji statystycznych.
+<a href="#" id="accept-cookies">Rozumiem</a></p>
+</div>
+  
+<a href="http://fundacja.ekspert-kujawy.pl/przekaz-srodki-pieniezne-na-cele-statutowe-fundacji/" target="_blank">
+    <img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/pd.png" style="position: fixed; top: 45%; right: 0; z-Index: 9999;">
+</a>
+
+<!-- Navigation -->
+<nav class="navbar navbar-main navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-logo" href="http://fundacja.ekspert-kujawy.pl"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/logo.jpg"></a>
+        </div>
+        
+        <div id="navbar-collapse-1" class="navbar-collapse collapse right">
+       <ul id="main-menu"><li id="menu-item-10040" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10040"><a href="http://fundacja.ekspert-kujawy.pl/">Strona główna</a></li>
+<li id="menu-item-10055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10055"><a href="http://fundacja.ekspert-kujawy.pl/archiwum/">Aktualności</a></li>
+<li id="menu-item-10042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10042"><a href="http://fundacja.ekspert-kujawy.pl/archiwum-inicjatyw/">Inicjatywy</a></li>
+<li id="menu-item-10043" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10043"><a href="http://fundacja.ekspert-kujawy.pl/archiwum-projektow/realizowane/">Projekty</a></li>
+<li id="menu-item-10175" class="menu-item menu-item-type-taxonomy menu-item-object-inicjatywa menu-item-10175"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/wynajem-sal-szkoleniowych/">Wynajem</a></li>
+<li id="menu-item-11012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11012"><a href="http://fundacja.ekspert-kujawy.pl/galeria/">Galeria</a></li>
+<li id="menu-item-10377" class="menu-item menu-item-type-post_type menu-item-object-fundacja menu-item-10377"><a href="http://fundacja.ekspert-kujawy.pl/fundacja/o-nas/">Fundacja</a></li>
+<li id="menu-item-16784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16784"><a href="http://fundacja.ekspert-kujawy.pl/polityka-prywatnosci/">Ochrona danych osobowych</a></li>
+<li id="menu-item-11048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11048"><a href="http://fundacja.ekspert-kujawy.pl/kontakt-z-fundacja/">Kontakt</a></li>
+</ul>        </div>
+    </div>
+</nav>
+
+
+<!-- Header -->
+<header class="container-fluid">    
+    <div id="header-carousel" class="slick-initialized slick-slider" role="toolbar">
+
+
+           
+                            
+                                
+            <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 5120px;"><div class="header-image slick-slide slick-current slick-active" style="background-image: url(http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/istock2.jpg); width: 1024px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00">
+                <div class="header-overlay">
+                    <div class="container">
+                        <h2 class="vertical-algn"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/szkola-jezykow-obcych" tabindex="0">Szkoła Języków Obcych</a></h2>
+                    </div>
+                </div>
+            </div><div class="header-image slick-slide" style="background-image: url(http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2008/03/foto13sala1.jpg); width: 1024px; position: relative; left: -1024px; top: 0px; z-index: 998; opacity: 0;" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01">
+                <div class="header-overlay">
+                    <div class="container">
+                        <h2 class="vertical-algn"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywy/365-oferta-wynajmu" tabindex="-1">Oferta wynajmu</a></h2>
+                    </div>
+                </div>
+            </div><div class="header-image slick-slide" style="background-image: url(http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/download3.jpg); width: 1024px; position: relative; left: -2048px; top: 0px; z-index: 998; opacity: 0;" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02">
+                <div class="header-overlay">
+                    <div class="container">
+                        <h2 class="vertical-algn"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/osrodek-doskonalenia-nauczycieli" tabindex="-1">Ośrodek Doskonalenia Nauczycieli</a></h2>
+                    </div>
+                </div>
+            </div><div class="header-image slick-slide" style="background-image: url(http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2.jpg); width: 1024px; position: relative; left: -3072px; top: 0px; z-index: 998; opacity: 0;" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide03">
+                <div class="header-overlay">
+                    <div class="container">
+                        <h2 class="vertical-algn"><a href="http://fundacja.ekspert-kujawy.pl/archiwum-inicjatyw/" tabindex="-1">Sprawdź inicjatywy Fundacji Ekspert-Kujawy</a></h2>
+                    </div>
+                </div>
+            </div><div class="header-image slick-slide" style="background-image: url(http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/Senior-active-couple-iStock-LARGE.jpg); width: 1024px; position: relative; left: -4096px; top: 0px; z-index: 998; opacity: 0;" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide04">
+                <div class="header-overlay">
+                    <div class="container">
+                        <h2 class="vertical-algn"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/uniwersytet-iii-wieku/" tabindex="-1">Uniwersytet III Wieku Fundacji Ekspert</a></h2>
+                    </div>
+                </div>
+            </div></div></div>
+            
+                            
+                                
+            
+            
+                            
+                                
+            
+            
+                            
+                                
+            
+            
+                            
+                                
+            
+            
+                        
+                <ul class="slick-dots" role="tablist" style="display: block;"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0">2</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0">3</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation03" id="slick-slide03"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0">4</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation04" id="slick-slide04"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0">5</button></li></ul></div>
+</header>
+
+<!-- Content -->
+<div class="container main-container">
+
+    <div id="ico-facebook"><a href="https://www.facebook.com/ekspertkujawy" target="_blank"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/fb_icon.png" alt="f"></a></div>
+    <div id="ico-googlep"><a href="#"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/gplus_icon.png" alt="g"></a></div>
+      
+    <section id="news">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <h1>Aktualności</h1>
+             <p><a class="pbtn" href="http://fundacja.ekspert-kujawy.pl/archiwum" role="button">Zobacz archiwum aktualności  »</a></p>
+            </div>
+                                                
+<div id="post-16871" class="col-sm-6 col-md-3">
+    <h3><a href="http://fundacja.ekspert-kujawy.pl/projekty/16871-rozpoczynamy-rekrutacje-na-szkolenia-3" rel="bookmark">Rozpoczynamy rekrutacje na szkolenia !!!!</a></h3>
+    <p class="news-date">7 lutego 2019</p>
+    <p class="main-news-content">Dzisiaj rozpoczynamy następną rekrutację na szkolenia w projekcie: „Stawiam na wiedzę – szkolenia podnoszące kwalifikacje i kompetencje zawodowe mieszkańców powiatów: inowrocławskiego, mogileńskiego, żnińskiego i [...]</p>
+</div>
+                            
+<div id="post-16795" class="col-sm-6 col-md-3">
+    <h3><a href="http://fundacja.ekspert-kujawy.pl/szukasz-srodkow-na-otwarcie-lub-rozwoj-firmy-czeka-na-ciebie-nisko-oprocentowana-pozyczka-unijna-az-do-1-mln-zlotych/" rel="bookmark">Szukasz środków na otwarcie lub rozwój firmy? Czeka na Ciebie nisko oprocentowana pożyczka unijna aż do 1 mln złotych!</a></h3>
+    <p class="news-date">28 stycznia 2019</p>
+    <p class="main-news-content">Od stycznia Fundacja Ekspert – Kujawy w Inowrocławiu rozpoczęła współpracę z Kujawsko – Pomorskim Funduszem Pożyczkowym w Toruniu. Efektem współpracy jest utworzenie punkt konsultacyjnego [...]</p>
+</div>
+                            
+<div id="post-16800" class="col-sm-6 col-md-3">
+    <h3><a href="http://fundacja.ekspert-kujawy.pl/projekty/16800-zapraszamy-do-udzialu-w-projekcie-57" rel="bookmark">Zapraszamy do udziału w projekcie!</a></h3>
+    <p class="news-date">28 stycznia 2019</p>
+    <p class="main-news-content">Jesteś osobą niesamodzielną, należącą do osób zagrożonych wykluczeniem społecznym z powodu niesamodzielności oraz zamieszkującą teren powiatu żnińskiego? Jeśli tak – zapraszamy do udziału w [...]</p>
+</div>
+                            </div>
+    </section>
+    
+       <hr>
+    
+    <section id="initiative">
+        <div class="row row-initiative">
+            <div class="col-sm-6 col-md-3">
+                <h1>Inicjatywy</h1>
+            </div>
+             <div class="col-sm-6 col-md-3 main-initiative" style="background: #dd8233;">
+      <a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/kujawski-inkubator-przedsiebiorczosci-spolecznej/" title="Kujawski Inkubator Przedsiębiorczości Społecznej"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is3-272x240.jpg"></a>
+          <h4><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/kujawski-inkubator-przedsiebiorczosci-spolecznej/" title="Kujawski Inkubator Przedsiębiorczości Społecznej">Kujawski Inkubator Przedsiębiorczości Społecznej</a></h4>
+       </div><div class="col-sm-6 col-md-3 main-initiative" style="background: #156d02;">
+      <a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/osrodek-doskonalenia-nauczycieli/" title="Ośrodek Doskonalenia Nauczycieli"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/download3-272x240.jpg"></a>
+          <h4><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/osrodek-doskonalenia-nauczycieli/" title="Ośrodek Doskonalenia Nauczycieli">Ośrodek Doskonalenia Nauczycieli</a></h4>
+       </div><div class="col-sm-6 col-md-3 main-initiative" style="background: #1e73be;">
+      <a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/osrodek-szkolenia-kierowcow/" title="Ośrodek Szkolenia Kierowców"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/drive-272x240.jpg"></a>
+          <h4><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/osrodek-szkolenia-kierowcow/" title="Ośrodek Szkolenia Kierowców">Ośrodek Szkolenia Kierowców</a></h4>
+       </div><div class="col-sm-6 col-md-3 main-initiative" style="background: #81d742;">
+      <a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/osrodek-wspierania-ekonomii-spolecznej/" title="Ośrodek Wspierania Ekonomii Społecznej"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/02/ngo2.19.02-272x240.jpg"></a>
+          <h4><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/osrodek-wspierania-ekonomii-spolecznej/" title="Ośrodek Wspierania Ekonomii Społecznej">Ośrodek Wspierania Ekonomii Społecznej</a></h4>
+       </div><div class="col-sm-6 col-md-3 main-initiative" style="background: #dd9933;">
+      <a href="http://warp.org.pl/pozyczki-2/pozyczka-unijna-w-kujawsko-pomorskim/mikropozyczka/" target="_blank" title="Pożyczki dla przedsiębiorstw - WARP"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2018/09/WARP-272x240.jpg"></a>
+          <h4><a href="http://warp.org.pl/pozyczki-2/pozyczka-unijna-w-kujawsko-pomorskim/mikropozyczka/" target="_blank" title="Pożyczki dla przedsiębiorstw - WARP">Pożyczki dla przedsiębiorstw - WARP</a></h4>
+       </div><div class="col-sm-6 col-md-3 main-initiative" style="background: #dd3333;">
+      <a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/szkola-jezykow-obcych/" title="Szkoła Języków Obcych"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2016/09/hello-1502369-272x240.png"></a>
+          <h4><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/szkola-jezykow-obcych/" title="Szkoła Języków Obcych">Szkoła Języków Obcych</a></h4>
+       </div><div class="col-sm-6 col-md-3 main-initiative" style="background: #010ec4;">
+      <a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/uniwersytet-iii-wieku/" title="Uniwersytet III Wieku"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/Senior-active-couple-iStock-LARGE-272x240.jpg"></a>
+          <h4><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/uniwersytet-iii-wieku/" title="Uniwersytet III Wieku">Uniwersytet III Wieku</a></h4>
+       </div><div class="col-sm-6 col-md-3 main-initiative" style="background: #010ec4;">
+      <a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/filia-utw-dabrowa-biskupia/" title="UTW - Filia Dąbrowa Biskupia"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/10/DSC01723-272x240.jpg"></a>
+          <h4><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/filia-utw-dabrowa-biskupia/" title="UTW - Filia Dąbrowa Biskupia">UTW - Filia Dąbrowa Biskupia</a></h4>
+       </div><div class="col-sm-6 col-md-3 main-initiative" style="background: #c9c9c9;">
+      <a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/wynajem-sal-szkoleniowych/" title="Wynajem sal szkoleniowych"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2008/03/foto13sala1-272x240.jpg"></a>
+          <h4><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/wynajem-sal-szkoleniowych/" title="Wynajem sal szkoleniowych">Wynajem sal szkoleniowych</a></h4>
+       </div> 
+        </div>
+    </section>
+   
+    <hr>
+    
+    <section id="projects">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Projekty</h1>
+            </div>
+            <div class="col-md-9">
+                <div class="button-group filter-button-group">
+                    <button class="button first is-checked" data-filter="*">Wszystkie</button>
+                     <button class="button" data-filter=".bezrobotni">Bezrobotni</button><button class="button" data-filter=".kursy">Kursy</button><button class="button" data-filter=".nauczyciele">Nauczyciele</button><button class="button" data-filter=".niepelnosprawni">Niepełnosprawni</button><button class="button" data-filter=".praca">Praca</button><button class="button" data-filter=".seniorzy">Seniorzy</button><button class="button" data-filter=".szkolenia">Szkolenia</button>                </div>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <div class="row row-projects grid" style="position: relative; height: 1350px;">
+        
+        <div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 0px; top: 30px;"><div class="project-image" style="background: #81d742;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/akademia-kompetencji-spolecznych-ii-edycja/" title="Akademia Kompetencji Społecznych - II edycja"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2016/03/business-1137397_1920-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/akademia-kompetencji-spolecznych-ii-edycja/" title="Akademia Kompetencji Społecznych - II edycja">Akademia Kompetencji Społecznych - II edycja</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 230px; top: 30px;"><div class="project-image" style="background: #7f9191;"><a class="project-name-main" target="_blank" href="http://cyfrowysenior.pl/" title="Bezpłatne szkolenia komputerowe dla seniorów w województwie kujawsko - pomorskim"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2019/01/Screenshot_2019-01-29-Cyfrowy-SENIOR-250x140.png" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" target="_blank" href="http://cyfrowysenior.pl/" title="Bezpłatne szkolenia komputerowe dla seniorów w województwie kujawsko - pomorskim">Bezpłatne szkolenia komputerowe dla seniorów w województwie kujawsko - pomorskim</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 460px; top: 30px;"><div class="project-image" style="background: #1e73be;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/czas-na-aktywnosc/" title="Czas na aktywnosć!"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/czas-na-aktywnosc/" title="Czas na aktywnosć!">Czas na aktywnosć!</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 690px; top: 30px;"><div class="project-image" style="background: #95e236;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/dobra-praca-godna-placa/" title="Dobra praca - godna płaca. Projekt aktywizacji edukacyjno-zawodowej mieszkańców powiatu szczecineckiego i drawskiego"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is1-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/dobra-praca-godna-placa/" title="Dobra praca - godna płaca. Projekt aktywizacji edukacyjno-zawodowej mieszkańców powiatu szczecineckiego i drawskiego">Dobra praca - godna płaca. Projekt aktywizacji edukacyjno-zawodowej mieszkańców powiatu szczecineckiego i drawskiego</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 0px; top: 195px;"><div class="project-image" style="background: #1a84b2;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/drogowskaz-kierunek-dobrej-zmiany/" title="Drogowskaz - kierunek dobrej zmiany"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/drogowskaz-kierunek-dobrej-zmiany/" title="Drogowskaz - kierunek dobrej zmiany">Drogowskaz - kierunek dobrej zmiany</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item niepelnosprawni project-main" style="position: absolute; left: 230px; top: 195px;"><div class="project-image" style="background: ;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/jestesmy-aktywni/" title="Jesteśmy aktywni!"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/jestesmy-aktywni/" title="Jesteśmy aktywni!">Jesteśmy aktywni!</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 460px; top: 195px;"><div class="project-image" style="background: #f226ee;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/jestesmy-aktywni-projekt-w-powiecie-chodzieskim-i-wagrowieckim/" title="Jesteśmy aktywni! Projekt w powiecie chodzieskim i wągrowieckim."><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/jestesmy-aktywni-projekt-w-powiecie-chodzieskim-i-wagrowieckim/" title="Jesteśmy aktywni! Projekt w powiecie chodzieskim i wągrowieckim.">Jesteśmy aktywni! Projekt w powiecie chodzieskim i wągrowieckim.</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 690px; top: 195px;"><div class="project-image" style="background: ;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/kis-powiat-inowroclawski/" title="Klub Integracji Społecznej dla mieszkańców powiatu inowrocławskiego"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads." style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/kis-powiat-inowroclawski/" title="Klub Integracji Społecznej dla mieszkańców powiatu inowrocławskiego">Klub Integracji Społecznej dla mieszkańców powiatu inowrocławskiego</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 0px; top: 360px;"><div class="project-image" style="background: ;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/klub-integracji-spolecznej-fundacji-ekspert-kujawy/" title="Klub Integracji Społecznej Fundacji Ekspert-Kujawy"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/klub-integracji-spolecznej-fundacji-ekspert-kujawy/" title="Klub Integracji Społecznej Fundacji Ekspert-Kujawy">Klub Integracji Społecznej Fundacji Ekspert-Kujawy</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 230px; top: 360px;"><div class="project-image" style="background: ;"><a class="project-name-main" target="_blank" href="http://kpces.pl/" title="Ośrodek Wsparcia Ekonomii Społecznej"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2016/09/plan-1616237_1920-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" target="_blank" href="http://kpces.pl/" title="Ośrodek Wsparcia Ekonomii Społecznej">Ośrodek Wsparcia Ekonomii Społecznej</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item praca project-main" style="position: absolute; left: 460px; top: 360px;"><div class="project-image" style="background: #4687bf;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/outplacement/" title="Outplacement w województwie wielkopolskim"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2017/05/outplacment-250x140.png" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/outplacement/" title="Outplacement w województwie wielkopolskim">Outplacement w województwie wielkopolskim</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 690px; top: 360px;"><div class="project-image" style="background: #81d742;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-w-bytomiu/" title="Pogodna Jesień Życia w Bytomiu"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-w-bytomiu/" title="Pogodna Jesień Życia w Bytomiu">Pogodna Jesień Życia w Bytomiu</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 0px; top: 525px;"><div class="project-image" style="background: #ea6635;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-inowroclaw/" title="Pogodna Jesień Życia w mieście i gminie Inowrocław"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-inowroclaw/" title="Pogodna Jesień Życia w mieście i gminie Inowrocław">Pogodna Jesień Życia w mieście i gminie Inowrocław</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 230px; top: 525px;"><div class="project-image" style="background: #81d742;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-w-opolu/" title="Pogodna Jesień Życia w Opolu"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-w-opolu/" title="Pogodna Jesień Życia w Opolu">Pogodna Jesień Życia w Opolu</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 460px; top: 525px;"><div class="project-image" style="background: #dd9e40;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-w-powiecie-namyslowskim/" title="Pogodna Jesień Życia w powiecie Namysłowskim"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-w-powiecie-namyslowskim/" title="Pogodna Jesień Życia w powiecie Namysłowskim">Pogodna Jesień Życia w powiecie Namysłowskim</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 690px; top: 525px;"><div class="project-image" style="background: #eac220;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-nysa/" title="Pogodna Jesień Życia w powiecie nyskim"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-nysa/" title="Pogodna Jesień Życia w powiecie nyskim">Pogodna Jesień Życia w powiecie nyskim</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 0px; top: 690px;"><div class="project-image" style="background: ;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-tarnogorski/" title="Pogodna Jesień Życia w powiecie tarnogórskim"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-tarnogorski/" title="Pogodna Jesień Życia w powiecie tarnogórskim">Pogodna Jesień Życia w powiecie tarnogórskim</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 230px; top: 690px;"><div class="project-image" style="background: #e0931f;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-w-powiecie-zninskim/" title="Pogodna Jesień Życia w powiecie żnińskim"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2018/01/strona-111-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-w-powiecie-zninskim/" title="Pogodna Jesień Życia w powiecie żnińskim">Pogodna Jesień Życia w powiecie żnińskim</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 460px; top: 690px;"><div class="project-image" style="background: #dd1f1f;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesiez-zycia-poznan-i-powiat-wagrowiecki/" title="Pogodna Jesień Życia w Poznaniu i powiecie wągrowieckim"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesiez-zycia-poznan-i-powiat-wagrowiecki/" title="Pogodna Jesień Życia w Poznaniu i powiecie wągrowieckim">Pogodna Jesień Życia w Poznaniu i powiecie wągrowieckim</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 690px; top: 690px;"><div class="project-image" style="background: ;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-w-radzionkowie/" title="Pogodna Jesień Życia w Radzionkowie"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-w-radzionkowie/" title="Pogodna Jesień Życia w Radzionkowie">Pogodna Jesień Życia w Radzionkowie</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 0px; top: 855px;"><div class="project-image" style="background: ;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-tychy/" title="Pogodna Jesień Życia w Tychach"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-tychy/" title="Pogodna Jesień Życia w Tychach">Pogodna Jesień Życia w Tychach</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 230px; top: 855px;"><div class="project-image" style="background: ;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-zabrze/" title="Pogodna Jesień Życia w Zabrzu"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-zabrze/" title="Pogodna Jesień Życia w Zabrzu">Pogodna Jesień Życia w Zabrzu</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 460px; top: 855px;"><div class="project-image" style="background: #ea6635;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-gniewkowo/" title="POGODNA JESIEŃ ŻYCIA. Usługi opiekuńcze w gminie Gniewkowo"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-gniewkowo/" title="POGODNA JESIEŃ ŻYCIA. Usługi opiekuńcze w gminie Gniewkowo">POGODNA JESIEŃ ŻYCIA. Usługi opiekuńcze w gminie Gniewkowo</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 690px; top: 855px;"><div class="project-image" style="background: #dd4b4b;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-uslugi-opiekuncze-w-powiecie-gostyninskim-i-gnieznienskim/" title="POGODNA JESIEŃ ŻYCIA. Usługi opiekuńcze w powiecie gostynińskim i gnieźnieńskim"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-uslugi-opiekuncze-w-powiecie-gostyninskim-i-gnieznienskim/" title="POGODNA JESIEŃ ŻYCIA. Usługi opiekuńcze w powiecie gostynińskim i gnieźnieńskim">POGODNA JESIEŃ ŻYCIA. Usługi opiekuńcze w powiecie gostynińskim i gnieźnieńskim</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 0px; top: 1020px;"><div class="project-image" style="background: #a0d67a;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-uslugi-opiekuncze-w-powiecie-gostynskim-i-gnieznienskim-2/" title="Pogodna Jesień Życia. Usługi opiekuńcze w powiecie gostyńskim i gnieźnieńskim."><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads." style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/pogodna-jesien-zycia-uslugi-opiekuncze-w-powiecie-gostynskim-i-gnieznienskim-2/" title="Pogodna Jesień Życia. Usługi opiekuńcze w powiecie gostyńskim i gnieźnieńskim.">Pogodna Jesień Życia. Usługi opiekuńcze w powiecie gostyńskim i gnieźnieńskim.</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 230px; top: 1020px;"><div class="project-image" style="background: ;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/paez/" title="Program Aktywizacji Edukacyjno-Zawodowej dla osób powyżej 29 roku życia"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/paez/" title="Program Aktywizacji Edukacyjno-Zawodowej dla osób powyżej 29 roku życia">Program Aktywizacji Edukacyjno-Zawodowej dla osób powyżej 29 roku życia</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item seniorzy project-main" style="position: absolute; left: 460px; top: 1020px;"><div class="project-image" style="background: #dd3333;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/roztanczony-senior/" title="Roztańczony senior! Aktywność fizyczna i edukacyjna osób w wieku senioralnym."><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/roztanczony-senior/" title="Roztańczony senior! Aktywność fizyczna i edukacyjna osób w wieku senioralnym.">Roztańczony senior! Aktywność fizyczna i edukacyjna osób w wieku senioralnym.</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item kursy project-main" style="position: absolute; left: 690px; top: 1020px;"><div class="project-image" style="background: #1e73be;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/stawiam-na-wiedze/" title="STAWIAM NA WIEDZĘ - szkolenia podnoszące kwalifikacje i kompetencje zawodowe mieszkańców powiatów: inowrocławskiego, mogileńskiego, żnińskiego i nakielskiego"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2018/04/business-3-Kopia-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/stawiam-na-wiedze/" title="STAWIAM NA WIEDZĘ - szkolenia podnoszące kwalifikacje i kompetencje zawodowe mieszkańców powiatów: inowrocławskiego, mogileńskiego, żnińskiego i nakielskiego">STAWIAM NA WIEDZĘ - szkolenia podnoszące kwalifikacje i kompetencje zawodowe mieszkańców powiatów: inowrocławskiego, mogileńskiego, żnińskiego i nakielskiego</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item kursy project-main" style="position: absolute; left: 0px; top: 1185px;"><div class="project-image" style="background: #70d628;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/szkolenia-komputerowe-w-wojewodztwie-mazowieckim/" title="Szkolenia komputerowe w województwie mazowieckim"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/istock2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/szkolenia-komputerowe-w-wojewodztwie-mazowieckim/" title="Szkolenia komputerowe w województwie mazowieckim">Szkolenia komputerowe w województwie mazowieckim</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 230px; top: 1185px;"><div class="project-image" style="background: #dd3333;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/szkola-dla-rodzicow/" title="Szkoła dla Rodziców"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/szkola-dla-rodzicow/" title="Szkoła dla Rodziców">Szkoła dla Rodziców</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item kursy project-main" style="position: absolute; left: 460px; top: 1185px;"><div class="project-image" style="background: ;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/z-komputerem-za-pan-brat/" title="Z komputerem za pan brat"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads." style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/z-komputerem-za-pan-brat/" title="Z komputerem za pan brat">Z komputerem za pan brat</a></h4>
+           </div><div class="col-sm-6 col-md-3 element-item bezrobotni project-main" style="position: absolute; left: 690px; top: 1185px;"><div class="project-image" style="background: #1e73be;"><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/zdobywam-kompetencje-cyfrowe-i-jezykowe-w-woj-zachodniopomorskim/" title="Zdobywam kompetencje cyfrowe i językowe woj. zachodniopomorskim"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/uploads/2015/08/is2-250x140.jpg" style="opacity: 0.16;"></a></div>
+              <h4><a class="project-name-main" href="http://fundacja.ekspert-kujawy.pl/projekt/zdobywam-kompetencje-cyfrowe-i-jezykowe-w-woj-zachodniopomorskim/" title="Zdobywam kompetencje cyfrowe i językowe woj. zachodniopomorskim">Zdobywam kompetencje cyfrowe i językowe woj. zachodniopomorskim</a></h4>
+           </div>       
+        </div>
+    </section>
+
+
+    <hr>
+    
+    <section id="partners">
+        <h1>Partnerzy fundacji</h1>
+        <div id="partners-carousel" class="slick-initialized slick-slider" role="toolbar">
+                        
+            <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 3026px; transform: translate3d(-890px, 0px, 0px);"><div class="partners-item slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" tabindex="-1" style="width: 178px;">
+                <a href="http://www.krokos-adwokat.pl/" target="_blank" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/logokk.png" alt="Korkowska-Krokos Kancelaria Adwokacka"></a>
+            </div><div class="partners-item slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 178px;">
+                <a href="https://www.pitax.pl/" target="_blank" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/pitaxpl.png" alt="PITax.pl Łatwe podatki"></a>
+            </div><div class="partners-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 178px;">
+                <a href="http://pupinowroclaw.pl/" target="_blank" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/pup.jpg" alt="Powiatowy Urząd Pracy"></a>
+            </div><div class="partners-item slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 178px;">
+                <a href="http://www.wsg.byd.pl/" target="_blank" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/wsg.png" alt="Wyższa Szkoła Gospodarki w Bydgoszczy"></a>
+            </div><div class="partners-item slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 178px;">
+                <a href="http://wspt.pl/" target="_blank" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/wspt.png" alt="Wyższa Szkoła Pedagogiczno-Techniczna w Koninie"></a>
+            </div><div class="partners-item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide10" style="width: 178px;">
+                <a href="#" target="" tabindex="0"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/kpskw.jpg" alt=""></a>
+            </div><div class="partners-item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide11" style="width: 178px;">
+                <a href="#" target="" tabindex="0"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/lgd_paluki.jpg" alt=""></a>
+            </div><div class="partners-item slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide12" style="width: 178px;">
+                <a href="http://www.krokos-adwokat.pl/" target="_blank" tabindex="0"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/logokk.png" alt="Korkowska-Krokos Kancelaria Adwokacka"></a>
+            </div><div class="partners-item slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide13" style="width: 178px;">
+                <a href="https://www.pitax.pl/" target="_blank" tabindex="0"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/pitaxpl.png" alt="PITax.pl Łatwe podatki"></a>
+            </div><div class="partners-item slick-slide slick-active" data-slick-index="4" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide14" style="width: 178px;">
+                <a href="http://pupinowroclaw.pl/" target="_blank" tabindex="0"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/pup.jpg" alt="Powiatowy Urząd Pracy"></a>
+            </div><div class="partners-item slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide15" style="width: 178px;">
+                <a href="http://www.wsg.byd.pl/" target="_blank" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/wsg.png" alt="Wyższa Szkoła Gospodarki w Bydgoszczy"></a>
+            </div><div class="partners-item slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide16" style="width: 178px;">
+                <a href="http://wspt.pl/" target="_blank" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/wspt.png" alt="Wyższa Szkoła Pedagogiczno-Techniczna w Koninie"></a>
+            </div><div class="partners-item slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 178px;">
+                <a href="#" target="" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/kpskw.jpg" alt=""></a>
+            </div><div class="partners-item slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 178px;">
+                <a href="#" target="" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/lgd_paluki.jpg" alt=""></a>
+            </div><div class="partners-item slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 178px;">
+                <a href="http://www.krokos-adwokat.pl/" target="_blank" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/logokk.png" alt="Korkowska-Krokos Kancelaria Adwokacka"></a>
+            </div><div class="partners-item slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" tabindex="-1" style="width: 178px;">
+                <a href="https://www.pitax.pl/" target="_blank" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/pitaxpl.png" alt="PITax.pl Łatwe podatki"></a>
+            </div><div class="partners-item slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 178px;">
+                <a href="http://pupinowroclaw.pl/" target="_blank" tabindex="-1"><img src="http://fundacja.ekspert-kujawy.pl/wp-content/themes/ekspert/images/partners/pup.jpg" alt="Powiatowy Urząd Pracy"></a>
+            </div></div></div>
+                              
+            
+  
+            
+            
+             	                       
+        <ul class="slick-dots" role="tablist" style="display: block;"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation10" id="slick-slide10"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation11" id="slick-slide11"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0">2</button></li></ul></div>
+    </section>
+             
+</div>
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <section id="footer-widget-area-1" class="footer-widget-area col-md-3">
+                     <div id="tertiary" class="sidebar-container" role="complementary">
+        <div class="sidebar-inner">
+            <div class="widget-area">
+                <aside id="nav_menu-2" class="widget widget_nav_menu"><h3 class="widget-title">Nawigacja</h3><div class="menu-menu-glowne-container"><ul id="menu-menu-glowne" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-10040"><a href="http://fundacja.ekspert-kujawy.pl/">Strona główna</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10055"><a href="http://fundacja.ekspert-kujawy.pl/archiwum/">Aktualności</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10042"><a href="http://fundacja.ekspert-kujawy.pl/archiwum-inicjatyw/">Inicjatywy</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10043"><a href="http://fundacja.ekspert-kujawy.pl/archiwum-projektow/realizowane/">Projekty</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-inicjatywa menu-item-10175"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/wynajem-sal-szkoleniowych/">Wynajem</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11012"><a href="http://fundacja.ekspert-kujawy.pl/galeria/">Galeria</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-fundacja menu-item-10377"><a href="http://fundacja.ekspert-kujawy.pl/fundacja/o-nas/">Fundacja</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16784"><a href="http://fundacja.ekspert-kujawy.pl/polityka-prywatnosci/">Ochrona danych osobowych</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11048"><a href="http://fundacja.ekspert-kujawy.pl/kontakt-z-fundacja/">Kontakt</a></li>
+</ul></div></aside>            </div><!-- .widget-area -->
+        </div><!-- .sidebar-inner -->
+    </div><!-- #tertiary -->
+            </section>
+            
+            <section id="footer-widget-area-2" class="footer-widget-area col-md-3">
+                     <div id="tertiary" class="sidebar-container" role="complementary">
+        <div class="sidebar-inner">
+            <div class="widget-area">
+                <aside id="text-2" class="widget widget_text"><h3 class="widget-title">O fundacji</h3>			<div class="textwidget">Fundacja Ekspert – Kujawy w Inowrocławiu jest niezależną organizacją pozarządową, działającą na rynku edukcyjno – doradczym od 2001 roku. Za priorytety swego działania uznaje budowanie zaufania do swojej działalności, promowanie dobrych praktyk oraz przestrzeganie najwyższych standardów organizacyjnych.</div>
+		</aside>            </div><!-- .widget-area -->
+        </div><!-- .sidebar-inner -->
+    </div><!-- #tertiary -->
+            </section>
+            
+            <section id="footer-widget-area-3" class="footer-widget-area col-md-3">
+                     <div id="tertiary" class="sidebar-container" role="complementary">
+        <div class="sidebar-inner">
+            <div class="widget-area">
+                <aside id="text-3" class="widget widget_text"><h3 class="widget-title">Kontakt</h3>			<div class="textwidget"><p>fundacja@ekspert-kujawy.pl<br>
++48 52 3576 215<br>
++48 52 3576 215<br>
+ul. Dworcowa 65, 88-100 Inowrocław</p>
+</div>
+		</aside>            </div><!-- .widget-area -->
+        </div><!-- .sidebar-inner -->
+    </div><!-- #tertiary -->
+            </section>
+            
+            <section id="footer-widget-area-4" class="footer-widget-area col-md-3">
+                <div id="tertiary" class="sidebar-container" role="complementary">
+        <div class="sidebar-inner">
+            <div class="widget-area">
+                <aside id="text-3" class="widget widget_text">
+                 <h3 class="widget-title">Inicjatywy</h3>
+                 <div class="textwidget">
+                             <ul>
+            	<li class="cat-item cat-item-289"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/kujawski-inkubator-przedsiebiorczosci-spolecznej/">Kujawski Inkubator Przedsiębiorczości Społecznej</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/osrodek-doskonalenia-nauczycieli/">Ośrodek Doskonalenia Nauczycieli</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/osrodek-szkolenia-kierowcow/">Ośrodek Szkolenia Kierowców</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/osrodek-wspierania-ekonomii-spolecznej/">Ośrodek Wspierania Ekonomii Społecznej</a>
+</li>
+	<li class="cat-item cat-item-419"><a href="http://fundacja.ekspert-kujawy.pl/inicjatywa/pozyczki-dla-przedsiebiorstw-warp/">Pożyczki dla przedsiębiorstw – WARP</a>
+</li>
+        </ul>
+        </div>
+        </aside>
+            </div><!-- .widget-area -->
+        </div><!-- .sidebar-inner -->
+    </div><!-- #tertiary -->
+            </section>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="container">
+            <div class="footer-bottom row">
+                <a href="#top" class="right">do góry</a>
+                © 2015-2019 Fundacja Ekspert-Kujawy
+            </div>
+        </div> 
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28436474-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Lightbox Plus Colorbox v2.7.2/1.5.9 - 2013.01.24 - Message: 0-->
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  $("a[rel*=lightbox]").colorbox({initialWidth:"30%",initialHeight:"30%",maxWidth:"90%",maxHeight:"90%",opacity:0.8,current:"Obraz {current} z {total}",previous:"Poprzedni",next:"Następny",close:"Zamknij"});
+});
+</script>
+<script type="text/javascript" src="http://fundacja.ekspert-kujawy.pl/wp-content/plugins/lightbox-plus/js/jquery.colorbox.1.5.9-min.js?ver=1.5.9"></script>
+<script type="text/javascript" src="http://fundacja.ekspert-kujawy.pl/wp-includes/js/wp-embed.min.js?ver=4.9.9"></script>
+
+			<div id="cookie-notice" role="banner" class="cn-bottom bootstrap" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); visibility: visible;"><div class="cookie-notice-container"><span id="cn-notice-text">Ta strona korzysta z ciasteczek aby świadczyć usługi na najwyższym poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich użycie.</span><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button bootstrap button">Zgoda</a><a href="http://fundacja.ekspert-kujawy.pl/polityka-cookies/" target="_blank" id="cn-more-info" class="cn-more-info cn-button bootstrap button">Polityka ciasteczek</a>
+				</div>
+				
+			</div>
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>

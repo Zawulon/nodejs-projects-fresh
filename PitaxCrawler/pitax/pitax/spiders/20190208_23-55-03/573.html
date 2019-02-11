@@ -1,0 +1,683 @@
+<!DOCTYPE html><html class=" js flexbox canvas canvastext webgl touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface video audio no-localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+        <meta charset="utf-8">
+        <title>
+            1% podatku | Oddział Warszawski Polskiego Towarzystwa Stwardnienia Rozsianego        </title>
+
+        <link rel="shortcut icon" href="http://www.ptsr.nazwa.pl/ptsr_icon.ico" type="image/png">
+
+        <meta name="author" content="Pixelbite s.c. Bartosz Gałek, Krzysztof Borkowski">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://ptsr.waw.pl/feed/">
+        <link rel="alternate" type="application/atom+xml" title="ATOM" href="http://ptsr.waw.pl/feed/atom/">
+
+        <link rel="shortcut icon" type="image/png" href="http://ptsr.waw.pl/wp-content/themes/ptsr/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="http://ptsr.waw.pl/wp-content/themes/ptsr/favicon.ico">
+        <link rel="pingback" href="http://ptsr.waw.pl/xmlrpc.php">
+
+        <link rel="stylesheet" href="http://ptsr.waw.pl/wp-content/themes/ptsr/style.css" type="text/css" media="all">
+        <script type="text/javascript" src="http://ptsr.waw.pl/wp-content/themes/ptsr/js/modernizr-1.7.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <!--[if lt IE 7 ]>
+          <script type="text/javascript" src="http://ptsr.waw.pl/wp-content/themes/ptsr/js/dd_belatedpng.js"></script>
+          <script type="text/javascript">DD_belatedPNG.fix("img, .png_bg");</script>
+        <![endif]-->
+
+        <script src="http://ptsr.waw.pl/wp-content/themes/ptsr/js/jquery.jfontsize-1.0.min.js" type="text/javascript"></script>
+        <script src="http://ptsr.waw.pl/wp-content/themes/ptsr/js/jquery.bxSlider.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+function pokazCookie(nazwa) { 
+    if (document.cookie!="") { 
+    var toCookie=document.cookie.split("; ");  
+        for (i=0; i<toCookie.length; i++) { 
+            var nazwaCookie=toCookie[i].split("=")[0]; 
+            var wartoscCookie=toCookie[i].split("=")[1]; 
+            if (nazwaCookie==nazwa) return unescape(wartoscCookie) 
+        }
+    }
+}
+function zwin(){
+	    document.cookie = 'cinfo' + "=" + 'aktywne' + "";
+	    $('#cookies_info').css('display','none');
+};
+
+
+            $(document).ready(function(){
+                $('#slider').bxSlider({
+                    speed: 700,
+                    auto: true,
+                    controls: false,
+                    pager: false,
+                    displaySlideQty: 6,
+                    moveSlideQty: 1,
+                    pause: 2000
+                });
+				
+				function str_replace(haystack, needle, replacement) {
+					var temp = haystack.split(needle);
+				return temp.join(replacement);
+				}
+				
+                var min=12;  
+                var max=17; 
+                var reset = $('#main p').css('fontSize'); 
+		var elm = $('#main p, #main a, #main ul li, #main span, #main strong, #main');  
+                var size = str_replace(reset, 'px', ''); 
+		
+	               
+                $('a.fontSizePlus').click(function() {
+                    if (size<=max) {
+                        size++;
+			elm.css({'fontSize' : size});
+			if(size >= 17){
+			elm.css({'line-height' : '20px'});
+			}
+			
+			
+			
+                    }
+                    return false;   
+                });
+                
+                $('a.fontSizeMinus').click(function() {
+                    if (size>=min) {
+                        size--;
+			elm.css({'fontSize' : size});
+
+			if(size < 17){
+			elm.css({'line-height' : '17px'});
+			}
+			
+
+			
+                    }
+                    return false;   		 
+                });
+
+				$('.menu-item a').click(function() {
+					var y = $(this).next('ul');
+					if(y.css('display')=='none') { 
+						y.fadeIn();
+						return false; 
+					}
+				});
+
+
+if(pokazCookie('cinfo')=='aktywne'){
+  $('#cookies_info').css('display','none');
+  }
+
+			});
+
+        </script>
+
+
+        <link rel="dns-prefetch" href="//vjs.zencdn.net">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Oddział Warszawski Polskiego Towarzystwa Stwardnienia Rozsianego » 1% podatku Kanał z komentarzami" href="http://ptsr.waw.pl/1-podatku/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ptsr.waw.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.6"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://ptsr.waw.pl/wp-includes/js/wp-emoji-release.min.js?ver=4.9.6" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="fullcalendar-css" href="http://ptsr.waw.pl/wp-content/plugins/wp-calendar/css/fullcalendar.css?ver=4.9.6" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="http://ptsr.waw.pl/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="videojs-css" href="//vjs.zencdn.net/5.4.6/video-js.min.css?ver=4.9.6" type="text/css" media="all">
+<link rel="stylesheet" id="wp-pagenavi-css" href="http://ptsr.waw.pl/wp-content/themes/ptsr/pagenavi-css.css?ver=2.70" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="http://ptsr.waw.pl/wp-content/plugins/tablepress/css/default.min.css?ver=1.9" type="text/css" media="all">
+<script type="text/javascript" src="http://ptsr.waw.pl/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://ptsr.waw.pl/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPCalendar = {"ajaxUrl":"http:\/\/ptsr.waw.pl\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://ptsr.waw.pl/wp-content/plugins/wp-calendar/js/fullcalendar.min.js?ver=4.9.6"></script>
+<link rel="https://api.w.org/" href="http://ptsr.waw.pl/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ptsr.waw.pl/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ptsr.waw.pl/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.6">
+<link rel="canonical" href="http://ptsr.waw.pl/1-podatku/">
+<link rel="shortlink" href="http://ptsr.waw.pl/?p=782">
+<link rel="alternate" type="application/json+oembed" href="http://ptsr.waw.pl/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fptsr.waw.pl%2F1-podatku%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://ptsr.waw.pl/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fptsr.waw.pl%2F1-podatku%2F&amp;format=xml">
+<link type="text/css" rel="stylesheet" href="http://ptsr.waw.pl/wp-content/plugins/wp-activity/wp-activity.css">
+		<script type="text/javascript"> document.createElement("video");document.createElement("audio");document.createElement("track"); </script>
+		<!-- <meta name="NextGEN" version="3.0.1" /> -->
+    </head>
+    <body>
+
+        <a href="http://ptsr.waw.pl/wp-admin/" title="Panel administracyjny" id="login-page-fold"></a>
+
+<div id="cookies_info" style="width:100%;background-color:white;border-bottom:1px solid black;float:left;"><div style="float:left;width:90%;"><p style="padding: 10px 20px 10px 50px;font-size:12px;color:black;">Ten serwis wykorzystuje pliki cookies. Informacje zapisane w ciasteczkach są wykorzystywane w celach statystycznych, analizy ruchu i zapisywania ustawień. Dalsze korzystanie z serwisu z włączonym zapisem cookies oznacza zgodę na ich używanie i zapisywanie ich w Twojej przeglądarce. W ustawieniach przeglądarki możesz także zmienić ustawienia dotyczące cookies.</p></div><div style="float:left;"><img src="http://ptsr.waw.pl/wp-content/themes/ptsr/img/x_black.png" onclick="zwin()" style="position:relative;top:14px; cursor:pointer;"></div>
+</div>
+
+        <div id="wrapper">
+            <div id="header">
+                <div id="logotype">
+                    <a href="/" title="Powrót na stronę główną"></a>
+                </div>
+                <div class="info-coil">
+                    <strong>Adres i kontakt:</strong><br>
+                    tel. 22 831 00 76<br>
+                    tel. 22 831 00 77<br>
+                    <a href="mailto:biuro@ptsr.waw.pl" title="Napisz do nas">biuro@ptsr.waw.pl</a>
+                </div>
+                <div class="info-coil">
+                    <strong>Informacje telefoniczne:</strong><br>
+                    od poniedziałku do piątku<br>
+                    w godz. 9.00 - 16.00,<br>
+                    wtorek i czwartek 9.00 - 18.00
+                </div>
+                <div class="info-coil">
+                    <strong>Biuro OW PTSR czynne:</strong><br>
+                    poniedziałek 8.00 - 16.00<br>
+		    wtorek 9.00 - 18.00<br>
+                    środa 9.00 - 16.00<br>
+                    czwartek 9.00 - 18.00<br>
+                    piątek 9.00 - 16.00
+                </div>
+                <div class="info-coil bpi last">
+                    <a href="../biurowy-punkt-informacyjny" title="Biurowy Punkt Informacyjny OW PTSR">
+                        <strong>Biurowy<br>
+                            Punkt<br>
+                            Informacyjny</strong><br>
+                        OW PTSR
+                    </a>
+                </div>
+            </div><div id="sidebar">
+    
+    <div class="box">
+        <div class="inner" style="padding:10px !important; width:190px !important;">
+             
+	    <form role="search" method="get" id="searchform" action="http://ptsr.waw.pl/">
+   	    <div id="searchdiv">
+       	    <input type="text" value="" name="s" id="s">
+      	    <a id="searchsubmit" href="#" onclick="document.forms['searchform'].submit()"><img src="http://ptsr.waw.pl/wp-content/themes/ptsr/img/search.jpg">			 </a>
+            </div>
+	    </form>
+        </div>
+    </div>
+    
+    <div class="box">
+        <div class="inner">
+            <span class="header">
+                O NAS
+            </span>
+            <div class="menu-o-nas-container"><ul id="menu-o-nas" class="menu"><li id="menu-item-1173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1173"><a href="http://ptsr.waw.pl/o-ow-ptsr/">Kim jesteśmy?</a></li>
+<li id="menu-item-1081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1081"><a href="http://ptsr.waw.pl/wladze-i-pracownicy/">Władze i pracownicy</a></li>
+<li id="menu-item-1082" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1082"><a href="http://ptsr.waw.pl/nasze-kola/">Nasze Koła</a></li>
+<li id="menu-item-1083" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1083"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/05/PTSR_STATUT_2017.pdf">Statut PTSR</a></li>
+<li id="menu-item-1084" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-1084"><a href="http://ptsr.waw.pl/">Skąd czerpiemy środki ?</a>
+<ul class="sub-menu">
+	<li id="menu-item-1085" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1085"><a href="http://ptsr.waw.pl/instytucje-publiczne-i-firmy/">Instytucje publiczne i firmy</a></li>
+	<li id="menu-item-1086" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1086"><a href="http://ptsr.waw.pl/osoby-prywatne/">Osoby prywatne</a></li>
+</ul>
+</li>
+<li id="menu-item-1087" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1087"><a href="http://ptsr.waw.pl/">1% i OPP</a>
+<ul class="sub-menu">
+	<li id="menu-item-1088" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-782 current_page_item menu-item-1088"><a href="http://ptsr.waw.pl/1-podatku/">1% podatku</a></li>
+	<li id="menu-item-1089" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1089"><a href="http://ptsr.waw.pl/ustawa-o-pozytku/">Ustawa o pożytku</a></li>
+</ul>
+</li>
+<li id="menu-item-1090" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1090"><a href="http://ptsr.waw.pl/sprawozdania-ow-ptsr/">Sprawozdania</a></li>
+</ul></div>        </div>
+    </div>
+    
+    <div class="box">
+        <div class="inner">
+            <span class="header">
+                O SM
+            </span>
+            <div class="menu-o-sm-container"><ul id="menu-o-sm" class="menu"><li id="menu-item-1091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1091"><a href="http://ptsr.waw.pl/stwardnienie-rozsiane/">Kilka słów o chorobie</a></li>
+<li id="menu-item-1093" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1093"><a href="http://www.ptsr.org.pl/pl/?poz=Top/B/B50">Metody leczenia</a></li>
+<li id="menu-item-1094" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1094"><a href="http://ptsr.waw.pl/nowosci-o-sm/streszczenia/">Streszczenia zagranicznych artykułów</a></li>
+</ul></div>        </div>
+    </div>
+    
+    <div class="box">
+        <div class="inner">
+            <span class="header">
+                Co ROBIMY?
+            </span>
+            <div class="menu-co-robimy-container"><ul id="menu-co-robimy" class="menu"><li id="menu-item-1095" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1095"><a href="http://ptsr.waw.pl/realizowane-projekty/">Realizowane projekty</a></li>
+<li id="menu-item-1096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1096"><a href="http://ptsr.waw.pl/biurowy-punkt-informacyjny/">Biurowy Punkt Informacyjny</a></li>
+<li id="menu-item-1097" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1097"><a href="http://ptsr.waw.pl/rehabilitacja/">Rehabilitacja</a>
+<ul class="sub-menu">
+	<li id="menu-item-1098" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1098"><a href="http://ptsr.waw.pl/rehabilitacja/ruchowa/">Ruchowa</a></li>
+	<li id="menu-item-1099" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1099"><a href="http://ptsr.waw.pl/rehabilitacja/domowa/">Domowa</a></li>
+	<li id="menu-item-5164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5164"><a href="http://ptsr.waw.pl/rehabilitacja/mechanoterapia/">Mechanoterapia</a></li>
+	<li id="menu-item-1100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1100"><a href="http://ptsr.waw.pl/rehabilitacja/masaz-usprawniajacy/">Masaż usprawniający</a></li>
+	<li id="menu-item-1101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1101"><a href="http://ptsr.waw.pl/rehabilitacja/joga/">zajęcia jogi</a></li>
+	<li id="menu-item-1102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1102"><a href="http://ptsr.waw.pl/rehabilitacja/zajecia-tai-chi/">Zajęcia tai-chi</a></li>
+	<li id="menu-item-2808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2808"><a href="http://ptsr.waw.pl/zajecia-taneczne/">Zajęcia taneczne</a></li>
+	<li id="menu-item-1105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1105"><a href="http://ptsr.waw.pl/rehabilitacja/metoda-feldenkraisa/">Metoda Feldenkraisa</a></li>
+	<li id="menu-item-1104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1104"><a href="http://ptsr.waw.pl/basen/">Basen</a></li>
+	<li id="menu-item-1103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1103"><a href="http://ptsr.waw.pl/hipoterapia/">Hipoterapia</a></li>
+	<li id="menu-item-2740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2740"><a href="http://ptsr.waw.pl/glowka-pracuje/">Główka pracuje</a></li>
+	<li id="menu-item-1115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115"><a href="http://ptsr.waw.pl/w-naszym-kregu/">W naszym kręgu</a></li>
+	<li id="menu-item-1107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1107"><a href="http://ptsr.waw.pl/arteterapia/">Arteterapia</a></li>
+	<li id="menu-item-1106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1106"><a href="http://ptsr.waw.pl/warsztaty-ceramiczne/">Warsztaty ceramiczne</a></li>
+	<li id="menu-item-5172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5172"><a href="http://ptsr.waw.pl/rehabilitacja/warsztaty-teatralne/">Warsztaty teatralne</a></li>
+	<li id="menu-item-5171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5171"><a href="http://ptsr.waw.pl/rehabilitacja/warsztaty-wokalne/">Warsztaty wokalne</a></li>
+</ul>
+</li>
+<li id="menu-item-1109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-1109"><a href="http://ptsr.waw.pl/">Wsparcie specjalistów</a>
+<ul class="sub-menu">
+	<li id="menu-item-1111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1111"><a href="http://ptsr.waw.pl/porady-psychologiczne/">Psycholog</a></li>
+	<li id="menu-item-1112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1112"><a href="http://ptsr.waw.pl/porady-prawne/">Prawnik</a></li>
+	<li id="menu-item-1113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1113"><a href="http://ptsr.waw.pl/porady-socjalne/">Pracownik socjalny</a></li>
+	<li id="menu-item-1114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1114"><a href="http://ptsr.waw.pl/logopeda/">Logopeda</a></li>
+	<li id="menu-item-2794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2794"><a href="http://ptsr.waw.pl/dietetyk/">Dietetyk</a></li>
+	<li id="menu-item-1116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1116"><a href="http://ptsr.waw.pl/warsztaty-psychologiczne/">Warsztaty psychologiczne</a></li>
+	<li id="menu-item-1110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110"><a href="http://ptsr.waw.pl/wsparcie-dla-opiekunow/">Wsparcie dla opiekunów</a></li>
+</ul>
+</li>
+<li id="menu-item-1117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-1117"><a href="http://ptsr.waw.pl/">Asystent</a>
+<ul class="sub-menu">
+	<li id="menu-item-1118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1118"><a href="http://ptsr.waw.pl/asystent-informacje/">Informacje</a></li>
+	<li id="menu-item-1119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1119"><a href="http://ptsr.waw.pl/zamow-asystenta/">Zamów asystenta</a></li>
+	<li id="menu-item-1120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1120"><a href="http://ptsr.waw.pl/asystent-poza-ptsr/">Asystent poza PTSR</a></li>
+	<li id="menu-item-1121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1121"><a href="http://ptsr.waw.pl/kurs-na-asystenta/">Kurs na asystenta</a></li>
+</ul>
+</li>
+<li id="menu-item-1108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1108"><a href="http://ptsr.waw.pl/osrodki-rehabilitacji-sm/">Rehabilitacja w ośrodkach</a></li>
+<li id="menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501"><a href="http://ptsr.waw.pl/integracja/">Integracja</a></li>
+<li id="menu-item-1544" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1544"><a href="http://www.ptsr.waw.pl/">Wypożyczalnia sprzętu rehabilitacyjnego</a>
+<ul class="sub-menu">
+	<li id="menu-item-2795" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2795"><a href="http://ptsr.waw.pl/zasady-dzialania/">Zasady działania</a></li>
+	<li id="menu-item-1546" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1546"><a href="http://ptsr.waw.pl/sprzet/">Sprzęt</a></li>
+</ul>
+</li>
+<li id="menu-item-1130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-1130"><a href="http://ptsr.waw.pl/">Wydawnictwa</a>
+<ul class="sub-menu">
+	<li id="menu-item-1542" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1542"><a href="http://www.ptsr.waw.pl">kwartalnik „Nadzieja”</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1136"><a href="http://ptsr.waw.pl/kwartalnik-nadzieja/historia/">Historia</a></li>
+		<li id="menu-item-1137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1137"><a href="http://ptsr.waw.pl/kwartalnik-nadzieja/redakcja/">Redakcja</a></li>
+		<li id="menu-item-1141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1141"><a href="http://ptsr.waw.pl/kwartalnik-nadzieja/prenumerata/">Prenumerata</a></li>
+		<li id="menu-item-7742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7742"><a href="http://ptsr.waw.pl/wp-content/uploads/2019/01/Nadzieja_4_2018_internet.pdf">115/2018</a></li>
+		<li id="menu-item-7621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7621"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/11/Nadzieja114_internet.pdf">nr 114/2018</a></li>
+		<li id="menu-item-7455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7455"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/08/113_do-internetu.pdf">nr 113/2018</a></li>
+		<li id="menu-item-7214" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7214"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/04/nr1_do-internetu.pdf">nr 112/2018</a></li>
+		<li id="menu-item-7130" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7130"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/01/Nadzieja_6_2017.pdf">nr s6/2017</a></li>
+		<li id="menu-item-7129" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7129"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/01/Nadzieja_5_2017.pdf">nr 111/2017</a></li>
+		<li id="menu-item-7112" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7112"><a href="http://ptsr.waw.pl/wp-content/uploads/2017/12/Nadzieja_4_2017_do-internetu.pdf">nr 110/2017</a></li>
+		<li id="menu-item-7004" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7004"><a href="http://ptsr.waw.pl/wp-content/uploads/2017/10/Nadzieja_3_2017_do-internetu.pdf">nr 109/2017</a></li>
+		<li id="menu-item-6732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6732"><a href="http://ptsr.waw.pl/wp-content/uploads/2017/08/Nadzieja_2_2017_internet.pdf">nr 108/2017</a></li>
+		<li id="menu-item-6128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6128"><a href="http://ptsr.waw.pl/wp-content/uploads/2017/03/nr-1072017.pdf">nr 107/2017</a></li>
+		<li id="menu-item-6027" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6027"><a href="http://ptsr.waw.pl/wp-content/uploads/2017/02/nr-1062016.pdf">nr 106/2016</a></li>
+		<li id="menu-item-5790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5790"><a href="http://ptsr.waw.pl/wp-content/uploads/2016/11/nr-1052016.pdf">nr 105/2016</a></li>
+		<li id="menu-item-5590" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5590"><a href="http://ptsr.waw.pl/wp-content/uploads/2016/07/nr-1042016.pdf">nr 104/2016</a></li>
+		<li id="menu-item-4946" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4946"><a href="http://ptsr.waw.pl/wp-content/uploads/2016/02/nadzieja_103_www.pdf">nr 103/2016</a></li>
+		<li id="menu-item-4827" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4827"><a href="http://ptsr.waw.pl/wp-content/uploads/2015/12/nadzieja_102.pdf">nr 102/2015</a></li>
+		<li id="menu-item-4490" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4490"><a href="http://ptsr.waw.pl/wp-content/uploads/2015/09/Nadzieja_101.pdf">nr 101/2015</a></li>
+		<li id="menu-item-4447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4447"><a href="http://ptsr.waw.pl/wp-content/uploads/2012/09/nadzieja_100_www.pdf">nr 100/2015</a></li>
+		<li id="menu-item-4449" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4449"><a href="http://ptsr.waw.pl/wp-content/uploads/2012/09/nadzieja_s_2015_www.pdf">nr s5/2014</a></li>
+		<li id="menu-item-3907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3907"><a href="http://ptsr.waw.pl/wp-content/uploads/2015/01/nadzieja_99.pdf">nr 99/2014</a></li>
+		<li id="menu-item-3882" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3882"><a href="http://ptsr.waw.pl/wp-content/uploads/2014/12/nadzieja_98_www.pdf">nr 98/2014</a></li>
+		<li id="menu-item-3673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3673"><a href="http://ptsr.waw.pl/wp-content/uploads/2014/08/nadzieja_97.pdf">nr 97/2014</a></li>
+		<li id="menu-item-3498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3498"><a href="http://www.ptsr.nazwa.pl/files/nadzieja/96.pdf">nr 96/2014</a></li>
+		<li id="menu-item-3239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3239"><a href="http://www.ptsr.nazwa.pl/files/nadzieja/95.pdf">nr 95/2013</a></li>
+		<li id="menu-item-3191" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3191"><a href="http://www.ptsr.nazwa.pl/files/nadzieja/94.pdf">nr 94/2013</a></li>
+		<li id="menu-item-3190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3190"><a href="http://www.ptsr.nazwa.pl/files/nadzieja/93.pdf">nr 93/2013</a></li>
+		<li id="menu-item-2842" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2842"><a href="http://ptsr.waw.pl/wp-content/uploads/2013/08/92.pdf">nr 92/2013</a></li>
+		<li id="menu-item-2609" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2609"><a href="http://www.ptsr.waw.pl/Nadzieja/91.pdf">nr 91/2013</a></li>
+		<li id="menu-item-2626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2626"><a href="http://ptsr.waw.pl/wp-content/uploads/2013/06/90.pdf">nr 90/2012</a></li>
+		<li id="menu-item-2122" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2122"><a>nr s3/2012</a></li>
+		<li id="menu-item-2008" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2008"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/s2.pdf">nr s2/2012</a></li>
+		<li id="menu-item-2007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2007"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/s1.pdf">nr s1/2012</a></li>
+		<li id="menu-item-1892" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1892"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/89.pdf">nr 89/2012</a></li>
+		<li id="menu-item-1498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1498"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/88.pdf">nr 88/2012</a></li>
+		<li id="menu-item-1497" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1497"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/87.pdf">nr 87/2012</a></li>
+		<li id="menu-item-1496" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1496"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/86.pdf">nr 86/2011</a></li>
+		<li id="menu-item-1495" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1495"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/85.pdf">nr 85/2011</a></li>
+		<li id="menu-item-1494" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1494"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/84.pdf">nr 84/2011</a></li>
+		<li id="menu-item-1493" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1493"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/83.pdf">nr 83/2011</a></li>
+		<li id="menu-item-1492" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1492"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/82.pdf">nr 82/2010</a></li>
+		<li id="menu-item-1491" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1491"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/81.pdf">nr 81/2010</a></li>
+		<li id="menu-item-1490" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1490"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/80.pdf">nr 80/2010</a></li>
+		<li id="menu-item-1489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1489"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/79.pdf">nr 79/2010</a></li>
+		<li id="menu-item-1500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1500"><a href="http://ptsr.waw.pl/archiwum/">Numery archiwalne</a></li>
+		<li id="menu-item-1142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1142"><a href="http://ptsr.waw.pl/kwartalnik-nadzieja/napisz-do-redakcji/">Napisz do redakcji</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5884"><a href="http://ptsr.waw.pl/informator-ow-ptsr-2016/">Informator 2016</a></li>
+	<li id="menu-item-1543" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1543"><a href="http://www.ptsr.waw.pl">Broszurki Informacyjne</a>
+	<ul class="sub-menu">
+		<li id="menu-item-7470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7470"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/08/glowka-pracuje_do-internetu.pdf">Główka pracuje, czyli trening mózgu cz.2</a></li>
+		<li id="menu-item-1134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1134"><a href="http://ptsr.waw.pl/poradnik-dla-osob-nowozdiagnozowanych/">Poradnik dla osób nowozdiagnozowanych</a></li>
+		<li id="menu-item-1133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1133"><a href="http://ptsr.waw.pl/usprawnianie-ruchowe/">Usprawnianie ruchowe</a></li>
+		<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="http://ptsr.waw.pl/usprawnianie-mowy/">Usprawnianie mowy</a></li>
+		<li id="menu-item-3679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3679"><a href="http://ptsr.waw.pl/zywienie-w-stwardnieniu-rozsianym/">Żywienie w stwardnieniu rozsianym</a></li>
+		<li id="menu-item-4495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4495"><a href="http://ptsr.waw.pl/ruszamy-po-zdrowie/">Ruszamy po zdrowie</a></li>
+		<li id="menu-item-4941" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4941"><a href="http://ptsr.waw.pl/moja_przestrzen/">Moja przestrzeń</a></li>
+		<li id="menu-item-4957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4957"><a href="http://ptsr.waw.pl/wolontariusz-pomocna-dlon/">Wolontariusz – pomocna dłoń</a></li>
+		<li id="menu-item-5886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5886"><a href="http://ptsr.waw.pl/zywienie-w-stwardnieniu-rozsianym-dodatkowe-aspekty-wplywajace-na-jakosc-diety/">Żywienie w stwardnieniu rozsianym. Dodatkowe aspekty wpływające na jakość diety.</a></li>
+		<li id="menu-item-5993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5993"><a href="http://ptsr.waw.pl/glowka-pracuje-czyli-trening-mozgu/">Główka pracuje, czyli trening mózgu</a></li>
+		<li id="menu-item-6037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6037"><a href="http://ptsr.waw.pl/mam-sm-i-co-dalej/">Mam SM… i co dalej?</a></li>
+		<li id="menu-item-6133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6133"><a href="http://ptsr.waw.pl/pomocna-dlon-poradnik-dla-asystentow-i-opiekunow-osob-z-sm/">Pomocna dłoń. Poradnik dla asystentów i opiekunów osób z SM.</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-3518" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3518"><a href="http://ptsr.waw.pl/kategorie-filmow/">Materiały video</a></li>
+<li id="menu-item-1147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1147"><a href="http://ptsr.waw.pl/galeria/">Galeria</a></li>
+<li id="menu-item-3761" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3761"><a href="http://www.ptsr.waw.pl">Dołącz do nas !</a>
+<ul class="sub-menu">
+	<li id="menu-item-1144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1144"><a href="http://ptsr.waw.pl/dolacz-do-nas/">Jak zostać członkiem Stowarzyszenia?</a></li>
+	<li id="menu-item-1145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1145"><a href="http://ptsr.waw.pl/dolacz-do-nas/">Członkostwo wspierające</a></li>
+	<li id="menu-item-1146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1146"><a href="http://ptsr.waw.pl/wolontariusz/">Wolontariat</a></li>
+</ul>
+</li>
+</ul></div>        </div>
+    </div>
+
+    
+        <a href="http://www.poradnictwo.waw.pl" target="_blank"><img src="http://www.ptsr.waw.pl/pliki_ogloszenia/baner_100x300_warszawa.gif" width="222px" height="74px"></a>
+
+    
+        
+
+    </div>
+<div id="content">
+            <div id="promo">
+        <img src="http://ptsr.waw.pl/wp-content/uploads/2012/10/baner20122.jpg" alt="Promobox article">
+        <div class="note">
+            <span class="title"></span>
+            <p></p><h5><strong>Przeprowadzka</strong></h5>
+<h5><strong><a title="Przeprowadzka" href="http://ptsr.waw.pl/przeprowadzka/">Informujemy,<br>
+iż w połowie stycznia 2013r.<br>
+przeprowadziliśmy się<br>
+do nowej siedziby<br>
+przy ul. Nowosieleckiej 12.<br>
+</a></strong></h5>
+<p></p>
+        </div>
+    </div>
+    <div id="navigation">
+        <div class="menu-menu-glowne-container"><ul id="menu-menu-glowne" class="menu"><li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-91"><a href="http://ptsr.waw.pl/">Strona główna</a></li>
+<li id="menu-item-92" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-92"><a href="http://ptsr.waw.pl/category/aktualnosci/">Aktualności</a></li>
+<li id="menu-item-94" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-94"><a href="http://ptsr.waw.pl/category/ogloszenia/">Ogłoszenia i zapytania ofertowe</a></li>
+<li id="menu-item-95" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-95"><a href="http://ptsr.waw.pl/category/praca/">Praca</a></li>
+<li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="http://ptsr.waw.pl/dolacz-do-nas/">Dołącz do nas</a></li>
+<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="http://ptsr.waw.pl/kontakt/">Kontakt</a></li>
+</ul></div>    </div>
+    <div id="breadcrumbs">
+        <div id="crumbs">
+            <a href="http://ptsr.waw.pl">PTSR OW</a> » 1% podatku        </div>
+        <div id="tools">
+            Rozmiar czcionki <a href="#" class="small fontSizeMinus">A- </a><a href="#" class="large fontSizePlus"> A+</a>        </div>
+    </div>
+    <div id="columns">
+        <h1>1% podatku</h1>
+        <div id="main" class="full">
+            <div class="box">
+                <p>„Jeden procent” to jedyny podatek o którym każdy może zdecydować, na co go przeznaczyć. Każdy podatnik może zdecydować, czy cały swój podatek przeznaczy Państwu, czy skorzysta z możliwości przekazania go np. na rzecz Oddziału Warszawskiego Polskiego Towarzystwa Stwardnienia Rozsianego*.<strong><br>
+</strong></p>
+<p><strong>Każda wpłata, nawet ta najmniejsza, jeśli zostanie pomnożona kilkadziesiąt razy, pozwoli na dalsze, sprawne funkcjonowanie naszego Stowarzyszenia, prowadzenie różnorodnych zajęć rehabilitacyjnych, wsparcia specjalistów, działalności wydawniczej, informacyjnej, czy różnorodnych działań z zakresu aktywizacji społecznej i zawodowej osób z SM**. </strong></p>
+<p><strong>Kto może przekazać 1% podatku organizacji pożytku publicznego?<br>
+</strong>– podatnik podatku dochodowego od osób fizycznych,<br>
+– podatnik opodatkowany ryczałtem od przychodów ewidencjonowanych np. z tytułu najmu, podnajmu, dzierżawy, poddzierżawy,<br>
+– podatnik objęty liniową, 19 – procentową stawką podatku,<br>
+– podatnik uzyskujący dochód z odpłatnego zbycia papierów wartościowych oraz pochodnych instrumentów finansowych.<br>
+Odpis 1% podatku na rzecz OPP można uwzględnić w rocznym zeznaniu podatkowym PIT-28, PIT-36, PIT- 36L, PIT-37 lub PIT–38.</p>
+<p>&nbsp;</p>
+<p><strong>Jak przekazać 1% na rzecz OPP, w szczególności Oddziału Warszawskiego Polskiego Towarzystwa Stwardnienia Rozsianego?<br>
+</strong>W rubryce zatytułowanej „Wniosek o przekazanie 1% podatku należnego na rzecz organizacji pożytku publicznego OPP” (w deklaracji PIT-37 ma symbol J) należy wpisać numer, pod jakim organizacja widnieje w KRS. Nasz numer to<strong>: KRS 0000 110 888<br>
+</strong>W kolejnej rubryce wpisujemy kwotę, którą chcemy przekazać dla OPP, nie może ona jednak przekraczać 1% podatku należnego, wynikającego z zeznania podatkowego, po zaokrągleniu do pełnych dziesiątek groszy w dół.<br>
+Podatnik w składanym zeznaniu podatkowym może podać dodatkowe informacje, mogące mieć wpływ na rozdysponowanie pieniędzy z 1% przez organizację pożytku publicznego. Na te informacje przeznaczona jest specjalna rubryka „Informacje uzupełniające” (w PIT – 37 rubryka K)<br>
+W informacjach uzupełniających można także zaznaczyć rubrykę „wyrażam zgodę” aby obdarowana Organizacja wiedziała kto i w jakiej wysokości ją wspiera.</p>
+<p>&nbsp;</p>
+<p>Zachęcamy do skorzystania z bezpłatnego programu do wypełniania deklaracji PIT.</p>
+<p><a href="http://www.pitax.pl/krs/0000110888/"><img class="size-full wp-image-7165 alignleft" src="http://ptsr.waw.pl/wp-content/uploads/2012/09/Start.png" alt="" width="295" height="180" srcset="http://ptsr.waw.pl/wp-content/uploads/2012/09/Start.png 295w, http://ptsr.waw.pl/wp-content/uploads/2012/09/Start-131x80.png 131w" sizes="(max-width: 295px) 100vw, 295px"></a></p>
+<p>(w programie powyższym domyślną organizacją, na którą można przekazać 1%, jest PTSR Oddział Warszawski)</p>
+<p><strong><br>
+Będziemy wdzięczni za przekazanie 1% na nasze Towarzystwo oraz poinformowanie przyjaciół i znajomych o takiej możliwości.</strong></p>
+<p><strong><br>
+UWAGA!!! </strong>Odpis 1% nie znosi możliwości odliczenia od dochodu darowizny dla organizacji pożytku publicznego. Limit odpisu darowizn dla osoby fizycznej wynosi maksymalnie 6% od dochodu.</p>
+<p><strong>Pracownicy Oddziału Warszawskiego PTSR bezpłatnie rozliczają PIT-y za rok 2015. Aby skorzystać z tej możliwości należy zadzwonić do naszego biura 22&nbsp;831 00 76 i umówić się na spotkanie.</strong></p>
+<p>&nbsp;</p>
+<p>* Pełna lista organizacji uprawnionych do otrzymania 1% podatku dostępna jest na stronie <a href="http://www.pozytek.gov.pl/Wykaz,opp,3666.html">http://www.pozytek.gov.pl/Wykaz,opp,3666.html</a></p>
+<p>** Ze środków pozyskanych z tytułu 1% planujemy również wydruk ulotek informacyjnych na temat naszego Stowarzyszenia wraz z informacją o możliwości przekazania 1% na rzecz organizacji.</p>
+<p>&nbsp;</p>
+<p>——</p>
+<p><strong>Serdecznie dziękujemy Wszystkim, którzy zdecydowali się wesprzeć Naszą Organizację 1% podatku.&nbsp;</strong>Do grudnia&nbsp;2015r. na nasze konto z tego tytułu wpłynęło 270 656,78 zł<strong><br>
+</strong></p>
+<p>Środki przekazane przez Państwa zostaną przeznaczone zgodnie ze wskazanym przez Państwa celem, w tym na dalszy rozwój działalności i podnoszenie jakości oferowanych przez nas usług, zakup sprzętu rehabilitacyjnego, prowadzenie zajęć usprawniających, działalność informacyjną i wydawniczą, a także rehabilitację ruchową, społeczną i zawodową chorych na SM.</p>
+<p>Jeszcze raz dziękujemy!</p>
+<p>Darmowy​ ​Program​ ​PIT​ ​dostarcza​ <a href="http://www.iwop.pl">Instytut​ ​Wsparcia Organizacji​ ​Pozarządowych</a> ​w​ ​ramach​ ​projektu​ <a href="http://www.pitax.pl">PITax.pl</a> ​dla​ ​OPP.&nbsp;</p>
+    
+            </div>
+
+                        <a href="javascript:window.history.back()" class="btn icon-arrow right">wróć</a>
+        </div>
+        <br class="c">
+    </div>
+</div>
+</div>
+
+<div id="sponsors">
+    <div class="push">
+        <div class="bx-wrapper" style="width:930px; position:relative;"><div class="bx-window" style="position:relative; overflow:hidden; width:930px;"><ul id="slider" style="width: 999999px; position: relative; left: -155px;"><li style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/09/mazowsze_small.jpg" alt="Partner"></a>
+                </li>
+            8
+                <li class="pager" style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2015/11/logo_biale_wspolfinansowanie.jpg" alt="Partner"></a>
+                </li>
+            
+                <li class="pager" style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2014/05/logo-ASOS_www3.jpg" alt="Partner"></a>
+                </li>
+            
+                <li class="pager" style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/11/pefron-nowe-www.jpg" alt="Partner"></a>
+                </li>
+            
+                <li class="pager" style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/09/piast.png" alt="Partner"></a>
+                </li>
+            
+                <li class="pager" style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/09/premier-144x80.gif" alt="Partner"></a>
+                </li>
+            
+                <li class="pager" style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/09/uw.png" alt="Partner"></a>
+                </li>
+            
+                <li class="pager" style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/09/wojewoda-67x80.gif" alt="Partner"></a>
+                </li>
+            
+                <li class="pager" style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/09/mazowsze_small.jpg" alt="Partner"></a>
+                </li>
+                    <li style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2015/11/logo_biale_wspolfinansowanie.jpg" alt="Partner"></a>
+                </li><li style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2014/05/logo-ASOS_www3.jpg" alt="Partner"></a>
+                </li><li style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/11/pefron-nowe-www.jpg" alt="Partner"></a>
+                </li><li style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/09/piast.png" alt="Partner"></a>
+                </li><li style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/09/premier-144x80.gif" alt="Partner"></a>
+                </li><li style="width: 155px; float: left; list-style: none;">
+                                                            <a href="" target="_blank"><img src="http://ptsr.waw.pl/wp-content/uploads/2012/09/uw.png" alt="Partner"></a>
+                </li></ul></div></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="push">
+        <span class="copy">copyright © 2012-2014 Oddział Warszawski PTSR</span>
+        <div class="menu-co-robimy-container"><ul id="menu-co-robimy-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1095"><a href="http://ptsr.waw.pl/realizowane-projekty/">Realizowane projekty</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1096"><a href="http://ptsr.waw.pl/biurowy-punkt-informacyjny/">Biurowy Punkt Informacyjny</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1097"><a href="http://ptsr.waw.pl/rehabilitacja/">Rehabilitacja</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1098"><a href="http://ptsr.waw.pl/rehabilitacja/ruchowa/">Ruchowa</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1099"><a href="http://ptsr.waw.pl/rehabilitacja/domowa/">Domowa</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5164"><a href="http://ptsr.waw.pl/rehabilitacja/mechanoterapia/">Mechanoterapia</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1100"><a href="http://ptsr.waw.pl/rehabilitacja/masaz-usprawniajacy/">Masaż usprawniający</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1101"><a href="http://ptsr.waw.pl/rehabilitacja/joga/">zajęcia jogi</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1102"><a href="http://ptsr.waw.pl/rehabilitacja/zajecia-tai-chi/">Zajęcia tai-chi</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2808"><a href="http://ptsr.waw.pl/zajecia-taneczne/">Zajęcia taneczne</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1105"><a href="http://ptsr.waw.pl/rehabilitacja/metoda-feldenkraisa/">Metoda Feldenkraisa</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1104"><a href="http://ptsr.waw.pl/basen/">Basen</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1103"><a href="http://ptsr.waw.pl/hipoterapia/">Hipoterapia</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2740"><a href="http://ptsr.waw.pl/glowka-pracuje/">Główka pracuje</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115"><a href="http://ptsr.waw.pl/w-naszym-kregu/">W naszym kręgu</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1107"><a href="http://ptsr.waw.pl/arteterapia/">Arteterapia</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1106"><a href="http://ptsr.waw.pl/warsztaty-ceramiczne/">Warsztaty ceramiczne</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5172"><a href="http://ptsr.waw.pl/rehabilitacja/warsztaty-teatralne/">Warsztaty teatralne</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5171"><a href="http://ptsr.waw.pl/rehabilitacja/warsztaty-wokalne/">Warsztaty wokalne</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-1109"><a href="http://ptsr.waw.pl/">Wsparcie specjalistów</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1111"><a href="http://ptsr.waw.pl/porady-psychologiczne/">Psycholog</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1112"><a href="http://ptsr.waw.pl/porady-prawne/">Prawnik</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1113"><a href="http://ptsr.waw.pl/porady-socjalne/">Pracownik socjalny</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1114"><a href="http://ptsr.waw.pl/logopeda/">Logopeda</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2794"><a href="http://ptsr.waw.pl/dietetyk/">Dietetyk</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1116"><a href="http://ptsr.waw.pl/warsztaty-psychologiczne/">Warsztaty psychologiczne</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110"><a href="http://ptsr.waw.pl/wsparcie-dla-opiekunow/">Wsparcie dla opiekunów</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-1117"><a href="http://ptsr.waw.pl/">Asystent</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1118"><a href="http://ptsr.waw.pl/asystent-informacje/">Informacje</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1119"><a href="http://ptsr.waw.pl/zamow-asystenta/">Zamów asystenta</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1120"><a href="http://ptsr.waw.pl/asystent-poza-ptsr/">Asystent poza PTSR</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1121"><a href="http://ptsr.waw.pl/kurs-na-asystenta/">Kurs na asystenta</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1108"><a href="http://ptsr.waw.pl/osrodki-rehabilitacji-sm/">Rehabilitacja w ośrodkach</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501"><a href="http://ptsr.waw.pl/integracja/">Integracja</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1544"><a href="http://www.ptsr.waw.pl/">Wypożyczalnia sprzętu rehabilitacyjnego</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2795"><a href="http://ptsr.waw.pl/zasady-dzialania/">Zasady działania</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1546"><a href="http://ptsr.waw.pl/sprzet/">Sprzęt</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-1130"><a href="http://ptsr.waw.pl/">Wydawnictwa</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1542"><a href="http://www.ptsr.waw.pl">kwartalnik „Nadzieja”</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1136"><a href="http://ptsr.waw.pl/kwartalnik-nadzieja/historia/">Historia</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1137"><a href="http://ptsr.waw.pl/kwartalnik-nadzieja/redakcja/">Redakcja</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1141"><a href="http://ptsr.waw.pl/kwartalnik-nadzieja/prenumerata/">Prenumerata</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7742"><a href="http://ptsr.waw.pl/wp-content/uploads/2019/01/Nadzieja_4_2018_internet.pdf">115/2018</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7621"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/11/Nadzieja114_internet.pdf">nr 114/2018</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7455"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/08/113_do-internetu.pdf">nr 113/2018</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7214"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/04/nr1_do-internetu.pdf">nr 112/2018</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7130"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/01/Nadzieja_6_2017.pdf">nr s6/2017</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7129"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/01/Nadzieja_5_2017.pdf">nr 111/2017</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7112"><a href="http://ptsr.waw.pl/wp-content/uploads/2017/12/Nadzieja_4_2017_do-internetu.pdf">nr 110/2017</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7004"><a href="http://ptsr.waw.pl/wp-content/uploads/2017/10/Nadzieja_3_2017_do-internetu.pdf">nr 109/2017</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6732"><a href="http://ptsr.waw.pl/wp-content/uploads/2017/08/Nadzieja_2_2017_internet.pdf">nr 108/2017</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6128"><a href="http://ptsr.waw.pl/wp-content/uploads/2017/03/nr-1072017.pdf">nr 107/2017</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6027"><a href="http://ptsr.waw.pl/wp-content/uploads/2017/02/nr-1062016.pdf">nr 106/2016</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5790"><a href="http://ptsr.waw.pl/wp-content/uploads/2016/11/nr-1052016.pdf">nr 105/2016</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5590"><a href="http://ptsr.waw.pl/wp-content/uploads/2016/07/nr-1042016.pdf">nr 104/2016</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4946"><a href="http://ptsr.waw.pl/wp-content/uploads/2016/02/nadzieja_103_www.pdf">nr 103/2016</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4827"><a href="http://ptsr.waw.pl/wp-content/uploads/2015/12/nadzieja_102.pdf">nr 102/2015</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4490"><a href="http://ptsr.waw.pl/wp-content/uploads/2015/09/Nadzieja_101.pdf">nr 101/2015</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4447"><a href="http://ptsr.waw.pl/wp-content/uploads/2012/09/nadzieja_100_www.pdf">nr 100/2015</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4449"><a href="http://ptsr.waw.pl/wp-content/uploads/2012/09/nadzieja_s_2015_www.pdf">nr s5/2014</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3907"><a href="http://ptsr.waw.pl/wp-content/uploads/2015/01/nadzieja_99.pdf">nr 99/2014</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3882"><a href="http://ptsr.waw.pl/wp-content/uploads/2014/12/nadzieja_98_www.pdf">nr 98/2014</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3673"><a href="http://ptsr.waw.pl/wp-content/uploads/2014/08/nadzieja_97.pdf">nr 97/2014</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3498"><a href="http://www.ptsr.nazwa.pl/files/nadzieja/96.pdf">nr 96/2014</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3239"><a href="http://www.ptsr.nazwa.pl/files/nadzieja/95.pdf">nr 95/2013</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3191"><a href="http://www.ptsr.nazwa.pl/files/nadzieja/94.pdf">nr 94/2013</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3190"><a href="http://www.ptsr.nazwa.pl/files/nadzieja/93.pdf">nr 93/2013</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2842"><a href="http://ptsr.waw.pl/wp-content/uploads/2013/08/92.pdf">nr 92/2013</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2609"><a href="http://www.ptsr.waw.pl/Nadzieja/91.pdf">nr 91/2013</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2626"><a href="http://ptsr.waw.pl/wp-content/uploads/2013/06/90.pdf">nr 90/2012</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2122"><a>nr s3/2012</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2008"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/s2.pdf">nr s2/2012</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2007"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/s1.pdf">nr s1/2012</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1892"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/89.pdf">nr 89/2012</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1498"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/88.pdf">nr 88/2012</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1497"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/87.pdf">nr 87/2012</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1496"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/86.pdf">nr 86/2011</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1495"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/85.pdf">nr 85/2011</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1494"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/84.pdf">nr 84/2011</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1493"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/83.pdf">nr 83/2011</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1492"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/82.pdf">nr 82/2010</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1491"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/81.pdf">nr 81/2010</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1490"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/80.pdf">nr 80/2010</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1489"><a href="http://www.ptsr.nazwa.pl/home/nadzieja/79.pdf">nr 79/2010</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1500"><a href="http://ptsr.waw.pl/archiwum/">Numery archiwalne</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1142"><a href="http://ptsr.waw.pl/kwartalnik-nadzieja/napisz-do-redakcji/">Napisz do redakcji</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5884"><a href="http://ptsr.waw.pl/informator-ow-ptsr-2016/">Informator 2016</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1543"><a href="http://www.ptsr.waw.pl">Broszurki Informacyjne</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7470"><a href="http://ptsr.waw.pl/wp-content/uploads/2018/08/glowka-pracuje_do-internetu.pdf">Główka pracuje, czyli trening mózgu cz.2</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1134"><a href="http://ptsr.waw.pl/poradnik-dla-osob-nowozdiagnozowanych/">Poradnik dla osób nowozdiagnozowanych</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1133"><a href="http://ptsr.waw.pl/usprawnianie-ruchowe/">Usprawnianie ruchowe</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132"><a href="http://ptsr.waw.pl/usprawnianie-mowy/">Usprawnianie mowy</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3679"><a href="http://ptsr.waw.pl/zywienie-w-stwardnieniu-rozsianym/">Żywienie w stwardnieniu rozsianym</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4495"><a href="http://ptsr.waw.pl/ruszamy-po-zdrowie/">Ruszamy po zdrowie</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4941"><a href="http://ptsr.waw.pl/moja_przestrzen/">Moja przestrzeń</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4957"><a href="http://ptsr.waw.pl/wolontariusz-pomocna-dlon/">Wolontariusz – pomocna dłoń</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5886"><a href="http://ptsr.waw.pl/zywienie-w-stwardnieniu-rozsianym-dodatkowe-aspekty-wplywajace-na-jakosc-diety/">Żywienie w stwardnieniu rozsianym. Dodatkowe aspekty wpływające na jakość diety.</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5993"><a href="http://ptsr.waw.pl/glowka-pracuje-czyli-trening-mozgu/">Główka pracuje, czyli trening mózgu</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6037"><a href="http://ptsr.waw.pl/mam-sm-i-co-dalej/">Mam SM… i co dalej?</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6133"><a href="http://ptsr.waw.pl/pomocna-dlon-poradnik-dla-asystentow-i-opiekunow-osob-z-sm/">Pomocna dłoń. Poradnik dla asystentów i opiekunów osób z SM.</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3518"><a href="http://ptsr.waw.pl/kategorie-filmow/">Materiały video</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1147"><a href="http://ptsr.waw.pl/galeria/">Galeria</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3761"><a href="http://www.ptsr.waw.pl">Dołącz do nas !</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1144"><a href="http://ptsr.waw.pl/dolacz-do-nas/">Jak zostać członkiem Stowarzyszenia?</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1145"><a href="http://ptsr.waw.pl/dolacz-do-nas/">Członkostwo wspierające</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1146"><a href="http://ptsr.waw.pl/wolontariusz/">Wolontariat</a></li>
+</ul>
+</li>
+</ul></div>    </div>
+</div>
+<!-- ngg_resource_manager_marker --><script type="text/javascript" src="http://ptsr.waw.pl/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/ptsr.waw.pl\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://ptsr.waw.pl/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.2"></script>
+<script type="text/javascript">
+/* Highlight Search Terms 1.5 ( RavanH - http://status301.net/wordpress-plugins/highlight-search-terms/ ) */
+var hlst_query = []; var hlst_areas = ["#groups-dir-list","#members-dir-list","div.bbp-topic-content,div.bbp-reply-content,li.bbp-forum-info,.bbp-topic-title,.bbp-reply-title","article","div.hentry","div.post","#content","#main","div.content","#middle","#container","div.container","div.page","#wrapper","body"];
+</script>
+<script type="text/javascript" src="http://ptsr.waw.pl/wp-content/plugins/highlight-search-terms/hlst-extend.min.js?ver=1.5"></script>
+<script type="text/javascript" src="http://ptsr.waw.pl/wp-includes/js/wp-embed.min.js?ver=4.9.6"></script>
+
+<script language="JavaScript">
+<!--
+document.write('<a href="http://www.freestat.pl/"><img src="http://www.freestat.pl/stat-count-1a.php?id=owptsr&'+document.referrer+'" alt="FreeStat.pl - darmowe statystyki stron WWW" border=0></a>');
+//-->
+</script><a href="http://www.freestat.pl/"><img src="http://www.freestat.pl/stat-count-1a.php?id=owptsr&amp;" alt="FreeStat.pl - darmowe statystyki stron WWW" border="0"></a>
+<noscript>&lt;a href="http://www.bezplatnidoradcy.pl/"&gt;Doradcy finansowi&lt;img src="http://www.freestat.pl/stat-count-1a.php?id=owptsr" border=0 alt="Bezpłatni doradcy finansowi"&gt;&lt;/a&gt;</noscript>
+
+
+     </body></html>

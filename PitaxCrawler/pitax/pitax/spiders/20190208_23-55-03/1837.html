@@ -1,0 +1,532 @@
+<!DOCTYPE html><html dir="ltr" lang="pl"><head>
+	<title>Aktualności - Fundacja Polskich Niewidomych i Słabowidzących „Trakt”</title>
+
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" href="http://trakt.org.pl/wp-content/themes/trakt/css/reset.css" type="text/css">
+
+	
+	<link rel="stylesheet" href="http://trakt.org.pl/wp-content/themes/trakt/css/font-size-0.css" type="text/css">
+
+	
+	<link rel="stylesheet" href="http://trakt.org.pl/wp-content/themes/trakt/css/positive.css" type="text/css">
+
+	<link rel="stylesheet" href="http://trakt.org.pl/wp-content/themes/trakt/style.css" type="text/css">
+
+	<!-- jQuery -->
+	<script src="http://trakt.org.pl/wp-content/themes/trakt/smartmenus/libs/jquery/jquery.js" type="text/javascript"></script>
+
+	<!-- Tooltipster -->
+    	<link rel="stylesheet" type="text/css" href="http://trakt.org.pl/wp-content/themes/trakt/tooltipster-master/css/tooltipster.css">
+    	<link rel="stylesheet" type="text/css" href="http://trakt.org.pl/wp-content/themes/trakt/tooltipster-master/css/themes/tooltipster-noir.css">
+	<script type="text/javascript" src="http://trakt.org.pl/wp-content/themes/trakt/tooltipster-master/js/jquery.tooltipster.min.js"></script>
+
+	<!-- SmartMenus jQuery plugin -->
+	<script src="http://trakt.org.pl/wp-content/themes/trakt/smartmenus/jquery.smartmenus.js" type="text/javascript"></script>
+
+	<!-- SmartMenus jQuery Keyboard Addon -->
+	<script type="text/javascript" src="http://trakt.org.pl/wp-content/themes/trakt/smartmenus/addons/keyboard/jquery.smartmenus.keyboard.js"></script>
+
+	<!-- SmartMenus core CSS (required) -->
+	<link href="http://trakt.org.pl/wp-content/themes/trakt/smartmenus/css/sm-core-css.css" rel="stylesheet" type="text/css">
+	<!-- "sm-clean" menu theme -->
+	<link href="http://trakt.org.pl/wp-content/themes/trakt/smartmenus/css/sm-clean/sm-clean.css" rel="stylesheet" type="text/css">
+
+	<!-- SmartMenus jQuery init -->
+	<script type="text/javascript">
+		$(function() {
+			$('#main-menu').smartmenus({
+				markCurrentItem: true,
+				markCurrentTree: true,
+				showFunction: function($ul, complete) { $ul.fadeIn(10, complete); },
+				subIndicatorsText: "",
+				hideFunction: 0,
+				hideTimeout: 0,
+				showTimeout: 0
+			});
+
+			$('#main-menu').smartmenus('keyboardSetHotkey', '123', 'shiftKey');
+
+			$('.tooltip').tooltipster({
+				position: 'bottom-left',
+				theme: 'tooltipster-noir'
+				
+			});
+
+			loadStyle();
+			checkAcceptCookies();
+		
+			$( ".text-changer" ).focus(function() {
+				$("#text-tmp").addClass("hover-topmenuposition");
+			});
+			$( ".text-changer" ).blur(function() {
+				$("#text-tmp").removeClass("hover-topmenuposition");
+			});
+
+			$( ".lang-item a" ).focus(function() {
+				$("#polylang-3").addClass("hover-topmenuposition");
+			});
+			$( ".lang-item a" ).blur(function() {
+				$("#polylang-3").removeClass("hover-topmenuposition");
+			});
+		});
+	</script>
+
+	<!-- jQuery Cookie -->
+	<script src="http://trakt.org.pl/wp-content/themes/trakt/js/jquery.cookie.js" type="text/javascript"></script>
+
+	<!-- Change stylesheets -->
+	<script type="text/javascript">
+		var page_lang = 'pl_PL';
+		function loadStyle() { 		
+			if ($.cookie('style') == "negative.css") {
+				if (page_lang == 'pl_PL') {
+					$('#topmenuposition-pn').text('Pozytyw');
+				} else if (page_lang == 'en_GB') {
+					$('#topmenuposition-pn').text('Positive');
+				}
+			}
+			return false;
+		}
+
+		function changePositiveNegative() {
+			$.removeCookie('style');
+			if ($('#topmenuposition-pn').text().trim() == "Negatyw") {
+				if (page_lang == 'pl_PL') {
+					$('#topmenuposition-pn').text('Pozytyw');
+				} else if (page_lang == 'en_GB') {
+					$('#topmenuposition-pn').text('Positive');
+				}
+				$.cookie('style', 'negative.css', { expires: 30, path: '/' });
+			} else {
+				if (page_lang == 'pl_PL') {
+					$('#topmenuposition-pn').text('Negatyw');
+				} else if (page_lang == 'en_GB') {
+					$('#topmenuposition-pn').text('Negative');
+				}
+				$.cookie('style', 'positive.css', { expires: 30, path: '/' });
+			}
+		}
+
+		function fontSizePlus() {
+			var fSize = $.cookie('fSize');
+			if (isNaN(fSize)) {
+				fSize = 0;
+			}
+			$.removeCookie('fSize');
+			
+			fSize = (fSize < 2) ? parseInt(fSize) + 1 : fSize = 2;
+			$.cookie('fSize', fSize, { expires: 30, path: '/' });
+		}
+
+		function fontSizeMinus() {
+			var fSize = $.cookie('fSize');
+			if (isNaN(fSize)) {
+				fSize = 0;
+			}
+			$.removeCookie('fSize');
+
+			fSize = (fSize > 0) ? parseInt(fSize) - 1 : fSize = 0;
+			$.cookie('fSize', fSize, { expires: 30, path: '/' });
+		}
+
+		function checkAcceptCookies() {
+			if ($.cookie('acceptCookies') != null) {
+				$('#cookies').hide();
+			} else {
+				$('#cookies').show();
+
+			}
+		}
+
+		function acceptCookies() {
+			$('#cookies').slideUp();
+			$.removeCookie('acceptCookies');
+			$.cookie('acceptCookies', '', { expires: 365, path: '/' });
+		}
+	</script>
+
+	<meta name="author" content="Marek Faderewski - http://marek.f24.waw.pl">
+
+	
+<!-- This site is optimized with the Yoast SEO plugin v4.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://trakt.org.pl/category/aktualnosci/">
+<link rel="next" href="http://trakt.org.pl/category/aktualnosci/page/2/">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:type" content="object">
+<meta property="og:title" content="Aktualności - Fundacja Polskich Niewidomych i Słabowidzących „Trakt”">
+<meta property="og:url" content="http://trakt.org.pl/category/aktualnosci/">
+<meta property="og:site_name" content="Fundacja Polskich Niewidomych i Słabowidzących „Trakt”">
+<meta property="og:image" content="http://www.trakt.org.pl/wp-content/themes/trakt/img/logo-fb.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Aktualności - Fundacja Polskich Niewidomych i Słabowidzących „Trakt”">
+<meta name="twitter:image" content="http://www.trakt.org.pl/wp-content/themes/trakt/img/logo-fb.jpg">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Fundacja Polskich Niewidomych i Słabowidzących „Trakt” » Kanał z wpisami zaszufladkowanymi do kategorii Aktualności" href="http://trakt.org.pl/category/aktualnosci/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/trakt.org.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.3"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://trakt.org.pl/wp-includes/js/wp-emoji-release.min.js?ver=5.0.3" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="bxslider-style-css" href="http://trakt.org.pl/wp-content/plugins/gs-logo-slider/css/jquery.bxslider.css?ver=4.1.2" type="text/css" media="">
+<link rel="stylesheet" id="gs-main-style-css" href="http://trakt.org.pl/wp-content/plugins/gs-logo-slider/css/gs-main.css?ver=1.0.0" type="text/css" media="">
+<link rel="stylesheet" id="bxslider-css-css" href="http://trakt.org.pl/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.css?ver=5.0.3" type="text/css" media="">
+<link rel="stylesheet" id="kiwi-logo-carousel-styles-css" href="http://trakt.org.pl/wp-content/plugins/kiwi-logo-carousel/custom-styles.css?ver=5.0.3" type="text/css" media="">
+<link rel="stylesheet" id="wp-block-library-css" href="http://trakt.org.pl/wp-includes/css/dist/block-library/style.min.css?ver=5.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="http://trakt.org.pl/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.6" type="text/css" media="all">
+<script type="text/javascript" src="http://trakt.org.pl/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://trakt.org.pl/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript" src="http://trakt.org.pl/wp-content/plugins/useful-banner-manager/scripts.js?ver=5.0.3"></script>
+<link rel="https://api.w.org/" href="http://trakt.org.pl/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://trakt.org.pl/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://trakt.org.pl/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.0.3">
+<!-- <meta name="NextGEN" version="2.2.50" /> -->
+</head>
+<body>
+<a id="top" tabindex="-1"></a>
+<ul id="skipLinks">
+	<li><a href="#mg" accesskey="1">Przejdź do menu głównego</a></li> 
+	<li><a href="#ts" accesskey="2">Przejdź do treści</a></li>
+	<li><a href="#sz" accesskey="3">Przejdź do wyszukiwarki</a></li>
+	<li><a href="/mapa-strony/" accesskey="4">Przejdź do mapy strony</a></li>
+	<li><a href="#pb" accesskey="5">Przejdź do paska bocznego</a></li>
+</ul>
+
+<div id="bg0">
+<div id="page0">
+
+	<div id="header">
+		<h1 id="mainHeader">
+			<span class="hide">Aktualności - Fundacja Polskich Niewidomych i Słabowidzących „Trakt”</span>
+		</h1>
+	
+		<div id="topmenu">
+			<div id="text-3" class="widget widget_text">			<div class="textwidget"><div id="text-tmp" class="topmenuposition">
+<div id="text-changer-box">
+<div class="text-line">Tekst</div><a class="text-changer" href="" title="Zwiększ czcionkę" onclick="fontSizePlus();">+<span class="hide">Zwiększ czcionkę</span></a><a class="text-changer" href="" title="Zmniejsz czcionkę" onclick="fontSizeMinus();">–<span class="hide">Zmniejsz czcionkę</span></a></div></div>
+<a id="topmenuposition-pn" href="" onclick="changePositiveNegative();">Negatyw</a></div>
+		</div>			<div id="polylang-3" class="widget widget_polylang"><ul>
+	<li class="lang-item lang-item-20 lang-item-en no-translation"><a lang="en-GB" hreflang="en-GB" href="http://www.trakt.org.pl/en/">EN</a></li>
+	<li class="lang-item lang-item-121 lang-item-de no-translation"><a lang="de-DE" hreflang="de-DE" href="http://www.trakt.org.pl/de/">DE</a></li>
+</ul>
+</div>			<div id="text-4" class="widget widget_text">			<div class="textwidget"><a class="topmenuposition" href="/mapa-strony/">Mapa strony</a></div>
+		</div>		</div> <!-- end Top Menu -->
+
+		<div id="logobox">
+			<a id="logo" href="http://www.trakt.org.pl/pl">
+			<img src="http://trakt.org.pl/wp-content/themes/trakt/img/logo-1240.png" alt="Start"></a>
+		</div>
+
+		<div id="banner">
+			<div id="ubm-banners-rotation-2" class="widget ubm_rotation_widget"></div>		</div>
+
+		<div id="donatebox">
+			<div id="text-5" class="widget widget_text">			<div class="textwidget"><a href="/wspieraj-nas/" id="donatebutton">Wspieraj nas</a>
+</div>
+		</div>		</div>
+
+		<div id="searchbox">
+			<div id="searchform">
+				<a id="sz" tabindex="-1"></a>
+				<h2 class="hide">Wyszukiwarka</h2>
+				<form id="sform" method="get" action="http://www.trakt.org.pl/pl">
+					<label for="s"><span class="hide">Szukaj</span></label>
+					<input type="text" name="s" id="s" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Szukaj':this.value;" value="Szukaj">
+					<button type="button" title="Szukaj" class="searcharrow" onclick="document.getElementById('sform').submit();return false;">
+					</button>
+				</form>
+			</div> <!-- end searchform -->
+		</div> <!-- end searchbox -->
+
+		<span id="logotitle">Fundacja Polskich Niewidomych i Słabowidzących „Trakt”</span>
+
+		<div id="navbar">
+			<a id="mg" tabindex="-1"></a>
+			<h2 class="hide">Menu główne</h2>
+			<ul id="main-menu" class="sm sm-clean" data-smartmenus-id="1549670662874058"><li id="menu-item-1576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1576"><a href="/fundacja/o-fundacji/" class="has-submenu" id="sm-1549670662874058-1" aria-haspopup="true" aria-controls="sm-1549670662874058-2" aria-expanded="false"><span class="sub-arrow"></span>Fundacja</a>
+<ul class="sub-menu" id="sm-1549670662874058-2" role="group" aria-hidden="true" aria-labelledby="sm-1549670662874058-1" aria-expanded="false">
+	<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="http://trakt.org.pl/fundacja/o-fundacji/">O FUNDACJI</a></li>
+	<li id="menu-item-369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-369"><a href="http://trakt.org.pl/fundacja/statut/">STATUT I KRS</a></li>
+	<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="http://trakt.org.pl/fundacja/pracownicy/">DZIAŁACZE I PRACOWNICY</a></li>
+	<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="http://trakt.org.pl/fundacja/sprawozdania/">SPRAWOZDANIA</a></li>
+	<li id="menu-item-1635" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1635"><a href="http://trakt.org.pl/category/fundacja/archiwum/">ARCHIWUM</a></li>
+</ul>
+</li>
+<li id="menu-item-1633" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1633"><a href="/category/dzialania/projekty/" class="has-submenu" id="sm-1549670662874058-3" aria-haspopup="true" aria-controls="sm-1549670662874058-4" aria-expanded="false"><span class="sub-arrow"></span>Działania</a>
+<ul class="sub-menu" id="sm-1549670662874058-4" role="group" aria-hidden="true" aria-labelledby="sm-1549670662874058-3" aria-expanded="false">
+	<li id="menu-item-988" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-988"><a href="http://trakt.org.pl/category/dzialania/projekty/">PROJEKTY</a></li>
+	<li id="menu-item-3359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3359"><a href="http://trakt.org.pl/droga-do-integracji-ue/">DROGA DO INTEGRACJI UE</a></li>
+	<li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221"><a href="http://trakt.org.pl/dzialania/baza-wiedzy-wcag/">BAZA WIEDZY WCAG</a></li>
+	<li id="menu-item-371" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-371"><a href="http://trakt.org.pl/category/dzialania/porady/">PORADY</a></li>
+</ul>
+</li>
+<li id="menu-item-1951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1951"><a href="http://trakt.org.pl/tyfloserwis/" class="has-submenu" id="sm-1549670662874058-5" aria-haspopup="true" aria-controls="sm-1549670662874058-6" aria-expanded="false"><span class="sub-arrow"></span>Tyfloserwis</a>
+<ul class="sub-menu" id="sm-1549670662874058-6" role="group" aria-hidden="true" aria-labelledby="sm-1549670662874058-5" aria-expanded="false">
+	<li id="menu-item-3220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3220"><a href="http://trakt.org.pl/tyfloserwis/tyfloserwis-2018/">Tyfloserwis 2018</a></li>
+	<li id="menu-item-2926" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2926"><a href="http://trakt.org.pl/tyfloserwis/tyfloserwis-2017/">Tyfloserwis 2017</a></li>
+	<li id="menu-item-1952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1952"><a href="http://trakt.org.pl/tyfloserwis/tyfloserwis-2016/">Tyfloserwis 2016</a></li>
+	<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="http://trakt.org.pl/tyfloserwis/tyfloserwis-2015/">Tyfloserwis 2015</a></li>
+</ul>
+</li>
+<li id="menu-item-1634" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1634"><a href="/category/publikacje/ksiazki/" class="has-submenu" id="sm-1549670662874058-7" aria-haspopup="true" aria-controls="sm-1549670662874058-8" aria-expanded="false"><span class="sub-arrow"></span>Publikacje</a>
+<ul class="sub-menu" id="sm-1549670662874058-8" role="group" aria-hidden="true" aria-labelledby="sm-1549670662874058-7" aria-expanded="false">
+	<li id="menu-item-380" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-380"><a href="http://trakt.org.pl/category/publikacje/ksiazki/">KSIĄŻKI</a></li>
+	<li id="menu-item-381" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-381"><a href="http://trakt.org.pl/category/publikacje/mapy/">MAPY</a></li>
+	<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="http://trakt.org.pl/publikacje/bit/">BIT</a></li>
+	<li id="menu-item-1478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1478"><a href="http://trakt.org.pl/publikacje/tyflopedia/">TYFLOPEDIA</a></li>
+</ul>
+</li>
+<li id="menu-item-1577" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1577"><a href="/kontakt/adres-i-mapa/" class="has-submenu" id="sm-1549670662874058-9" aria-haspopup="true" aria-controls="sm-1549670662874058-10" aria-expanded="false"><span class="sub-arrow"></span>Kontakt</a>
+<ul class="sub-menu" id="sm-1549670662874058-10" role="group" aria-hidden="true" aria-labelledby="sm-1549670662874058-9" aria-expanded="false">
+	<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="http://trakt.org.pl/kontakt/adres-i-mapa/">ADRES I MAPA</a></li>
+	<li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="http://trakt.org.pl/kontakt/formularz-kontaktowy/">FORMULARZ KONTAKTOWY</a></li>
+</ul>
+</li>
+</ul>		</div> <!-- end navbar -->
+	</div> <!-- end header -->
+
+</div> <!-- end page0 -->
+</div> <!-- end bg0 -->
+
+	<div id="bg1">
+	<div id="page1">
+	<div id="container">
+		<div id="content">
+			<div id="breadcrumb" class="hide">
+			<span><span typeof="v:Breadcrumb"><a href="http://www.trakt.org.pl/pl/" rel="v:url" property="v:title">trakt.org.pl</a> <span id="breadcrumb-arrow"></span> <strong class="breadcrumb_last">Aktualności</strong></span></span>			</div>
+
+			<a id="ts" tabindex="-1"></a>
+			<h2 class="hide">Treść strony</h2>
+			<div id="entries">
+
+			<!-- <h2>Aktualności</h2> -->
+
+									
+<!-- <p><a href="http://www.trakt.org.pl/twoj-1-procent-podatku/"><img src="http://www.trakt.org.pl/img/baner_1procent.jpg" alt="Podaruj nam 1 procent swojego podatku" style="width: 100%" /></a></p>
+<p>Darmowy <a href="https://www.pitax.pl/krs/0000230693/">PIT</a> wypełniamy we współpracy z <a href="https://www.pitax.pl/">PITax.pl</a> Łatwe podatki.</p> -->
+
+<p><a href="http://www.trakt.org.pl/droga-do-integracji-ue/"><img src="http://www.trakt.org.pl/wp-content/uploads/projektue/zestaw_logo_efs.png" alt="Od lewej znak Funduszy Europejskich złożony z symbolu graficznego, nazwy Fundusze Europejskie oraz odwołania do Programu Regionalnego; w środku flaga Polski z napisem Rzeczpospolita Polska następnie logo promocyjne Mazowsza złożone z ozdobnego napisu Mazowsze oraz podpisu Serce Polski; zestaw podstawowy zamyka znak Unii Europejskiej złożony z flagi Unii Europejskiej i napisu Unia Europejska oraz Europejski Fundusz Społeczny. Napisy znajdują się po lewej stronie flagi." style="width: 100%"></a></p>
+
+
+<p><a href="http://www.trakt.org.pl/twoj-1-procent-podatku/"><img src="http://www.trakt.org.pl/img/baner_1procent.jpg" alt="Podaruj nam 1 procent swojego podatku" style="width: 100%"></a></p>
+<p>Darmowy <a href="https://www.pitax.pl/krs/0000230693/">PIT</a> wypełniamy we współpracy z <a href="https://www.pitax.pl/">PITax.pl</a> Łatwe podatki.<br><br></p>
+
+<p></p>
+<p>&nbsp;</p>
+
+						
+
+			
+			
+			
+			
+			
+			
+			
+			
+						
+			
+							<div class="entry">
+					<div class="circle"></div>
+					<h3><a href="http://trakt.org.pl/koledowanie-z-niewidomymi-dla-niepodleglej/">Kolędowanie z niewidomymi dla Niepodległej!</a></h3>
+
+					<p>Na prośbę PZN kierujemy zaproszenie na koncert.</p>
+<p>Polski Związek Niewidomych, Parafia św. Antoniego z Padwy oraz Biuro Programu Niepodległa z ogromną radością zapraszają 30 stycznia 2019 r. o godz. 14.00 na „Kolędowanie z niewidomymi dla Niepodległej”, koncert z serca, podczas którego wystąpią Rafał Brzozowski – strona oficjalna z zespołem Rband oraz goście specjalni: Halina Frąckowiak, Mateusz Ziółko, Anna Bystroń-Jajkiewicz, Marcin Jajkiewicz, Małgorzata Szarek, Julita Bartosiak oraz zespół NaNowo.</p>
+<p></p>
+<div class="more-link-bg">
+<div class="more-link-arrow"><a class="more-link" href="http://trakt.org.pl/koledowanie-z-niewidomymi-dla-niepodleglej/" title="Czytaj więcej...">&nbsp;</a></div>
+</div>
+
+					<!--
+						<p class="entry-date">Zmodyfikowany: 21-01-2019 12:30 przez Fundacja TRAKT						</p>
+					-->										<div class="clear"></div>
+											<div class="breakline"></div>
+									</div> <!-- end entry -->
+								<div class="entry">
+					<div class="circle"></div>
+					<h3><a href="http://trakt.org.pl/warsztaty-ceramiczne-w-warszawie-druga-edycja/">Warsztaty ceramiczne w Warszawie - druga edycja</a></h3>
+
+					<p>Wraz z Fundacją PZU zapraszamy na drugą edycję warsztatów ceramicznych pod tytułem „Ceramika? Nie widzę przeszkód!”</p>
+<p>Zaproszenie kierujemy do młodzieży i dorosłych niewidomych, ociemniałych i słabowidzących.</p>
+<div class="more-link-bg">
+<div class="more-link-arrow"><a class="more-link" href="http://trakt.org.pl/warsztaty-ceramiczne-w-warszawie-druga-edycja/" title="Czytaj więcej...">&nbsp;</a></div>
+</div>
+
+					<!--
+						<p class="entry-date">Zmodyfikowany: 17-01-2019 14:23 przez Fundacja TRAKT						</p>
+					-->										<div class="clear"></div>
+											<div class="breakline"></div>
+									</div> <!-- end entry -->
+								<div class="entry">
+					<div class="circle"></div>
+					<h3><a href="http://trakt.org.pl/zyczenia-bozonarodzeniowe-2/">ŻYCZENIA BOŻONARODZENIOWE</a></h3>
+
+					<p style="text-align: center;"><img class="wp-image-1581 size-medium alignright" src="http://www.trakt.org.pl/wp-content/uploads/2015/12/choinka-215x300.png" alt="Choinka" width="100" height="140" srcset="http://trakt.org.pl/wp-content/uploads/2015/12/choinka-215x300.png 215w, http://trakt.org.pl/wp-content/uploads/2015/12/choinka.png 457w" sizes="(max-width: 100px) 100vw, 100px"><em>Pięknych, radosnych <br> i pełnych pokoju </em><br> <em> Świąt Bożego Narodzenia </em><br> <em> oraz dobrego Nowego Roku </em><br> <em> życzy</em><br> <em>  </em><br> <em> Zespół Fundacji TRAKT</em></p>
+
+					<!--
+						<p class="entry-date">Zmodyfikowany: 20-12-2018 12:19 przez Fundacja TRAKT						</p>
+					-->										<div class="clear"></div>
+											<div class="breakline"></div>
+									</div> <!-- end entry -->
+								<div class="entry">
+					<div class="circle"></div>
+					<h3><a href="http://trakt.org.pl/zamowienia-na-bezplatny-egzemplarz-publikacji-warszawa-chopina-dla-osob-niewidomych-i-slabowidzacych/">Zamówienia na bezpłatny egzemplarz publikacji „Warszawa Chopina dla osób niewidomych i słabowidzących”</a></h3>
+
+					<p>Warszawa ma wiele kolorów. Zapraszamy do podróży w czasie, spotkania z Fryderykiem Chopinem i jego Warszawą.</p>
+<div class="more-link-bg">
+<div class="more-link-arrow"><a class="more-link" href="http://trakt.org.pl/zamowienia-na-bezplatny-egzemplarz-publikacji-warszawa-chopina-dla-osob-niewidomych-i-slabowidzacych/" title="Czytaj więcej...">&nbsp;</a></div>
+</div>
+
+					<!--
+						<p class="entry-date">Zmodyfikowany: 03-12-2018 14:06 przez Fundacja TRAKT						</p>
+					-->										<div class="clear"></div>
+											<div class="breakline"></div>
+									</div> <!-- end entry -->
+								<div class="entry">
+					<div class="circle"></div>
+					<h3><a href="http://trakt.org.pl/warsztaty-ceramiczne-w-warszawie/">Warsztaty ceramiczne w Warszawie</a></h3>
+
+					<p>Wraz z Fundacją PZU zapraszamy na serię warsztatów ceramicznych pod tytułem „Ceramika? Nie widzę przeszkód!”</p>
+<p>Warsztaty przeznaczone są dla młodzieży i dorosłych niewidomych, ociemniałych i słabowidzących. Będą realizowane w dwóch grupach w następującym układzie spotkań:</p>
+<div class="more-link-bg">
+<div class="more-link-arrow"><a class="more-link" href="http://trakt.org.pl/warsztaty-ceramiczne-w-warszawie/" title="Czytaj więcej...">&nbsp;</a></div>
+</div>
+
+					<!--
+						<p class="entry-date">Zmodyfikowany: 11-01-2019 12:02 przez Fundacja TRAKT						</p>
+					-->										<div class="clear"></div>
+											<div class="breakline"></div>
+									</div> <!-- end entry -->
+							<div class="posts-nav">
+				<div class="posts-nav-left"><a href="http://trakt.org.pl/category/aktualnosci/page/2/">« Starsze wpisy</a></div>
+				<div class="posts-nav-right"></div>
+			</div>
+		</div> <!-- end entries -->
+		</div> <!-- end content -->
+
+		<div id="above-sidebar"></div>
+		<div id="sidebar">
+			<a id="pb" tabindex="-1"></a>
+			<h2 class="hide">Pasek boczny</h2>
+
+			<div id="text-2" class="widget widget_text">			<div class="textwidget"><a class="rightbutton bg-color-grey-1 txt-color-black" href="/dzialania/baza-wiedzy-wcag/">WCAG<span class="hide">Przejdź do bazy wiedzy WCAG</span></a>
+<a class="rightbutton ld bg-color-grey-1 txt-color-black" href="/wcag-projekt/">Projekt WCAG</a>
+<a class="rightbutton bg-color-grey-1 txt-color-black" href="http://www.platmat.pl" target="_blank">PLATMAT<span class="hide">Przejdź na stronę projektu PlatMat</span></a>
+<a class="rightbutton ld bg-color-grey-1 txt-color-black" href="/lista-dyskusyjna/">Lista dyskusyjna</a>
+<a class="rightbutton bg-color-grey-1 txt-color-black" href="/newsletter/">Newsletter<span class="hide">przejdź aby zapisać się do otrzymywania powiadomień na e-mail</span></a>
+<a class="rightbutton fb bg-color-grey-1 txt-color-blue" href="https://www.facebook.com/pages/Fundacja-Polskich-Niewidomych-i-Słabowidzących-Trakt/130076473742227" target="blank">f<span class="hide">Fejsbuk, przejdź na Fanpejdż Fundacji na Fajsbuku</span></a></div>
+		</div>		</div> <!-- end sidebar -->
+
+
+		<div class="clear"></div>
+
+	</div> <!-- end container -->
+
+</div> <!-- end page1 -->
+</div> <!-- end bg1 -->
+
+<div id="bg2">
+<div id="page2">
+
+	<div id="footer">
+		<div id="partners">
+			<h2 class="hide">Partnerzy</h2>
+			<div class="bx-wrapper" style="max-width: 1070px; margin: 0px auto;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 80px;"><ul class="kiwi-logo-carousel kiwi-logo-carousel-default default align-center col4" style="width: 1215%; position: relative; left: -1080px;"><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.pozytek.gov.pl/FIO,379.html"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/fio_logo.jpg" alt="Fundusz Inicjatyw Obywatelskich" title="Fundusz Inicjatyw Obywatelskich"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.mkidn.gov.pl"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/2018/02/logotyp-min-kultury-115.jpg" alt="Ministerstwo Kultury i Dziedzictwa Narodowego" title="Ministerstwo Kultury i Dziedzictwa Narodowego"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://pl.chopin.nifc.pl/institute/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/nifc_logo.jpg" alt="Narodowy Instytut Fryderyka Chopina" title="Narodowy Instytut Fryderyka Chopina"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.fundacjakghm.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/2018/02/fundacja_kghm_polskamiedz.jpg" alt="Fundacja KGHM Polska Miedź" title="Fundacja KGHM Polska Miedź"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.batory.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/batory_logo.png" alt="Fundacja im. Stefana Batorego" title="Fundacja im. Stefana Batorego"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.pfron.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/pfron_logo.jpg" alt="Państwowy Fundusz Rehabilitacji Osób Niepełnosprawnych" title="Państwowy Fundusz Rehabilitacji Osób Niepełnosprawnych"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.imm.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/imm_logo.png" alt="Instytut Maszyn Matematycznych" title="Instytut Maszyn Matematycznych"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="https://www.eog.gov.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/eea-grants_logo.jpg" alt="Europejski Obszar Gospodarczy" title="Europejski Obszar Gospodarczy"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.pti.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/pti_logo.png" alt="Polskie Towarzystwo Informatyczne" title="Polskie Towarzystwo Informatyczne"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;"><a target="_blank" href="http://www.nck.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/nck_logo.jpg" alt="Narodowe Centrum Kultury" title="Narodowe Centrum Kultury"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;"><a target="_blank" href="http://www.pozytek.gov.pl/FIO,379.html"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/fio_logo.jpg" alt="Fundusz Inicjatyw Obywatelskich" title="Fundusz Inicjatyw Obywatelskich"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;"><a target="_blank" href="http://www.mkidn.gov.pl"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/2018/02/logotyp-min-kultury-115.jpg" alt="Ministerstwo Kultury i Dziedzictwa Narodowego" title="Ministerstwo Kultury i Dziedzictwa Narodowego"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;"><a target="_blank" href="http://pl.chopin.nifc.pl/institute/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/nifc_logo.jpg" alt="Narodowy Instytut Fryderyka Chopina" title="Narodowy Instytut Fryderyka Chopina"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;"><a target="_blank" href="http://www.fundacjakghm.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/2018/02/fundacja_kghm_polskamiedz.jpg" alt="Fundacja KGHM Polska Miedź" title="Fundacja KGHM Polska Miedź"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;"><a target="_blank" href="http://www.batory.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/batory_logo.png" alt="Fundacja im. Stefana Batorego" title="Fundacja im. Stefana Batorego"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;"><a target="_blank" href="http://www.pfron.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/pfron_logo.jpg" alt="Państwowy Fundusz Rehabilitacji Osób Niepełnosprawnych" title="Państwowy Fundusz Rehabilitacji Osób Niepełnosprawnych"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;"><a target="_blank" href="http://www.imm.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/imm_logo.png" alt="Instytut Maszyn Matematycznych" title="Instytut Maszyn Matematycznych"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;"><a target="_blank" href="https://www.eog.gov.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/eea-grants_logo.jpg" alt="Europejski Obszar Gospodarczy" title="Europejski Obszar Gospodarczy"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;"><a target="_blank" href="http://www.pti.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/pti_logo.png" alt="Polskie Towarzystwo Informatyczne" title="Polskie Towarzystwo Informatyczne"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.nck.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/nck_logo.jpg" alt="Narodowe Centrum Kultury" title="Narodowe Centrum Kultury"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.pozytek.gov.pl/FIO,379.html"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/fio_logo.jpg" alt="Fundusz Inicjatyw Obywatelskich" title="Fundusz Inicjatyw Obywatelskich"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.mkidn.gov.pl"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/2018/02/logotyp-min-kultury-115.jpg" alt="Ministerstwo Kultury i Dziedzictwa Narodowego" title="Ministerstwo Kultury i Dziedzictwa Narodowego"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://pl.chopin.nifc.pl/institute/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/nifc_logo.jpg" alt="Narodowy Instytut Fryderyka Chopina" title="Narodowy Instytut Fryderyka Chopina"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.fundacjakghm.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/2018/02/fundacja_kghm_polskamiedz.jpg" alt="Fundacja KGHM Polska Miedź" title="Fundacja KGHM Polska Miedź"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.batory.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/batory_logo.png" alt="Fundacja im. Stefana Batorego" title="Fundacja im. Stefana Batorego"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.pfron.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/pfron_logo.jpg" alt="Państwowy Fundusz Rehabilitacji Osób Niepełnosprawnych" title="Państwowy Fundusz Rehabilitacji Osób Niepełnosprawnych"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="http://www.imm.org.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/imm_logo.png" alt="Instytut Maszyn Matematycznych" title="Instytut Maszyn Matematycznych"></div></a></li><li style="height: 80px; float: left; list-style: none; position: relative; width: 110px; margin-right: 10px;" class="bx-clone"><a target="_blank" href="https://www.eog.gov.pl/"><div class="helper" style="height:80px; width:110px;"><img src="http://trakt.org.pl/wp-content/uploads/loga/eea-grants_logo.jpg" alt="Europejski Obszar Gospodarczy" title="Europejski Obszar Gospodarczy"></div></a></li></ul></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>		</div>
+
+		<h2 class="hide">Stopka</h2>
+		<p>© 2019 Fundacja Polskich Niewidomych i Słabowidzących „Trakt” |
+		Grafika: AS | Wykonanie: <a href="http://www.marek.f24.waw.pl" target="_blank">MF<span class="hide">Przejdź na stronę Marka Faderewskiego</span></a></p>
+
+		<!-- Support -->
+		<br>
+		<p>Stworzenie witryny dofinansowano ze środków PFRON</p>
+		<br>	
+		<p>
+		<a href="http://www.pfron.org.pl" target="_blank">
+			<img src="http://www.trakt.org.pl/wp-content/uploads/loga/pfron_logo.jpg" width="150px" alt="Logo Państwowy Fundusz Rehabilitacji Osób Niepełnosprawnych">
+		</a></p>
+	</div> <!-- end footer -->
+	<div id="cookies">
+			<div id="text-10" class="widget widget_text">			<div class="textwidget"><p class="cookie-text">Ta strona używa ciasteczek w celu poprawnego działania niektórych funkcji. Korzystając z naszej strony, zgadzasz się na dostęp ciasteczek do Twojego urządzenia.
+<a href="http://wszystkoociasteczkach.pl/" target="_blank">Wszystko o plikach cookie.<span class="hide" przejdź="" na="" stronę="" na,="" której="" znajdziesz="" wszystkie="" informacje="" o="" plikach="" cookie<="" span=""></span></a> <a class="cookie-ok" href="" onclick="acceptCookies();return false;">OK</a></p></div>
+		</div>	</div>
+
+
+</div> <!-- end page2 -->
+</div> <!-- bg2 -->
+
+<!-- ngg_resource_manager_marker --><script type="text/javascript" src="http://trakt.org.pl/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Potwierd\u017a, \u017ce nie jeste\u015b robotem."}},"cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://trakt.org.pl/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.6"></script>
+<script type="text/javascript" src="http://trakt.org.pl/wp-content/plugins/gs-logo-slider/js/jquery.bxslider.min.js?ver=4.1.2"></script>
+<script type="text/javascript" src="http://trakt.org.pl/wp-content/plugins/gs-logo-slider/js/jquery.easing.1.3.js?ver=1.3"></script>
+<script type="text/javascript" src="http://trakt.org.pl/wp-includes/js/wp-embed.min.js?ver=5.0.3"></script>
+<script type="text/javascript" src="http://trakt.org.pl/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.js?ver=5.0.3"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery('.gs_logo_container').bxSlider({
+  	slideWidth: 200,
+    minSlides: 1,
+    maxSlides: 5,
+    slideMargin: 10,
+  	moveSlides: 1,
+  	speed: 750,
+  	controls: true,
+  	autoHover: true,
+  	pager: false,
+  	auto: true
+  });
+ 
+});
+</script>
+<script>jQuery(document).ready(function(){jQuery(".kiwi-logo-carousel-default").bxSlider({mode:"horizontal",speed:500,slideMargin:10,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:true,adaptiveHeight:true,responsive:true,pager:false,controls:true,autoControls:false,minSlides:1,maxSlides:9,moveSlides:1,slideWidth:110,auto:false,pause:4000,useCSS:false});});</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

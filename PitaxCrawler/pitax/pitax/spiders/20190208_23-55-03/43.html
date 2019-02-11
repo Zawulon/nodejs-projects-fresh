@@ -1,0 +1,324 @@
+<!DOCTYPE html><!-- jsn_solid_free 2.1.0 --><html lang="" dir="ltr" slick-uniqueid="3"><head>
+	<base href="http://www.fundacja-radosc.pl/przekaz-jeden-procent-podatku">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Fundacja, fundacja, chrześcijańska, Chrześcijańska, Tabita, tabita, pomoc, dzieciom, dzieci, sierot, sieroty, porzucone, porzuconych, Barycz, barycz, Podsiadły, podsiadły, podsiadly, Christian, Tabitha, Foundation,christian tabitha foundation, radosc, radość, Radość, Radosc, joy, joy fundation">
+	<meta name="author" content="biuro">
+	<meta name="description" content="Posiadamy status Organizacji Pożytku Publicznego, dzięki czemu możesz przekazać nam 1% swojego podatku!">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>Przekaż 1% </title>
+	<link href="/templates/jsn_solid_free/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/components/com_imageshow/assets/css/style.css" rel="stylesheet" type="text/css">
+	<link href="/media/jui/css/bootstrap.min.css?3c7c7dc4209549224712188eb9042198" rel="stylesheet" type="text/css">
+	<link href="/media/jui/css/bootstrap-responsive.min.css?3c7c7dc4209549224712188eb9042198" rel="stylesheet" type="text/css">
+	<link href="/media/jui/css/bootstrap-extended.css?3c7c7dc4209549224712188eb9042198" rel="stylesheet" type="text/css">
+	<link href="/plugins/system/jsntplframework/assets/3rd-party/bootstrap/css/bootstrap-frontend.min.css" rel="stylesheet" type="text/css">
+	<link href="/templates/system/css/system.css" rel="stylesheet" type="text/css">
+	<link href="/templates/system/css/general.css" rel="stylesheet" type="text/css">
+	<link href="/templates/jsn_solid_free/css/template.css" rel="stylesheet" type="text/css">
+	<link href="/templates/jsn_solid_free/css/colors/green.css" rel="stylesheet" type="text/css">
+	<link href="/templates/jsn_solid_free/css/styles/business.css" rel="stylesheet" type="text/css">
+	<link href="/media/system/css/modal.css?3c7c7dc4209549224712188eb9042198" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	#jsn-page {
+		min-width: 960px;
+	}
+	#jsn-pos-topbar,
+	#jsn-header,
+	#jsn-menu_inner,
+	#jsn-content-top,
+	#jsn-content,
+	#jsn-content-bottom-inner,
+	#jsn-footer {
+		width: 960px;
+	}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"b5c613a0bb84f1572d732b6d2bea9deb","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/jui/js/jquery.min.js?3c7c7dc4209549224712188eb9042198" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?3c7c7dc4209549224712188eb9042198" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?3c7c7dc4209549224712188eb9042198" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?3c7c7dc4209549224712188eb9042198" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js?3c7c7dc4209549224712188eb9042198" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-core.js?3c7c7dc4209549224712188eb9042198" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?3c7c7dc4209549224712188eb9042198" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js?3c7c7dc4209549224712188eb9042198" type="text/javascript"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/noconflict.js" type="text/javascript"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/utils.js" type="text/javascript"></script>
+	<script src="/templates/jsn_solid_free/js/jsn_template.js" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?3c7c7dc4209549224712188eb9042198" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(function($){ $(".dropdown-toggle").dropdown(); });
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+				JSNTemplate.initTemplate({
+					templatePrefix			: "jsn_solid_free_",
+					templatePath			: "/templates/jsn_solid_free",
+					enableRTL				: 0,
+					enableGotopLink			: 1,
+					enableMobile			: 0,
+					enableMobileMenuSticky	: 1,
+					enableDesktopMenuSticky	: 0,
+					responsiveLayout		: [],
+					mobileMenuEffect		: ""
+				});
+			
+					window.addEvent("domready", JSNUtils.setDesktopOnMobile);
+				
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+		
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{	
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+					
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+		
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+		
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+	</script>
+
+</head>
+<body id="jsn-master" class="jsn-textstyle-business jsn-color-green jsn-direction-ltr jsn-desktop jsn-joomla-30  jsn-com-content jsn-view-article jsn-itemid-2167">
+<div id="jsn-master_inner">
+		<div id="jsn-page" class="container">
+			<div id="jsn-header" class="row-fluid">
+			<div id="jsn-logo" class="pull-left">
+			<a href="/index.php" title=""><img src="/templates/jsn_solid_free/images/colors/green/logo.png" alt="" id="jsn-logo-desktop"></a>			</div>
+			<div id="jsn-headerright" class="pull-right">
+							<div id="jsn-pos-top" class="pull-left">
+					<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle"><i class="fa fa-navicon"></i></span>
+<ul class="menu-topmenu menu-iconmenu">
+	<li class="jsn-menu-mobile-control">Menu <span class="close-menu"></span></li> 
+	<li class="first last">	<a href="https://www.facebook.com/Fundacja.radosc/">
+		<span>
+		<img src="/images/fb_2.jpg" alt="facebook">		</span>
+	</a>
+	</li></ul><div class="clearbreak"></div></div></div></div>
+					<div class="clearbreak"></div>
+				</div>
+						</div>
+		</div>
+					<div id="jsn-menu"><div id="jsn-menu_inner"><div id="jsn-menu_inner1">
+							<div id="jsn-pos-mainmenu">
+					<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle"><i class="fa fa-navicon"></i></span>
+<ul class="menu-mainmenu">
+	<li class="jsn-menu-mobile-control">Menu <span class="close-menu"></span></li> 
+	<li class="first"><a class="clearfix" href="/" title="Start here">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Start</span><span class="jsn-menudescription">Start here</span>	</span>
+</a></li><li class="parent"><a class="clearfix" href="/o-nas">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">O Fundacji</span>	</span>
+</a><span class="jsn-menu-toggle"></span><ul><li class="first"><a class="clearfix" href="/o-nas/cele">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Cele</span>	</span>
+</a></li><li class=""><a class="clearfix" href="/o-nas/statut">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Statut</span>	</span>
+</a></li><li class=""><a class="clearfix" href="/o-nas/zarzad">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Zarząd</span>	</span>
+</a></li><li class=""><a class="clearfix" href="/o-nas/audyt-zewnetrzny">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Audyt zewnętrzny</span>	</span>
+</a></li><li class=""><a class="clearfix" href="/o-nas/referencje-i-podziekowania">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Referencje i podziękowania</span>	</span>
+</a></li><li class=""><a class="clearfix" href="/o-nas/partnerzy1">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Partnerzy</span>	</span>
+</a></li><li class="last"><a class="clearfix" href="/o-nas/sprawozdanie">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Sprawozdania</span>	</span>
+</a></li></ul></li><li class="parent"><a class="clearfix" href="/dzialalnosc">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Działalność</span>	</span>
+</a><span class="jsn-menu-toggle"></span><ul><li class="parent first"><a class="clearfix" href="/dzialalnosc/pomoc-spoleczna">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Pomoc społeczna</span>	</span>
+</a><span class="jsn-menu-toggle"></span><ul><li class="first"><a class="clearfix" href="/dzialalnosc/pomoc-spoleczna/zbiorki-zywnosci">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Zbiórki żywności</span>	</span>
+</a></li><li class=""><a class="clearfix" href="/dzialalnosc/pomoc-spoleczna/dostarczanie-zywnosci">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Dostarczanie żywności</span>	</span>
+</a></li><li class="last"><a class="clearfix" href="/dzialalnosc/pomoc-spoleczna/gwiazdkowa-niespodzianka">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Gwiazdkowa niespodzianka</span>	</span>
+</a></li></ul></li><li class=""><a class="clearfix" href="/dzialalnosc/obozy-dla-dzieci-i-mlodziezy">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Obozy dla dzieci i młodzieży</span>	</span>
+</a></li><li class="last"><a class="clearfix" href="/dzialalnosc/joy-weekend">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Joy weekend</span>	</span>
+</a></li></ul></li><li class="parent"><a class="clearfix" href="/wsparcie">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Wsparcie</span>	</span>
+</a><span class="jsn-menu-toggle"></span><ul><li class="first"><a class="clearfix" href="/wsparcie/darowizny">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Darowizny</span>	</span>
+</a></li><li class=""><a class="clearfix" href="/wsparcie/wolontariat">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Wolontariat</span>	</span>
+</a></li><li class="last"><a class="clearfix" href="/wsparcie/przekaz-jeden-procent-podatku">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Przekaż 1 %</span>	</span>
+</a></li></ul></li><li class="current active"><a class="current clearfix" href="/przekaz-jeden-procent-podatku">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Przekaż 1% </span>	</span>
+</a></li><li class="parent"><a class="clearfix" href="/multimedia">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Multimedia</span>	</span>
+</a><span class="jsn-menu-toggle"></span><ul><li class="first"><a class="clearfix" href="/multimedia/fotogaleria">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Fotogaleria</span>	</span>
+</a></li><li class="last"><a class="clearfix" href="/multimedia/video">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Video</span>	</span>
+</a></li></ul></li><li class="last"><a class="clearfix" href="/kontakt">
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">Kontakt</span>	</span>
+</a></li></ul><div class="clearbreak"></div></div></div></div>
+				</div>
+			            <div class="clearbreak"></div>
+			</div></div></div>
+				<div id="jsn-body">
+					<div id="jsn-content" class="jsn-hasright ">
+				<div id="jsn-content_inner" class="row-fluid">
+													<div id="jsn-maincontent" class="span9 order1  row-fluid">
+														<div id="jsn-centercol" class="span12 order1 ">
+															<div id="jsn-mainbody-content" class=" jsn-hasmainbody">
+																	<div id="jsn-mainbody">
+													<div id="system-message-container">
+	</div>
+
+													<div class="item-page" itemscope="" itemtype="http://schema.org/Article">
+	<meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://google.com/article">
+	<meta itemprop="inLanguage" content="pl-PL">
+	
+		<div class="page-header">
+		<h2 itemprop="headline">
+															Przekaż 1% podatku									</h2>
+			</div>
+		<div class="jsn-article-toolbar">
+    							<div class="clearfix"></div>
+	</div>
+		
+								<p>&nbsp;Możesz skorzystać z <strong>darmowego</strong> programu do rozliczenia podatku i przekazania 1% na rzecz naszej Fundacji, zgodnie z linkiem poniżej (<a href="https://www.pitax.pl/pobierz?krs=0000245205" target="_blank" rel="noopener noreferrer">wersja do pobrania</a> lub <a href="https://www.pitax.pl/rozlicz?krs=0000245205&amp;cel=" target="_blank" rel="noopener noreferrer">rozliczenia online)</a>:</p>
+<p><a href="https://www.pitax.pl/pobierz?krs=0000245205" target="_blank" rel="noopener noreferrer">&nbsp;</a></p>
+<center>
+<p><a href="https://www.pitax.pl/pobierz?krs=0000245205" target="_blank" rel="noopener noreferrer"><img src="/images/1procent/pobierz-program-pit.png" alt="Pobierz darmowy program do rozliczenia podatku"></a><a href="https://www.pitax.pl/rozlicz?krs=0000245205&amp;cel=" target="_blank" rel="noopener noreferrer"><img src="/images/1procent/rozlicz-pit-online.png" alt="Rozlicz podatek online i przekaż 1%"></a></p>
+</center>
+<p style="margin: 0px 0px 10px; padding: 0px; color: #4d4d4d; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px;"><span style="color: #000000; font-family: arial, sans-serif; font-size: 15px; line-height: 21px;">Posiadamy status Organizacji Pożytku Publicznego, dzięki czemu możesz przekazać nam 1% swojego podatku,&nbsp;</span><span style="color: #000000; font-family: arial, sans-serif; font-size: 15px; line-height: 21px;">wpisując w&nbsp;odpowiednie rubryki swojej deklaracji podatkowej dane:</span></p>
+<p style="margin: 0px 0px 10px; padding: 0px; color: #4d4d4d; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px;">nr&nbsp;KRS:&nbsp;<b>0000245205</b><br style="margin: 0px; outline: 0px;">nazwa organizacji:&nbsp;<strong style="margin: 0px; outline: 0px;">Chrześcijańska Fundacja Radość</strong></p>
+<p style="margin: 0px 0px 10px; padding: 0px; color: #4d4d4d; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px;"><strong style="margin: 0px; outline: 0px;"><span style="color: #444444; font-family: OpenSans, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">Potwierdzenie statusu OPP Chrześcijańskiej Fundacji Radość&nbsp;można uzyskać również na stronie portalu organizacji pozarządowych&nbsp;</span><a style="border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; color: #e8308a; font-family: OpenSans, Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;" title="Portal NGO" href="http://bazy.ngo.pl/search/wyniki.asp?wyniki=1&amp;kryt_nazwa=Chrze%C5%9Bcija%C5%84ska+Fundacja+rado%C5%9B%C4%87&amp;kryt_miasto=&amp;kryt_woj=&amp;kryt_krs=&amp;kryt_pola=&amp;szukanie=opp" target="_blank" rel="noopener noreferrer">– ngo.pl</a></strong></p>
+<h1 style="margin: 0px 0px 10px; padding: 0px; color: #4d4d4d; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px;">Jak przekazać 1% podatku?</h1>
+<p style="margin: 0px 0px 10px; padding: 0px; color: #4d4d4d; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px;">Wypełniając odpowiednią rubrykę w rocznym zeznaniu podatkowym PIT (28, 36, 36L, 37, 38), należy wpisać&nbsp;<strong style="border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; background: transparent;">KRS:&nbsp;<b>0000245205</b>,&nbsp;</strong>1% podatku mogą przekazać:&nbsp;</p>
+<p style="padding-left: 60px;">ryczałtowcy – PIT 28,</p>
+<p style="padding-left: 60px;">przedsiębiorcy – PIT 36,</p>
+<p style="padding-left: 60px;">przedsiębiorcy-liniowcy – PIT 36L,</p>
+<p style="padding-left: 60px;">pracownicy – PIT 37,</p>
+<p style="padding-left: 60px;">gracze giełdowi – PIT 38,</p>
+<p style="padding-left: 60px;">osoby, które sprzedały nieruchomość – PIT 39.</p>
+<p><a href="https://www.pitax.pl/krs/0000245205/" target="_blank" rel="noopener noreferrer"><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/1procent/jeden_procent_rozlicz_pitax.gif" alt="Rozliczenie PIT z PITax.pl" border="0"></a></p>
+<p><a href="https://www.pitax.pl/krs/0000245205/" target="_blank" rel="noopener noreferrer"><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/fr/1procent_mini.jpg" alt="1% podatku" width="610" height="209"></a><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/1procent/pitax-rozlicz-pit-w-750x200.jpg" alt=""></p>
+<p>&nbsp;</p>
+<p>Darmowy Program PIT dostarcza firma <a href="https://www.pitax.pl/">PITax.pl Łatwe podatki</a></p> 
+	
+							
+					 </div>
+
+												</div>
+																</div>
+														</div> <!-- end centercol -->
+													</div> <!-- end jsn-maincontent -->
+													<div id="jsn-rightsidecontent" class="span3 order2 ">
+									<div id="jsn-rightsidecontent_inner">
+										<div id="jsn-pos-right">
+											<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><h3 class="jsn-moduletitle"><span class="jsn-moduletitle_inner1"><span class="jsn-moduletitle_inner2"><span class="jsn-moduleicon">PayPal</span></span></span></h3><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="ZEVFZPNB6KVTY"> <input alt="PayPal – Płać wygodnie i bezpiecznie" name="submit" src="https://www.paypalobjects.com/pl_PL/PL/i/btn/btn_donateCC_LG.gif" type="image"> <img src="https://www.paypalobjects.com/pl_PL/i/scr/pixel.gif" alt="" width="1" height="1" border="0"></form></div><div class="clearbreak"></div></div></div></div><div class="solid-1 jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><h3 class="jsn-moduletitle"><span class="jsn-moduletitle_inner1"><span class="jsn-moduletitle_inner2"><span class="jsn-moduleicon">Rozlicz PIT</span></span></span></h3><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p><a href="https://www.pitax.pl/krs/0000245205/" target="_blank" rel="noopener noreferrer"><img src="/images/1procent/pitax-rozlicz-pit-w-200x200.jpg" alt=""></a></p></div><div class="clearbreak"></div></div></div></div><div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><h3 class="jsn-moduletitle"><span class="jsn-moduletitle_inner1"><span class="jsn-moduletitle_inner2"><span class="jsn-moduleicon">Zasil przez Siepomaga</span></span></span></h3><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<script type="text/javascript" src="https://www.siepomaga.pl/f/chfr/widget/150x155/green.js"></script><iframe src="https://www.siepomaga.pl/f/chfr/widget/150x155/green.htm" scrolling="no" frameborder="0" style="border:0; height: 155px; width: 150px;"></iframe></div><div class="clearbreak"></div></div></div></div><div class="solid-1 jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><h3 class="jsn-moduletitle"><span class="jsn-moduletitle_inner1"><span class="jsn-moduletitle_inner2"><span class="jsn-moduleicon">transferuj</span></span></span></h3><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p>Przekaż darowiznę przez Transferuj.pl</p>
+<form action="https://secure.transferuj.pl" method="post" name="payment"><input name="id" type="hidden" value="25024"><input name="opis" type="hidden" value="Darowizna na cele statutowe"><input name="online" type="hidden" value="1"><input name="nazwisko" type="hidden" value="Chrześcijańska Fundacja Radość"><input name="md5sum" type="hidden" value="29203b203713d870b9115e66b1946a3f"><input type="submit" value="Wpłacam"></form></div><div class="clearbreak"></div></div></div></div>
+										</div>
+									</div>
+								</div>
+									</div>
+			</div>
+		</div>
+							<div id="jsn-footer">
+				<div id="jsn-footermodules" class="jsn-modulescontainer jsn-modulescontainer1 row-fluid">
+										<div id="jsn-pos-bottom" class="span12">
+						<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p>Copyright © 2008 - 2016 <a href="http://www.Fundacja-Radosc.pl">www.Fundacja-Radosc.pl</a>. All rights reserved.</p></div><div class="clearbreak"></div></div></div></div>
+					</div>
+
+										<div class="clearbreak"></div>
+				</div>
+			</div>
+			</div>
+	<div id="jsn-brand">
+		JSN Solid template designed by <a href="http://www.joomlashine.com" target="_blank" title="Free Hi-Quality Joomla Templates on JoomlaShine">JoomlaShine.com</a>
+	</div>
+
+</div>
+
+<div id="sbox-overlay" aria-hidden="true" tabindex="-1" style="z-index: 65555; opacity: 0;"></div><div id="sbox-window" role="dialog" aria-hidden="true" class="shadow" style="z-index: 65557;"><div id="sbox-content" style="opacity: 0;"></div><a id="sbox-btn-close" href="#" role="button" aria-controls="sbox-window"></a></div></body></html>
