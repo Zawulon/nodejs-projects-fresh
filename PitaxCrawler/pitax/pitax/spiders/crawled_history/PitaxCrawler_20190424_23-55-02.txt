@@ -1,0 +1,1794 @@
+2019-04-24 23:55:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: pitax)
+2019-04-24 23:55:03 [scrapy.utils.log] INFO: Versions: lxml 3.4.0.0, libxml2 2.9.1, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.4.2 (default, Oct  8 2014, 10:45:20) - [GCC 4.9.1], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-3.16.0-6-amd64-x86_64-with-debian-8.10
+2019-04-24 23:55:03 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_MAX_DELAY': 20, 'AUTOTHROTTLE_START_DELAY': 3, 'NEWSPIDER_MODULE': 'pitax.spiders', 'BOT_NAME': 'pitax', 'AUTOTHROTTLE_ENABLED': True, 'SPIDER_LOADER_WARN_ONLY': True, 'DOWNLOAD_DELAY': 3, 'SPIDER_MODULES': ['pitax.spiders'], 'LOG_FILE': 'crawled_history/PitaxCrawler_20190424_23-55-02.txt', 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter'}
+2019-04-24 23:55:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2019-04-24 23:55:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-04-24 23:55:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-04-24 23:55:03 [scrapy.middleware] INFO: Enabled item pipelines:
+['pitax.pipelines.Sqlite3Pipeline']
+2019-04-24 23:55:03 [scrapy.core.engine] INFO: Spider opened
+2019-04-24 23:55:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-04-24 23:55:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-04-24 23:55:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://1podatku.org/podaj-dalej-1-podatku/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:55:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://1procent.synapsis.org.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://1procent.viva.org.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://1procent.zaginieni.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:55:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://1podatku.org/podaj-dalej-1-podatku/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': '1 Podatku Fundacja Podaj Dalej - Konin - jeden procent '
+                'podatku PIT na rehabilitację dla niepełnosprawnych - '
+                'WYPEŁNIJ PIT',
+ 'crawl_url': 'http://1podatku.org/podaj-dalej-1-podatku/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:55:18 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pobierz/0000197058/" '
+              'class="myButton" target="_blank">POBIERZ PROGRAM PIT</a>,<a '
+              'href="https://www.pitax.pl/rozlicz/0000197058/" '
+              'class="myButton" target="_blank">WYPEŁNIJ PIT ONLINE</a>,<a '
+              'href="https://www.pitax.pl/krs/formularze/0000197058/" '
+              'class="myButton" target="_blank">WYDRUKUJ FORMULARZE</a>,<a '
+              'href="https://www.iwop.pl/">Instytut Wsparcia Organizacji '
+              'Pozarządowych</a>,<a '
+              'href="https://www.pitax.pl/">PITax.pl</a>,<a '
+              'href="https://www.pitax.pl/pobierz/0000197058/" '
+              'class="myButton" target="_blank">POBIERZ PROGRAM PIT</a>,<a '
+              'href="https://www.pitax.pl/rozlicz/0000197058/" '
+              'class="myButton" target="_blank">WYPEŁNIJ PIT ONLINE</a>,<a '
+              'href="https://www.pitax.pl/krs/formularze/0000197058/" '
+              'class="myButton" target="_blank">WYDRUKUJ FORMULARZE</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:55:18 GMT'}
+2019-04-24 23:55:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://1procent.wiatrak.org.pl/#przekazJedenProcent via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:55:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://3obieg.pl/rozliczenie-podatkowe-na-preferencyjnych-warunkach-z-programem-pit via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:55:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://1procent.synapsis.org.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Pomóż dzieciom z autyzmem. Przekaż 1% podatku. - Synapsis',
+ 'crawl_url': 'http://1procent.synapsis.org.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:55:21 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pit-online">PITax.pl Łatwe '
+              'podatki</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:55:21 GMT'}
+2019-04-24 23:55:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://4lomza.pl/index.php?wiad=44322 via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:55:43 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://100procentradosci.fundacja-hipoterapia.pl/ via http://localhost:8050/render.html> (failed 1 times): 502 Bad Gateway
+2019-04-24 23:55:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://1procent.viva.org.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Przekaż 1% podatku dla Vivy!',
+ 'crawl_url': 'http://1procent.viva.org.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:55:24 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/pobierz/0000135274?cel=FundacjaViva" '
+              'target="_blank" rel="alternate"><span style="color: '
+              '#ffffff;">Pobierz darmowy program i rozlicz z nami swój '
+              'PIT</span></a>,<a '
+              'href="https://www.pitax.pl/rozlicz/0000135274/?cel=Fundacja%20Viva" '
+              'target="_blank" rel="alternate"><span style="color: '
+              '#ffffff;">Rozlicz z nami PIT ONLINE\xa0</span></a>,<a '
+              'href="https://www.iwop.pl/">Instytut WsparciaOrganizacji '
+              'Pozarządowych</a>,<a href="https://www.pitax.pl/" '
+              'rel="alternate">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:55:24 GMT'}
+2019-04-24 23:55:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://1procent.zaginieni.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Fundacja Itaka - przekaż 1% podatku',
+ 'crawl_url': 'http://1procent.zaginieni.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:55:24 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pobierz?krs=0000126459" '
+              'target="_blank" class="btn_50p btn_50p_mg" '
+              'onclick="_gaq.push([\'_trackEvent\', \'Pobrania\', \'Program '
+              'PIT 2018\', \'Przycisk Pobierz\']);"><span>Pobierz bezpłatny '
+              'Program PIT 2018<br>Przekaż swój 1%</span></a>,<a '
+              'href="https://www.pitax.pl/rozlicz?krs=0000126459" '
+              'target="_blank" class="btn_50p" '
+              'onclick="_gaq.push([\'_trackEvent\', \'Pobrania\', \'Program '
+              'PIT 2018\', \'Przycisk Pit online\']);"><span>Wypełnij online '
+              'PIT 2018<br>Przekaż swój 1%</span></a>,<a title="PITax.pl '
+              'Łatwe podatki" target="_blank" href="https://www.pitax.pl/" '
+              'class="logo_pitprogram">1% zbieramy we współpracy z PITax.pl '
+              'Łatwe podatki</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:55:24 GMT'}
+2019-04-24 23:55:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://4up.pl/finanse/gglv/rozlicz-pity-roczne-online-i-zapomnij-o-papierowych-formularzach.html via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:56:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://1procent.wiatrak.org.pl/#przekazJedenProcent>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Rozkręć z nami dobro!',
+ 'crawl_url': 'http://1procent.wiatrak.org.pl/#przekazJedenProcent',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:55:27 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/krs/formularze/0000175233%20" '
+              'target="_blank "><img class="anim img-fluid " '
+              'src="assets/images/pitb2.gif%20"></a>,<a '
+              'href="https://www.pitax.pl/%20" target="_blank ">PITax.pl '
+              'Łatwe podatki</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:55:27 GMT'}
+2019-04-24 23:56:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://3obieg.pl/rozliczenie-podatkowe-na-preferencyjnych-warunkach-z-programem-pit>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Rozliczenie podatkowe na preferencyjnych warunkach z '
+                'programem pit - 3obieg.pl - Serwis informacyjny '
+                'dziennikarstwa obywatelskiego.',
+ 'crawl_url': 'http://3obieg.pl/rozliczenie-podatkowe-na-preferencyjnych-warunkach-z-programem-pit',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:55:27 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/program-pit/">program pit</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:55:27 GMT'}
+2019-04-24 23:56:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://100procentradosci.fundacja-hipoterapia.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:56:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://80bpm.net/2016/12/rozliczamy-pity-programem/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:56:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://4lomza.pl/index.php?wiad=44322>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Pierwsze zeznania pit online - ::4lomza.pl:: Regionalny '
+                'Portal',
+ 'crawl_url': 'http://4lomza.pl/index.php?wiad=44322',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:55:35 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pit-online" '
+              'target="_blank"><span style="text-decoration: underline;">pit '
+              'online</span></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:55:35 GMT'}
+2019-04-24 23:56:17 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 10 pages/min), scraped 7 items (at 7 items/min)
+2019-04-24 23:56:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ada.org.pl/zaangazuj-sie/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:56:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://4up.pl/finanse/gglv/rozlicz-pity-roczne-online-i-zapomnij-o-papierowych-formularzach.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Rozlicz pity roczne online i zapomnij o papierowych '
+                'formularzach - 4up.pl',
+ 'crawl_url': 'http://4up.pl/finanse/gglv/rozlicz-pity-roczne-online-i-zapomnij-o-papierowych-formularzach.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:55:43 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/program-pit/">pit 2017 '
+              'program</a>,<a href="http://www.iwop.pl/pity/">Instytut '
+              'Wsparcia Organizacji Pozarządowych</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:55:43 GMT'}
+2019-04-24 23:56:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://alauda.org.pl/about/list/9/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:56:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://100procentradosci.fundacja-hipoterapia.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Fundacja Hipoterapia Na Rzecz Rehabilitacji Dzieci '
+                'Niepełnosprawnych',
+ 'crawl_url': 'http://100procentradosci.fundacja-hipoterapia.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:55:56 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/krs/0000043097" '
+              'id="lP3l2efqyvRyoIvaOJoQxa5odrD0I8E9" class="widget '
+              'widget-image" target="_blank">\n'
+              '    <img '
+              'src="https://images.assets-landingi.com/dDebEf9e/banner_opp_rozlicz_320x100_pom.gif" '
+              'alt="" width="314" height="95">\n'
+              '</a>,<a '
+              'href="https://www.pitax.pl/krs/formularze/0000043097/" '
+              'id="OGzuG8EINZVAz7KSWzozOHGVlMfAQea1" class="widget '
+              'widget-button" version="2" target="_blank" '
+              'onclick="ga(\'send\',\'event\', \'Wyslanie PIT\', '
+              '\'wypełnij\');"><div class="widget-overlay"></div><div '
+              'id="LCZIoGlSovXlWXdEM6POaSIm3N4aydPc" class="widget '
+              'widget-text"></div></a>,<a '
+              'href="https://www.pitax.pl/rozlicz?krs=0000043097" '
+              'id="BHH77tTIWScib8FCkJ7lilT0RNcNqIhO" class="widget '
+              'widget-button" version="2" target="_blank" '
+              'onclick="ga(\'send\',\'event\', \'Wyslanie PIT\', '
+              '\'wypełnij\');"><div class="widget-overlay"></div><div '
+              'id="C4HBubn16c2stwvTPuTdHCxh8qdMLEw7" class="widget '
+              'widget-text"></div></a>,<a href="https://www.pitax.pl/" '
+              'id="S0LcrtSngHoC5Pp0BKuSdgTC84h42Ohe" class="widget '
+              'widget-button" version="2" target="_blank" '
+              'onclick="ga(\'send\',\'event\', \'Wyslanie PIT\', '
+              '\'wypełnij\');"><div class="widget-overlay"></div><div '
+              'id="nTkvyqTzdDScJ74DazA7b0EvhKTeCnDf" class="widget '
+              'widget-text"></div></a>,<a '
+              'href="https://www.pitax.pl/krs/0000043097" '
+              'id="c7BHUDbNuzq98rOm16B5eQWPCkWUhvJC" class="widget '
+              'widget-button" version="2" target="_blank" '
+              'onclick="ga(\'send\',\'event\', \'Wyslanie PIT\', '
+              '\'przekaz\');"><div class="widget-overlay"></div><div '
+              'id="vnGFAeqlhsgoBHr5iZs3UpbybNrtuMDv" class="widget '
+              'widget-text"></div></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:55:56 GMT'}
+2019-04-24 23:56:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://80bpm.net/2016/12/rozliczamy-pity-programem/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Rozliczamy pity z programem – 80bpm.net',
+ 'crawl_url': 'http://80bpm.net/2016/12/rozliczamy-pity-programem/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:55:56 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pity/">pitax.pl/pity</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:55:56 GMT'}
+2019-04-24 23:56:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://aleklasa.pl/ostatnie-wpisy/rozliczyc-pit-boleslawcu via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:56:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://ada.org.pl/zaangazuj-sie/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Stowarzyszenie Pomocy Dzieciom Specjalnej Troski ADA   » '
+                'Zaangażuj się',
+ 'crawl_url': 'http://ada.org.pl/zaangazuj-sie/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:56:09 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/krs/0000034605">darmowego '
+              'programu</a>,<a '
+              'href="https://www.pitax.pl/pit-online/">PITax.pl Łatwe '
+              'podatki</a>,<a '
+              'href="https://www.pitax.pl/krs/0000034605"><img '
+              'class="aligncenter wp-image-5889 size-full" '
+              'src="http://ada.org.pl/wp-content/uploads/2014/06/arm-hugs-3.jpg" '
+              'alt="Przekaż 1% swojego podatku" width="560" height="397"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:56:09 GMT'}
+2019-04-24 23:56:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://alexjones.pl/aj/aj-inne/item/105840-organizacje-pozytku-publicznego-opp-licza-na-wsparcie via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:56:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://alauda.org.pl/about/list/9/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Towarzystwo Przyrodnicze ALAUDA',
+ 'crawl_url': 'http://alauda.org.pl/about/list/9/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:56:17 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://www.pitax.pl/rozlicz/0000380495/" '
+              'target="_blank"><img '
+              'src="../../../../tinymce/files/Urozlicz-pit-online-new-button.png" '
+              'alt=""></a>,<a href="http://www.pitax.pl/pobierz/0000380495/" '
+              'target="_blank"><img '
+              'src="../../../../tinymce/files/UPobierz-pit-button.png" '
+              'alt=""></a>,<a href="http://www.iwop.pl">Instytut Wsparcia '
+              'Organizacji Pozarządowych</a>,<a '
+              'href="http://www.pitax.pl">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:56:17 GMT'}
+2019-04-24 23:56:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://amazonki.krakow.pl/index.php/przekaz-nam-1 via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:57:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://aleklasa.pl/ostatnie-wpisy/rozliczyc-pit-boleslawcu>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': '\n\t\t\tAleKlasa | Page not found\t\t',
+ 'crawl_url': 'http://aleklasa.pl/ostatnie-wpisy/rozliczyc-pit-boleslawcu',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:56:25 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 21:56:25 GMT'}
+2019-04-24 23:57:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://amazonki.krakow.pl/index.php/przekaz-nam-2 via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:57:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://alexjones.pl/aj/aj-inne/item/105840-organizacje-pozytku-publicznego-opp-licza-na-wsparcie>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Organizacje Pożytku Publicznego (OPP) liczą na wsparcie',
+ 'crawl_url': 'http://alexjones.pl/aj/aj-inne/item/105840-organizacje-pozytku-publicznego-opp-licza-na-wsparcie',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:56:38 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pity-2016/">pitax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:56:38 GMT'}
+2019-04-24 23:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://amazonki.krakow.pl/index.php/przekaz-nam-3 via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:57:13 [scrapy.extensions.logstats] INFO: Crawled 17 pages (at 7 pages/min), scraped 14 items (at 7 items/min)
+2019-04-24 23:57:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://amazonki.krakow.pl/index.php/przekaz-nam-1>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Przekaż nam 1%',
+ 'crawl_url': 'http://amazonki.krakow.pl/index.php/przekaz-nam-1',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:56:46 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://www.pitax.pl/rozlicz/0000167942/"><img '
+              'src="/images/rozlicz.png" alt=""></a>,<a '
+              'href="http://www.pitax.pl/pobierz/0000167942/"><img '
+              'src="/images/pobierz.png" alt=""></a>,<a '
+              'href="https://www.iwop.pl/">Instytut Wsparcia Organizacji '
+              'Pozarządowych</a>,<a href="https://www.pitax.pl/">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:56:46 GMT'}
+2019-04-24 23:57:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://amazonki.krakow.pl/index.php/przekaz-nam-2>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': '404-Błąd: 404',
+ 'crawl_url': 'http://amazonki.krakow.pl/index.php/przekaz-nam-2',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:56:54 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 21:56:54 GMT'}
+2019-04-24 23:57:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://amazonki.leszno.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:57:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://amazonki.krakow.pl/index.php/przekaz-nam-3>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': '404-Błąd: 404',
+ 'crawl_url': 'http://amazonki.krakow.pl/index.php/przekaz-nam-3',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:57:02 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 21:57:02 GMT'}
+2019-04-24 23:57:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://amazonki.wroclaw.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:57:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://amazonki.krakow.pl/index.php/przekaz-nam-4 via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:57:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://amazonki.wroclaw.pl/1-podatku/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:57:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://amazonki.leszno.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': '"Amazonka" – Leszczyńskie Stowarzyszenie Rehabilitacyjne',
+ 'crawl_url': 'http://amazonki.leszno.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:57:18 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/">PITax.pl Łatwe Podatki</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:57:18 GMT'}
+2019-04-24 23:57:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://amazonkisosnowiec.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://amazonki.wroclaw.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Stowarzyszenie Amazonek Femina Fenix Wrocław',
+ 'crawl_url': 'http://amazonki.wroclaw.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:57:26 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.iwop.pl/%20">Instytut Wsparcia<br>\n'
+              'Organizacji Pozarządowych</a>,<a '
+              'href="https://www.pitax.pl/%20">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:57:26 GMT'}
+2019-04-24 23:57:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://amazonki.krakow.pl/index.php/przekaz-nam-4>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': '404-Błąd: 404',
+ 'crawl_url': 'http://amazonki.krakow.pl/index.php/przekaz-nam-4',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:57:26 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 21:57:26 GMT'}
+2019-04-24 23:57:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://amazonkiwarszawa.pl/wesprzyj-nas/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:58:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://amazonki.wroclaw.pl/1-podatku/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': '1% podatku | Stowarzyszenie Amazonek Femina Fenix Wrocław',
+ 'crawl_url': 'http://amazonki.wroclaw.pl/1-podatku/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:57:34 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://www.pitax.pl/rozlicz/0000085940/"><img '
+              'class="aligncenter wp-image-263 size-full" '
+              'src="http://amazonki.wroclaw.pl/wp-content/uploads/2018/02/triboard_Amazonki.jpg" '
+              'alt="triboard_Amazonki" width="982" height="412" '
+              'srcset="http://amazonki.wroclaw.pl/wp-content/uploads/2018/02/triboard_Amazonki.jpg '
+              '982w, '
+              'http://amazonki.wroclaw.pl/wp-content/uploads/2018/02/triboard_Amazonki-300x126.jpg '
+              '300w, '
+              'http://amazonki.wroclaw.pl/wp-content/uploads/2018/02/triboard_Amazonki-768x322.jpg '
+              '768w" sizes="(max-width: 982px) 100vw, 982px"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:57:34 GMT'}
+2019-04-24 23:58:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://applemobile.pl/korekta-pit-36-online/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:58:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://amazonkisosnowiec.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Newsy',
+ 'crawl_url': 'http://amazonkisosnowiec.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:57:37 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/rozlicz/0000002116/?cel="><img '
+              'src="/images/1_2017.jpg" alt=""></a>,<a '
+              'href="https://www.iwop.pl/">Instytut Wsparcia Organizacji '
+              'Pozarządowych</a>,<a '
+              'href="https://www.pitax.pl/rozliczenie-pit/">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:57:37 GMT'}
+2019-04-24 23:58:15 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 7 pages/min), scraped 22 items (at 8 items/min)
+2019-04-24 23:58:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ariadnafundacja.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:58:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://amazonkiwarszawa.pl/wesprzyj-nas/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'AmazonkiWarszawa.pl | WESPRZYJ NAS',
+ 'crawl_url': 'http://amazonkiwarszawa.pl/wesprzyj-nas/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:57:45 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 21:57:45 GMT'}
+2019-04-24 23:58:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://arka.edu.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:58:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://applemobile.pl/korekta-pit-36-online/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Korekta pit 36 online - Serwis iPhone Szczecin - '
+                'AppleMobile.pl - iPhone, iPod, iPadSerwis iPhone Szczecin - '
+                'AppleMobile.pl - iPhone, iPod, iPad',
+ 'crawl_url': 'http://applemobile.pl/korekta-pit-36-online/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:57:59 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pit36/">pit 36 online</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:57:59 GMT'}
+2019-04-24 23:58:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://arscreatori.pl/podziel-sie-1-podatku/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://ariadnafundacja.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': '\n'
+                '\t\t   Fundacja Ariadna - Człowiek jest wielki nie przez '
+                'to, co posiada, lecz przez to, kim jest;  nie przez to, co '
+                'ma,  lecz przez to, czym dzieli się z innymi.\t',
+ 'crawl_url': 'http://ariadnafundacja.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:58:07 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/krs/0000113872" '
+              'target="_blank"><img '
+              'src="https://www.pitax.pl/assets/banners/banner_opp_rozlicz_300x250_pom.gif" '
+              'width="300" height="250" alt="Darmowy Program PIT" '
+              'border="0"></a>,<a href="https://www.pitax.pl/pit-online" '
+              'target="_blank">PIT online</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:58:07 GMT'}
+2019-04-24 23:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://artelis.pl/artykuly/70775/Odwiedz-urzad-skarbowy-przez-internet via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:58:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://arka.edu.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Prywatna Szkoła Podstawowa "Arka" - Zapraszamy! | 25 lat na '
+                'terenie Wrocławia. Rodzinna atmosfera, indywidualne '
+                'podejście, chrześcijańskie wartości. Odwiedź nas i '
+                'przekonaj się, dlaczego warto wybrać "Arkę".',
+ 'crawl_url': 'http://arka.edu.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:58:15 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 21:58:15 GMT'}
+2019-04-24 23:58:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://artmuzyka.pl/cms/44293/pitaxpl_ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:58:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://arscreatori.pl/podziel-sie-1-podatku/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Podziel się 1% podatku – Fundacja ArsCreatori',
+ 'crawl_url': 'http://arscreatori.pl/podziel-sie-1-podatku/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:58:23 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/rozlicz/0000511336/?cel=PodajCel"><img '
+              'class="aligncenter size-full wp-image-382" '
+              'src="http://arscreatori.pl/wp-content/uploads/2018/02/rozlicz-pit-online-new-button.png" '
+              'alt="rozlicz-pit-online-new-button" width="234" '
+              'height="83"></a>,<a '
+              'href="https://www.pitax.pl/pobierz/0000511336/"><img '
+              'class="aligncenter size-full wp-image-383" '
+              'src="http://arscreatori.pl/wp-content/uploads/2018/02/UPobierz-pit-button.png" '
+              'alt="upobierz-pit-button" width="234" height="83"></a>,<a '
+              'href="https://www.iwop.pl/">Instytut Wsparcia Organizacji '
+              'Pozarządowych</a>,<a href="https://www.pitax.pl/">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:58:23 GMT'}
+2019-04-24 23:58:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://asbe.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:59:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://artelis.pl/artykuly/70775/Odwiedz-urzad-skarbowy-przez-internet>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Artelis  - Odwiedź urząd skarbowy przez internet - Artelis '
+                '- Treść Zewnętrzna - Finanse i Ekonomia, Podatki ',
+ 'crawl_url': 'http://artelis.pl/artykuly/70775/Odwiedz-urzad-skarbowy-przez-internet',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:58:31 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/urzad-skarbowy-online/"><strong>Urząd '
+              'skarbowy przez Internet</strong></a>,<a '
+              'href="http://www.iwop.pl/pity/">Instytut Wsparcia Organizacji '
+              'Pozarządowych</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:58:31 GMT'}
+2019-04-24 23:59:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://atlanty.pl/wykaz-prenumerowanych-czasopism-2017 via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:59:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://artmuzyka.pl/cms/44293/pitaxpl_>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Społeczne Szkoły Muzyczne w Szczecinie',
+ 'crawl_url': 'http://artmuzyka.pl/cms/44293/pitaxpl_',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:58:39 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 21:58:39 GMT'}
+2019-04-24 23:59:11 [scrapy.extensions.logstats] INFO: Crawled 31 pages (at 7 pages/min), scraped 29 items (at 7 items/min)
+2019-04-24 23:59:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://audyty-bezpieczenstwa.pl/#partnerzy via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:59:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://asbe.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Fundacja im. Joanny Bednarczyk',
+ 'crawl_url': 'http://asbe.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:58:47 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/krs/0000223475?amputm_source=opp_0000223475&amp;utm_medium=banner_opp_rozlicz_300x250_gran.gif&amp;utmcampaign=OPPSitePrzekaz1procent" '
+              'target="_blank"><img src="http://i65.tinypic.com/2zflxj4.gif" '
+              'alt="Image and video hosting by TinyPic" border="0"></a>,<a '
+              'href="https://www.pitax.pl" '
+              'target="_blank">https://www.pitax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:58:47 GMT'}
+2019-04-24 23:59:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://augustow24.pl/info/najwczesniej-skladane-deklaracje-pit--.16031.html via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:59:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://atlanty.pl/wykaz-prenumerowanych-czasopism-2017>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Wykaz prenumerowanych czasopism na 2018 rok - Biblioteka '
+                'pod Atlantami w Wałbrzychu',
+ 'crawl_url': 'http://atlanty.pl/wykaz-prenumerowanych-czasopism-2017',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:58:55 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 21:58:55 GMT'}
+2019-04-24 23:59:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://autopolan.pl/preferencyjne-rozliczenie-pit-dzieckiem/ via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:59:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://audyty-bezpieczenstwa.pl/#partnerzy>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Database Error',
+ 'crawl_url': 'http://audyty-bezpieczenstwa.pl/#partnerzy',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:59:03 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 21:59:03 GMT'}
+2019-04-24 23:59:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://autyzmopole.pl/?p=1616 via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:59:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://augustow24.pl/info/najwczesniej-skladane-deklaracje-pit--.16031.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Augustow24.pl | Najwcześniej składane deklaracje PIT-28 '
+                '(2887)',
+ 'crawl_url': 'http://augustow24.pl/info/najwczesniej-skladane-deklaracje-pit--.16031.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:59:11 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pit-28/" '
+              'target="_blank"><strong>pit 28</strong></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:59:11 GMT'}
+2019-04-24 23:59:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://autyzmopole.pl/?p=1617 via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:59:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://autopolan.pl/preferencyjne-rozliczenie-pit-dzieckiem/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Preferencyjne rozliczenie pit z dzieckiem',
+ 'crawl_url': 'http://autopolan.pl/preferencyjne-rozliczenie-pit-dzieckiem/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:59:19 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/rozliczenie-pit/">https://www.pitax.pl/rozliczenie-pit/</a>,<a '
+              'href="http://www.iwop.pl/pity/">Instytutem Wsparcia '
+              'Organizacji Pozarządowych</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:59:19 GMT'}
+2019-04-24 23:59:59 [scrapy.core.scraper] ERROR: Spider error processing <GET http://autyzmopole.pl/?p=1616 via http://localhost:8050/render.html> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.4/dist-packages/scrapy_splash/middleware.py", line 156, in process_spider_output
+    for el in result:
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/twoznica/nodejs-projects-fresh/PitaxCrawler/pitax/pitax/spiders/toscrape-test3.py", line 95, in parse
+    item['crawl_title'] = response.xpath('//title/text()')[0].extract()
+  File "/usr/local/lib/python3.4/dist-packages/parsel/selector.py", line 61, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2019-04-24 23:59:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://azs.umcs.pl/1-procent.html via http://localhost:8050/render.html> (referer: None)
+2019-04-24 23:59:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://autyzmopole.pl/?p=1618 via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:00:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://autyzmopole.pl/?p=1617 via http://localhost:8050/render.html> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.4/dist-packages/scrapy_splash/middleware.py", line 156, in process_spider_output
+    for el in result:
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/twoznica/nodejs-projects-fresh/PitaxCrawler/pitax/pitax/spiders/toscrape-test3.py", line 95, in parse
+    item['crawl_title'] = response.xpath('//title/text()')[0].extract()
+  File "/usr/local/lib/python3.4/dist-packages/parsel/selector.py", line 61, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2019-04-25 00:00:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://azymut45gdynia.org via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:00:10 [scrapy.extensions.logstats] INFO: Crawled 39 pages (at 8 pages/min), scraped 34 items (at 5 items/min)
+2019-04-25 00:00:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baba.org.pl/index.php/zaangazuj-sie/jak-przekazac-1-procent-podatku/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:00:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://azs.umcs.pl/1-procent.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Przekaż 1 procent podatku - AZS UMCS Lublin - oficjalna '
+                'strona internetowa',
+ 'crawl_url': 'http://azs.umcs.pl/1-procent.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:59:51 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/rozlicz/0000056079/" '
+              'target="_blank"><strong><img class="left" title="" '
+              'src="https://www.pitax.pl/assets/Uploads/rozlicz-pit-online-new-button.png" '
+              'alt="rozlicz pit online new button" width="234" '
+              'height="83"></strong></a>,<a '
+              'href="https://www.pitax.pl/pobierz/0000056079/" '
+              'target="_blank"><img class="left" title="" '
+              'src="https://www.pitax.pl/assets/Uploads/Pobierz-pit-button.png" '
+              'alt="Pobierz pit button" width="234" height="83"></a>,<a '
+              'href="https://www.iwop.pl/">Instytut Wsparcia Organizacji '
+              'Pozarządowych</a>,<a '
+              'href="https://www.pitax.pl/">PITax.pl</a>,<a '
+              'href="https://www.pitax.pl/krs/formularze/0000056079/"><img '
+              'style="display: block; margin-left: auto; margin-right: '
+              'auto;" title="" '
+              'src="https://www.pitax.pl/assets/banners/pobierz_formularze_fiolet_250_250.png" '
+              'alt="" height="250"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:59:51 GMT'}
+2019-04-25 00:00:23 [scrapy.core.scraper] ERROR: Spider error processing <GET http://autyzmopole.pl/?p=1618 via http://localhost:8050/render.html> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.4/dist-packages/scrapy_splash/middleware.py", line 156, in process_spider_output
+    for el in result:
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/twoznica/nodejs-projects-fresh/PitaxCrawler/pitax/pitax/spiders/toscrape-test3.py", line 95, in parse
+    item['crawl_title'] = response.xpath('//title/text()')[0].extract()
+  File "/usr/local/lib/python3.4/dist-packages/parsel/selector.py", line 61, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2019-04-25 00:00:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baby-shower.pl/uprawnienia-ulgi-dzieci via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:00:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://azymut45gdynia.org>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Azymut 45 ',
+ 'crawl_url': 'http://azymut45gdynia.org',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 21:59:59 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/rozlicz/0000413120/?cel=WsparceRozwojuKlubu" '
+              'target="_blank">\n'
+              '  <img '
+              'src="/website/var/assets/ikonki/1_pitax_przekaz_jeden_procent.png" '
+              'alt="Rozliczenie PIT z PITax.pl" border="0">\n'
+              '</a>,<a href="https://www.iwop.pl/%20">Instytut Wsparcia\n'
+              'Organizacji Pozarządowych</a>,<a '
+              'href="https://www.pitax.pl/%20">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 21:59:59 GMT'}
+2019-04-25 00:00:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bankserc.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:00:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://baba.org.pl/index.php/zaangazuj-sie/jak-przekazac-1-procent-podatku/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': '\n'
+                'Jak przekazać 1% podatku | BABA Lubuskie Stowarzyszenie na '
+                'Rzecz Kobiet\t',
+ 'crawl_url': 'http://baba.org.pl/index.php/zaangazuj-sie/jak-przekazac-1-procent-podatku/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:00:07 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.iwop.pl/">https://www.iwop.pl/</a>,<a '
+              'href="https://www.pitax.pl/">https://www.pitax.pl/</a>,<a '
+              'href="https://www.pitax.pl/rozlicz/0000060904/?cel=PodajCel"><img '
+              'alt="" class="alignleft size-medium wp-image-1365" '
+              'height="157" '
+              'src="https://babazg.home.pl/autoinstalator/wordpress/wp-content/uploads/2012/04/BABA_ULOTKA_1_s2-300x212.jpg" '
+              'title="1% pierwsza strona" width="224" '
+              'srcset="https://babazg.home.pl/autoinstalator/wordpress/wp-content/uploads/2012/04/BABA_ULOTKA_1_s2-300x212.jpg '
+              '300w, '
+              'https://babazg.home.pl/autoinstalator/wordpress/wp-content/uploads/2012/04/BABA_ULOTKA_1_s2-150x106.jpg '
+              '150w" sizes="(max-width: 224px) 100vw, 224px"></a>,<a '
+              'href="https://www.iwop.pl/">https://www.iwop.pl/</a>,<a '
+              'href="https://www.pitax.pl/">https://www.pitax.pl/</a>,<a '
+              'href="https://www.pitax.pl/pobierz/0000060904/"><img alt="" '
+              'class="alignright size-medium wp-image-1363" height="300" '
+              'src="https://babazg.home.pl/autoinstalator/wordpress/wp-content/uploads/2017/04/ulotka1procentv2_rewers_DRUK-1.jpg" '
+              'style="float: left;" title="1 % druga strona" width="216"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:00:07 GMT'}
+2019-04-25 00:00:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://beaglewpotrzebie.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:00:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://baby-shower.pl/uprawnienia-ulgi-dzieci>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Uprawnienia do ulgi na dzieci',
+ 'crawl_url': 'http://baby-shower.pl/uprawnienia-ulgi-dzieci',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:00:10 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 22:00:10 GMT'}
+2019-04-25 00:00:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://beskidzkapilka.pl/aktualnosci/8522 via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:00:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bankserc.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Stowarzyszenie Bank Życzliwych Serc',
+ 'crawl_url': 'http://bankserc.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:00:23 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 22:00:23 GMT'}
+2019-04-25 00:01:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://beaglewpotrzebie.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'beaglewpotrzebie.pl - Home',
+ 'crawl_url': 'http://beaglewpotrzebie.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:00:31 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a title="Rozliczenie PIT z PITax.pl" '
+              'href="https://www.pitax.pl/rozliczenie-pit-online-0000451372" '
+              'target="_blank" rel="noopener"><img src="/images/Landing.gif" '
+              'alt=""></a>,<a href="https://www.iwop.pl/">Instytut Wsparcia '
+              'Organizacji Pozarządowych</a>,<a '
+              'href="https://www.pitax.pl/">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:00:31 GMT'}
+2019-04-25 00:01:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://betlejem.org/przekaz-1/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:01:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://beskidzkapilka.pl/aktualnosci/8522>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'BeskidzkaPilka.pl - Twój serwis piłki lokalnej',
+ 'crawl_url': 'http://beskidzkapilka.pl/aktualnosci/8522',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:00:39 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pity-2017/" '
+              'target="_blank"><strong>www.PITax.pl</strong></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:00:39 GMT'}
+2019-04-25 00:01:12 [scrapy.extensions.logstats] INFO: Crawled 45 pages (at 6 pages/min), scraped 41 items (at 7 items/min)
+2019-04-25 00:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bg.ue.katowice.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:01:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bialostocka.zhp.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:01:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bg.szczecin.pl/e-czasopisma/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:01:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://betlejem.org/przekaz-1/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Przekaż 1% - Stowarzyszenie Betlejem',
+ 'crawl_url': 'http://betlejem.org/przekaz-1/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:00:47 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 22:00:47 GMT'}
+2019-04-25 00:01:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka-rypin.pl/aktualnosci via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:01:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bg.ue.katowice.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Strona Główna',
+ 'crawl_url': 'http://bg.ue.katowice.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:01:04 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 22:01:04 GMT'}
+2019-04-25 00:01:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka-ujazd.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:01:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bialostocka.zhp.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Chorągiew Białostocka ZHP',
+ 'crawl_url': 'http://bialostocka.zhp.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:01:12 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/rozlicz/0000271846/"><img '
+              'src="./files/slider/1procent2018_slide.png" title=""></a>,<a '
+              'href="https://www.pitax.pl/rozlicz/0000271846/"><img '
+              'style="padding-bottom:10px;" '
+              'src="./files/1procent/rozlicz-pit-online-new-button.png" '
+              'alt="Rozliczenie PIT z PITax.pl" border="0">\n'
+              '</a>,<a href="https://www.pitax.pl/pobierz/0000271846/"><img '
+              'style="padding-bottom:10px;" '
+              'src="./files/1procent/Pobierz-pit-button.png" '
+              'alt="Rozliczenie PIT z PITax.pl" border="0">\n'
+              '</a>,<a href="https://www.iwop.pl/"><img '
+              'src="./files/1procent/1procent2018_stopka1.png" '
+              'border="0"></a>,<a href="https://www.pitax.pl/"><img '
+              'src="./files/1procent/1procent2018_stopka2.png" '
+              'border="0"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:01:12 GMT'}
+2019-04-25 00:01:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bg.szczecin.pl/e-czasopisma/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Biblioteka Główna  » E-czasopisma2018',
+ 'crawl_url': 'http://bg.szczecin.pl/e-czasopisma/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:00:55 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 22:00:55 GMT'}
+2019-04-25 00:01:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.dziemiany.pl via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:01:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka-rypin.pl/aktualnosci>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Miejsko – Powiatowa Biblioteka Publiczna w Rypinie - '
+                'Aktualności',
+ 'crawl_url': 'http://biblioteka-rypin.pl/aktualnosci',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:01:15 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://www.pitax.pl"><img style="margin-right: 10px; '
+              'margin-bottom: 10px; margin-left: 10px;" '
+              'src="/images/PITax.jpg" alt="PITax" width="161" '
+              'height="64"></a>,<a '
+              'href="http://www.pitax.pl">www.pitax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:01:15 GMT'}
+2019-04-25 00:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.granowo.pl via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:01:55 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://biblioteka.lwowek.com.pl/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-04-25 00:02:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka-ujazd.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Gminna Biblioteka Publiczna w Ujazeździe – Strona '
+                'biblioteki w Ujeździe',
+ 'crawl_url': 'http://biblioteka-ujazd.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:01:23 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl">PITax.pl Łatwe podatki </a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:01:23 GMT'}
+2019-04-25 00:02:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.jastrzebie.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:02:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.dziemiany.pl>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Biblioteka Publiczna w Dziemianach —',
+ 'crawl_url': 'http://biblioteka.dziemiany.pl',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:01:31 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 22:01:31 GMT'}
+2019-04-25 00:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.lwowek.com.pl via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:02:08 [scrapy.extensions.logstats] INFO: Crawled 54 pages (at 9 pages/min), scraped 48 items (at 7 items/min)
+2019-04-25 00:02:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.granowo.pl>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Aktualności',
+ 'crawl_url': 'http://biblioteka.granowo.pl',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:01:44 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://pitax.pl" target="_blank" rel="noopener '
+              'noreferrer"><img src="/images/pitax.jpg" alt="" '
+              'width="170"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:01:44 GMT'}
+2019-04-25 00:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.jastrzebie.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Miejska Biblioteka Publiczna w Jastrzębiu-Zdroju',
+ 'crawl_url': 'http://biblioteka.jastrzebie.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:01:52 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl" title="PITEX" '
+              'target="_blank">\n'
+              '\t\t\t\t\t\t\t\t\t\t\t\t<img style="max-width:100%;" '
+              'src="http://biblioteka.jastrzebie.pl/_public/source/loga/pitax_logo_white.jpg" '
+              'alt="PITEX">\n'
+              '\t\t       \t\t\t\t\t\t\t\t</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:01:52 GMT'}
+2019-04-25 00:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.mszana-dolna.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:02:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.lwowek.com.pl>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Biblioteka Publiczna Miasta i Gminy Lwówek |Biblioteka '
+                'Publiczna Miasta i Gminy Lwówek',
+ 'crawl_url': 'http://biblioteka.lwowek.com.pl',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:02:00 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a class="widget_sp_image-image-link" '
+              'href="https://www.pitax.pl/" target="_blank"><img '
+              'src="http://biblioteka.lwowek.com.pl/wp-content/uploads/2017/03/pitax.png" '
+              'style="max-width: 120px;" alt="Współpracujemy z PITax.pl '
+              'Łatwe podatki"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:02:00 GMT'}
+2019-04-25 00:02:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.pb.edu.pl/pl/content/cyfrowa-prenumerata-gazety-wyborczej-0 via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.pollub.pl/zasoby/e-czytelnia via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:02:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.mszana-dolna.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Biblioteka w Mszanie Dolnej',
+ 'crawl_url': 'http://biblioteka.mszana-dolna.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:02:16 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://pitax.pl/" target="_blank" '
+              'class="banner"><img '
+              'src="http://biblioteka.mszana-dolna.pl/wp-content/uploads/2017/01/pitax_logo_horizontal-white-width-160.jpg" '
+              'alt="Pitax"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:02:16 GMT'}
+2019-04-25 00:02:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.r-sl.pl/biblioteka/index.php/nasi_darczyncy.html via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:02:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.pb.edu.pl/pl/content/cyfrowa-prenumerata-gazety-wyborczej-0>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Cyfrowa prenumerata Gazety Wyborczej | Biblioteka '
+                'Politechniki Białostockiej',
+ 'crawl_url': 'http://biblioteka.pb.edu.pl/pl/content/cyfrowa-prenumerata-gazety-wyborczej-0',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:02:24 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl" target="_blank">PITax.pl Łatwe '
+              'podatki</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:02:24 GMT'}
+2019-04-25 00:02:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.slowacki.edu.pl/linki/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:02:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.pollub.pl/zasoby/e-czytelnia>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'E-czytelnia | ',
+ 'crawl_url': 'http://biblioteka.pollub.pl/zasoby/e-czytelnia',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:02:32 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/"><b>\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 '
+              '</b></a>,<a href="https://www.pitax.pl/"><img alt="" '
+              'src="/sites/default/files/pitax_logo.png" style="width: '
+              '150px; height: 60px;"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:02:32 GMT'}
+2019-04-25 00:02:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.turek.net.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:03:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.r-sl.pl/biblioteka/index.php/nasi_darczyncy.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Nasi darczyńcy',
+ 'crawl_url': 'http://biblioteka.r-sl.pl/biblioteka/index.php/nasi_darczyncy.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:02:35 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a class="linkred" '
+              'href="mailto:kontakt@pitax.pl">kontakt@pitax.pl</a>,<a '
+              'target="_blank" href="https://www.pitax.pl/" class="linkred" '
+              'title="Otwarcie w nowym oknie">www.pitax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:02:35 GMT'}
+2019-04-25 00:03:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.ustron.pl/pad/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:03:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.slowacki.edu.pl/linki/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Linki – Biblioteka Akademickiego Zespołu Szkół '
+                'Ogólnokształcących w Chorzowie',
+ 'crawl_url': 'http://biblioteka.slowacki.edu.pl/linki/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:02:43 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://pitax.pl">PIT 2017</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:02:43 GMT'}
+2019-04-25 00:03:15 [scrapy.extensions.logstats] INFO: Crawled 61 pages (at 7 pages/min), scraped 56 items (at 8 items/min)
+2019-04-25 00:03:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.wodzislaw.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:03:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.turek.net.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Miejska Biblioteka Publiczna w Turku – Zatrać się w '
+                'czytaniu!',
+ 'crawl_url': 'http://biblioteka.turek.net.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:02:51 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/" target="_blank" rel="noopener '
+              'noreferrer"><img class="alignnone size-full wp-image-512" '
+              'src="http://biblioteka.turek.net.pl/wp-content/uploads/2016/09/pitax.png" '
+              'alt="" width="158" height="52"></a>,<a '
+              'href="https://www.pitax.pl/" target="_blank" rel="noopener '
+              'noreferrer">PITax.pl Łatwe podatki</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:02:51 GMT'}
+2019-04-25 00:03:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biblioteka.wsg.byd.pl/news,3,2,5,Aktualnosci-biblioteczne.html via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:03:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.ustron.pl/pad/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Miejska Biblioteka Publiczna w Ustroniu im. Jana Wantuły',
+ 'crawl_url': 'http://biblioteka.ustron.pl/pad/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:02:59 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl"><img '
+              'src="http://biblioteka.ustron.pl/pad//container/pitax_logo_horizontal-orange-width-200.jpg" '
+              'alt="pitax"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:02:59 GMT'}
+2019-04-25 00:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bibliotekabolkow.blogspot.com/p/partnerzy.html via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.wodzislaw.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Miejska i Powiatowa Biblioteka Publiczna w Wodzisławiu '
+                'Śląskim – W naszej bibliotece znajdziesz …',
+ 'crawl_url': 'http://biblioteka.wodzislaw.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:03:07 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl" title=\'"Chidusz" dostępny '
+              "jest dla czytelników dzięki firmie PITax.pl Łatwe podatki ' "
+              'class="vcex-icon-box-link">\n'
+              '        \n'
+              '    \n'
+              '        <img '
+              'src="http://biblioteka.wodzislaw.pl/wp-content/uploads/2015/05/ch.png" '
+              'alt=\'"Chidusz" dostępny jest dla czytelników dzięki firmie '
+              'PITax.pl Łatwe podatki \' class="vcex-icon-box-image" '
+              'style="width:90px;">\n'
+              '\n'
+              '        \n'
+              '    \n'
+              '        <div class="vcex-icon-box-heading" '
+              'style="font-weight:400;color:#000000;font-size:12px;text-transform:none;">\n'
+              '            "Chidusz" dostępny jest dla czytelników dzięki '
+              'firmie PITax.pl Łatwe podatki         </div>\n'
+              '\n'
+              '    \n'
+              '    </a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:03:07 GMT'}
+2019-04-25 00:03:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bibliotekadalikow.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:03:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biblioteka.wsg.byd.pl/news,3,2,5,Aktualnosci-biblioteczne.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Aktualności » Biblioteka » Wortal Biblioteczny Wyższej '
+                'Szkoły Gospodarki w Bydgoszczy',
+ 'crawl_url': 'http://biblioteka.wsg.byd.pl/news,3,2,5,Aktualnosci-biblioteczne.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:03:15 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/"><img '
+              'src="./images/pitax_logo_horizontal-violet-width-160.jpg"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:03:15 GMT'}
+2019-04-25 00:03:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bibliotekadlugoleka.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:03:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bibliotekabolkow.blogspot.com/p/partnerzy.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'BIBLIOTEKA PUBLICZNA GMINY I MIASTA BOLKÓW: PARTNERZY',
+ 'crawl_url': 'http://bibliotekabolkow.blogspot.com/p/partnerzy.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:03:23 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:03:23 GMT'}
+2019-04-25 00:03:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bibliotekaosina.pl via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:04:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bibliotekadalikow.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': '..:: Gminna Biblioteka w Dalikowie ::..',
+ 'crawl_url': 'http://bibliotekadalikow.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:03:31 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://www.pitax.pl/" target="_blank"><img '
+              'src="dane/images/pitax.png" alt="Pitax" title="Pitax" '
+              'border="0"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:03:31 GMT'}
+2019-04-25 00:04:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bifk.info/2018/02/21/magazyn-chidusz-w-naszej-czytelni/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:04:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bibliotekadlugoleka.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Nasza Biblioteka',
+ 'crawl_url': 'http://bibliotekadlugoleka.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:03:39 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/" target="_blank" '
+              'rel="alternate noopener noreferrer"><img '
+              'src="/images/sponsor/pitax_logo_violet.jpg" width="120" '
+              'height="120"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:03:39 GMT'}
+2019-04-25 00:04:12 [scrapy.extensions.logstats] INFO: Crawled 68 pages (at 7 pages/min), scraped 63 items (at 7 items/min)
+2019-04-25 00:04:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bioderko.chodziez.pl/news1.php?podglad=1298 via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bibliotekaosina.pl>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Strona główna - Gminna Biblioteka Publiczna w Osinie',
+ 'crawl_url': 'http://bibliotekaosina.pl',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:03:47 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/"><img alt="" '
+              'src="http://bibliotekaosina.pl/pliki/obraz/pitax-1523018442.png" '
+              'style="width: 158px; height: 52px;"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:03:47 GMT'}
+2019-04-25 00:04:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biznes-praca.pl/prawo-i-podatki/rozliczenie-pitu-przez-internet-wynagrodzenie-z-umowy-o-prace/hjr_titv via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:04:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bifk.info/2018/02/21/magazyn-chidusz-w-naszej-czytelni/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Magazyn „Chidusz” w naszej Czytelni «  Biblioteka i Forum '
+                'Kultury w Oleśnicy',
+ 'crawl_url': 'http://bifk.info/2018/02/21/magazyn-chidusz-w-naszej-czytelni/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:03:55 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a style="color: #800000;" href="http://pitax.pl/" '
+              'target="_blank" rel="noopener">PITax.pl Łatwe Podatki</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:03:55 GMT'}
+2019-04-25 00:04:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biznes.haloursynow.pl/artykuly/koniec-roku-podatkowego-dla-przedsiebiorcow,7151.htm via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:04:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bioderko.chodziez.pl/news1.php?podglad=1298>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Stowarzyszenie Osób po Endoprotezoplastyce Biodra BIODERKO',
+ 'crawl_url': 'http://bioderko.chodziez.pl/news1.php?podglad=1298',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:04:03 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/opp/zestaw-formularzy-pit-dla-opp/?krs=0000302009"><img '
+              'alt="" '
+              'src="/kcfinder/upload/images/pobierz_formularze_fiolet_728_90.png" '
+              'style="height:150px; width:1100px"></a>,<a '
+              'href="https://www.pitax.pl/krs/0000302009"><img alt="" '
+              'src="/kcfinder/upload/images/banner_opp_rozlicz_728x90_gran_off.gif" '
+              'style="height:150px; width:1100px"></a>,<a '
+              'href="http://www.pitax.pl"><span '
+              'style="color:#ff6600">rozliczenie PIT</span></a>,<a '
+              'href="http://pitax.pl"><span '
+              'style="color:#ff6600">PITax.pl</span></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:04:03 GMT'}
+2019-04-25 00:04:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://blogfcb.com/jak-przekazac-darowizne-i-1-dla-klubu-sportowego/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:04:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biznes-praca.pl/prawo-i-podatki/rozliczenie-pitu-przez-internet-wynagrodzenie-z-umowy-o-prace/hjr_titv>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Rozliczenie PITu przez Internet: wynagrodzenie z umowy o '
+                'pracę | BIZNES-PRACA.PL',
+ 'crawl_url': 'http://biznes-praca.pl/prawo-i-podatki/rozliczenie-pitu-przez-internet-wynagrodzenie-z-umowy-o-prace/hjr_titv',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:04:12 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/" target="_blank">rozliczenie '
+              'PITu przez Internet)</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:04:12 GMT'}
+2019-04-25 00:04:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://biznes.haloursynow.pl/artykuly/koniec-roku-podatkowego-dla-przedsiebiorcow,7151.htm>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Koniec roku podatkowego dla przedsiębiorców',
+ 'crawl_url': 'http://biznes.haloursynow.pl/artykuly/koniec-roku-podatkowego-dla-przedsiebiorcow,7151.htm',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:04:20 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'data-saferedirecturl="https://www.google.com/url?hl=pl&amp;q=https://www.pitax.pl/pit36/&amp;source=gmail&amp;ust=1484391997167000&amp;usg=AFQjCNF3C-9Yx52CEs69X_OAEY5M6Z_JbA" '
+              'href="https://www.pitax.pl/pit36/" '
+              'target="_blank">https://pitax.pl/pit36/</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:04:20 GMT'}
+2019-04-25 00:04:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bort.pl/blog/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:04:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bmbp.pdt.pl/ogloszenia.html via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:05:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://blogfcb.com/jak-przekazac-darowizne-i-1-dla-klubu-sportowego/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Page non trouvée – blogfcb.com',
+ 'crawl_url': 'http://blogfcb.com/jak-przekazac-darowizne-i-1-dla-klubu-sportowego/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:04:28 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 22:04:28 GMT'}
+2019-04-25 00:05:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://boryniemodlinskie.pl/19/9/zostan-darczynca.html via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:05:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bpgl.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:05:06 [scrapy.extensions.logstats] INFO: Crawled 76 pages (at 8 pages/min), scraped 69 items (at 6 items/min)
+2019-04-25 00:05:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bort.pl/blog/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'News - Biuro Obsługi Ruchu Turystycznego BORT PTTK',
+ 'crawl_url': 'http://bort.pl/blog/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:04:44 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/"><strong>PITax.pl Łatwe '
+              'podatki\xa0</strong></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:04:44 GMT'}
+2019-04-25 00:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bmbp.pdt.pl/ogloszenia.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Miejska Biblioteka Publiczna w Bielsku Podlaskim',
+ 'crawl_url': 'http://bmbp.pdt.pl/ogloszenia.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:04:36 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://www.pitax.pl/">firmie PITax.pl Łatwe Podatki '
+              '(która sponsoruje prenumeratę - czytaj więcej) </a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:04:36 GMT'}
+2019-04-25 00:05:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://boryniemodlinskie.pl/19/9/zostan-darczynca.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Zostań Darczyńcą - Partnerstwo Borów Niemodlińskich',
+ 'crawl_url': 'http://boryniemodlinskie.pl/19/9/zostan-darczynca.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:04:52 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://www.pitax.pl/krs/0000252107/"><img '
+              'class="img-responsive" '
+              'src="http://boryniemodlinskie.pl/download//2204/1-przekaz.jpeg" '
+              'alt="1% przekaz.jpeg" title="1% przekaz.jpeg"></a>,<a '
+              'href="https://www.iwop.pl/%20">Instytut Wsparcia Organizacji '
+              'Pozarządowych</a>,<a '
+              'href="https://www.pitax.pl/%20">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:04:52 GMT'}
+2019-04-25 00:05:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bpgl.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Biblioteka Publiczna Gminy Linia',
+ 'crawl_url': 'http://bpgl.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:05:00 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl" title="PITax.pl - łatwe '
+              'podatki" target="_blank"><img class="center-block" '
+              'src="/static/img/pitax.jpg" alt="PITax.pl - łatwe '
+              'podatki"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:05:00 GMT'}
+2019-04-25 00:05:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bratalbert.nstrefa.pl/nadzieja.srem.info/s16,1_procent_podatku.html via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:05:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bpoportal.pl/jak-rozliczyc-pit-38-przez-internet/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:05:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bratalbertlipsko.boo.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:05:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bratalbert.nstrefa.pl/nadzieja.srem.info/s16,1_procent_podatku.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Towarzystwo Pomocy Potrzebującym "Nadzieja"',
+ 'crawl_url': 'http://bratalbert.nstrefa.pl/nadzieja.srem.info/s16,1_procent_podatku.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:05:24 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="http://www.pitax.pl/rozlicz/0000063355/" '
+              'target="_blank"><span style="font-size: smaller;"><img '
+              'src="http://bratalbert.nstrefa.pl/nadzieja.srem.info/fls/editor/Image/Urozlicz-pit-online-new-button.png" '
+              'alt="" width="180" height="64"></span></a>,<a '
+              'href="http://www.pitax.pl/krs/0000063355/"><img '
+              'src="http://bratalbert.nstrefa.pl/nadzieja.srem.info/fls/editor/Image/pitax-przekaz-1-procent-d-750x100.jpg" '
+              'alt="" width="750" height="100"></a>,<a '
+              'href="http://www.iwop.pl">Instrytut Wsparcia Organizacji '
+              'Pozarządowych</a>,<a href="http://www.pitax.pl">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:05:24 GMT'}
+2019-04-25 00:05:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bpoportal.pl/jak-rozliczyc-pit-38-przez-internet/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Jak rozliczyć PIT 38 przez internet? | BPOPortal.pl - '
+                'Portal wiedzy o branży BPO',
+ 'crawl_url': 'http://bpoportal.pl/jak-rozliczyc-pit-38-przez-internet/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:05:16 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pit-online/" '
+              'target="_blank">https://www.pitax.pl/pit-online/.</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:05:16 GMT'}
+2019-04-25 00:05:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://businesstraveller.pl/wiadomosci/polska/polisa-ubezpieczeniowa-zagranicznej-podrozy-sluzbowej-a-pit via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:05:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bratalbertlipsko.boo.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Stowarzyszenie "Pomocna Dłoń" im. Św. Brata Alberta w\n'
+                'Lipsku',
+ 'crawl_url': 'http://bratalbertlipsko.boo.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:05:32 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/rozliczenie-pit-online-0000080582/"><img '
+              'alt="pit" style="border: 0px solid; width: 250px; height: '
+              '250px;" src="pit.png"></a>,<a '
+              'href="https://www.iwop.pl/">Instytut Wsparcia Organizacji '
+              'Pozarządowych</a>,<a '
+              'href="https://www.pitax.pl/program-pit/">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:05:32 GMT'}
+2019-04-25 00:05:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bypoznan.pl/inne/gflv/od-15-marca-fiskus-moze-wypelnic-za-nas-pit.html via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:05:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bullerbyn.org.pl/wsparcie-dla-fundacji/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:06:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://businesstraveller.pl/wiadomosci/polska/polisa-ubezpieczeniowa-zagranicznej-podrozy-sluzbowej-a-pit>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Polska, Polisa ubezpieczeniowa w zagranicznej podróży '
+                'służbowej a pit - Business Traveller Poland',
+ 'crawl_url': 'http://businesstraveller.pl/wiadomosci/polska/polisa-ubezpieczeniowa-zagranicznej-podrozy-sluzbowej-a-pit',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:05:38 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pity/">www.pitax.pl/pity</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:05:38 GMT'}
+2019-04-25 00:06:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bpndg.org/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:06:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bzsos.pl/2016/1-dla-banku-zywnosci-sos-w-warszawie/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:06:13 [scrapy.extensions.logstats] INFO: Crawled 84 pages (at 8 pages/min), scraped 77 items (at 8 items/min)
+2019-04-25 00:06:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bypoznan.pl/inne/gflv/od-15-marca-fiskus-moze-wypelnic-za-nas-pit.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Od 15 marca fiskus może wypełnić za nas PIT - bypoznan.pl',
+ 'crawl_url': 'http://bypoznan.pl/inne/gflv/od-15-marca-fiskus-moze-wypelnic-za-nas-pit.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:05:51 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/wniosek-o-rozliczenie-pit-przez-urzad-skarbowy/">https://www.pitax.pl/</a>,<a '
+              'href="http://www.iwop.pl/pity/">Instytut Wsparcia Organizacji '
+              'Pozarządowych</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:05:51 GMT'}
+2019-04-25 00:06:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bullerbyn.org.pl/wsparcie-dla-fundacji/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': '  Przekaż 1% podatku Fundacji Bullerbyn',
+ 'crawl_url': 'http://bullerbyn.org.pl/wsparcie-dla-fundacji/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:05:35 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/" target="_blank" '
+              'data-saferedirecturl="https://www.google.com/url?hl=pl&amp;q=https://www.pitax.pl&amp;source=gmail&amp;ust=1492263249594000&amp;usg=AFQjCNFQeQigpgb6mLxo2UYTpRHwMQvshg">https://www.pitax.pl</a>,<a '
+              'href="https://www.pitax.pl" target="_blank" rel="attachment '
+              'wp-att-4394"><img class="aligncenter wp-image-4394" '
+              'src="http://bullerbyn.org.pl/wp-content/uploads/2013/06/pitax_logo-1-1-1-1-1-1-e1492176370763.png" '
+              'alt="" width="170" height="68"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:05:35 GMT'}
+2019-04-25 00:06:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cafepineska.pl/rozliczyc-pit-37-online/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:06:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://bzczestochowa.pl/ via http://localhost:8050/render.html> (failed 1 times): 502 Bad Gateway
+2019-04-25 00:06:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bpndg.org/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'BIBLIOTEKA PUBLICZNA MIASTA I GMINY NOWY DWÓR GDAŃSKI',
+ 'crawl_url': 'http://bpndg.org/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:05:03 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.google.com/url?q=http://www.pitax.pl&amp;sa=D&amp;ust=1554368720654000&amp;usg=AFQjCNFcqJuUFa2jDgm8qfyyRnqeY3NEbw">www.pitax.pl</a>,<a '
+              'href="https://www.pitax.pl" target="_blank"><img '
+              'style="WIDTH: 139px;" border="0" alt="" align="left" '
+              'src="var/files/images/pitax_logo_white.jpg"></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:05:03 GMT'}
+2019-04-25 00:06:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bzsos.pl/2016/1-dla-banku-zywnosci-sos-w-warszawie/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': '1% dla Banku Żywności SOS w Warszawie - Bank Żywności SOS w '
+                'Warszawie',
+ 'crawl_url': 'http://bzsos.pl/2016/1-dla-banku-zywnosci-sos-w-warszawie/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:06:02 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/rozlicz/0000029435/"><img '
+              'class="alignnone size-full wp-image-8541" '
+              'src="http://bzsos.pl/wp-content/uploads/2017/02/online_button1.png" '
+              'alt="przkaż online"></a>,<a '
+              'href="https://www.pitax.pl/pobierz/0000029435/"><img '
+              'class="alignnone size-full wp-image-8541" '
+              'src="http://bzsos.pl/wp-content/uploads/2017/02/pobierz_button1.png" '
+              'alt="przekaż online"></a>,<a '
+              'href="https://www.iwop.pl/">Instytut Wsparcia Organizacji '
+              'Pozarządowych</a>,<a href="https://www.pitax.pl/">PITax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:06:02 GMT'}
+2019-04-25 00:06:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://caritaspoznan.pl/1procent via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:06:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cafepineska.pl/rozliczyc-pit-37-online/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Jak rozliczyć PIT 37 online? - Cafe Pineska',
+ 'crawl_url': 'http://cafepineska.pl/rozliczyc-pit-37-online/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:06:10 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/">Jak rozliczyć PIT 37 '
+              'online</a>,<a href="http://www.iwop.pl/pity/">Instytut '
+              'Wsparcia Organizacji Pozarządowych</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:06:10 GMT'}
+2019-04-25 00:06:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://centrumkultury.gminawyszki.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:06:48 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://bzczestochowa.pl/ via http://localhost:8050/render.html> (failed 2 times): 502 Bad Gateway
+2019-04-25 00:06:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://centrumlotow.pl/vademecum/wysylamy-rozliczenie-podatkowe-z-zagranicy/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:06:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://caritaspoznan.pl/1procent>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Caritas',
+ 'crawl_url': 'http://caritaspoznan.pl/1procent',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:06:26 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 22:06:26 GMT'}
+2019-04-25 00:06:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://centrumpr.pl/artykul/kto-powinien-sporzadzic-rozliczenie-pit-37-online,96029.html via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:07:07 [scrapy.core.scraper] ERROR: Spider error processing <GET http://centrumkultury.gminawyszki.pl/ via http://localhost:8050/render.html> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.4/dist-packages/scrapy_splash/middleware.py", line 156, in process_spider_output
+    for el in result:
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/twoznica/nodejs-projects-fresh/PitaxCrawler/pitax/pitax/spiders/toscrape-test3.py", line 95, in parse
+    item['crawl_title'] = response.xpath('//title/text()')[0].extract()
+  File "/usr/local/lib/python3.4/dist-packages/parsel/selector.py", line 61, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2019-04-25 00:07:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://charaktery.eu/psychowiesci/rozliczenie-pit-bez-stresu via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:07:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bzczestochowa.pl/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:07:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://centrumlotow.pl/vademecum/wysylamy-rozliczenie-podatkowe-z-zagranicy/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Wysyłamy rozliczenie podatkowe z zagranicy - Centrum Lotów',
+ 'crawl_url': 'http://centrumlotow.pl/vademecum/wysylamy-rozliczenie-podatkowe-z-zagranicy/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:06:48 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a style="color: #bf103c;" '
+              'href="https://www.pitax.pl/pit-online/">https://www.pitax.pl/pit-online/</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:06:48 GMT'}
+2019-04-25 00:07:15 [scrapy.extensions.logstats] INFO: Crawled 91 pages (at 7 pages/min), scraped 84 items (at 7 items/min)
+2019-04-25 00:07:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://chidusz.com/pity/pityonline/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:07:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://centrumpr.pl/artykul/kto-powinien-sporzadzic-rozliczenie-pit-37-online,96029.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'Kto powinien sporządzić rozliczenie PIT 37 online? - '
+                'Centrum PRasowe',
+ 'crawl_url': 'http://centrumpr.pl/artykul/kto-powinien-sporzadzic-rozliczenie-pit-37-online,96029.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:06:51 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 22:06:51 GMT'}
+2019-04-25 00:07:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://chidusz.com/pity/portal-podatnika/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:07:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://charaktery.eu/psychowiesci/rozliczenie-pit-bez-stresu>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Rozliczenie PIT bez stresu - Charaktery - portal '
+                'psychologiczny',
+ 'crawl_url': 'http://charaktery.eu/psychowiesci/rozliczenie-pit-bez-stresu',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:06:59 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/" '
+              'target="_blank">https://pitax.pl</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:06:59 GMT'}
+2019-04-25 00:07:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bzczestochowa.pl/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Home - Bank Żywności',
+ 'crawl_url': 'http://bzczestochowa.pl/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:06:51 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a target="_blank" '
+              'href="https://www.pitax.pl/krs/0000103100/" '
+              'class="menu-link"><span class="text-wrap">Przekaż '
+              '1%</span></a>,<a '
+              'href="https://www.pitax.pl/rozlicz/0000103100/" '
+              'target="_blank" rel="noopener" class="no-lightbox"><img '
+              'class="alignnone size-full wp-image-269" '
+              'src="http://bzczestochowa.pl/wp-content/uploads/2018/02/banner_opp_rozlicz_300x600_pom.gif" '
+              'alt="" width="300" height="600"></a>,<a '
+              'href="https://www.iwop.pl/%20">Instytut   Wsparcia '
+              'Organizacji   Pozarządowych</a>,<a '
+              'href="https://www.pitax.pl/%20">PITax.pl</a>,<a '
+              'target="_blank" href="https://www.pitax.pl/krs/0000103100/" '
+              'class="sidr-class-menu-link"><span '
+              'class="sidr-class-text-wrap">Przekaż 1%</span></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:06:51 GMT'}
+2019-04-25 00:07:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://chidusz.com/pity/pityonline/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Jak rozliczyć PIT online i skorzystać ze wsparcia '
+                'podatkowego dla rodzin',
+ 'crawl_url': 'http://chidusz.com/pity/pityonline/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:07:07 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/pobierz?krs=0000435915&amp;kampania=ZAP"><img '
+              'src="https://chidusz.com/pity/wp-content/uploads/2017/02/Pobierz-pit-button.png" '
+              'alt="Pobierz Program PIT od PITax.pl" '
+              'style="float:right;margin-top:10px;" height="70px" '
+              'border="0"></a>,<a '
+              'href="https://www.pitax.pl/rozlicz?krs=0000435915&amp;kampania=ZAP" '
+              'style="margin-right:15px;"><img '
+              'src="https://chidusz.com/pity/wp-content/uploads/2017/02/rozlicz_pit_online_new_button.png" '
+              'style="float:right;margin-right:15px;margin-top:10px;" '
+              'height="70px" alt="Rozlicz PIT Online z PITax.pl" '
+              'border="0"></a>,<a href="https://www.pitax.pl/pity-2016/%20"> '
+              '<h1>PITy</h1></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:07:07 GMT'}
+2019-04-25 00:07:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://chidusz.com/pity/portal-podatnika/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Rozliczenie podatkowe nauczyciela — działalność pozaszkolna',
+ 'crawl_url': 'http://chidusz.com/pity/portal-podatnika/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:07:15 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/pobierz?krs=0000435915&amp;kampania=ZAP"><img '
+              'src="https://chidusz.com/pity/wp-content/uploads/2017/02/Pobierz-pit-button.png" '
+              'alt="Pobierz Program PIT od PITax.pl" '
+              'style="float:right;margin-top:10px;" height="70px" '
+              'border="0"></a>,<a '
+              'href="https://www.pitax.pl/rozlicz?krs=0000435915&amp;kampania=ZAP" '
+              'style="margin-right:15px;"><img '
+              'src="https://chidusz.com/pity/wp-content/uploads/2017/02/rozlicz_pit_online_new_button.png" '
+              'style="float:right;margin-right:15px;margin-top:10px;" '
+              'height="70px" alt="Rozlicz PIT Online z PITax.pl" '
+              'border="0"></a>,<a '
+              'href="https://www.pitax.pl/portal-podatnika%20"> <h1>portal '
+              'podatnika</h1></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:07:15 GMT'}
+2019-04-25 00:07:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://chidusz.com/pity/program-pit-2016-online/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:07:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://chmurka.org.pl/pomagaja_podaruj.html via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:08:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://chidusz.com/pity/program-pit-2016-online/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Ustawa o minimalnym wynagrodzeniu za pracę',
+ 'crawl_url': 'http://chidusz.com/pity/program-pit-2016-online/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:07:44 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/pobierz?krs=0000435915&amp;kampania=ZAP"><img '
+              'src="https://chidusz.com/pity/wp-content/uploads/2017/02/Pobierz-pit-button.png" '
+              'alt="Pobierz Program PIT od PITax.pl" '
+              'style="float:right;margin-top:10px;" height="70px" '
+              'border="0"></a>,<a '
+              'href="https://www.pitax.pl/rozlicz?krs=0000435915&amp;kampania=ZAP" '
+              'style="margin-right:15px;"><img '
+              'src="https://chidusz.com/pity/wp-content/uploads/2017/02/rozlicz_pit_online_new_button.png" '
+              'style="float:right;margin-right:15px;margin-top:10px;" '
+              'height="70px" alt="Rozlicz PIT Online z PITax.pl" '
+              'border="0"></a>,<a '
+              'href="https://www.pitax.pl/program-pit%09%09%09">\n'
+              '\t\t\t<h1>program pit 2016 online.</h1></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:07:44 GMT'}
+2019-04-25 00:08:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://ckbislelis.pl/index.php/biblioteka via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:08:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://chrzanowski24.pl/wiadomosci-lokalne/program-e-pity-ze-strony-opp-181119305 via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:08:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://chmurka.org.pl/pomagaja_podaruj.html>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Stowarzyszenie na rzecz dzieci ze schorzeniami '
+                'neurologicznymi - "Chmurka".',
+ 'crawl_url': 'http://chmurka.org.pl/pomagaja_podaruj.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:07:52 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/rozlicz?krs=0000073918&amp;amputm_source=opp_0000073918&amp;utm_medium=pobierz_formularze_bialy_250_250.png&amp;utmcampaign=OPPSitePrzekaz1procent"><img '
+              'src="https://www.pitax.pl/assets/banners/pitax-przekaz-1-procent-w-200x200.jpg" '
+              'width="212" height="212" alt="Rozliczenie PIT z PITax.pl" '
+              'border="0"></a>,<a '
+              'href="https://www.pitax.pl/rozlicz?krs=0000073918&amp;amputm_source=opp_0000073918&amp;utm_medium=rozlicz-pit-online&amp;utmcampaign=OPPSitePrzekaz1procent"><img '
+              'style="margin-right: 15px;" '
+              'src="https://www.pitax.pl/assets/Uploads/rozlicz-pit-online-new-button.png" '
+              'alt="Rozliczenie PIT z PITax.pl" border="0"></a>,<a '
+              'href="https://www.pitax.pl/pobierz?krs=0000073918&amp;amputm_source=opp_0000073918&amp;utm_medium=pobierz=program-pit&amp;utmcampaign=OPPSitePrzekaz1procent"><img '
+              'style="margin-left: 15px;" '
+              'src="https://www.pitax.pl/assets/Uploads/Pobierz-pit-button.png" '
+              'alt="Rozliczenie PIT z PITax.pl" border="0"></a>,<a '
+              'href="https://www.pitax.pl/pit-online">PITax.pl Łatwe '
+              'podatki</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:07:52 GMT'}
+2019-04-25 00:08:14 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 6 pages/min), scraped 91 items (at 7 items/min)
+2019-04-25 00:08:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://coteraz.org/?utm_source=www&utm_medium=baner-slider&utm_campaign=1procent-2018&utm_term=1procent-2018-coteraz-hospicja&utm_content=promocja-LP-www-baner-slider via http://localhost:8050/render.html> (failed 1 times): 502 Bad Gateway
+2019-04-25 00:08:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://chidusz.com/pity/rozlicz-pit/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:08:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cracon.pl/2017/01/rozliczanie-pit-internet-2017-roku/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:08:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://ckbislelis.pl/index.php/biblioteka>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 0,
+ 'crawl_status': 200,
+ 'crawl_title': 'BIBLIOTEKA',
+ 'crawl_url': 'http://ckbislelis.pl/index.php/biblioteka',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:07:58 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '',
+ 'parse_time': b'Wed, 24 Apr 2019 22:07:58 GMT'}
+2019-04-25 00:08:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://chrzanowski24.pl/wiadomosci-lokalne/program-e-pity-ze-strony-opp-181119305>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Platforma e pity ze strony OPP - Portal Chrzanowski24.pl',
+ 'crawl_url': 'http://chrzanowski24.pl/wiadomosci-lokalne/program-e-pity-ze-strony-opp-181119305',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:07:55 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/e-pity/">e pity</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:07:55 GMT'}
+2019-04-25 00:08:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://crd24.pl/a/eqnv,program-pit-bez-krs-daje-mozliwosc-wyboru-odpowiadajacej-nam-organizacji-pozytku-publicznego via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:08:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://chidusz.com/pity/rozlicz-pit/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Załączniki do deklaracji PIT/28 online',
+ 'crawl_url': 'http://chidusz.com/pity/rozlicz-pit/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:08:06 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/pobierz?krs=0000435915&amp;kampania=ZAP"><img '
+              'src="https://chidusz.com/pity/wp-content/uploads/2017/02/Pobierz-pit-button.png" '
+              'alt="Pobierz Program PIT od PITax.pl" '
+              'style="float:right;margin-top:10px;" height="70px" '
+              'border="0"></a>,<a '
+              'href="https://www.pitax.pl/rozlicz?krs=0000435915&amp;kampania=ZAP" '
+              'style="margin-right:15px;"><img '
+              'src="https://chidusz.com/pity/wp-content/uploads/2017/02/rozlicz_pit_online_new_button.png" '
+              'style="float:right;margin-right:15px;margin-top:10px;" '
+              'height="70px" alt="Rozlicz PIT Online z PITax.pl" '
+              'border="0"></a>,<a '
+              'href="https://www.pitax.pl/pity%09%09%09">\n'
+              '\t\t\t<h1>rozlicz pit</h1></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:08:06 GMT'}
+2019-04-25 00:08:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://crl.org.pl/kategorie/1-procent via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:08:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://chidusz.com/pity/ulgi/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:08:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cracon.pl/2017/01/rozliczanie-pit-internet-2017-roku/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Rozliczanie PIT przez internet w 2017 roku - Cracon.pl',
+ 'crawl_url': 'http://cracon.pl/2017/01/rozliczanie-pit-internet-2017-roku/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:08:14 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/pity/">Rozliczanie pit przez '
+              'internet </a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:08:14 GMT'}
+2019-04-25 00:08:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://czasdzieci.pl/ro_artykuly/id,8416271.html via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:08:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://coteraz.org/?utm_source=www&utm_medium=baner-slider&utm_campaign=1procent-2018&utm_term=1procent-2018-coteraz-hospicja&utm_content=promocja-LP-www-baner-slider via http://localhost:8050/render.html> (failed 2 times): 502 Bad Gateway
+2019-04-25 00:08:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://crd24.pl/a/eqnv,program-pit-bez-krs-daje-mozliwosc-wyboru-odpowiadajacej-nam-organizacji-pozytku-publicznego>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Program PIT bez KRS daje możliwość wyboru odpowiadającej '
+                'nam organizacji pożytku publicznego - crd24.pl',
+ 'crawl_url': 'http://crd24.pl/a/eqnv,program-pit-bez-krs-daje-mozliwosc-wyboru-odpowiadajacej-nam-organizacji-pozytku-publicznego',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:08:17 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a href="https://www.pitax.pl/program-pit/">program PIT bez '
+              'KRS</a>,<a href="http://www.iwop.pl/pity/">pity 2016</a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:08:17 GMT'}
+2019-04-25 00:08:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://daj-szanse.eu/?page_id=322 via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:09:02 [scrapy.core.scraper] ERROR: Spider error processing <GET http://crl.org.pl/kategorie/1-procent via http://localhost:8050/render.html> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.4/dist-packages/scrapy_splash/middleware.py", line 156, in process_spider_output
+    for el in result:
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.4/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/twoznica/nodejs-projects-fresh/PitaxCrawler/pitax/pitax/spiders/toscrape-test3.py", line 95, in parse
+    item['crawl_title'] = response.xpath('//title/text()')[0].extract()
+  File "/usr/local/lib/python3.4/dist-packages/parsel/selector.py", line 61, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2019-04-25 00:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://chidusz.com/pity/ulgi/>
+{'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Rozliczenie roczne PIT — ostatnie godziny w roku 2018',
+ 'crawl_url': 'http://chidusz.com/pity/ulgi/',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date': [b'Wed, 24 Apr 2019 22:08:30 GMT'],
+             b'Server': [b'TwistedWeb/16.1.1']},
+ 'link_text': '<a '
+              'href="https://www.pitax.pl/pobierz?krs=0000435915&amp;kampania=ZAP"><img '
+              'src="https://chidusz.com/pity/wp-content/uploads/2017/02/Pobierz-pit-button.png" '
+              'alt="Pobierz Program PIT od PITax.pl" '
+              'style="float:right;margin-top:10px;" height="70px" '
+              'border="0"></a>,<a '
+              'href="https://www.pitax.pl/rozlicz?krs=0000435915&amp;kampania=ZAP" '
+              'style="margin-right:15px;"><img '
+              'src="https://chidusz.com/pity/wp-content/uploads/2017/02/rozlicz_pit_online_new_button.png" '
+              'style="float:right;margin-right:15px;margin-top:10px;" '
+              'height="70px" alt="Rozlicz PIT Online z PITax.pl" '
+              'border="0"></a>,<a '
+              'href="https://www.pitax.pl/program-pit%20"> <h1>Rozliczanie '
+              'PIT 2018 online</h1></a>',
+ 'parse_time': b'Wed, 24 Apr 2019 22:08:30 GMT'}
+2019-04-25 00:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://dajmynadzieje.pl/1procent/ via http://localhost:8050/render.html> (referer: None)
+2019-04-25 00:09:28 [scrapy.core.scraper] ERROR: Error processing {'crawl_date': '2019-04-24 23:55:03',
+ 'crawl_found': 1,
+ 'crawl_status': 200,
+ 'crawl_title': 'Kiedy nie przysługuje ulga na dziecko w PIT 2016, Czas '
+                'Dzieci',
+ 'crawl_url': 'http://czasdzieci.pl/ro_artykuly/id,8416271.html',
+ 'headers': {b'Content-Type': [b'text/html; charset=utf-8'],
+             b'Date'

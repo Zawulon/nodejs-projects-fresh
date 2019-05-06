@@ -1,0 +1,997 @@
+<!DOCTYPE html><html lang="pl"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Biblioteka Publiczna Gminy Linia</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/carousel.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="/static/css/lightbox.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div id="nav-top"><div class="container">
+        <a href="https://www.facebook.com/biblioteka.publiczna.gminy.linia" target="_blank" title="Facebook - Biblioteka Publiczna Gminy Linia"><img src="/static/img/facebook.png" alt="Facebook - Biblioteka Publiczna Gminy Linia"></a>
+        <a href="https://www.bip.gov.pl/subjects/view/36215" target="_blank" title="Biuletyn Informacji Publicznej - Biblioteka Publiczna Gminy Linia"><img src="/static/img/bip.png" alt="Biuletyn Informacji Publicznej - Biblioteka Publiczna Gminy Linia"></a>
+    </div></div>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a title="Biblioteka Publiczna Gminy Linia" class="navbar-brand" href="/"><img src="/static/img/logo.jpg" alt="Logo - Biblioteka Publiczna Gminy Linia"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a title="Katalogi Strzepcz i Linia, Molik Strzepcz i Linia" href="#katalogi">Katalogi</a>/</li>
+            <li><a title="Aktualności, projekty, wydarzenia" href="#aktualnosci">Aktualności</a>/</li>
+            <li><a title="Nowe książki w bibliotece" href="#ksiazki">Książki</a>/</li>
+            <li><a title="O bibliotece" href="#o_bibliotece">O nas</a>/</li>
+            <li><a title="Galeria zdjęć" href="#galeria">Galeria</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<script>
+window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        document.getElementById("nav-top").className = "test";
+    } else {
+        document.getElementById("nav-top").className = "";
+    }
+}
+</script>
+
+<div class="page-wrap">
+  
+
+    
+
+    <script>
+
+    $( document ).ready(function() {
+    console.log( "ready!" );
+
+
+    // Add scrollspy to <body>
+$('body').scrollspy({target: ".navbar", offset: 80});
+
+// Add smooth scrolling on all links inside the navbar
+$("#navbar a").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top - 70
+    }, 800, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+      //window.location.hash = hash;
+    });
+
+  } // End if
+
+
+});
+
+});
+
+    </script>
+
+<header>
+<div id="carousel-example-generic" class="carousel slide visible-lg visible-md" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+          
+              
+                <div class="item active">
+              
+                <img src="media/slider/josh-felise-79991-unsplash__kopia.jpg" alt="slider">
+                <div class="carousel-caption">
+                <!--  <h3>Heading</h3>  -->
+                </div>
+              </div>
+          
+              
+                <div class="item">
+              
+                <img src="media/slider/baner.jpeg" alt="slider">
+                <div class="carousel-caption">
+                <!--  <h3>Heading</h3>  -->
+                </div>
+              </div>
+          
+
+        
+      </div>
+    </div>
+
+</header>
+
+    <div class="container">
+
+    <!--<form method='GET' action=''>
+
+         <select value='s' name="q">
+
+             <option value=''>wszystkie</option>
+             <option value='kategoria'>kategoria</option>
+             <option value='inna'>inna</option>
+
+         </select>
+-->
+       <!-- <input type='text' name='q' placeholder='Search posts' value=''/> -->
+    <!--    <input type='submit' value='Search' />
+    </form> -->
+
+    <section id="katalogi">
+          <div class="row">
+
+          <h2>Katalogi</h2>
+
+              <div class="col-md-3 col-sm-6">
+                  <a href="http://83.14.59.198:81/cgi-bin/LibraOpac.dll" target="_blank" title="Katalog Libra - Linia">
+                      <figure>
+                          <img src="/static/img/katalog_linia.png" alt="Katalog Libra - Linia">
+                          <figcaption>Katalog Linia</figcaption>
+                      </figure>
+                  </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <a href="http://83.14.59.198:81/sf/anims" target="_blank" title="Molik - katalog dla dzieci - Linia">
+                      <figure>
+                          <img src="/static/img/molik_linia.png" alt="Molik - katalog dla dzieci - Linia">
+                          <figcaption>Molik Linia</figcaption>
+                      </figure>
+                  </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <a href="http://83.14.252.230:81/LibraOpac.dll" target="_blank" title="Katalog Libra - Strzepcz">
+                      <figure>
+                          <img src="/static/img/katalog_strzepcz.png" alt="Katalog Libra - Strzepcz">
+                          <figcaption>Katalog Strzepcz</figcaption>
+                      </figure>
+                  </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <a href="http://83.14.252.230:82/sf/anims" target="_blank" title="Molik - katalog dla dzieci - Strzepcz">
+                      <figure>
+                          <img src="/static/img/molik_strzepcz.png" alt="Molik - katalog dla dzieci - Strzepcz">
+                          <figcaption>Molik Strzepcz</figcaption>
+                      </figure>
+                  </a>
+              </div>
+
+          </div><!--/span-->
+
+    </section>
+
+    <section id="aktualnosci">
+          <div class="row">
+
+          <h2>Aktualności</h2>
+
+              <!--  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" style="float: right; height: 430px; background: red;">ghjgh</div> -->
+
+
+
+<ul class="list">
+
+              
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2193/56184164_430084177749653_5080718845405036544_n.jpg.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 05.04.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/nowe-ksiazki-dla-dzieci/">Nowe wspaniałe książki dla dzieci</a></h3>
+                            
+                                <p> </p><p>W ramach projektu „Akademia Eksperymentu” zakupiliśmy 137 egzemplarzy książek popularnon...</p>
+                            
+
+                            <p><a class="link" href="/nowe-ksiazki-dla-dzieci/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2185/DSC_0410.JPG.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 28.03.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/chemia-na-talerzu/">Chemia na talerzu</a></h3>
+                            
+                                <p> </p><p>Dnia 27.03.2019 r. w Szkole Podstawowej w Niepoczołowicach i w Pobłociu odbyły się spotk...</p>
+                            
+
+                            <p><a class="link" href="/chemia-na-talerzu/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2182/DSC_0218.JPG.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 26.03.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/eksperymenty-z-powietrzem/">Eksperymenty z powietrzem</a></h3>
+                            
+                                <p> </p><p>Za nami pierwszy cykl zajęć dla uczestników projektu „Akademia Eksperymentu”, podczas kt...</p>
+                            
+
+                            <p><a class="link" href="/eksperymenty-z-powietrzem/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2181/DSC_0026.JPG.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 28.02.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/Czytelnik-Roku-2018/">Czytelnik Roku 2018!</a></h3>
+                            
+                                <p> </p><p>&nbsp;Dnia 27.02.2019 r. w bibliotece w Lini mieliśmy przyjemność gościć dorosłych i naj...</p>
+                            
+
+                            <p><a class="link" href="/Czytelnik-Roku-2018/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2172/DSC_0031.JPG.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 21.02.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/ferie-z-biblioteka-za-nami/">Ferie z biblioteką za nami!</a></h3>
+                            
+                                <p> </p><p>W dniach 18.02-21.02.2019 r. w Bibliotece w Lini i w Strzepczu odbyły się warsztaty filc...</p>
+                            
+
+                            <p><a class="link" href="/ferie-z-biblioteka-za-nami/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2136/DSC_0015.JPG.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 19.02.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/Kultura-Na-Widoku-w-bibliotece/">Kultura Na Widoku w bibliotece</a></h3>
+                            
+                                <p> </p><p>Internetowy portal Lustro Biblioteki przeprowadził konkurs fotograficzny polegający&nbsp;...</p>
+                            
+
+                            <p><a class="link" href="/Kultura-Na-Widoku-w-bibliotece/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2135/IMG_20190114_120842_875.jpg.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 18.02.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/Kodowanie-w-bibliotece/">Kodowanie w bibliotece</a></h3>
+                            
+                                <p> </p><p>Miło nam poinformować że nasza biblioteka zakwalifikowała się do drugiej edycji projektu...</p>
+                            
+
+                            <p><a class="link" href="/Kodowanie-w-bibliotece/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2132/52130029_1234461243375125_8584625338112278528_n.jpg.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 18.02.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/bardzo-dziekujemy/">Dziękujemy!</a></h3>
+                            
+                                <p> </p><p>Serdecznie dziękujemy wszystkim czytelnikom, którzy wzięli udział w Walentynkowej randce...</p>
+                            
+
+                            <p><a class="link" href="/bardzo-dziekujemy/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2132/na_fb_i_na_stron%C4%99.jpg.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 25.01.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/Ferie-z-biblioteka-2019/">Ferie z biblioteką 2019</a></h3>
+                            
+                                <p> </p><p>Serdecznie zapraszamy do spędzenia wolnego czasu w ferie zimowe z Biblioteką w Strzepczu...</p>
+                            
+
+                            <p><a class="link" href="/Ferie-z-biblioteka-2019/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2129/Beztytu%C5%82u.jpg.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 21.01.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/Akademia-Eksperymentu-w-naszej-bibliotece/">„Akademia Eksperymentu” w naszej bibliotece</a></h3>
+                            
+                                <p> </p><p>Z wielką satysfakcją oraz przyjemnością informujemy że nasz projekt „Akademia Eksperymen...</p>
+                            
+
+                            <p><a class="link" href="/Akademia-Eksperymentu-w-naszej-bibliotece/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2127/phpThumb_generated_thumbnail.jpeg.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 18.01.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/projekt-kultura-na-widoku/">Projekt "Kultura na widoku"</a></h3>
+                            
+                                <p> </p><p align="center">Gdziekolwiek jesteś. Kiedykolwiek chcesz. Kultura jest z Tobą. </p><p>Nas...</p>
+                            
+
+                            <p><a class="link" href="/projekt-kultura-na-widoku/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+
+                      <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="post">
+                          
+                          
+
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2128/50685943_538644309967771_7565277934886322176_n.jpg.360x360_q85_upscale.jpg" alt="Obraz dla aktualności" class="" style="width: 100%">
+                                </div>
+                                <p class="date">Aktualności | 16.01.2019</p>
+                            
+
+
+                      <div class="text">
+                            <h3><a href="/Pieciolatki-ze-Strzepcza-w-Strefie-Juniora/">Pięciolatki ze Strzepcza w Strefie Juniora</a></h3>
+                            
+                                <p> </p><p>Dnia 15.01.2018 r. Bibliotekę w Lini odwiedziły pięciolatki z grupy przedszkolnej ze Str...</p>
+                            
+
+                            <p><a class="link" href="/Pieciolatki-ze-Strzepcza-w-Strefie-Juniora/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+
+                      </li>
+            
+</ul>
+              <a href="/wpisy/?kategoria=aktualnosci" title="Zobacz wszystkie aktualności, projekty, wydarzenia"><h3 class="all">Zobacz wszystkie →</h3></a>
+          <ul class="pagination"></ul>
+
+
+            </div><!--/span-->
+
+    </section>
+
+    <section id="ksiazki">
+    <div class="row">
+
+          <h2>Nowości książkowe</h2>
+
+              <!--  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" style="float: right; height: 430px; background: red;">ghjgh</div> -->
+
+<ul class="list">
+              
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2262/774916.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 17.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/wladcy-dinozaurow/">Władcy dinozaurów - Victor Milan</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Raj – świat powołany do życia przez Ośmiu Stwórców, którzy toczą w nim gry władzy i namiętnoś...</p>
+                            
+
+                            <p><a class="link" href="/wladcy-dinozaurow/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2261/905811.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 17.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/Nowe-niebo/">Nowe niebo - Hanna Cygler</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Stany Zjednoczone przełomu XIX i XX wieku, ludzie śniący amerykański sen i emigranci z Kaszub...</p>
+                            
+
+                            <p><a class="link" href="/Nowe-niebo/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2260/957466.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 17.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/Wciaz-cie-widze/">Wciąż cię widzę - Daniel Waters</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Świat apokaliptycznej przyszłości. Wśród żywych są także duchy zmarłych. Veronica i Kirk chcą...</p>
+                            
+
+                            <p><a class="link" href="/Wciaz-cie-widze/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2259/423031.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 17.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/krolik-chce-byc-duzy/">Królik. Chcę być duży - Grzegorz Kasdepke</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Dzięki tej serii, najmłodsi dowiedzą się, że czytanie to wspaniałe chwile spędzone w towarzys...</p>
+                            
+
+                            <p><a class="link" href="/krolik-chce-byc-duzy/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2258/813695.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 17.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/ala-baba-i-idwoch-rozbojnikow/">Ala Baba i dwóch rozbójników - Joanna Wachowiak</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Ala musi dzielić pokój z młodszymi braćmi bliźniakami, którzy bywają dla niej prawdziwym utra...</p>
+                            
+
+                            <p><a class="link" href="/ala-baba-i-idwoch-rozbojnikow/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2257/940462.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 17.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/Bob/">Bob - Wendy Mass, Rebecca Stead</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Prawdziwa przyjaźń może wszystko! Livy wraz z mamą, tatą i młodszą siostrzyczką odwiedzają ba...</p>
+                            
+
+                            <p><a class="link" href="/Bob/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2256/777317.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 17.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/Projekt-Breslau/">Projekt Breslau - Magdalena Zarębska</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Chyba nie uwierzyliby, że największa przygoda życia zdarzy im się w murach gimnazjum! Gdy prz...</p>
+                            
+
+                            <p><a class="link" href="/Projekt-Breslau/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2255/621176.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 17.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/masakra-na-wyspie-utoya/">Masakra na wyspie Utoya - Adrian Pracoń</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Na wyspie Utoya trwa letni obóz młodzieżowy. Dzień jest spokojny, nic nie wskazuje, że za chw...</p>
+                            
+
+                            <p><a class="link" href="/masakra-na-wyspie-utoya/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2254/932261.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 17.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/notes-mlodej-pisarki/">Notes młodej pisarki - Ewa Nowak</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Ten notes to niezbędne akcesorium każdej szanującej się młodej pisarki! Piszesz do szuflady? ...</p>
+                            
+
+                            <p><a class="link" href="/notes-mlodej-pisarki/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2253/953589.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 17.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/Dieta-ketogeniczna/">Dieta ketogeniczna - Miriam Kalamian</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Dieta ketogeniczna to prawdziwa rewolucja w dietetyce. Lekarze podkreślają jej zdrowotne walo...</p>
+                            
+
+                            <p><a class="link" href="/Dieta-ketogeniczna/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2252/961561.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 16.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/Blahy-incydent/">Błahy incydent - Justyna Edmondson</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Na granicy dźwięku i ciszy… Na granicy dźwięku i ciszy powstaje melodia życia. Krysi, która m...</p>
+                            
+
+                            <p><a class="link" href="/Blahy-incydent/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+                      <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="post">
+
+                          
+                          
+                            
+                                <div style="width: 100%; overflow-y: hidden;">
+                                <img src="/media/2251/961555.jpg.360x360_q85_upscale.jpg" alt="Okładka książki" class="" style="width: 100%"></div>
+                                <p class="date">Książki | 16.04.2019</p>
+                            
+
+                        <div class="text">
+                            <h3><a href="/Poscig/">Pościg - Elle Kennedy</a></h3>
+                            
+                                <p style="text-align: justify"> </p><p>Summer to dziewczyna z wyższych sfer, pozornie pochłonięta wyłącznie zakupami i wyglądem. Fit...</p>
+                            
+
+                            <p><a class="link" href="/Poscig/" role="button">Zobacz więcej »</a></p>
+                      </div>
+                      </div>
+                      </li>
+            
+
+</ul>
+    <a href="/wpisy/?kategoria=ksiazki" title="Zobacz wszystkie nowości książki"><h3 class="all">Zobacz wszystkie →</h3></a>
+          <ul class="pagination"></ul>
+<script src="http://listjs.com/assets/javascripts/list.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.pagination.js/0.1.1/list.pagination.min.js"></script>
+<script>
+    var newsList = new List('aktualnosci', {
+  valueNames: ['post'],
+  page: 4,
+  plugins: [ ListPagination({}) ]
+});
+  var booksList = new List('ksiazki', {
+  valueNames: ['post'],
+  page: 4,
+  plugins: [ ListPagination({}) ]
+});
+
+</script>
+
+            </div><!--/span-->
+
+</section>
+
+    <section id="o_bibliotece">
+    <div class="row">
+
+          <h2>O bibliotece</h2>
+
+              <!--  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" style="float: right; height: 430px; background: red;">ghjgh</div> -->
+
+              
+                
+            
+                
+            
+                
+            
+                
+                      <div class="col-lg-12">
+                      <div class="biblioteka">
+
+                          
+                          
+                                <div class="pull-left" style="overflow-y: hidden;">
+                                    <a href="/media/865/biblioteka.jpg.500x500_q85_upscale.jpg" data-lightbox="o-bibliotece"><img src="/media/865/biblioteka.jpg.500x500_q85_upscale.jpg" alt="biblioteka" class="" style="width: 100%"></a></div>
+
+
+                        <div class="text">
+                            
+                                <p style="text-align: justify"> </p><p>Pierwsza biblioteka gminna na terenie dzisiejszej gminy Linia powstała w Strzepczu 16 marca 1948 r. w siedzibie Zarządu Gminy. Obowiązki bibliotekarki powierzono nauczycielce Marii Richert. Do 31.01.1999 r. siedzibą biblioteki był lokal przy obecnej ulicy ks. Józefa Rotty w domu państwa Kos. Następnie biblioteka została przeniesiona do budynku Kaszubskiego Liceum Ogólnokształcącego (dziś Ośrodek Rehabilitacyjno-Edukacyjno-Wychowawczy), a w VII 2000 r. do lokalu w Szkole Podstawowej i Gimnazjum. Biblioteka zm...</p>
+                            
+
+                            <p><a class="link" href="/o-bibliotece/" role="button">Dowiedz się więcej o nas! »</a></p>
+                            <p><a class="link" href="/aleksander-majkowski" role="button">Kim był Aleksander Majkowski? »</a></p>
+                            <p><a class="link" href="/cennik" role="button">Sprawdź cennik naszych usług »</a></p>
+                            <p><a class="link" href="/regulaminy" role="button">Zobacz nasze regulaminy »</a></p>
+                      </div>
+                      </div>
+                      </div>
+            
+            
+
+
+
+
+            </div><!--/span-->
+
+    </section>
+
+    <section id="galeria">
+        <a href="galeria" title="Galeria zdjęć"><h3>Odwiedź naszą galerię zdjęć »</h3></a>
+    <div class="row">
+
+              <!--  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" style="float: right; height: 430px; background: red;">ghjgh</div> -->
+
+        <div class="col-md-4">
+            <img class="img-responsive" alt="Zdjęcie z galerii" src="media/photologue/photos/DSC_0821.JPG">
+        </div>
+        <div class="col-md-4">
+            <img class="img-responsive" alt="Zdjęcie z galerii" src="media/photologue/photos/_dsc5643.jpg">
+        </div>
+        <div class="col-md-4">
+             <img class="img-responsive" alt="Zdjęcie z galerii" src="media/photologue/photos/dsc_0453.jpg">
+        </div>
+
+
+
+    </div><!--/span-->
+
+    </section>
+
+    <section id="wsparcie">
+        <h3>Działalność biblioteki wspierana jest przez:</h3>
+    <div class="row">
+
+        <div class="col-md-2">
+            <img class="center-block" src="/static/img/biblioteka_narodowa.jpg" alt="Biblioteka Narodowa">
+        </div>
+        <div class="col-md-2">
+             <img class="center-block" src="/static/img/program_rozwoju_czytelnictwa.jpg" alt="Program Rozwoju Czytelnictwa">
+        </div>
+        <div class="col-md-2">
+             <img class="center-block" src="/static/img/fundacja_orange.jpg" alt="Fundacja Orange">
+        </div>
+        <div class="col-md-2">
+             <a href="https://www.pitax.pl" title="PITax.pl - łatwe podatki" target="_blank"><img class="center-block" src="/static/img/pitax.jpg" alt="PITax.pl - łatwe podatki"></a>
+        </div>
+        <div class="col-md-2">
+             <img class="center-block" src="/static/img/mkidn.jpg" alt="Ministerstwo Kultury i Dziedzictwa Narodowego">
+        </div>
+        <div class="col-md-2">
+            <img class="center-block" src="/static/img/kraszewski.jpg" alt="Kraszewski - komputery dla bibliotek">
+        </div>
+
+    </div><!--/span-->
+
+    </section>
+
+</div>
+
+
+
+
+</div>
+
+      <footer>
+
+        <div class="container">
+
+            <div class="row">
+                    <div class="col-md-6">
+                        <h3>Biblioteka Publiczna Gminy Linia</h3>
+                        <img width="25" class="center-block" src="/static/img/ikona-adres.png" alt="ikona - adres">ul. Szkolna 1<br>
+                        <span>84-223 Linia</span><br>
+                        <img width="25" class="center-block" src="/static/img/ikona-telefon.png" alt="ikona - numer telefonu">tel. 58 676 86 19<br>
+                        <img width="25" class="center-block" src="/static/img/ikona-email.png" alt="ikona - email">e-mail: linia@bpgl.pl<br>
+                        Czynne od poniedziałku do piątku w godzinach 9:00 - 17:00<br><br>
+                        <h5><a style="color: #F17E01" href="https://bpgl.pl/polityka-prywatnosci/">Polityka prywatności</a></h5>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>Biblioteka Publiczna Gminy Linia</h3>
+                        <h5><img width="25" class="center-block" src="/static/img/ikona-filia.png" alt="ikona - filia">Filia w Strzepczu</h5>
+                        <img width="25" class="center-block" src="/static/img/ikona-adres.png" alt="ikona - adres">ul. H. Derdowskiego 3<br>
+                        <span>84-223 Strzepcz</span><br>
+                        <img width="25" class="center-block" src="/static/img/ikona-telefon.png" alt="ikona - numer telefonu">tel. 58 676 82 58<br>
+                        <img width="25" class="center-block" src="/static/img/ikona-email.png" alt="ikona - email">e-mail: strzepcz@bpgl.pl<br>
+                        Czynne od poniedziałku do piątku w godzinach 9:00 - 17:00<br>
+                    </div>
+            </div>
+        </div>
+
+        <div id="cookies" style="position: fixed; bottom: 0px; background-color: rgb(51, 51, 51); display: flex; padding: 15px; align-items: center; color: rgb(255, 255, 255); width: 100%; font-size: 16px; background-position: initial initial; background-repeat: initial initial;">
+          <p style="margin: 0;">Serwis bpgl.pl wykorzystuje pliki cookies. Korzystając z naszej strony zgadzasz się z naszą <a style="color: #F17E01" href="https://bpgl.pl/polityka-prywatnosci/">polityką prywatności</a></p>
+          <!--<div id="cookies-close" style="margin-left: 20px; text-align: right; flex-grow: 1; cursor: pointer; font-weight: 400">Zamknij</div>-->
+        </div>
+
+      </footer>
+
+    <script src="/static/js/lightbox.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          $('#carousel-example-generic').carousel()
+        })
+      }(window.jQuery)
+
+      doOnce();
+      function doOnce() {
+          if (document.cookie.replace(/(?:(?:^|.*;\s*)jacookie\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+              document.getElementById("cookies").style.display = "flex";
+              document.cookie = "jacookie=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+          }
+      }
+    </script>
+  
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>

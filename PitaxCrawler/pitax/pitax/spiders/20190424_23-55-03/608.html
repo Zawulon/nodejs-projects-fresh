@@ -1,0 +1,368 @@
+<!DOCTYPE html><html dir="ltr" lang="pl-pl" slick-uniqueid="3" class="chrome chrome44 safari safari0 js csstransitions desktop"><head>
+    	<div id="powrIframeLoader">­<style> .powrLoaded iframe { visibility: hidden; } </style></div><base href="https://beaglewpotrzebie.pl/">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Beagle
+Adopcja
+BwP">
+	<meta name="description" content="Beagle w Potrzebie">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>beaglewpotrzebie.pl - Home</title>
+	<link href="/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+	<link href="/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0">
+	<link href="/templatesdd_petfood_66/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script id="powr-js" async="" src="https://beaglewpotrzebie.pl/modules/mod_powrbutton/powr_joomla.js" powr-token="n8atfKXySS1524508595" external-type="joomla"></script><script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+	<script src="/media/system/js/core.js" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+(function(d){
+            var js, id = 'powr-js', ref = d.getElementsByTagName('script')[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement('script'); js.id = id; js.async = true;
+            js.src = 'https://beaglewpotrzebie.pl/modules/mod_powrbutton/powr_joomla.js';
+            js.setAttribute('powr-token','n8atfKXySS1524508595');
+            js.setAttribute('external-type','joomla');
+            ref.parentNode.insertBefore(js, ref);
+          }(document));
+var ct_joom25=false;
+function ctSetCookie(c_name, value) {
+	document.cookie = c_name + "=" + encodeURIComponent(value) + "; path=/";
+}
+
+ctSetCookie("ct_ps_timestamp", Math.floor(new Date().getTime()/1000));
+ctSetCookie("ct_fkp_timestamp", "0");
+ctSetCookie("ct_pointer_data", "0");
+ctSetCookie("ct_checkjs", "184162030", "0");
+ctSetCookie("ct_timezone", new Date().getTimezoneOffset()/60*(-1));
+
+//Stop observing function
+function ctMouseStopData(){
+	if(typeof window.addEventListener == "function")
+		window.removeEventListener("mousemove", ctFunctionMouseMove);
+	else
+		window.detachEvent("onmousemove", ctFunctionMouseMove);
+	clearInterval(ctMouseReadInterval);
+	clearInterval(ctMouseWriteDataInterval);				
+}
+
+//Stop key listening function
+function ctKeyStopStopListening(){
+	if(typeof window.addEventListener == "function"){
+		window.removeEventListener("mousedown", ctFunctionFirstKey);
+		window.removeEventListener("keydown", ctFunctionFirstKey);
+	}else{
+		window.detachEvent("mousedown", ctFunctionFirstKey);
+		window.detachEvent("keydown", ctFunctionFirstKey);
+	}			
+}
+
+var d = new Date(), 
+	ctTimeMs = new Date().getTime(),
+	ctMouseEventTimerFlag = true, //Reading interval flag
+	ctMouseData = "[",
+	ctMouseDataCounter = 0;
+	
+//Reading interval
+var ctMouseReadInterval = setInterval(function(){
+		ctMouseEventTimerFlag = true;
+	}, 150);
+	
+//Writting interval
+var ctMouseWriteDataInterval = setInterval(function(){ 
+		var ctMouseDataToSend = ctMouseData.slice(0,-1).concat("]");
+		ctSetCookie("ct_pointer_data", ctMouseDataToSend);
+	}, 1200);
+
+//Logging mouse position each 300 ms
+var ctFunctionMouseMove = function output(event){
+	if(ctMouseEventTimerFlag == true){
+		var mouseDate = new Date();
+		ctMouseData += "[" + event.pageY + "," + event.pageX + "," + (mouseDate.getTime() - ctTimeMs) + "],";
+		ctMouseDataCounter++;
+		ctMouseEventTimerFlag = false;
+		if(ctMouseDataCounter >= 100)
+			ctMouseStopData();
+	}
+}
+//Writing first key press timestamp
+var ctFunctionFirstKey = function output(event){
+	var KeyTimestamp = Math.floor(new Date().getTime()/1000);
+	ctSetCookie("ct_fkp_timestamp", KeyTimestamp);
+	ctKeyStopStopListening();
+}
+
+if(typeof window.addEventListener == "function"){
+	window.addEventListener("mousemove", ctFunctionMouseMove);
+	window.addEventListener("mousedown", ctFunctionFirstKey);
+	window.addEventListener("keydown", ctFunctionFirstKey);
+}else{
+	window.attachEvent("onmousemove", ctFunctionMouseMove);
+	window.attachEvent("mousedown", ctFunctionFirstKey);
+	window.attachEvent("keydown", ctFunctionFirstKey);
+}
+	</script>
+
+    <link rel="stylesheet" href="/templates/system/css/system.css">
+    <link rel="stylesheet" href="/templates/system/css/general.css">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="/templates/dd_petfood_66/css/template.css" media="screen" type="text/css">
+    <!--[if lte IE 7]><link rel="stylesheet" href="/templates/dd_petfood_66/css/template.ie7.css" media="screen" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Adamina&amp;subset=latin">
+<link rel="shortcut icon" href="/templates/dd_petfood_66/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/templates/dd_petfood_66/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/templates/dd_petfood_66/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/templates/dd_petfood_66/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/templates/dd_petfood_66/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/templates/dd_petfood_66/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/templates/dd_petfood_66/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/templates/dd_petfood_66/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/templates/dd_petfood_66/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/templates/dd_petfood_66/apple-touch-icon-180x180.png">
+    <script>if ('undefined' != typeof jQuery) document._artxJQueryBackup = jQuery;</script>
+    <script src="/templates/dd_petfood_66/jquery.js"></script>
+    <script>jQuery.noConflict();</script>
+
+    <script src="/templates/dd_petfood_66/script.js"></script>
+    <script src="/templates/dd_petfood_66/modules.js"></script>
+        <script>if (document._artxJQueryBackup) jQuery = document._artxJQueryBackup;</script>
+    <!--rotator-->
+    		<link rel="stylesheet" type="text/css" href="/templates/dd_petfood_66/css/component.css">
+		<script src="/templates/dd_petfood_66/js/modernizr.custom.js"></script>
+    <!--social-->
+<link rel="stylesheet" href="/templates/dd_petfood_66/css/social.css" type="text/css" media="screen">
+       
+
+
+
+<!-- Google Analytics for Joomla 1.6 by Analytics For Joomla v1.0 | http://www.analyticsforjoomla.com/ -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-110544224-1']);
+  _gaq.push(['_addDevId', 'YogEE'],['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End of Google Analytics for Joomla 1.6 by Analytics For Joomla v1.0 -->
+
+
+<style id="dd-menu-style"></style></head>
+<body>
+
+<div id="dd-main">
+<header class="dd-header" style="background-position: 50% 0%;">
+    <div class="dd-shapes">
+        <div class="dd-object993135599" style="left: 668.4000000000001px; top: 132.84999999999997px;; margin-left: 0px !important;"></div>
+<div class="dd-object1485184805" style="left: 660.44px; top: 270.48px;; margin-left: 0px !important;"></div>
+<div class="dd-object209475449" style="left: 357.59999999999997px; top: 245.26999999999998px;; margin-left: 0px !important;"></div>
+<div class="dd-object1729383307" style="left: -63.699999999999996px; top: 162.87px;; margin-left: 0px !important;"></div>
+<div class="dd-textblock dd-object1088533933" style="left: -422.4px; top: -97.44px;; margin-left: 0px !important;">
+        <div class="dd-object1088533933-text-container">
+        <div class="dd-object1088533933-text"></div>
+    </div>
+    
+</div><div class="dd-textblock dd-object631016860" style="left: 63.6px; top: 239px;; margin-left: 0px !important;">
+        <div class="dd-object631016860-text-container">
+        <div class="dd-object631016860-text">Nasi podopieczni ...</div>
+    </div>
+    
+</div><div class="dd-textblock dd-object190009532" style="left: 48.160000000000004px; top: 285.35999999999996px;; margin-left: 0px !important;">
+        <div class="dd-object190009532-text-container">
+        <div class="dd-object190009532-text"><div class="rotator"><div id="cbp-qtrotator" class="cbp-qtrotator">
+	<div class="cbp-qtcontent cbp-qtcurrent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
+		<p><img src="/images/BwP/OPP_1_2.png">Stowarzyszenie Beagle w Potrzebie.
+Los pokrzywdzonych zwierząt nie jest nam obojętny,
+jesteśmy po to, aby pomagać. </p>
+        <div class="button"><a href="https://beaglewpotrzebie.pl/o-nas2/p-s" class="rotatorb">O nas ...</a></div>
+	</div>
+	<div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
+		  <p><img src="/images/BwP/Adopcje/T_Portos.png">Portos trafił do nas ze schroniska dla zwierząt.To fajny, łagodny psiak w kwiecie wieku. W tej chwili jest w trakcie leczenia. Jeżeli ktoś zechciałby pomóc Portosowi, będziemy wdzięczni!</p>
+          <div class="button"><a href="https://beaglewpotrzebie.pl/adopcje/nasi-podopieczni2?id=213" class="rotatorb">Więcej o Portosie ...</a></div>
+	</div>
+	<div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
+		  <p><img src="/images/BwP/Adopcje/T_Selma-2.png">Selma, około pięcioletnia sunia, która ostatnio trafiła pod naszą opiekę. Przez jakiś czas błąkała się po kilku miejscowościach w okolicy Warszawy.
+
+Sponiewierana przez los, brudna, z licznymi bliznami na pysiu, i wszechobecnym grzybem...</p>
+          <div class="button"><a href="https://beaglewpotrzebie.pl/adopcje/nasi-podopieczni2?id=136" class="rotatorb">Więcej o Selmie ...</a></div>
+	</div>
+	<div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
+		  <p><img src="/images/BwP/Adopcje/T_Lester.png">Lester ma półtora roku. Do doświadczonego domu bez dzieci.....</p>
+          <div class="button"><a href="https://beaglewpotrzebie.pl/adopcje/nasi-podopieczni2?id=239" class="rotatorb">Więcej o Lesterze...</a></div>
+	</div>
+    <div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
+		  <p><img src="/images/BwP/Adopcje/T_Meisi1.png">Dziewięcioletnia sunia odebrana interwencyjnie z łańcucha przez OTOZ. W tej chwili przebywa w Domu Tymczasowym....</p>
+          <div class="button"><a href="https://beaglewpotrzebie.pl/adopcje/nasi-podopieczni2?id=299" class="rotatorb">Więcej na temat Meisi...</a></div>
+	</div>
+<span class="cbp-qtprogress" style="transition: width 8000ms linear; -webkit-transition: width 8000ms linear; width: 100%;"></span></div></div></div>
+    </div>
+    
+</div>
+            </div>
+
+
+
+
+<div class="dd-logo dd-logo-1321622916" style="left: 734.3499999999999px; top: 263.24px;; margin-left: 0px !important;">
+    <img src="/templates/dd_petfood_66/images/logo-1321622916.png" alt="">
+</div><a href="#" class="dd-logo dd-logo-1654706685" style="left: -2.32px; top: 3.95px;; margin-left: 0px !important;">
+      <img src="/images/BwP/logo3.png" alt="">
+</a><a href="/" target="_blank" class="dd-logo dd-logo-1876450385" style="left: 315.4px; top: 17.2px;; margin-left: 0px !important;">
+    <img src="/images/BwP/logo_BwP.png" alt="">
+</a>
+
+<div class="social">﻿<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+<ul class="social">
+  <li>
+    <a class="fa fa-facebook" href="http://facebook.com/beaglewpotrzebie/">    
+      <span>Facebook</span>
+    </a> 
+  </li>  
+    
+  <li>
+    <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCMSkcJq_blvBep1Q4Q7_jAw">
+      <span>Youtube</span>
+    </a>
+  </li>  
+    
+</ul></div><nav class="dd-nav desktop-nav" style="left: 0px; width: 1060px;">
+    <div class="dd-nav-inner">
+    
+<ul class="dd-hmenu"><li class="item-104 current active"><a class=" active" href="/">Home</a></li><li class="item-121 deeper parent ext-r ext dd-hmenu-item-1" style="width: 82px;"><div class="ext-off"></div><div class="ext-m"></div><div class="ext-l" style="width: 89px;"></div><div class="ext-r" style="width: 89px;"></div><a href="#">O nas</a><ul><li class="item-142"><a href="/o-nas2/skad-sie-wzielismy">Skąd się wzięliśmy ?</a></li><li class="item-122"><a href="/o-nas2/p-s">Przedstawiamy się</a></li><li class="item-132"><a href="/o-nas2/nasz-statut">Nasz Statut</a></li><li class="item-133 deeper parent"><a href="#">Sprawozdania</a><ul><li class="item-258"><a href="/o-nas2/sprawozdania/sprawozdanie-finansowe-2017">Sprawozdanie finansowe 2017</a></li><li class="item-206"><a href="/o-nas2/sprawozdania/sprawozdanie-finansowe-2016">Sprawozdanie finansowe 2016</a></li><li class="item-163"><a href="/o-nas2/sprawozdania/sprawozdania-finansowe-archiwum">Sprawozdania finansowe - archiwum</a></li><li class="item-164"><a href="/o-nas2/sprawozdania/zbiorki-publiczne">Zbiórki publiczne</a></li></ul></li><li class="item-159"><a href="http://ebeagle.pl" target="_blank">Forum</a></li><li class="item-139"><a href="/o-nas2/archiwalne">Aktualności archiwalne</a></li><li class="item-263"><a href="/o-nas2/about-us">About Us</a></li></ul></li><li class="item-103 deeper parent ext-r ext dd-hmenu-item-2" style="width: 97px;"><div class="ext-off"></div><div class="ext-m"></div><div class="ext-l" style="width: 61px;"></div><div class="ext-r" style="width: 61px;"></div><a href="#">Adopcje</a><ul><li class="item-144"><a href="/adopcje/nasi-podopieczni2">Nasi podopieczni</a></li><li class="item-109"><a href="/adopcje/zanim-adoptujesz">Zanim adoptujesz</a></li><li class="item-110"><a href="/adopcje/co-warto-rozwazyc">Co warto rozważyć</a></li><li class="item-111"><a href="/adopcje/po-adopcji">Po adopcji</a></li><li class="item-112"><a href="/adopcje/adopcja-wirtualna">Adopcja wirtualna</a></li><li class="item-114"><a href="/adopcje/co-i-jak-z-ta-adopcja">Co i jak z tą adopcją</a></li><li class="item-125"><a href="/adopcje/ankieta-adopcyjna">ANKIETA adopcyjna</a></li></ul></li><li class="item-107 deeper parent ext-r ext dd-hmenu-item-3" style="width: 123px;"><div class="ext-off"></div><div class="ext-m"></div><div class="ext-l" style="width: 10px;"></div><div class="ext-r" style="width: 10px;"></div><a href="#">Rasa Beagle</a><ul><li class="item-143"><a href="/rasa-beagle/o-rasie">O rasie</a></li><li class="item-108"><a href="/rasa-beagle/wzorzec-rasy">Wzorzec rasy</a></li></ul></li><li class="item-115 deeper parent ext-r ext dd-hmenu-item-4" style="width: 153px;"><div class="ext-off"></div><div class="ext-m"></div><div class="ext-l" style="width: 95px;"></div><div class="ext-r" style="width: 95px;"></div><a href="#">Warto przeczytać</a><ul><li class="item-251"><a href="/zaginione/ustawa-o-ochronie-zwierząt">Ustawa o ochronie zwierząt</a></li><li class="item-252"><a href="/zaginione/kastracja-sterylizacja">Kastracja / sterylizacja</a></li><li class="item-250"><a href="/zaginione/pierwsze-chwile-po-adopcji">Pierwsze chwile po adopcji</a></li><li class="item-254"><a href="/zaginione/pasożyty-wewnętrzne-odrobaczanie">Pasożyty wewnętrzne - odrobaczanie</a></li><li class="item-253"><a href="/zaginione/kleszcze-mikroskopijni-zabójcy">Kleszcze - mikroskopijni zabójcy</a></li><li class="item-154"><a href="/zaginione/gdy-znajdziesz-psa">Gdy znajdziesz psa</a></li><li class="item-116"><a href="/zaginione/gdy-zaginie-pies">Gdy zaginie pies</a></li><li class="item-255"><a href="/zaginione/wakacje,-wakacje">Wakacje, wakacje</a></li></ul></li><li class="item-119 deeper parent ext-r ext dd-hmenu-item-5" style="width: 123px;"><div class="ext-off"></div><div class="ext-m"></div><div class="ext-l" style="width: 50px;"></div><div class="ext-r" style="width: 50px;"></div><a href="#">Rozmaitości</a><ul><li class="item-256"><a href="/podziekowania/sponsorzy">Sponsorzy</a></li><li class="item-257"><a href="/podziekowania/partnerzy">Partnerzy</a></li><li class="item-128"><a href="/podziekowania/zapraszamy-na-zakupy">Zapraszamy na zakupy</a></li><li class="item-157"><a href="/podziekowania/dziekujemy">Dziękujemy !</a></li><li class="item-217"><a href="/podziekowania/polecamy">Polecamy</a></li></ul></li><li class="item-118 deeper parent ext-r ext dd-hmenu-item-6" style="width: 128px;"><div class="ext-off"></div><div class="ext-m"></div><div class="ext-l" style="width: 50px;"></div><div class="ext-r" style="width: 50px;"></div><a href="#">Znalazły dom</a><ul><li class="item-156"><a href="/znalazly-dom/szczesliwe-zakonczenia">Szczęśliwe zakończenia</a></li></ul></li><li class="item-120 deeper parent ext-r ext dd-hmenu-item-7" style="width: 94px;"><div class="ext-off"></div><div class="ext-m"></div><div class="ext-l" style="width: 72px;"></div><div class="ext-r" style="width: 72px;"></div><a href="#">Kontakt</a><ul><li class="item-158"><a href="/kontakt/formularz-kontaktowy">Formularz kontaktowy</a></li></ul></li><li class="item-264"><a href="/kontakt-2"><img class="dd-menu-image" src="/images/uk.jpg" alt="English"></a></li></ul> 
+        </div>
+    </nav>
+
+                    
+</header>
+<div class="dd-sheet clearfix">
+            <div class="dd-content-layout"><div class="dd-content-layout-row"><div class="dd-layout-cell dd-layout-sidebar-bg" style="width: 33%;"><div class="dd-block clearfix"><div class="dd-blockcontent"><div class="powr-button powrLoaded" label="joomla_121"><iframe src="https://www.powr.io/plugins/button/cached_view?load=async&amp;index=0&amp;unique_label=&amp;powr_token=n8atfKXySS1524508595&amp;user_label=joomla_121&amp;demo_mode=false&amp;external_type=joomla&amp;template_powr_token=&amp;color=rgb(105%2C%20105%2C%20105)&amp;backgroundColor=rgb(227%2C%20214%2C%20206)&amp;fontFamily=Arial%2C%20'Arial%20Unicode%20MS'%2C%20Helvetica%2C%20sans-serif" powrindex="0" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="visibility: visible;"></iframe></div></div></div></div><div class="dd-layout-cell dd-layout-sidebar-bg" style="width: 33%;"><div class="dd-block clearfix"><div class="dd-blockcontent"><div class="powr-button powrLoaded" label="joomla_156"><iframe src="https://www.powr.io/plugins/button/cached_view?load=async&amp;index=1&amp;unique_label=&amp;powr_token=n8atfKXySS1524508595&amp;user_label=joomla_156&amp;demo_mode=false&amp;external_type=joomla&amp;template_powr_token=&amp;color=rgb(105%2C%20105%2C%20105)&amp;backgroundColor=rgb(227%2C%20214%2C%20206)&amp;fontFamily=Arial%2C%20'Arial%20Unicode%20MS'%2C%20Helvetica%2C%20sans-serif" powrindex="1" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="visibility: visible;"></iframe></div></div></div></div><div class="dd-layout-cell dd-layout-sidebar-bg" style="width: 34%;"><div class="dd-block clearfix"><div class="dd-blockcontent"><div class="powr-button powrLoaded" label="joomla_157"><iframe src="https://www.powr.io/plugins/button/cached_view?load=async&amp;index=2&amp;unique_label=&amp;powr_token=n8atfKXySS1524508595&amp;user_label=joomla_157&amp;demo_mode=false&amp;external_type=joomla&amp;template_powr_token=&amp;color=rgb(105%2C%20105%2C%20105)&amp;backgroundColor=rgb(227%2C%20214%2C%20206)&amp;fontFamily=Arial%2C%20'Arial%20Unicode%20MS'%2C%20Helvetica%2C%20sans-serif" powrindex="2" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="visibility: visible;"></iframe></div></div></div></div></div></div><div class="dd-layout-wrapper">
+                <div class="dd-content-layout">
+                    <div class="dd-content-layout-row">
+                        
+                        <div class="dd-layout-cell dd-content">
+                    
+<!-- begin nostyle -->
+<div class="dd-nostyle">
+<!-- begin nostyle content -->
+
+
+<div class="custom">
+	<p style="text-align: center;"><a title="Rozliczenie PIT z PITax.pl" href="https://www.pitax.pl/rozliczenie-pit-online-0000451372" target="_blank" rel="noopener"><img src="/images/Landing.gif" alt=""></a></p>
+<p style="text-align: center;"><br style="text-align: center;"></p>
+<p style="text-align: center;">&nbsp;</p></div>
+<!-- end nostyle content -->
+</div>
+<!-- end nostyle -->
+<div class="dd-content-layout"><div class="dd-content-layout-row"><div class="dd-layout-cell" style="width: 100%;"><article class="dd-post"><div class="dd-postmetadataheader"><h2 class="dd-postheader"><span class="dd-postheadericon">Wesołych Świąt! :)</span></h2></div><div class="dd-postcontent clearfix"><div class="custom">
+	<div id="js_bl" class="_5pbx userContent _3576" data-ft="{&quot;tn&quot;:&quot;K&quot;}">
+<p style="text-align: center;">Bryka zajączek żwawo po łączce<br> w tej przedświątecznej życzeń gorączce,<br> zając łaciaty, dość nietypowy<br> bo to specjalny zając beaglowy!</p>
+<div class="text_exposed_show">
+<p style="text-align: center;">Przesyła wszystkim szczere życzenia,<br> mnóstwa prezentów, marzeń spełnienia,<br> a bezdomniakom życzy żarliwie<br> żeby już odtąd żyły szczęśliwie!</p>
+<p style="text-align: center;">By miały domki i pełne miski,<br> i miały kogoś, kto sercu bliski,<br> spacerki w słońcu, deszczu i błocie<br> i pobłażanie beaglowej psocie!</p>
+<p style="text-align: center;">Bryka zajączek w dobrym humorze<br> i się doczekać tych Świąt nie może,<br> zagląda w każdy, najdalszy kąt<br> i życzy wszystkim WESOŁYCH ŚWIĄT!</p>
+<p style="text-align: center;">Załoga BEAGLE w POTRZEBIE</p>
+<p style="text-align: center;"><img src="/images/BwP/Foty/zajczek.jpg" alt="" width="489" height="734"></p>
+</div>
+<p></p>
+<p style="text-align: center;">1% z Twojego podatku ratuje bezdomne beagle<span class="_5mfr"><span class="_6qdm">🐾 </span></span><span class="_5mfr"><span class="_6qdm">💚</span></span><span class="_5mfr"><span class="_6qdm"> 🐾</span></span></p>
+<p style="text-align: center;">Wystarczy wpisać nasz KRS, podarować 1% a dzięki takiej pomocy uda się uratować kolejne psiaki. Pod nasza opieką są psy chore, porzucone, wyrwane z piekła niedoli. Ponad 400 łaciatym pomogliśmy zamieszkać na własnej kanapie i zyskać nowe kochające domy.</p>
+<p style="text-align: center;">Załoga BEAGLE w POTRZEBIE</p>
+<p></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/BwP/Foty/1-fotka.png" alt="" width="577" height="577"></p>
+</div>
+<p style="text-align: center;"><br style="text-align: center;"></p>
+<p style="text-align: center;">&nbsp;</p></div></div></article><article class="dd-post"><div class="dd-postmetadataheader"><h2 class="dd-postheader"><span class="dd-postheadericon">Witaj na stronie Stowarzyszenia Beagle w Potrzebie</span></h2></div><div class="dd-postcontent clearfix"><div class="custom">
+	<table style="width: 1016px; height: 404px;">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<p style="text-align: justify;"><i><span style="color: #6e503f;"><b>Jeśli trafili Państwo na naszą stronę, oznacza to, że interesują się Państwo psami rasy Beagle, oraz wszelkimi informacjami związanymi z tą rasą, która należy do VI Grupy FCI&nbsp; (<b>Fédération Cynologique Internationale)</b>, Sekcja 6.1&nbsp; - psy gończe.</b></span><br><strong><span style="color: #6e503f;">Zapraszamy zatem do zapoznania się z artykułami o Beaglach, które na naszej stronie się znajdują.</span></strong><br><strong><span style="color: #6e503f;">Zachęcamy szczególnie do przeczytania informacji na temat samej rasy, jej charakteru, predyspozycji i wymagań. Posiadanie Beagla to bowiem o wiele więcej, </span><span style="color: #6e503f;">niż tylko obowiązek karmienia, spaceru, czy koniecznych wizyt u lekarza weterynarii.</span></strong><br><strong><span style="color: #6e503f;">Od przyswojenia informacji o samej rasie należy więc zacząć. Być może jednak posiadają już Państwo wiedzę o Beaglach, a nawet pewne doświadczenie i trafili Państwo na naszą stronę świadomie, poszukując czworonożnego towarzysza, </span><span style="color: #6e503f;">który mógłby w Waszej Rodzinie spędzić resztę swego życia, otoczony miłością i traktowany jak pełnoprawny jej członek.</span></strong><br><strong><span style="color: #6e503f;">Zapraszamy w takim razie do odwiedzenia zakładki "Adopcje", znajdują się tam portrety naszych podopiecznych, którzy czekają na swoją szansę na szczęśliwe życie u boku człowieka.</span></strong><br><strong><span style="color: #6e503f;">Prosimy o dokładne przeczytanie informacji na temat psiaka, który Państwa zainteresuje, oraz o kontakt telefoniczny. Jest to pierwszy krok, który należy uczynić, aby móc stać się adopcyjnym domem </span><span style="color: #6e503f;">dla któregoś z naszych podopiecznych.</span></strong></i></p>
+</td>
+</tr>
+<tr>
+<td>
+<table style="margin-left: auto; margin-right: auto; width: 702px; height: 156px;">
+<tbody>
+<tr>
+<td><img style="float: right;" src="/images/BwP/OPP_logo_1proc.png" alt="OPP logo 1proc" width="89" height="139"></td>
+<td style="text-align: center;">
+<p><span style="font-size: 12pt; color: #bc5510;"><i>Stowarzyszenie Beagle w Potrzebie ul. Sumińska 59 44-290 Jejkowice</i></span><br><span style="font-size: 12pt; color: #bc5510;"><i>Konto: VW Bank nr rach. 87 2130 0004 2001 0640 2028 0001</i><i>&nbsp;</i></span><br><span style="font-size: 12pt; color: #bc5510;"><i>Zbiórki: VW Bank nr rach. 60 2130 0004 2001 0640 2028 0002</i></span><br><span style="font-size: 12pt; color: #bc5510;"><i>NIP: 6423183583&nbsp; REGON: 146551965&nbsp; KRS: 0000451372</i></span></p>
+<p><span style="font-size: 12pt; color: #bc5510;"><i><br><strong>Kontakt: Magdalena 501 714 686 ; Anna 501 409 850 ;&nbsp;<span style="font-size: 12pt; color: #bc5510;"><i><strong>Barbara 500 803 769</strong></i></span></strong></i></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table></div></div></article></div></div></div><article class="dd-post dd-messages" style="display: none;"><div class="dd-postcontent clearfix"><div id="system-message-container">
+	</div>
+</div></article><div class="blog"></div>
+     
+
+                        </div>
+                                            </div>
+                </div>
+            </div>
+<!-- begin nostyle -->
+<div class="dd-nostyle">
+<!-- begin nostyle content -->
+
+
+<div class="custom">
+	<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="color: #993300;">Nasza strona do prawidłowego działania wykorzystuje pliki "cookies". Korzystając ze strony wyrażasz zgodę na używanie cookie, zgodnie z aktualnymi ustawieniami przeglądarki.</span></p>
+<p style="text-align: center;">Darmowy Program PIT dostarcza <a href="https://www.iwop.pl/">Instytut Wsparcia Organizacji Pozarządowych</a> w ramach projektu <a href="https://www.pitax.pl/">PITax.pl</a> dla OPP.</p></div>
+<!-- end nostyle content -->
+</div>
+<!-- end nostyle -->
+
+
+    </div>
+<footer class="dd-footer">
+  <div class="dd-footer-inner">
+<span style="font-size: 12px; color: rgb(255, 255, 255);">
+<span style="color: #FFFFFF;">Copyright © 2019</span>&nbsp;<span style="font-weight: bold;">BEAGLE W POTRZEBIE</span><span style="color: #FFFFFF;">&nbsp;</span> <span style="color: #FFFFFF;">Rights Reserved.</span>
+</span>
+    <p class="dd-page-footer">
+        ﻿ <span id="dd-footnote-links">Designed by <a href="http://www.diablodesign.eu" target="_blank">www.diablodesign.eu</a>.</span>
+    </p>
+  </div>
+</footer>
+
+</div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="/templates/dd_petfood_66/js/jquery.cbpQTRotator.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpQTRotator( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 700,
+					// default transition easing
+					easing : 'ease',
+					// rotator interval (ms)
+					interval : 8000
+				}
+				- destroy:
+				$( selector ).cbpQTRotator( 'destroy' );
+				*/
+
+				$( '#cbp-qtrotator' ).cbpQTRotator();
+
+			} );
+		</script>
+ 
+
+</body></html>

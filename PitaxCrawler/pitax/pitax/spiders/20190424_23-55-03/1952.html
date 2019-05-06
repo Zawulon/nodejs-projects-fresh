@@ -1,0 +1,490 @@
+<!DOCTYPE html><html lang="pl"><head>
+        <meta charset="UTF-8">
+        <title>Fundacja Itaka - przekaż 1% podatku</title>
+        <meta name="description" content="Przekaż 1% podatku na poszukiwania zaginionych dzieci">
+        <meta name="keywords" content="">
+        <meta name="author" content="Esencja Studio @ www.esencja-studio.pl">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="shortcut icon" href="uploads/tpl/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css?v=3" media="all">
+        <link rel="stylesheet" type="text/css" href="css/anim.css?v=1" media="all">
+        <link rel="stylesheet" type="text/css" href="css/respo.css?v=1" media="all">
+
+        <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+        <script type="text/javascript" src="js/ZeroClipboard.js"></script>
+        <script type="text/javascript" src="js/jquery.animateNumber.min.js"></script>
+
+        <script type="text/javascript" src="js/global.js?v=2"></script>
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-5119760-3']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <div class="parallax_wrap" id="scene">
+
+            <div class="layer parallax_bg" data-depth="0.1"></div>
+            <div class="layer parallax_ptak" data-depth="0.20"><img src="img/parallax_ptak.gif" class="ptak" alt=""></div>
+            <div class="layer parallax_lighthouse trans" data-depth="0.30"></div>
+            <div class="layer parallax_clouds trans" data-depth="0.20"></div>
+            <div class="layer parallax_rocks trans" data-depth="0.45"></div>
+
+        </div>
+
+        <div class="popup">
+            <span class="close" onclick="$(this).parent().fadeOut(300);
+                    _gaq.push(['_trackEvent', 'Formularze', 'Opaski', 'Przycisk Zamknij']);"></span>
+            <div class="inner">
+                <p class="title">Dziękujemy za przekazanie Twojego 1% na poszukiwania zaginionych i wsparcie dla ich rodzin.</p>
+                <p class="txt">Jeżeli chcesz otrzymać opaskę dla Twojego dziecka, wypełnij poniższy formularz i odpowiedz krótko na jedno pytanie. Opaskę, na której wpisujesz swój numer telefonu, możesz założyć dziecku w centrum handlowym, supermarkecie czy na wakacjach.</p>
+
+                <form method="post" action="">
+                    <div class="popup_form_box">
+                        <div class="popup_form_box_inner">
+                            <p>Wypełnij formularz, a na podany adres prześlemy Ci 10 wytrzymałych opasek:</p>
+
+                            <p>
+                                <input type="text" class="txt wymagane" name="imie" value="Imię" data-default="Imię" id="txt_imie">
+                                <input type="text" class="txt wymagane" name="nazwisko" value="Nazwisko" data-default="Nazwisko" id="txt_nazwisko">
+                                <input type="text" class="txt wymagane" name="email" value="Email" data-default="Email" id="txt_email">
+                                <input type="text" class="txt wymagane" name="ulica" value="Ulica/nr. domu/nr. lokalu" data-default="Ulica/nr. domu/nr. lokalu" id="txt_ulica">
+                                <input type="text" class="txt wymagane" name="kod" value="Kod" data-default="Kod" id="txt_kod">
+                                <input type="text" class="txt wymagane" name="miasto" value="Miasto" data-default="Miasto" id="txt_miasto">
+                            </p>
+
+                            <p>Odpowiedz na pytanie: <strong>Dlaczego warto przekazać 1% Fundacji ITAKA?</strong></p>
+
+                            <p><textarea name="text" class="txt wymagane" data-default="Wpisz treść">Wpisz treść</textarea></p>
+
+                            <img src="img/popup_img.png" alt="" class="popup_img">
+
+                            <p class="zgoda">
+                                <input type="checkbox" class="zgoda_obowiazkowa" name="zgoda1" id="zgoda1">
+                                <label class="zgoda" for="zgoda1">Wyrażam zgodę na przetwarzanie moich danych osobowych w celach realizacji wysyłki pocztowej zamówionych opasek zgodnie z przepisami ustawy z 29.08.1997 o ochronie danych osobowych (Dz.U. z 2002 r. nr 101, poz. 926 z póź. zm.)</label>
+                            </p>
+                            <p class="zgoda">
+                                <input type="checkbox" name="zgoda2" id="zgoda2">
+                                <label class="zgoda" for="zgoda2">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu otrzymywania od Fundacji ITAKA - Centrum Poszukiwań Ludzi Zaginionych materiałów edukacyjnych z tematyki zaginięć i pozostałych celów statutowych organizacji i/lub informacji o prowadzonych akcjach społecznych zgodnie z przepisami ustawy z 29.08.1997 o ochronie danych osobowych (Dz.U. z 2002 r. nr 101, poz. 926 z póź. zm.)</label>
+                            </p>
+
+                        </div>
+                    </div>
+                    <p class="align-right">
+                        <a href="#">Polityka prywatności</a>
+                        <input id="send" type="submit" class="submit" value="Wyślij" onclick="_gaq.push(['_trackEvent', 'Formularze', 'Opaski', 'Przycisk Wyślij']);">
+                    </p>
+
+                </form>
+
+                <script>
+                    $('.popup form').submit(function () {
+                        var wymagane = 1;
+                        var wzorMaila = /^[0-9a-z_.-]+@+[0-9a-z.-]+\.[a-z]{2,3}$/i;
+                        var komunikat = '';
+
+                        $('.wymagane').each(function () {
+                            if (($(this).val() == '') || ($(this).val() == $(this).attr('data-default'))) {
+                                //blad
+                                wymagane = 0;
+                                komunikat = komunikat + 'Proszę wypełnić pole <b>' + $(this).attr('data-default') + '</b>.<br />';
+                            }
+                        });
+
+                        if (wzorMaila.test($('input[name="email"]').val()) == false) {
+                            //blad
+                            wymagane = 0;
+                            komunikat = komunikat + 'Proszę podać prawidłowy adres e-mail. <br />';
+                        }
+
+                        if ($('input.zgoda_obowiazkowa').is(':checked')) {
+                        } else {
+                            wymagane = 0;
+                            komunikat = komunikat + 'Proszę zaznaczyć zgodę na przetwarzanie danych w celu realizacji wysyłki. ';
+                        }
+
+                        if (wymagane == 0) {
+                            malert(komunikat);
+                            return false;
+                        } else {
+                            $.ajax({
+                                type: "POST",
+                                url: 'send.php',
+                                data: {imie: $('input[name="imie"]').val(), nazwisko: $('input[name="nazwisko"]').val(), email: $('input[name="email"]').val(), ulica: $('input[name="ulica"]').val(), kod: $('input[name="kod"]').val(), miasto: $('input[name="miasto"]').val(), text: $('textarea[name="text"]').val()},
+                                success: function () {
+                                    $('.popup').fadeOut(300);
+                                    _gaq.push(['_trackEvent', 'Formularz kontaktowy', 'wysłane']);
+                                    malert('Dziękujemy za przesłanie zgłoszenia i przekazanie Twojego 1% na poszukiwanie zaginionych i wsparcie ich rodzin.');
+                                }
+                            });
+                            return false;
+                        }
+
+                    });
+
+                    $(function () {
+                        var clip = new ZeroClipboard($('.copy_krs'));
+                        //$(clip.htmlBridge).tooltip({title: "Kopiuj", placement: 'right'});
+                        clip.on("load", function (client) {
+                            client.on("complete", function (client, args) {
+                                // `this` is the element that was clicked
+                                _gaq.push(['_trackEvent', 'Kliknięcie', 'KRS', 'KRS strona główna']);
+                                malert("Skopiowano do schowka: " + args.text);
+                                $('.copy_krs').addClass('copied');
+                            });
+                        });
+                    });
+                </script>
+
+
+            </div>
+        </div>
+
+        <div class="header_wrap">
+            <div class="header">
+
+                <a href="index.html" class="content_link" data-content="1"><img src="img/logo_itaka.png" class="logo" alt=""></a>
+
+                <span class="home_icon content_link" data-content="1"><a href="index.html"><img src="img/ico_home_top.png" alt=""></a></span>
+
+                <div class="menu">
+                    <ul>
+                        <li data-content="2"><a href="jak-pomagamy.html">Jak pomagamy?</a></li>
+                        <li data-content="3"><a href="o-fundacji.html">O Fundacji</a></li>
+                    </ul>
+                </div>
+
+                <span class="fb_icon"><a href="https://pl-pl.facebook.com/FundacjaItaka" target="_blank" onclick="_gaq.push(['_trackEvent', 'Wyjścia', 'Facebook', 'Ikonka górna']);"><img src="img/ico_fb_top.png" alt=""></a></span>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="main_wrap">
+            <div class="main">
+                <div class="content">
+
+
+
+
+
+                    <!-- STRONA GLOWNA -->
+                    <div class="left active" data-content="1">
+
+                        <p class="font_big">Fundacja ITAKA<br> nieprzerwanie od ponad 18 lat,</p>
+                        <p class="font_mid">
+                            codziennie,&nbsp; przez <strong><span class="numbers_1">10</span> dni</strong> w roku, pomaga zaginionym znaleźć drogę do domu i wspiera ich bliskich.<br>
+                            Do tej pory odnaleźliśmy <strong><span class="numbers_2">446</span> osób</strong>.
+                        </p>
+                        <p class="font_mid">
+                            Twój 1% pomoże nam szukać dalej -
+                            <span class="copy_krs" data-clipboard-text="0000126459"><strong>KRS 000 012 6459</strong> <img class="copy_krs_img" data-clipboard-text="0000126459" src="img/ico/ico_copy.png" title="kopiuj do schowka" alt=""></span>
+                        </p>
+
+                        <p class="font_mid align-center">
+                            <a href="https://www.pitax.pl/pobierz?krs=0000126459" target="_blank" class="btn_50p btn_50p_mg" onclick="_gaq.push(['_trackEvent', 'Pobrania', 'Program PIT 2018', 'Przycisk Pobierz']);"><span>Pobierz bezpłatny Program PIT 2018<br>Przekaż swój 1%</span></a>
+                            <a href="https://www.pitax.pl/rozlicz?krs=0000126459" target="_blank" class="btn_50p" onclick="_gaq.push(['_trackEvent', 'Pobrania', 'Program PIT 2018', 'Przycisk Pit online']);"><span>Wypełnij online PIT 2018<br>Przekaż swój 1%</span></a>
+
+                            <a onclick="$('.popup').fadeIn(300); _gaq.push(['_trackEvent', 'Formularze', 'Opaski', 'Przycisk Opaska dla Twojego dziecka']);" class="btn_50p third"><span>Opaska<br>dla Twojego dziecka</span></a>
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- JAK POMAGAMY -->
+                    <div class="left" data-content="2">
+
+                        <div class="submenu">
+                            <ul>
+                                <li data-page="1" class="submenu_active"><a href="#">Poszukiwania</a></li>
+                                <li class="gap">|</li>
+                                <li data-page="2"><a href="#">Pomoc rodzinom</a></li>
+                                <li class="gap">|</li>
+                                <li data-page="3"><a href="#">Profilaktyka zaginięć - Akcje społeczne/Edukacja</a></li>
+                                <li data-page="4" style="display: none;"><a href="#">Organizacja</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="pomagamy_page active" data-page="1">
+
+                            <div class="pomagamy_list">
+
+                                <div class="item3">
+                                    <div class="inner">
+                                        <p class="image"><img src="img/ico/ico_pomagamy_poszukiwania_1.png" alt=""></p>
+                                        <p><strong>Media</strong><br>nagłaśniamy zaginięcia w środkach masowego przekazu </p>
+                                    </div>
+                                </div>
+
+                                <div class="item3">
+                                    <div class="inner">
+                                        <p class="image"><img src="img/ico/ico_pomagamy_poszukiwania_2.png" alt=""></p>
+                                        <p><strong>Baza zaginionych</strong><br> mamy stały kontakt z rodziną zaginionego, udzielamy i aktualizujemy informacje</p>
+                                    </div>
+                                </div>
+
+                                <div class="item3">
+                                    <div class="inner">
+                                        <p class="image"><img src="img/ico/ico_pomagamy_poszukiwania_3.png" alt=""></p>
+                                        <p><strong>Internet</strong><br> wykorzystujemy media społecznościowe w poszukiwaniach</p>
+                                    </div>
+                                </div>
+
+                                <div class="item3">
+                                    <div class="inner">
+                                        <p class="image"><img src="img/ico/ico_pomagamy_poszukiwania_4.png" alt=""></p>
+                                        <p><strong>Policja, Straż miejska</strong><br> szukamy wspólnie i monitorujemy działania służb publicznych</p>
+                                    </div>
+                                </div>
+
+                                <div class="item3">
+                                    <div class="inner">
+                                        <p class="image"><img src="img/ico/ico_pomagamy_poszukiwania_5.png" alt=""></p>
+                                        <p><strong>Noclegownie, schronika, szpitale</strong><br>sprawdzamy miejsca możliwego pobytu</p>
+                                    </div>
+                                </div>
+
+                                <div class="item3">
+                                    <div class="inner">
+                                        <p class="image"><img src="img/ico/ico_pomagamy_poszukiwania_6.png" alt=""></p>
+                                        <p><strong>Ambasady, konsulaty</strong><br> współpracujemy z instytucjami rządowymi przy zaginięciach zagranicznych </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="pomagamy_page" data-page="2">
+
+                            <div class="pomagamy_list">
+                                <div class="item2">
+                                    <div class="inner">
+                                        <p class="image"><img src="img/ico/ico_pomagamy_pomoc_rodzinom_1.png" alt=""></p>
+                                        <p>Nasze  telefonicznie linie wsparcia <strong>801 24 70 70</strong> oraz <strong>116 000  (zaginięcia dzieci i nastolatków)</strong> oferują wsparcie <strong>przez cały rok</strong> </p>
+                                    </div>
+                                </div>
+
+                                <div class="item2">
+                                    <div class="inner">
+                                        <p class="image"><img src="img/ico/ico_pomagamy_pomoc_rodzinom_2.png" alt=""></p>
+                                        <p><strong>Porad udzielają psycholodzy, prawnicy, pracownicy socjalni</strong> oraz <strong>doświadczeni specjaliści ds. poszukiwań</strong></p>
+                                    </div>
+                                </div>
+
+                                <div class="item2">
+                                    <div class="inner">
+                                        <p class="image"><img src="img/ico/ico_pomagamy_pomoc_rodzinom_3.png" alt=""></p>
+                                        <p><strong>Aktywnie poszukujemy</strong> zaginionych w Polsce i zagranicą</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="pomagamy_page" data-page="3">
+                            <p class="font_mid">Dbamy o podnoszenie ważnych społecznie problemów poprzez <strong>akcje społeczne</strong>:</p>
+
+                            <div class="pomagamy_list">
+
+                                <a href="http://www.stopdepresji.pl/" target="_blank" class="item3_white">
+                                    <div class="inner">
+                                        <p class="title">STOP DEPRESJI</p>
+                                        <p>choroba psychiczna to jedna z głównych przyczyn zaginięć w Polsce</p>
+                                    </div>
+                                </a>
+                                <a href="http://nieuciekaj.pl/" target="_blank" class="item3_white">
+                                    <div class="inner">
+                                        <p class="title">NIE UCIEKAJ</p>
+                                        <p>akcja profilaktyczna skierowana do młodych osób przeżywających życiowe trudności</p>
+                                    </div>
+                                </a>
+                                <a href="http://bezpiecznapraca.eu/" target="_blank" class="item3_white">
+                                    <div class="inner">
+                                        <p class="title">BEZPIECZNA PRACA</p>
+                                        <p>jak uniknąć zagrożeń związanych z emigracją zarobkową</p>
+                                    </div>
+                                </a>
+                                <a href="http://porwaniarodzicielskie.pl/" target="_blank" class="item3_white">
+                                    <div class="inner">
+                                        <p class="title">PORWANIA RODZICIELSKIE</p>
+                                        <p>jako jedyna organizacja zajmujemy się trudną problematyką władzy rodzicielskiej i jej prawnymi aspektami</p>
+                                    </div>
+                                </a>
+                                <a href="http://www.helpbringthemhome.org.au/" target="_blank" class="item3_white">
+                                    <div class="inner">
+                                        <p class="title">MIĘDZYNARODOWY DZIEŃ DZIECKA ZAGINIONEGO (25.05)</p>
+                                        <p>współpracujemy z organizacjami z całego świata</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="link_forward page_link" data-page="4"></a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="pomagamy_page" data-page="4">
+
+                            <div class="pomagamy_list">
+
+                                <div class="item3">
+                                    <div class="inner">
+                                        <p class="image2"><img src="img/ico/ico_pomagamy_organizacja_1.png" alt=""></p>
+                                        <p><strong>Wykłady</strong><br>traktujące o profilaktyce zaginięć</p>
+                                    </div>
+                                </div>
+
+                                <div class="item3">
+                                    <div class="inner">
+                                        <p class="image2"><img src="img/ico/ico_pomagamy_organizacja_2.png" alt=""></p>
+                                        <p><strong>Szkolenia</strong><br> dla szkół podstawowych i ponadpodstawowych z zakresu profilaktyki zaginięć, depresji wśród nastolatków i ucieczek</p>
+                                    </div>
+                                </div>
+
+                                <div class="item3">
+                                    <div class="inner">
+                                        <p class="image2"><img src="img/ico/ico_pomagamy_organizacja_3.png" alt=""></p>
+                                        <p><strong>Konferencje eksperckie</strong><br> na temat zaginięć w Polsce, porwań rodzicielskich, zaginionych dzieci </p>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="link_backward page_link" data-page="3"></a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <!-- O FUNDACJI -->
+                    <div class="left" data-content="3">
+
+                        <p class="font_mid"><strong>Fundacja ITAKA</strong> – Centrum Poszukiwań Ludzi Zaginionych jest jedyną organizacją pozarządową w Polsce, która szuka zaginionych oraz wspiera ich rodziny, całkowicie bezpłatnie, przez cały rok, całodobowo.</p>
+
+                        <div class="slider_ofundacji_wrap">
+                            <div class="slider_ofundacji_pager_wrap"><span class="slider_ofundacji_pager"><span class="cycle-pager-active"></span><span></span><span></span><span></span><span></span><span></span><span></span></span></div>
+                            <div class="slider_ofundacji cycle-slideshow" data-cycle-fx="fade" data-pause-on-hover="true" data-cycle-pager-event="mouseover" data-cycle-timeout="4000" data-cycle-speed="600" data-cycle-manual-speed="50" data-cycle-slides="&gt; div" data-cycle-pager=".slider_ofundacji_pager" data-cycle-pager-template="&lt;span&gt;&lt;/span&gt;" style="position: relative;"><div class="slide cycle-slide cycle-sentinel" style="position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; visibility: hidden; display: block;">
+                                    <p class="image" style="visibility: hidden;"><img src="img/ico/ico_slider_ofundacji_s1.png" alt="" style="visibility: hidden;"></p>
+                                    <p class="title" style="visibility: hidden;">Ponad 18 lat działalności</p>
+                                    <p style="visibility: hidden;">do tej pory odnaleźliśmy <strong style="visibility: hidden;">ponad 14 800 osób</strong>, w Polsce i zagranicą</p>
+                                </div>
+
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+
+                            <div class="slide cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 100; opacity: 1;">
+                                    <p class="image"><img src="img/ico/ico_slider_ofundacji_s1.png" alt=""></p>
+                                    <p class="title">Ponad 18 lat działalności</p>
+                                    <p>do tej pory odnaleźliśmy <strong>ponad 14 800 osób</strong>, w Polsce i zagranicą</p>
+                                </div><div class="slide cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 99; display: none;">
+                                    <p class="image"><img src="img/ico/ico_slider_ofundacji_s2.png" alt=""></p>
+                                    <p class="title">Stale pod naszą opieką</p>
+                                    <p>jest ponad <strong>1000 rodzin</strong></p>
+                                </div><div class="slide cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 97; display: none;">
+                                    <p class="image"><img src="img/ico/ico_slider_ofundacji_s3.png" alt=""></p>
+                                    <p class="title">Pomoc świadczą <strong>wykwalifikowani specjaliści</strong></p>
+                                    <p>prawnicy, psycholodzy, pracownicy socjalni <br>oraz profesjonaliści od poszukiwań</p>
+                                </div><div class="slide cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 96; display: none;">
+                                    <p class="image"><img src="img/ico/ico_slider_ofundacji_s4.png" alt=""></p>
+                                    <p class="title">Nasze działania wspiera</p>
+                                    <p><strong>40 wyszkolonych</strong> wolontariuszy</p>
+                                </div><div class="slide cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 95; display: none;">
+                                    <p class="image"><img src="img/ico/ico_slider_ofundacji_s5.png" alt=""></p>
+                                    <p class="title"><a href="https://pl-pl.facebook.com/FundacjaItaka" target="_blank">Nasz profil</a> na Facebooku śledzi ponad</p>
+                                    <p>20 000 fanów, którzy pomagają nam szukać w sieci</p>
+                                </div><div class="slide cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 94; display: none;">
+                                    <p class="image"><img src="img/ico/ico_slider_ofundacji_s6.png" alt=""></p>
+                                    <p class="title">Realnie wpływamy na zmiany prawne</p>
+                                    <p>w Polsce zainicjowaliśmy wdrożenie systemu <strong>Child Alert</strong><br>Dążymy do zmian prawnych regulujących problem porwań rodzicielskich</p>
+                                </div><div class="slide cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 93; display: none;">
+                                    <p class="image"><img src="img/ico/ico_slider_ofundacji_s7.png" alt=""></p>
+                                    <p class="title">Przejrzyj naszą bazę zaginionych</p>
+                                    <p>i poznaj naszą organizację</p>
+                                    <p><a href="http://zaginieni.pl/" target="_blank">Dowiedz się więcej o Itace »</a></p>
+                                </div></div>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="clear"></div>
+                </div>
+
+                <a title="PITax.pl Łatwe podatki" target="_blank" href="https://www.pitax.pl/" class="logo_pitprogram">1% zbieramy we współpracy z PITax.pl Łatwe podatki</a>
+                <a title="Agencja interaktywna Esencja Studio" target="_blank" href="http://www.esencja-studio.pl/"><img src="img/esencja_logo.png" alt="" class="logo_esencja"></a>
+
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery.parallax.js"></script>
+        <script>
+                                $(window).load(function () {
+                                    $('.parallax_wrap .loading').removeClass('loading');
+
+
+                                    setTimeout(function () {
+                                        $('.parallax_wrap .trans').removeClass('trans');
+                                        $('#scene').parallax({
+                                            limitX: 30,
+                                            limitY: 0,
+                                            frictionX: 0.2,
+                                        });
+                                    }, 2000);
+
+                                });
+
+                                function getParameterByName(name) {
+                                    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+                                }
+
+                                $(function () {
+                                    if (getParameterByName('popup') == "true") {
+                                        $('.popup').fadeIn();
+                                    }
+
+                                });
+        </script>
+
+    
+<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="js/ZeroClipboard.swf?nocache=1556142924880">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=1procent.zaginieni.pl%2C%2F%2F1procent.zaginieni.pl%2Chttp%3A%2F%2F1procent.zaginieni.pl">         <embed src="js/ZeroClipboard.swf?nocache=1556142924880" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=1procent.zaginieni.pl%2C%2F%2F1procent.zaginieni.pl%2Chttp%3A%2F%2F1procent.zaginieni.pl" scale="exactfit">                </object></div></body></html>
